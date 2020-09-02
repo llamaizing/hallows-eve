@@ -1,0 +1,891 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "1",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 16,
+  width = 320,
+  height = 240,
+  pattern = "5_2",
+  tileset = "grass_green_large",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "11",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 24,
+  width = 16,
+  height = 24,
+  pattern = "11",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 0,
+  width = 192,
+  height = 128,
+  pattern = "5",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = -8,
+  width = 192,
+  height = 8,
+  pattern = "7",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 0,
+  width = 8,
+  height = 128,
+  pattern = "9",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 0,
+  width = 8,
+  height = 128,
+  pattern = "8",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 128,
+  width = 192,
+  height = 8,
+  pattern = "10",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 136,
+  width = 48,
+  height = 48,
+  pattern = "2_3",
+  tileset = "grass_green_large",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 176,
+  width = 64,
+  height = 48,
+  pattern = "4_3",
+  tileset = "grass_green_large",
+}
+
+destructible{
+  layer = 0,
+  x = 208,
+  y = 21,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 240,
+  y = 29,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 45,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 368,
+  y = 77,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 392,
+  y = 93,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 117,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 328,
+  y = 125,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 125,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 344,
+  y = 69,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 296,
+  y = 21,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 312,
+  y = 29,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 288,
+  y = 29,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 77,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 85,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 93,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 288,
+  y = 101,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 272,
+  y = 125,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 352,
+  y = 21,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 37,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 37,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 37,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 29,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 160,
+  y = 133,
+  direction = 3,
+}
+
+destructible{
+  name = "tester",
+  layer = 0,
+  x = 88,
+  y = 165,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 24,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = -8,
+  width = 48,
+  height = 48,
+  pattern = "13",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = -8,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = -40,
+  width = 48,
+  height = 48,
+  pattern = "13",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 16,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = -16,
+  width = 48,
+  height = 48,
+  pattern = "13",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = -8,
+  width = 64,
+  height = 48,
+  pattern = "1",
+  tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = -40,
+  width = 48,
+  height = 48,
+  pattern = "13",
+  tileset = "halloween",
+}
+
