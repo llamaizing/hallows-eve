@@ -1,4 +1,3 @@
-map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
 
@@ -93,6 +92,7 @@ sprite{ id = "foliage/leaf_burst", description = "Leaf Burst" }
 sprite{ id = "foliage/nettle_short", description = "Nettle-Short" }
 sprite{ id = "foliage/pumpkin_leaves", description = "Pumpkin Leaves" }
 sprite{ id = "foliage/sprig", description = "sprig" }
+sprite{ id = "foliage/sunflower", description = "Sunflower" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
 sprite{ id = "ground_effects/leaves", description = "Leaves" }
@@ -610,6 +610,7 @@ file{ path = "sprites/foliage/leaf_burst.dat", author = "Max Mraz", license = "C
 file{ path = "sprites/foliage/nettle_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/pumpkin_leaves.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/sprig.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/sunflower.dat", author = "Max Mraz", }
 file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
