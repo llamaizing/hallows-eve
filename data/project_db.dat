@@ -79,6 +79,7 @@ sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "foliage/barley", description = "Barley" }
@@ -147,6 +148,7 @@ sound{ id = "crystal", description = "crystal" }
 sound{ id = "crystal2", description = "crystal2" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "danger", description = "danger" }
+sound{ id = "dash", description = "dash" }
 sound{ id = "diarandor/solarus_logo", description = "Solarus logo" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
@@ -623,34 +625,6 @@ file{ path = "sprites/ground_effects/water_splash.dat", author = "Diarandor", li
 file{ path = "sprites/ground_effects/water_splash_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/caspian.png", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_boomerang v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_bow v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_hookshot v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_running_on_sword v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_seashell_flute v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_shovel v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_spin_attack v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_brandish v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_loading v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_tapping v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_victory v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/hero_on_shield v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne v2.2.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_boomerang v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_bow v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_grabbing v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_hookshot v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_miscellaneous v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_plunging v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_running v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_running_on_sword v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_shovel v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_spin_attack v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_swimming v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_brandish v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_loading v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_tapping v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_victory v2.0.ase", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/tunic1.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/button_icon.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }

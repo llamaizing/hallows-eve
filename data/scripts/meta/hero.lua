@@ -51,11 +51,26 @@ hero_meta:register_event("on_state_changed", function(self, state)
   local hero = self
   local game = sol.main.get_game()
 
+  -- Makes sure that the sword is drawn behind the hero when the hero is facing north
+  if state == "sword swinging" then
+    local main_sprite = self:get_sprite("tunic")
+    local sword_sprite = self:get_sprite("sword")
+    local direction4 = self:get_direction4_to(self:get_facing_position())
+    if (direction4 == 0 or direction4 == 1 or direction4 == 2) then
+      self:bring_sprite_to_back(sword_sprite)
+      self:bring_sprite_to_front(main_sprite)
+    else
+      self:bring_sprite_to_front(sword_sprite)
+      self:bring_sprite_to_back(main_sprite)
+    end
+  end
+
   if state == "back to solid ground" then
     hero:set_invincible(true,1500)
+  end
 
   --weird bad fire sword
-  elseif state == "sword swinging" and game.sword_on_fire then
+  if state == "sword swinging" and game.sword_on_fire then
     local dx = {[0]=16,[1]=0,[2]=-16,[3]=0}
     local dy = {[0]=0,[1]=-16,[2]=0,[3]=16}
     local map = game:get_map()

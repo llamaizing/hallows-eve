@@ -523,6 +523,7 @@ destructible{
 }
 
 destructible{
+  name = "test",
   layer = 0,
   x = 328,
   y = 125,
