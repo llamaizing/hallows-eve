@@ -1,6 +1,6 @@
 local dash_manager = {}
 
-local MAX_MOTHS = 10
+local MAX_MOTHS = 12
 local MAGIC_COST = 0
 local enough_magic
 local movement_id = 1
@@ -12,7 +12,9 @@ function dash_manager:dash(game)
     local dir = hero:get_direction()
     local dd = {[0]=0,[1]=math.pi/2,[2]=math.pi,[3]=3*math.pi/2} --to convert 0-4 direction to radians
     dir = dd[dir]
-    if hero:get_movement() then dir = hero:get_movement():get_angle() end
+    if hero:get_movement() and hero:get_movement():get_speed() > 0 then
+      dir = hero:get_movement():get_angle()
+    end
     dash_manager.m = sol.movement.create("straight")
     dash_manager.m:set_angle(dir)
     dash_manager.m:set_speed(180)
@@ -48,7 +50,7 @@ function dash_manager:dash(game)
     end)
 
     --start movement
-    map:create_poof(hero:get_position())
+    --map:create_poof(hero:get_position())
 
     --Apply jump state
     hero:start_state(game:get_item("inventory/feather"):get_jumping_state())
@@ -107,30 +109,32 @@ function dash_manager:generate_moths(game)
   local n = 0
   for n = 0, MAX_MOTHS do
     local x, y, layer = game:get_hero():get_position()
-    local sprite = sol.sprite.create"entities/moth"
-    local moth = {
-        x = x,
-        y = y,
-    }
-    --[[
-    moth.m = sol.movement.create"straight"
-    moth.m:set_speed(160)
-    moth.m:set_angle(2 * math.pi / MAX_MOTHS * n)
-    --]]
-    moth.m = sol.movement.create"random"
-    moth.m:set_speed(80)
-    moth.m:start(moth)
+    local sprite = sol.sprite.create"entities/leaf_blowing"
     sprite:set_animation("fade_out", function() moth = nil end)
+    sprite:set_frame_delay(30,70)
+    sprite:set_frame(math.random(1, 14))
+    local moth = {
+        x = x + math.random(-8, 8),
+        y = y + math.random(-12, 16),
+    }
+
+    moth.m = sol.movement.create"straight"
+    local rand = math.random(1,2)
+    if rand == 1 then angle = math.pi + .1
+    else angle = math.pi * 2 - .1 end
+    moth.m:set_angle(angle + math.random(-.2, .2))
+    moth.m:set_speed(math.random(10,60))
+    moth.m:start(moth)
     dash_manager.seeds[sprite] = moth
   end
 
-  --[[
+  --
   --Moths return to Hero as they stop dashing
-  sol.timer.start(map, 120, function()
+  sol.timer.start(map, 180, function()
       for _, seed in pairs(dash_manager.seeds) do
         seed.m:stop()
         local m = sol.movement.create"target"
-        m:set_target(hero)
+        m:set_target(hero:get_position())
         m:set_speed(240)
         m:start(seed)
       end
