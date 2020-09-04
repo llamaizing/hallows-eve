@@ -438,6 +438,184 @@ tile{
   tileset = "halloween",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 160,
+  width = 8,
+  height = 16,
+  pattern = "75",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 176,
+  width = 8,
+  height = 48,
+  pattern = "76",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "78",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "77",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 176,
+  width = 16,
+  height = 48,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "79",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 176,
+  width = 8,
+  height = 48,
+  pattern = "80",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 160,
+  width = 8,
+  height = 16,
+  pattern = "81",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 176,
+  width = 48,
+  height = 16,
+  pattern = "74",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 176,
+  width = 8,
+  height = 16,
+  pattern = "75",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 192,
+  width = 8,
+  height = 16,
+  pattern = "76",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 208,
+  width = 48,
+  height = 8,
+  pattern = "78",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "77",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 192,
+  width = 48,
+  height = 16,
+  pattern = "water",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "79",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 192,
+  width = 8,
+  height = 16,
+  pattern = "80",
+  tileset = "oceanset_desert",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 176,
+  width = 8,
+  height = 16,
+  pattern = "81",
+  tileset = "oceanset_desert",
+}
+
 destructible{
   layer = 0,
   x = 208,

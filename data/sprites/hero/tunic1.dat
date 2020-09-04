@@ -270,14 +270,14 @@ animation{
 }
 animation{
   name = "jumping_2",
-  src_image = "hero/caspian.png",
+  src_image = "hero/ichabod.png",
   frame_delay = 70,
   frame_to_loop_on = 0,
   directions = {
-    { x = 112, y = 1008, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 41, num_frames = 7 },
-    { x = 224, y = 976, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 41, num_frames = 6 },
-    { x = 112, y = 1040, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 41, num_frames = 7 },
-    { x = 112, y = 976, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 41, num_frames = 6 },
+    { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
+    { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
+    { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
+    { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
   },
 }
 animation{
@@ -337,13 +337,10 @@ animation{
 }
 animation{
   name = "plunging_water",
-  src_image = "hero/caspian.png",
+  src_image = "hero/ichabod.png",
   frame_delay = 100,
   directions = {
-    { x = 240, y = 752, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
-    { x = 304, y = 752, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
-    { x = 240, y = 776, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
-    { x = 304, y = 776, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 208, y = 464, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
   },
 }
 animation{

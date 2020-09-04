@@ -12,6 +12,7 @@ function dash_manager:dash(game)
     local dir = hero:get_direction()
     local dd = {[0]=0,[1]=math.pi/2,[2]=math.pi,[3]=3*math.pi/2} --to convert 0-4 direction to radians
     dir = dd[dir]
+    if hero:get_movement() then dir = hero:get_movement():get_angle() end
     dash_manager.m = sol.movement.create("straight")
     dash_manager.m:set_angle(dir)
     dash_manager.m:set_speed(180)
@@ -48,6 +49,11 @@ function dash_manager:dash(game)
 
     --start movement
     map:create_poof(hero:get_position())
+
+    --Apply jump state
+    hero:start_state(game:get_item("inventory/feather"):get_jumping_state())
+    hero:set_animation("dash")
+
     dash_manager.m:start(hero, function()
       local x, y, layer = hero:get_position()
       map:create_poof(x,y,layer)
@@ -68,7 +74,10 @@ function dash_manager:dash(game)
 
 end
 
+
 local hero_meta = sol.main.get_metatable"hero"
+
+--[[
 --Add check to dash movement to prevent dashing over holes and stuff
 hero_meta:register_event("on_position_changed", function(self)
   local game = sol.main.get_game()
@@ -79,6 +88,7 @@ hero_meta:register_event("on_position_changed", function(self)
     end
   end
 end)
+--]]
 
 dash_manager.seeds = {}
 hero_meta:register_event("on_pre_draw", function(self, dst)
