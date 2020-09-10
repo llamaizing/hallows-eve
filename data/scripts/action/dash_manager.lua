@@ -18,7 +18,7 @@ function dash_manager:dash(game)
     dash_manager.m = sol.movement.create("straight")
     dash_manager.m:set_angle(dir)
     dash_manager.m:set_speed(180)
-    dash_manager.m:set_max_distance(88)
+    dash_manager.m:set_max_distance(72)
     dash_manager.m:set_smooth(true)
 
     hero:get_sprite():set_animation("dash", function()
@@ -58,7 +58,8 @@ function dash_manager:dash(game)
 
     dash_manager.m:start(hero, function()
       local x, y, layer = hero:get_position()
-      map:create_poof(x,y,layer)
+      --map:create_poof(x,y,layer)
+      dash_manager:generate_moths(game)
       hero:unfreeze()
       game:set_value("hero_dashing", false)
       game:set_value("hero_rolling", false)
@@ -105,6 +106,9 @@ end)
 function dash_manager:generate_moths(game)
   local map = game:get_map()
   local hero = game:get_hero()
+
+  sol.audio.play_sound"bush"
+
   dash_manager.seeds = {}
   local n = 0
   for n = 0, MAX_MOTHS do

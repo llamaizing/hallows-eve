@@ -1,7 +1,7 @@
 animation{
   name = "sword",
   src_image = "hero/sword.sword1.png",
-  frame_delay = 40,
+  frame_delay = 70,
   directions = {
     { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = -8, origin_y = 29, num_frames = 6 },
     { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 45, num_frames = 6 },

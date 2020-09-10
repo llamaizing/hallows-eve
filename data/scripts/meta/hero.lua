@@ -65,6 +65,7 @@ hero_meta:register_event("on_state_changed", function(self, state)
     end
   end
 
+  --1500s of invincibility after falling into a hole in case you're returned to a space with an enemey
   if state == "back to solid ground" then
     hero:set_invincible(true,1500)
   end

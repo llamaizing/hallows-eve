@@ -880,7 +880,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 280,
+  x = 288,
   y = 109,
   width = 16,
   height = 16,
@@ -1090,7 +1090,7 @@ custom_entity{
 destination{
   name = "destination",
   layer = 0,
-  x = 160,
+  x = 152,
   y = 141,
   direction = 3,
 }
@@ -1291,6 +1291,14 @@ custom_entity{
   direction = 0,
   sprite = "foliage/sunflower",
   model = "foliage",
+}
+
+enemy{
+  layer = 0,
+  x = 288,
+  y = 213,
+  direction = 0,
+  breed = "wendigo_ghost",
 }
 
 tile{
