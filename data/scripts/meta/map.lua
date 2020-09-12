@@ -52,6 +52,17 @@ end) --end of on_started registered event
 --==================================================================================--
 
 
+function map_meta:is_on_screen(entity)
+  local map = entity:get_map()
+  local camera = map:get_camera()
+  local camx, camy = camera:get_position()
+  local camwi, camhi = camera:get_size()
+  local entityx, entityy = entity:get_position()
+
+  local on_screen = entityx >= camx and entityx <= (camx + camwi) and entityy >= camy and entityy <= (camy + camhi)
+  return on_screen
+end
+
 
 
 local function calculate_speed(entity1, entity2, duration)

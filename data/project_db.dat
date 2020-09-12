@@ -1,4 +1,5 @@
 map{ id = "aaa_templates/entities" }
+map{ id = "chase_forest" }
 map{ id = "debug", description = "debug" }
 map{ id = "tiletest" }
 
@@ -8,6 +9,7 @@ tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
+tileset{ id = "yarntown", description = "yarntown" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "blocks/cracked_block", description = "cracked block" }
@@ -35,6 +37,7 @@ sprite{ id = "elements/water_puddle_s", description = "Puddle-Small" }
 sprite{ id = "elements/water_splash", description = "Splash" }
 sprite{ id = "enemies/misc/bird", description = "Blackbird" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
+sprite{ id = "enemies/spider_thing", description = "Spider Thing" }
 sprite{ id = "enemies/wendigo_ghost", description = "Wendigo Ghost" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
@@ -236,6 +239,7 @@ item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 
 enemy{ id = "misc/bird", description = "Bird" }
+enemy{ id = "spider_thing", description = "Spider Thing" }
 enemy{ id = "wendigo_ghost", description = "Wendigo Ghost" }
 
 entity{ id = "arrow_player" }
@@ -266,6 +270,7 @@ font{ id = "white_digits", description = "White digits" }
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
+file{ path = "enemies/spider_thing.lua", author = "Max Mraz", }
 file{ path = "enemies/wendigo_ghost.lua", author = "Max Mraz", }
 file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
 file{ path = "entities/conductive_block.lua", author = "Max Mraz", }
@@ -468,6 +473,7 @@ file{ path = "sprites/elements/snowflake_frisbee.dat", author = "Max Mraz", }
 file{ path = "sprites/elements/water_puddle_s.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/water_splash.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
+file{ path = "sprites/enemies/spider_thing.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/wendigo_ghost.dat", author = "Max Mraz", }
 file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }

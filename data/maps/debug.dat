@@ -438,6 +438,26 @@ tile{
   tileset = "halloween",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "17",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "17",
+  tileset = "halloween",
+}
+
 destructible{
   layer = 0,
   x = 208,
@@ -924,17 +944,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 184,
-  y = 13,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 192,
   y = 21,
   width = 16,
@@ -1293,12 +1302,13 @@ custom_entity{
   model = "foliage",
 }
 
-enemy{
+teletransporter{
   layer = 0,
-  x = 288,
-  y = 213,
-  direction = 0,
-  breed = "wendigo_ghost",
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 16,
+  destination_map = "chase_forest",
 }
 
 tile{
@@ -1478,6 +1488,26 @@ tile{
   width = 48,
   height = 64,
   pattern = "14",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = -8,
+  width = 8,
+  height = 8,
+  pattern = "18",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = -8,
+  width = 8,
+  height = 8,
+  pattern = "18",
   tileset = "halloween",
 }
 

@@ -39,6 +39,7 @@ function lighting_effects:initialize()
 
   --set default darkness level
   darkness_color = {70,90,100}
+
 end
 
 
@@ -206,6 +207,7 @@ function lighting_effects:on_draw(dst_surface)
       end
     end
   end
+
 
   
 
