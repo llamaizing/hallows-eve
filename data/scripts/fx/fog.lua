@@ -1,13 +1,20 @@
---Fog script, written by Max Mraz and Llamazing
+--[[
+Fog script, written by Max Mraz and Llamazing
+
+Configurable options can be set with
+fog_menu:set_props({
+	drift = {speed_x, speed_y, x direction multiplier, y direction multiplier} --for example {10, 10, -1, 1} goes up 10px and right 10px
+	fog_textures = {
+		{png = "fog/fog.png", mode = "blend", opacity = opacity}
+	}
+})
+
+--]]
 
 local fog_menu = {}
 
---Fog parallax multiplier
-local PARALLAX_MULT = 1.2
 
-local surface = sol.surface.create("fogs/fog.png")
-surface:set_blend_mode"blend"
-surface:set_opacity(100)
+local surface = sol.surface.create()
 local width, height = surface:get_size()
 
 local opacity_min, opacity_max = 50, 150
@@ -15,13 +22,43 @@ local opacity_min, opacity_max = 50, 150
 fog_menu.drift_x = 0
 fog_menu.drift_y = 0
 
-function fog_menu:on_started()
-	sol.timer.start(fog_menu, 100, function()
-		fog_menu.drift_x = fog_menu.drift_x + 1
-		fog_menu.drift_y = fog_menu.drift_y + 1
-		return true
-	end)
 
+
+function fog_menu:set_props(props)
+	fog_menu.drift = props and props.drift or {8, 0, -1, 1}
+	fog_menu.parallax_speed = props and props.parallax_speed or 1
+
+	fog_menu.fog_textures = props and props.fog_textures or {{png = "fogs/fog.png", mode = "blend", opacity = 200}, {png = "fogs/fog_2.png", mode = "add", opacity = 200}} --temp, should be blank
+
+	fog_menu.props_set = true
+end
+
+
+function fog_menu:on_started()
+	if not fog_menu.props_set then fog_menu:set_props() end
+
+	for _, texture in pairs(fog_menu.fog_textures) do
+		local s = sol.surface.create(texture.png)
+		s:set_blend_mode(texture.mode or "blend")
+		s:set_opacity(texture.opacity or 255)
+		s:draw(surface)
+	end
+
+	--Drift
+	if fog_menu.drift[1] ~= 0 then
+		sol.timer.start(fog_menu, 1000 / fog_menu.drift[1], function()
+			fog_menu.drift_x = fog_menu.drift_x + 1 * (fog_menu.drift[3] or 1)
+			return true
+		end)
+	end
+	if fog_menu.drift[2] ~= 0 then
+		sol.timer.start(fog_menu, 1000 / fog_menu.drift[2], function()
+			fog_menu.drift_y = fog_menu.drift_y + 1 * (fog_menu.drift[4] or 1)
+			return true
+		end)
+	end
+
+	--Opacity Pulse
 	sol.timer.start(fog_menu, 100, function()
 
 	end)
@@ -61,8 +98,8 @@ end
 function fog_menu:on_draw(dst_surface)
   local camera_x, camera_y = sol.main.get_game():get_map():get_camera():get_position()
   tile_draw(
-  	fog_menu.drift_x + math.floor(camera_x * PARALLAX_MULT)%width,
-  	fog_menu.drift_y + math.floor(camera_y * PARALLAX_MULT)%height,
+  	fog_menu.drift_x + math.floor(camera_x * fog_menu.parallax_speed)%width,
+  	fog_menu.drift_y + math.floor(camera_y * fog_menu.parallax_speed)%height,
   	dst_surface, 0, 0
   	)
 end
