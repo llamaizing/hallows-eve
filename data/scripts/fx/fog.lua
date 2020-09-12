@@ -28,7 +28,7 @@ function fog_menu:set_props(props)
 	fog_menu.drift = props and props.drift or {8, 0, -1, 1}
 	fog_menu.parallax_speed = props and props.parallax_speed or 1
 
-	fog_menu.fog_textures = props and props.fog_textures or {{png = "fogs/fog.png", mode = "blend", opacity = 200}, {png = "fogs/fog_2.png", mode = "add", opacity = 200}} --temp, should be blank
+	fog_menu.texture = props and props.fog_textures or {png = "fogs/fog.png", mode = "blend", opacity = 200} --temp, should be blank
 
 	fog_menu.props_set = true
 end
@@ -37,12 +37,10 @@ end
 function fog_menu:on_started()
 	if not fog_menu.props_set then fog_menu:set_props() end
 
-	for _, texture in pairs(fog_menu.fog_textures) do
-		local s = sol.surface.create(texture.png)
-		s:set_blend_mode(texture.mode or "blend")
-		s:set_opacity(texture.opacity or 255)
-		s:draw(surface)
-	end
+	local s = sol.surface.create(fog_menu.texture.png)
+	s:set_blend_mode(fog_menu.texture.mode or "blend")
+	s:set_opacity(fog_menu.texture.opacity or 255)
+	s:draw(surface)
 
 	--Drift
 	if fog_menu.drift[1] ~= 0 then
