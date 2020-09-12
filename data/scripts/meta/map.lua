@@ -11,6 +11,13 @@ map_meta:register_event("on_started", function(self)
   local game = map:get_game()
   local map_id = map:get_id()
 
+
+  --Initialize Lighting Effects:
+  map.light_fx = require"scripts/fx/lighting_effects"
+  sol.menu.start(map, map.light_fx)
+
+
+
   --manage enemy respawns
   require("scripts/misc/enemy_respawn_manager"):manage_spawns(map)
 

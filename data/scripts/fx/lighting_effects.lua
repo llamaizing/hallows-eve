@@ -38,7 +38,8 @@ function lighting_effects:initialize()
   light_surface:set_blend_mode"add"
 
   --set default darkness level
-  darkness_color = {70,90,100}
+  --darkness_color = {70,90,100}
+  darkness_color = {255,255,255}
 
 end
 
@@ -129,7 +130,7 @@ function lighting_effects:on_draw(dst_surface)
 --=========================================================================================--
   --draw different light effects
   --hero aura:
-  if hero.torch then
+  if not hero.no_lighting_aura then
     effects.hero_aura:draw(light_surface, hx - cam_x, hy - cam_y)
   end
   --torches:
@@ -144,13 +145,6 @@ function lighting_effects:on_draw(dst_surface)
     if e:is_enabled() and e:get_distance(hero) <= 450 then
       local x,y = e:get_center_position()
       effects.candle:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
-  --Lanterns
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_model() == "lantern" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.lantern:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
   --explosions
@@ -174,27 +168,6 @@ function lighting_effects:on_draw(dst_surface)
     end
   end
 
-  --fire arrows
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_model() == "arrow_fire" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.candle:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
-  --iron candles
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_name() == "iron_candle_entity" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.candle:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
-  --lightning
-  for e in map:get_entities_by_type("custom_entity") do
-    if e:is_enabled() and e:get_name() == "lightning_attack" and e:get_distance(hero) <= 450 then
-      local x,y = e:get_center_position()
-      effects.torch:draw(light_surface, x - cam_x, y - cam_y)
-    end
-  end
   --enemies
   for e in map:get_entities_by_type("enemy") do
     if e:is_enabled() and e.lighting_effect and e:get_distance(hero) <= 450 then
