@@ -3,6 +3,7 @@ local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
+local ghost_sprite
 local movement
 
 local DETECTION_DISTANCE = 120
@@ -16,6 +17,16 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(4)
   enemy:set_damage(1)
+
+  ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed())
+  enemy:bring_sprite_to_back(ghost_sprite)
+  ghost_sprite:set_color_modulation{255,255,255}
+  ghost_sprite:set_blend_mode"add"
+  function sprite:on_frame_changed(animation, frame)
+    frame = frame + 1
+    if frame >= sprite:get_num_frames() then frame = 0 end
+    ghost_sprite:set_frame(frame)
+  end
 end
 
 function enemy:on_restarted()
@@ -24,6 +35,7 @@ end
 
 function enemy:on_movement_changed()
 	sprite:set_direction(enemy:get_movement():get_direction4())
+	ghost_sprite:set_direction(enemy:get_movement():get_direction4())
 end
 
 function enemy:choose_state()
@@ -81,9 +93,8 @@ function enemy:attack()
 			enemy:go_hero()
 		end)
 		local attack_sprite = enemy:create_sprite("enemies/misc/slash")
-		print(attack_sprite:get_animation_set())
+		enemy:set_invincible_sprite(attack_sprite)
 		attack_sprite:set_direction(sprite:get_direction())
-		-- attack_sprite:set_animation("slash", enemy:remove_sprite(attack_sprite))
-		sol.timer.start(enemy, 1000, function() enemy:go_hero() end)
+		sol.timer.start(enemy, 1000, function() enemy:remove_sprite(attack_sprite) end)
 	end)
 end
