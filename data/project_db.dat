@@ -1,4 +1,5 @@
 map{ id = "aaa_templates/entities" }
+map{ id = "cemetery", description = "cemetery" }
 map{ id = "chase_forest" }
 map{ id = "debug", description = "debug" }
 map{ id = "tiletest" }
@@ -35,7 +36,9 @@ sprite{ id = "elements/lightning_zap_big", description = "Lightning Zap Big" }
 sprite{ id = "elements/snowflake_frisbee" }
 sprite{ id = "elements/water_puddle_s", description = "Puddle-Small" }
 sprite{ id = "elements/water_splash", description = "Splash" }
+sprite{ id = "enemies/gremlin", description = "Gremlin" }
 sprite{ id = "enemies/misc/bird", description = "Blackbird" }
+sprite{ id = "enemies/misc/slash", description = "slash" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
 sprite{ id = "enemies/spider_thing", description = "Spider Thing" }
 sprite{ id = "enemies/wendigo_ghost", description = "Wendigo Ghost" }
@@ -59,6 +62,7 @@ sprite{ id = "entities/leaf_blowing", description = "Leaf-Blowing" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/shadow", description = "Shadow" }
+sprite{ id = "foliage/autumn_grass_clump", description = "AutumnGrass-Clump" }
 sprite{ id = "foliage/barley", description = "Barley" }
 sprite{ id = "foliage/barley_dark", description = "Barley-Dark" }
 sprite{ id = "foliage/corn", description = "Corn" }
@@ -238,6 +242,7 @@ item{ id = "inventory/hookshot", description = "Hookshot" }
 item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 
+enemy{ id = "gremlin", description = "Gremlin" }
 enemy{ id = "misc/bird", description = "Bird" }
 enemy{ id = "spider_thing", description = "Spider Thing" }
 enemy{ id = "wendigo_ghost", description = "Wendigo Ghost" }
@@ -270,6 +275,7 @@ font{ id = "white_digits", description = "White digits" }
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
+file{ path = "enemies/gremlin.lua", author = "Max Mraz", }
 file{ path = "enemies/spider_thing.lua", author = "Max Mraz", }
 file{ path = "enemies/wendigo_ghost.lua", author = "Max Mraz", }
 file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
@@ -473,6 +479,8 @@ file{ path = "sprites/elements/snowflake_frisbee.dat", author = "Max Mraz", }
 file{ path = "sprites/elements/water_puddle_s.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/water_splash.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
+file{ path = "sprites/enemies/gremlin.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/misc/slash.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/spider_thing.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/wendigo_ghost.dat", author = "Max Mraz", }
 file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
@@ -502,6 +510,7 @@ file{ path = "sprites/entities/leaf_blowing.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/foliage/autumn_grass_clump.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/barley_dark.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/corn.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }

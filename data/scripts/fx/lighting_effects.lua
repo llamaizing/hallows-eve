@@ -62,6 +62,11 @@ function lighting_effects:set_darkness_level(level)
   else
     darkness_color = level
   end
+
+  local light_sum = darkness_color[1] + darkness_color[2] + darkness_color[3]
+  local hero = sol.main.get_game():get_hero()
+  if light_sum <= 500 then hero.lighting_aura = true
+  else hero.lighting_aura = false end
 end
 
 function lighting_effects:fade_to_darkness_level(level)
@@ -130,7 +135,7 @@ function lighting_effects:on_draw(dst_surface)
 --=========================================================================================--
   --draw different light effects
   --hero aura:
-  if not hero.no_lighting_aura then
+  if hero.lighting_aura then
     effects.hero_aura:draw(light_surface, hx - cam_x, hy - cam_y)
   end
   --torches:

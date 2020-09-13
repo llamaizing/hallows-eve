@@ -22,8 +22,8 @@ tile{
   layer = 0,
   x = -8,
   y = 16,
-  width = 320,
-  height = 240,
+  width = 960,
+  height = 720,
   pattern = "5_2",
   tileset = "grass_green_large",
 }
@@ -2691,7 +2691,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "chase_forest",
+  destination_map = "cemetery",
 }
 
 dynamic_tile{
@@ -3808,6 +3808,14 @@ custom_entity{
   direction = 1,
   sprite = "foliage/corn",
   model = "foliage",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 261,
+  direction = 0,
+  breed = "gremlin",
 }
 
 tile{

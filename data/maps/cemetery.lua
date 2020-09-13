@@ -2,14 +2,14 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
-  map.light_fx:set_darkness_level("dusk")
+  map.light_fx:set_darkness_level("night")
   local fog1 = require("scripts/fx/fog").new()
   fog1:set_props{
   	fog_texture = {png = "fogs/fog.png", mode = "blend", opacity = 100},
   	opacity_range = {60,110},
     drift = {8, 0, -1, 1}
   }
-  --sol.menu.start(map, fog1)
+  sol.menu.start(map, fog1)
   local fog2 = require("scripts/fx/fog").new()
   fog2:set_props{
   	fog_texture = {png = "fogs/fog_2.png", mode = "blend", opacity = 60},
