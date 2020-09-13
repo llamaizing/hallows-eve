@@ -188,4 +188,14 @@ function lighting_effects:on_draw(dst_surface)
   shadow_surface:draw(dst_surface)
 end
 
+
+
+function lighting_effects:get_light_surface()
+  return light_surface
+end
+
+function lighting_effects:get_shadow_surface()
+  return shadow_surface
+end
+
 return lighting_effects

@@ -19,6 +19,7 @@ local fog_manager = {}
 function fog_manager.new()
 	local fog_menu = {}
 
+	--local surface = require("scripts/fx/lighting_effects"):get_shadow_surface()
 	local surface = sol.surface.create()
 	local width, height = surface:get_size()
 
@@ -40,7 +41,9 @@ function fog_manager.new()
 
 
 	function fog_menu:on_started()
+
 		if not fog_menu.props_set then fog_menu:set_props() end
+    sol.menu.bring_to_back(fog_menu) --so that it'll be behind the lighting_effects
 
 		surface = sol.surface.create(fog_menu.texture.png or "fogs/fog.png")
 		surface:set_blend_mode(fog_menu.texture.mode or "blend")

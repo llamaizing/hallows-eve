@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
-  --map.light_fx:set_darkness_level("night")
+  map.light_fx:set_darkness_level("dusk")
   local fog1 = require("scripts/fx/fog").new()
   fog1:set_props{
   	fog_texture = {png = "fogs/fog.png", mode = "blend", opacity = 100},
