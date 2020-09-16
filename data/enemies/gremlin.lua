@@ -15,7 +15,7 @@ local WIND_UP_TIME = 700
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(4)
+  enemy:set_life(6)
   enemy:set_damage(1)
 
   ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed())

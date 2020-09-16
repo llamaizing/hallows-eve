@@ -19,7 +19,6 @@ function entity:on_created()
   entity:set_can_traverse_ground("hole", true)
   entity:set_can_traverse_ground("lava", true)
   entity:set_can_traverse_ground("prickles", true)
-  entity:set_can_traverse_ground("low_wall", true)
 
   entity:set_drawn_in_y_order(true)
 
@@ -48,6 +47,7 @@ function entity:fire(dir4)
 
   function m:on_obstacle_reached()
     sol.audio.play_sound("arrow_hit")
+    if entity.type then entity:create_effect() end
     entity:remove()
   end
 
@@ -74,6 +74,7 @@ function entity:create_effect()
   elseif entity.type == "bomb" then
     local x, y, z = entity:get_position()
     map:create_explosion{x=x, y=y, layer=z}
+    sol.audio.play_sound"explosion"
     entity:remove()
 
   end

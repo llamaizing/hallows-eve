@@ -9,7 +9,7 @@ function item:on_started()
 end
 
 function item:on_using(props)
-  local arrow_type = (props and props.ball_type) or nil
+  local ball_type = (props and props.ball_type) or nil
   local map = item:get_map()
   local hero = map:get_hero()
   local slot_assigned = (props and props.slot_assigned) or (game:get_item_assigned(1) == item and 1 or 2)
@@ -18,9 +18,12 @@ function item:on_using(props)
   local state = item:get_dribbling_state()
   hero:start_state(state)
 
-  --Bounce sound effect
+  --Bounce sound effect and bounces counter
+  local dribbles = 0
   sol.timer.start(hero, 0, function()
     if hero:get_state_object() == state then
+      dribbles = dribbles + 1
+      -- if dribbles == 5 then sol.audio.play_sound"fuse" end
       sol.audio.play_sound"ball_kick"
       return 360
     end
@@ -38,16 +41,44 @@ function item:on_using(props)
     model = "soccer_ball",
   }
 
+
   function state:on_position_changed(x,y,z)
-    ball:set_position(x + game:dx(8)[dir4], y + game:dy(8)[dir4] - 2, z)
+    item:update_ball_dribble_position(ball)
+  end
+
+  function state:on_command_pressed(cmd)
+    local hero = game:get_hero()
+    local handled = false
+    if cmd == "right" then
+      hero:set_direction(0)
+      item:update_ball_dribble_position(ball)
+      handled = true
+    elseif cmd == "up" then
+      hero:set_direction(1)
+      item:update_ball_dribble_position(ball)
+      handled = true
+    elseif cmd == "left" then
+      hero:set_direction(2)
+      item:update_ball_dribble_position(ball)
+      handled = true
+    elseif cmd == "down" then
+      hero:set_direction(3)
+      item:update_ball_dribble_position(ball)
+      handled = true
+    end
+
+    return handled
   end
 
   sol.timer.start(hero,10,function()
     if game:is_command_pressed("item_" .. slot_assigned) then
       return true
     else
+
+      -- if dribbles > 4 then ball_type = "bomb" end
       if ball_type then ball:apply_type(ball_type) end
-      ball:fire(dir4)
+
+      ball:fire(hero:get_direction())
       sol.audio.play_sound"ball_kick_harder"
       hero:set_animation("kick", function()
         hero:unfreeze()
@@ -59,11 +90,19 @@ function item:on_using(props)
 end
 
 
+function item:update_ball_dribble_position(ball)
+  local hero = game:get_hero()
+  local dir4 = hero:get_direction()
+  local x,y,z = hero:get_position()
+  ball:set_position(x + game:dx(8)[dir4], y + game:dy(8)[dir4] - 2, z)
+end
+
+
 function item:get_dribbling_state()
   local state = sol.state.create()
   state:set_visible(true)
   state:set_can_control_direction(false)
-  state:set_can_control_movement(true)
+  state:set_can_control_movement(false)
   state:set_gravity_enabled(true)
   state:set_can_come_from_bad_ground(true)
   state:set_can_be_hurt(true)
@@ -81,26 +120,6 @@ function item:get_dribbling_state()
   state:set_can_use_jumper(false)
   state:set_carried_object_action("throw")
 
---[[
-  function state:on_command_pressed(cmd)
-    local handled = false
-    if cmd == "right" then
-      hero:set_direction(0)
-      handled = true
-    elseif cmd == "up" then
-      hero:set_direction(1)
-      handled = true
-    elseif cmd == "left" then
-      hero:set_direction(2)
-      handled = true
-    elseif cmd == "down" then
-      hero:set_direction(3)
-      handled = true
-
-
-    return handled
-  end
---]]
   return state
 end
 
