@@ -18,17 +18,6 @@ function item:on_using(props)
   local state = item:get_dribbling_state()
   hero:start_state(state)
 
-  --Bounce sound effect and bounces counter
-  local dribbles = 0
-  sol.timer.start(hero, 0, function()
-    if hero:get_state_object() == state then
-      dribbles = dribbles + 1
-      -- if dribbles == 5 then sol.audio.play_sound"fuse" end
-      sol.audio.play_sound"ball_kick"
-      return 360
-    end
-  end)
-
   --create ball
   local dir4 = hero:get_direction()
   local x, y, z = hero:get_position()
@@ -46,6 +35,7 @@ function item:on_using(props)
     item:update_ball_dribble_position(ball)
   end
 
+  --Direction changes
   function state:on_command_pressed(cmd)
     local hero = game:get_hero()
     local handled = false
@@ -66,16 +56,35 @@ function item:on_using(props)
       item:update_ball_dribble_position(ball)
       handled = true
     end
-
     return handled
   end
 
+
+  --Bounce sound effect and bounces counter
+  local dribbles = 0
+  sol.timer.start(hero, 0, function()
+    if hero:get_state_object() == state then
+      dribbles = dribbles + 1
+      sol.audio.play_sound"ball_kick"
+      --[[
+      if dribbles == 6 then
+        local flame_sprite = ball:create_sprite"entities/soccer_ball_flame"
+        ball:bring_sprite_to_back(flame_sprite)
+        sol.audio.play_sound"fuse"
+        ball_type = "bomb"
+      end --]]
+
+      return 360
+    end
+  end)
+
+
+
+  --Kick!
   sol.timer.start(hero,10,function()
     if game:is_command_pressed("item_" .. slot_assigned) then
       return true
     else
-
-      -- if dribbles > 4 then ball_type = "bomb" end
       if ball_type then ball:apply_type(ball_type) end
 
       ball:fire(hero:get_direction())
@@ -118,7 +127,7 @@ function item:get_dribbling_state()
   state:set_can_use_stream(true)
   state:set_can_use_stairs(false)
   state:set_can_use_jumper(false)
-  state:set_carried_object_action("throw")
+  state:set_carried_object_action("keep")
 
   return state
 end

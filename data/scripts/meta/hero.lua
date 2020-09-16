@@ -71,7 +71,7 @@ hero_meta:register_event("on_state_changed", function(self, state)
   end
 
   if state == "sword loading" then
-    hero:unfreeze()
+    game:simulate_command_released("attack")
   end
 
   --weird bad fire sword

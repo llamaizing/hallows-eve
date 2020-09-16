@@ -64,6 +64,7 @@ sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/soccer_ball", description = "Soccer Ball" }
+sprite{ id = "entities/soccer_ball_flame", description = "Soccer ball flame" }
 sprite{ id = "foliage/autumn_grass_clump", description = "AutumnGrass-Clump" }
 sprite{ id = "foliage/barley", description = "Barley" }
 sprite{ id = "foliage/barley_dark", description = "Barley-Dark" }
@@ -520,6 +521,7 @@ file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license 
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/soccer_ball.dat", author = "Max Mraz", }
+file{ path = "sprites/entities/soccer_ball_flame.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/autumn_grass_clump.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/barley_dark.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
