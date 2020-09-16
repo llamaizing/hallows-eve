@@ -113,3 +113,10 @@ animation{
     { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
+animation{
+  name = "soccer_kick",
+  src_image = "entities/soccer_ball.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

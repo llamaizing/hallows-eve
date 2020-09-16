@@ -2691,7 +2691,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "cemetery",
+  destination_map = "chase_forest",
 }
 
 dynamic_tile{
@@ -3815,7 +3815,119 @@ enemy{
   x = 360,
   y = 261,
   direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 416,
+  y = 413,
+  direction = 0,
   breed = "gremlin",
+}
+
+enemy{
+  layer = 0,
+  x = 192,
+  y = 333,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 16,
+  y = 229,
+  direction = 0,
+  breed = "gremlin",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 309,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 317,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 325,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
 }
 
 tile{

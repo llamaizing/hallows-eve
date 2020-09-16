@@ -70,6 +70,10 @@ hero_meta:register_event("on_state_changed", function(self, state)
     hero:set_invincible(true,1500)
   end
 
+  if state == "sword loading" then
+    hero:unfreeze()
+  end
+
   --weird bad fire sword
   if state == "sword swinging" and game.sword_on_fire then
     local dx = {[0]=16,[1]=0,[2]=-16,[3]=0}

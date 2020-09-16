@@ -1,13 +1,13 @@
 animation{
-  name = "stopped",
+  name = "walking",
   src_image = "enemies/gremlin.png",
   frame_delay = 120,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
-    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
   },
 }
 animation{
@@ -34,7 +34,7 @@ animation{
   },
 }
 animation{
-  name = "stopped (copy)",
+  name = "stopped",
   src_image = "enemies/gremlin.png",
   frame_delay = 120,
   frame_to_loop_on = 0,
@@ -46,15 +46,15 @@ animation{
   },
 }
 animation{
-  name = "walking",
+  name = "stopped (copy)",
   src_image = "enemies/gremlin.png",
   frame_delay = 120,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
-    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
   },
 }
 animation{

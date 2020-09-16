@@ -1,0 +1,24 @@
+animation{
+  name = "rolling",
+  src_image = "entities/soccer_ball.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "bouncing",
+  src_image = "entities/soccer_ball.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6, num_columns = 4 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6, num_columns = 4 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6, num_columns = 4 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6, num_columns = 4 },
+  },
+}

@@ -162,6 +162,18 @@ animation{
   },
 }
 animation{
+  name = "dribbling",
+  src_image = "hero/ichabod.png",
+  frame_delay = 90,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 176, y = 608, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 640, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 672, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 704, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
   name = "drowning_lava",
   src_image = "hero/ichabod.png",
   frame_delay = 100,
@@ -268,6 +280,17 @@ animation{
     { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
     { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
     { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 29, num_frames = 4, num_columns = 1 },
+  },
+}
+animation{
+  name = "kick",
+  src_image = "hero/ichabod.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 464, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 496, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 528, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 560, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
   },
 }
 animation{
@@ -418,7 +441,7 @@ animation{
 animation{
   name = "sword",
   src_image = "hero/ichabod.png",
-  frame_delay = 70,
+  frame_delay = 60,
   directions = {
     { x = 0, y = 464, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
     { x = 0, y = 496, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },

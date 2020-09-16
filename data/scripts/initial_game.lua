@@ -23,25 +23,10 @@ function initial_game:initialize_new_savegame(game)
   game:set_ability("sword", 1)
   --game:set_ability("swim", 1)
 
+  game:get_item("soccer_kick"):set_variant(1)
+  game:set_item_assigned(1, game:get_item("soccer_kick"))
 
 
-  --temporary stuff for testing:
-  game:get_item("inventory/flame_spell"):set_variant(1)
-  game:get_item("inventory/spark_spell"):set_variant(1)
-  game:get_item("inventory/hookseed_satchel"):set_variant(1)
-  game:get_item("inventory/hookshot"):set_variant(1)
-  game:get_item("inventory/boomerang"):set_variant(1)
-  game:get_item("inventory/bombs_counter"):set_variant(1)
-  game:get_item("inventory/feather"):set_variant(1)
-  game:get_item("inventory/metal_block_cane"):set_variant(1)
-  game:get_item("inventory/frostseed_satchel"):set_variant(1)
-  game:get_item("inventory/bow"):set_variant(1)
-  game:get_item("inventory/bow_fire"):set_variant(1)
-  game:get_item("inventory/bow_ice"):set_variant(1)
-  game:get_item("inventory/bow_electric"):set_variant(1)
-  game:get_item("inventory/bow_bomb"):set_variant(1)
-  game:set_item_assigned(1, game:get_item("inventory/bow"))
-  game:set_item_assigned(2, game:get_item("inventory/feather"))
 
 end
 
