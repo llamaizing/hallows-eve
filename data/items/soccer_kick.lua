@@ -1,6 +1,7 @@
 local item = ...
 local game = item:get_game()
 
+
 local SPEED_DELTA = 40
 
 function item:on_started()
@@ -59,6 +60,15 @@ function item:on_using(props)
     return handled
   end
 
+    --Avoid analog stick wildly jumping
+    local joy_avoid_repeat = {-2, -2}
+    function state:on_joypad_axis_moved(axis, state)
+      local handled = joy_avoid_repeat[0] == sol.input.get_joypad_axis_state(0)   
+        and joy_avoid_repeat[0] == sol.input.get_joypad_axis_state(1)
+      joy_avoid_repeat[0] = sol.input.get_joypad_axis_state(0)   
+      joy_avoid_repeat[0] = sol.input.get_joypad_axis_state(1)
+      return handled
+    end
 
   --Bounce sound effect and bounces counter
   local dribbles = 0
@@ -87,7 +97,11 @@ function item:on_using(props)
     else
       if ball_type then ball:apply_type(ball_type) end
 
-      ball:fire(hero:get_direction())
+      local angle = sol.input.get_left_stick_direction8()
+      if not angle then angle = hero:get_direction() * math.pi/2
+      else angle = angle * math.pi / 4 end
+
+      ball:fire(angle)
       sol.audio.play_sound"ball_kick_harder"
       hero:set_animation("kick", function()
         hero:unfreeze()

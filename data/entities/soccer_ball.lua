@@ -37,22 +37,30 @@ function entity:apply_type(type)
 end
 
 
-function entity:fire(dir4)
+function entity:fire(angle)
   sprite:set_animation"rolling"
   local m = sol.movement.create"straight"
   m:set_speed(190)
-  m:set_angle(dir4 * math.pi/2)
+  m:set_angle(angle)
   m:set_smooth(false)
   m:start(entity)
 
   function m:on_obstacle_reached()
+    m:stop()
     sol.audio.play_sound("arrow_hit")
     if entity.type then entity:create_effect() end
-    entity:remove()
+    entity:pop()
   end
 
 end
 
+
+function entity:pop()
+  entity:stop_movement()
+  entity:clear_collision_tests()
+  sol.audio.play_sound"pop"
+  sprite:set_animation("pop", function() entity:remove() end)
+end
 
 
 function entity:create_effect()
@@ -61,7 +69,7 @@ function entity:create_effect()
     local x, y, z = entity:get_position()
     map:create_fire{x=x+game:dx(8)[dir], y=y+game:dy(8)[dir], layer=z}
     entity:get_sprite():set_color_modulation{50,50,50}
-    entity:remove()
+    entity:pop()
 
   elseif entity.type == "ice" then
     map:create_ice_sparkle(entity:get_position())
@@ -75,7 +83,7 @@ function entity:create_effect()
     local x, y, z = entity:get_position()
     map:create_explosion{x=x, y=y, layer=z}
     sol.audio.play_sound"explosion"
-    entity:remove()
+    entity:pop()
 
   end
 end
@@ -86,6 +94,7 @@ entity:add_collision_test("sprite", function(entity, other_entity, sprite, other
 
   if type == "enemy" then
     other_entity:hurt(entity.damage)
+    entity:pop()
   end
 
   if type == "destructible" and other_entity:get_sprite():get_animation_set() == "destructibles/pot" then
@@ -127,7 +136,7 @@ end)
 function entity:break_pot(other_entity)
     print"yow pow pow breaking a pot"
 --    if other_entity:get_destruction_sound() then sol.audio.play_sound(other_entity:get_destruction_sound()) end
-    other_entity:get_sprite():set_animation("destroy", function() entity:remove() other_entity:remove() end)
+    other_entity:get_sprite():set_animation("destroy", function() entity:pop() other_entity:remove() end)
     local treasure = other_entity:get_treasure()
     if treasure then
       local x,y,z = other_entity:get_position()
