@@ -1,11 +1,11 @@
 map{ id = "aaa_templates/entities" }
-map{ id = "cemetery", description = "cemetery" }
-map{ id = "chase_forest" }
 map{ id = "debug", description = "debug" }
-map{ id = "tiletest" }
+map{ id = "town" }
 
+tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "halloween", description = "Halloween" }
+tileset{ id = "haunted_forest", description = "Haunted Forest" }
 tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
@@ -581,7 +581,13 @@ file{ path = "sprites/shadows/shadow_small.dat", author = "Max Mraz", license = 
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/ghost_town.dat", author = "Max Mraz", }
+file{ path = "tilesets/ghost_town.entities.png", author = "Max Mraz", }
+file{ path = "tilesets/ghost_town.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/halloween.dat", author = "Max Mraz", license = "All Rights Reserved" }
+file{ path = "tilesets/haunted_forest.dat", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
+file{ path = "tilesets/haunted_forest.entities.png", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
+file{ path = "tilesets/haunted_forest.tiles.png", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
 file{ path = "tilesets/oceanset_desert.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }

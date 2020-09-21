@@ -14,11 +14,11 @@ local WIND_UP_TIME = 700
 
 
 function enemy:on_created()
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed(), "main")
   enemy:set_life(6)
   enemy:set_damage(1)
 
-  ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed())
+  ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed(), "ghost_aura")
   enemy:bring_sprite_to_back(ghost_sprite)
   ghost_sprite:set_color_modulation{255,255,255}
   ghost_sprite:set_blend_mode"add"

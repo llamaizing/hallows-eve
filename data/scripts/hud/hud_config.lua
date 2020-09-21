@@ -34,7 +34,7 @@ local hud_config = {
   },
 --]]
 
-
+--[[
   -- Item assigned to slot 1.
   {
     menu_script = "scripts/hud/item",
@@ -52,7 +52,7 @@ local hud_config = {
     y = 8,
     slot = 2,  -- Item slot (1 or 2).
   },
-
+--]]
 
 
  -- Consumables picked-up.

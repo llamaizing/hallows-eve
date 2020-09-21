@@ -11,7 +11,7 @@ local SPEED = 70
 local DETECTION_DIST = 180
 
 function enemy:on_created()
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed(), "main")
   
   enemy:set_life(LIFE)
   enemy:set_damage(1)
@@ -20,7 +20,7 @@ function enemy:on_created()
   enemy.spawn_x, enemy.spawn_y, enemy.spawn_z = enemy:get_position()
 
   --Ghost undersprite
-  ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed())
+  ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed(), "ghost_aura")
   enemy:bring_sprite_to_back(ghost_sprite)
   ghost_sprite:set_color_modulation{255,255,255}
   ghost_sprite:set_blend_mode"add"
