@@ -1,6 +1,6 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
-map{ id = "town" }
+map{ id = "spirit_world/creepytown", description = "Creepytown" }
 
 tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
