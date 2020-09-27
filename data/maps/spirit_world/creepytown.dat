@@ -16162,6 +16162,35 @@ custom_entity{
   model = "foliage",
 }
 
+destination{
+  name = "from_mortal_world",
+  layer = 0,
+  x = 1616,
+  y = 229,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1608,
+  y = 200,
+  width = 16,
+  height = 16,
+  destination_map = "suburbs/cemetery",
+  destination = "from_spirit_world",
+}
+
+custom_entity{
+  name = "warp_portal",
+  layer = 0,
+  x = 1616,
+  y = 213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/portal",
+}
+
 tile{
   layer = 1,
   x = 280,

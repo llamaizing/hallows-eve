@@ -25,8 +25,8 @@ function enemy:on_created()
   ghost_sprite:set_color_modulation{255,255,255}
   ghost_sprite:set_blend_mode"add"
   function sprite:on_frame_changed(animation, frame)
-    frame = frame + 1
-    if frame >= sprite:get_num_frames() then frame = 0 end
+    frame = frame - 1
+    if frame < 0 then frame = sprite:get_num_frames() - 1 end
     ghost_sprite:set_frame(frame)
   end
 

@@ -15,14 +15,14 @@ function enemy:on_created()
   ghost_sprite:set_color_modulation{255,255,255}
   ghost_sprite:set_blend_mode"add"
   function sprite:on_frame_changed(animation, frame)
-    frame = frame + 1
-    if frame >= sprite:get_num_frames() then frame = 0 end
+    frame = frame - 1
+    if frame < 0 then frame = sprite:get_num_frames() - 1 end
     ghost_sprite:set_frame(frame)
   end
   
   enemy:set_life(1000)
   enemy:set_invincible(true)
-  enemy:set_damage(1)
+  enemy:set_damage(3)
   enemy:set_size(32,32)
   enemy:set_origin(16,29)
   enemy:set_attacking_collision_mode"overlapping"

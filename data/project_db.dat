@@ -1,6 +1,8 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
+map{ id = "suburbs/cemetery", description = "Cemetery" }
+map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 
 tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
@@ -10,6 +12,7 @@ tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
+tileset{ id = "suburbs", description = "Suburbs" }
 tileset{ id = "yarntown", description = "yarntown" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
@@ -37,6 +40,8 @@ sprite{ id = "elements/snowflake_frisbee" }
 sprite{ id = "elements/water_puddle_s", description = "Puddle-Small" }
 sprite{ id = "elements/water_splash", description = "Splash" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
+sprite{ id = "enemies/eyewight", description = "Eyewight" }
+sprite{ id = "enemies/ghost_projectile", description = "Ghost Projectile" }
 sprite{ id = "enemies/gremlin", description = "Gremlin" }
 sprite{ id = "enemies/misc/bird", description = "Blackbird" }
 sprite{ id = "enemies/misc/slash", description = "slash" }
@@ -62,6 +67,7 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_blowing", description = "Leaf-Blowing" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
+sprite{ id = "entities/portal", description = "Portal" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/small_explosion", description = "Small Explosion" }
 sprite{ id = "entities/soccer_ball", description = "Soccer Ball" }
@@ -251,6 +257,8 @@ item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 item{ id = "soccer_kick", description = "Soccer Kick Attack" }
 
+enemy{ id = "eyewight", description = "Eyewight" }
+enemy{ id = "ghost_projectile", description = "Ghost Projectile" }
 enemy{ id = "gremlin", description = "Gremlin" }
 enemy{ id = "misc/bird", description = "Bird" }
 enemy{ id = "spider_thing", description = "Spider Thing" }
@@ -285,6 +293,8 @@ font{ id = "white_digits", description = "White digits" }
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
+file{ path = "enemies/eyewight.lua", author = "Max Mraz", }
+file{ path = "enemies/ghost_projectile.lua", author = "Max Mraz", }
 file{ path = "enemies/gremlin.lua", author = "Max Mraz", }
 file{ path = "enemies/spider_thing.lua", author = "Max Mraz", }
 file{ path = "enemies/wendigo_ghost.lua", author = "Max Mraz", }
@@ -321,6 +331,10 @@ file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
+file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/neighborhood.lua", author = "Max Mraz", }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud/consumables.lua", author = "Llamazing", license = "GPL v3" }
@@ -493,6 +507,8 @@ file{ path = "sprites/elements/water_puddle_s.dat", author = "Max Mraz", license
 file{ path = "sprites/elements/water_splash.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies/enemy_killed.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/eyewight.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/ghost_projectile.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/gremlin.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/misc/slash.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/spider_thing.dat", author = "Max Mraz", }
@@ -522,6 +538,7 @@ file{ path = "sprites/entities/fountain v1.1.ase", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/items.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/leaf_blowing.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/entities/portal.dat", author = "Max Mraz", license = "CC0" }
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/small_explosion.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -600,3 +617,6 @@ file{ path = "tilesets/oceanset_outside.dat", author = "Max Mraz", license = "CC
 file{ path = "tilesets/oceanset_outside.tiles.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_trees.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_trees.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/suburbs.dat", author = "Max Mraz", }
+file{ path = "tilesets/suburbs.entities.png", author = "Max Mraz", }
+file{ path = "tilesets/suburbs.tiles.png", author = "Max Mraz", }

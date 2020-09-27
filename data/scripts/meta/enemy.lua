@@ -13,7 +13,6 @@ function enemy_meta:on_hurt(attack)
     camera:shake({count = 4, amplitude = 5, speed = 100, zoom_factor = 1.005})
   end) --end of timer
 
-print(sprite:get_blend_mode())
 	if not enemy.being_hit then
 		enemy.being_hit = true
 		sol.timer.start(map, 300, function() enemy.being_hit = false end)

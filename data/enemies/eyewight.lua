@@ -1,4 +1,4 @@
-local enemy = ...
+ local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
@@ -7,26 +7,30 @@ local ghost_sprite
 local movement
 
 local DETECTION_DISTANCE = 120
-local MELEE_RANGE = 64
+local SHOOTING_RANGE = 100
 local CHASE_SPEED = 70
 local WANDER_SPEED = 40
 local WIND_UP_TIME = 700
+local COOLDOWN = 2000
 
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed(), "main")
-  enemy:set_life(4)
-  enemy:set_damage(2)
+  --set proper windup time
+  WIND_UP_TIME = sprite:get_num_frames("charging", 0) * sprite:get_frame_delay("charging")
+  enemy:set_life(2)
+  enemy:set_damage(3)
 
   ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed(), "ghost_aura")
   enemy:bring_sprite_to_back(ghost_sprite)
   ghost_sprite:set_color_modulation{255,255,255}
   ghost_sprite:set_blend_mode"add"
-  function sprite:on_frame_changed(animation, frame)
-    frame = frame - 1
-    if frame < 0 then frame = sprite:get_num_frames() - 1 end
-    ghost_sprite:set_frame(frame)
-  end
+  shadow_sprite = enemy:create_sprite("shadows/shadow_medium", "shadow")
+  -- function sprite:on_frame_changed(animation, frame)
+  --   frame = frame - 1
+  --   if frame < 0 then frame = sprite:get_num_frames() - 1 end
+  --   ghost_sprite:set_frame(frame)
+  -- end
 end
 
 function enemy:on_restarted()
@@ -41,7 +45,7 @@ end
 
 function enemy:choose_state()
 	if enemy:is_close_to_hero() then
-		if enemy:get_distance(hero) <= MELEE_RANGE and not enemy.attacking then
+		if enemy:get_distance(hero) <= SHOOTING_RANGE and not enemy.attacking then
 			enemy:attack()
 		elseif not enemy.attacking then
 			enemy:go_hero()
@@ -86,19 +90,20 @@ function enemy:attack()
 	--stuff
 	enemy.attacking = true
 	enemy:stop_movement()
-	sprite:set_animation("wind_up")
+	sprite:set_animation("charging", "walking")
+	sol.audio.play_sound"cane3"
 	sol.timer.start(enemy, WIND_UP_TIME, function()
-		sprite:set_animation("attack", function()
+		sprite:set_animation("shooting", function()
 			sprite:set_animation"walking"
 			enemy:go_hero()
 		end)
-		local attack_sprite = enemy:create_sprite("enemies/misc/slash")
-		sol.audio.play_sound"swipe_1"
-		enemy:set_invincible_sprite(attack_sprite)
-		attack_sprite:set_direction(sprite:get_direction())
-		sol.timer.start(enemy, 1000, function()
-			enemy:remove_sprite(attack_sprite)
-			enemy.attacking = false
-		end)
+		sol.audio.play_sound"frost2"
+		local x,y,z = enemy:get_position()
+		local projectile = map:create_enemy{
+			x=x, y=y-8, layer=z, direction = 0,
+			breed = "ghost_projectile",
+		}
+		projectile:go(projectile:get_angle(hero))
+		sol.timer.start(enemy, COOLDOWN, function() enemy:restart() end)
 	end)
 end

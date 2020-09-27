@@ -54,6 +54,11 @@ map_meta:register_event("on_started", function(self)
     end
   end
 
+  --warp portals
+  for portal in map:get_entities("warp_portal") do
+    portal:get_sprite():set_blend_mode("add")
+  end
+
 
 end) --end of on_started registered event
 --==================================================================================--

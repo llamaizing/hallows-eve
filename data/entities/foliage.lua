@@ -16,7 +16,7 @@ function entity:on_created()
 
 
     entity:add_collision_test("overlapping", function(entity, other_entity)
-      if (other_entity:get_type() == "hero" or other_entity:get_type() == "enemy")
+      if (other_entity:get_type() == "hero" or (other_entity:get_type() == "enemy" and map:is_on_screen(other_entity) ))
       and not entity.shaking then
         entity.shaking = true
         sound_manager:play_sound("walk_on_grass")
