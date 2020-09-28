@@ -1,0 +1,16 @@
+animation{
+  name = "stopped",
+  src_image = "entities/rolling_log.png",
+  directions = {
+    { x = 128, y = 96, frame_width = 32, frame_height = 120, origin_x = 16, origin_y = 117 },
+  },
+}
+animation{
+  name = "rolling",
+  src_image = "entities/rolling_log.png",
+  frame_delay = 90,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 96, frame_width = 32, frame_height = 128, origin_x = 16, origin_y = 117, num_frames = 11, num_columns = 6 },
+  },
+}

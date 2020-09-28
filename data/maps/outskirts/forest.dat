@@ -1674,7 +1674,7 @@ tile{
   layer = 0,
   x = 416,
   y = 544,
-  width = 256,
+  width = 128,
   height = 8,
   pattern = "86",
 }
@@ -6648,6 +6648,51 @@ tile{
   pattern = "84",
 }
 
+tile{
+  layer = 0,
+  x = 568,
+  y = 416,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "85",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 528,
+  width = 128,
+  height = 8,
+  pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 536,
+  width = 128,
+  height = 8,
+  pattern = "1",
+}
+
 teletransporter{
   layer = 0,
   x = 256,
@@ -9342,8 +9387,8 @@ wall{
   layer = 0,
   x = 480,
   y = 448,
-  width = 240,
-  height = 16,
+  width = 128,
+  height = 8,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
@@ -9428,6 +9473,139 @@ custom_entity{
   direction = 0,
   sprite = "foliage/autumn_grass_clump",
   model = "foliage",
+}
+
+enemy{
+  layer = 0,
+  x = 440,
+  y = 245,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 168,
+  y = 309,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 288,
+  y = 757,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+enemy{
+  layer = 0,
+  x = 248,
+  y = 757,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 765,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+enemy{
+  layer = 0,
+  x = 296,
+  y = 717,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+enemy{
+  layer = 0,
+  x = 304,
+  y = 781,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 453,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+enemy{
+  layer = 0,
+  x = 328,
+  y = 469,
+  direction = 0,
+  breed = "misc/bird",
+}
+
+custom_entity{
+  name = "roll_log",
+  layer = 0,
+  x = 552,
+  y = 541,
+  width = 16,
+  height = 112,
+  origin_y = 109,
+  direction = 0,
+  sprite = "entities/rolling_log",
+}
+
+wall{
+  layer = 0,
+  x = 624,
+  y = 448,
+  width = 88,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "log_shadow",
+  layer = 0,
+  x = 560,
+  y = 448,
+  width = 8,
+  height = 80,
+  pattern = "59",
+}
+
+wall{
+  layer = 0,
+  x = 624,
+  y = 448,
+  width = 8,
+  height = 88,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 600,
+  y = 448,
+  width = 8,
+  height = 88,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -12074,5 +12252,32 @@ tile{
   width = 8,
   height = 8,
   pattern = "18",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 416,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 344,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 376,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
 }
 

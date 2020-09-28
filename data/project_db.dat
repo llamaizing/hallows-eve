@@ -70,6 +70,7 @@ sprite{ id = "entities/leaf_blowing", description = "Leaf-Blowing" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/portal", description = "Portal" }
+sprite{ id = "entities/rolling_log", description = "Rolling Log" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/small_explosion", description = "Small Explosion" }
 sprite{ id = "entities/soccer_ball", description = "Soccer Ball" }
@@ -544,6 +545,7 @@ file{ path = "sprites/entities/items.dat", author = "Max Mraz", license = "CC BY
 file{ path = "sprites/entities/leaf_blowing.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/portal.dat", author = "Max Mraz", license = "CC0" }
+file{ path = "sprites/entities/rolling_log.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/small_explosion.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }

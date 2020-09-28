@@ -20,4 +20,38 @@ map:register_event("on_started", function()
     drift = {15, 0, -1, 1}
   }
   sol.menu.start(map, fog2)
+
+
+  --Roll Log
+  roll_log:set_traversable_by("hero", true)
+  roll_log:set_modified_ground"traversable"
+  roll_log:add_collision_test("sprite", function(roll_log, other_entity)
+print("collide. Other type: ", other_entity:get_type())
+    if other_entity:get_type() == "hero" and other_entity:get_state() == "sword swinging" and hero:get_direction() == 0 then
+      roll_log:clear_collision_tests()
+      roll_log:get_sprite():set_animation"rolling"
+      local m2 = sol.movement.create("straight")
+      m2:set_max_distance(64)
+      m2:set_ignore_obstacles(true)
+      m2:start(log_shadow)
+      local m = sol.movement.create("straight")
+      m:set_max_distance(64)
+      m:set_ignore_obstacles(true)
+      m:start(roll_log, function()
+        roll_log:get_sprite():set_animation"stopped"
+        game:set_value("haunted_forest_log_rolled", true)
+      end)
+    end
+  end)
+
+  if game:get_value"haunted_forest_log_rolled" then
+    roll_log:clear_collision_tests()
+    local x,y,z = roll_log:get_position()
+    roll_log:set_position(x + 64, y, z)
+    local x,y,z = log_shadow:get_position()
+    log_shadow:set_position(x + 64, y, z)
+  end
+
 end)
+
+
