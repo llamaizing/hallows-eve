@@ -30,6 +30,7 @@ print("collide. Other type: ", other_entity:get_type())
     if other_entity:get_type() == "hero" and other_entity:get_state() == "sword swinging" and hero:get_direction() == 0 then
       roll_log:clear_collision_tests()
       roll_log:get_sprite():set_animation"rolling"
+      sol.audio.play_sound"dash_big"
       local m2 = sol.movement.create("straight")
       m2:set_max_distance(64)
       m2:set_ignore_obstacles(true)
@@ -38,6 +39,7 @@ print("collide. Other type: ", other_entity:get_type())
       m:set_max_distance(64)
       m:set_ignore_obstacles(true)
       m:start(roll_log, function()
+        sol.audio.play_sound"running_obstacle"
         roll_log:get_sprite():set_animation"stopped"
         game:set_value("haunted_forest_log_rolled", true)
       end)

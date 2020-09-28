@@ -1,5 +1,6 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
+map{ id = "outskirts/farm", description = "Farm" }
 map{ id = "outskirts/forest", description = "Forest" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
@@ -83,6 +84,7 @@ sprite{ id = "foliage/brown_thistle", description = "Brown Thistle" }
 sprite{ id = "foliage/corn", description = "Corn" }
 sprite{ id = "foliage/fern_big", description = "Fern-Big" }
 sprite{ id = "foliage/generic" }
+sprite{ id = "foliage/goldenrod", description = "Goldenrod" }
 sprite{ id = "foliage/grass_seed_short", description = "Grass Seed Short" }
 sprite{ id = "foliage/hookseed", description = "Hookseed" }
 sprite{ id = "foliage/leaf_burst", description = "Leaf Burst" }
@@ -149,6 +151,7 @@ sound{ id = "crystal2", description = "crystal2" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "danger", description = "danger" }
 sound{ id = "dash", description = "dash" }
+sound{ id = "dash_big", description = "dash_big" }
 sound{ id = "diarandor/solarus_logo", description = "Solarus logo" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
@@ -335,6 +338,8 @@ file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
+file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
@@ -385,7 +390,6 @@ file{ path = "sounds/cane2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" 
 file{ path = "sounds/cane3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cat.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/chest_appears.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/chest_open.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cricket.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/crystal.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/crystal2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -414,7 +418,6 @@ file{ path = "sounds/hero_dying.ogg", author = "Diarandor", license = "CC BY-SA 
 file{ path = "sounds/hero_falls.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hero_hurt.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/hero_lands.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/hero_pushes.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hero_seen.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hookshot.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/item_fall.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -438,7 +441,6 @@ file{ path = "sounds/picked_money.ogg", author = "Diarandor", license = "CC BY-S
 file{ path = "sounds/picked_small_key.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/quake.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/running.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/running_obstacle.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/shield.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/shield2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/shield3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -558,6 +560,7 @@ file{ path = "sprites/foliage/barley_dark.dat", author = "Max Mraz", license = "
 file{ path = "sprites/foliage/brown_thistle.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/corn.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/fern_big.dat", author = "Max Mraz", license = "CC-BY 4.0" }
+file{ path = "sprites/foliage/goldenrod.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/hookseed.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/leaf_burst.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
