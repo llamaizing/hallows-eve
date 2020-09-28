@@ -78,6 +78,7 @@ sprite{ id = "foliage/autumn_grass_clump", description = "AutumnGrass-Clump" }
 sprite{ id = "foliage/autumnlily", description = "Autumnlily" }
 sprite{ id = "foliage/barley", description = "Barley" }
 sprite{ id = "foliage/barley_dark", description = "Barley-Dark" }
+sprite{ id = "foliage/brown_thistle", description = "Brown Thistle" }
 sprite{ id = "foliage/corn", description = "Corn" }
 sprite{ id = "foliage/fern_big", description = "Fern-Big" }
 sprite{ id = "foliage/generic" }
@@ -552,6 +553,7 @@ file{ path = "sprites/foliage/autumn_grass_clump.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/autumnlily.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/barley_dark.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/brown_thistle.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/corn.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/fern_big.dat", author = "Max Mraz", license = "CC-BY 4.0" }
 file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
