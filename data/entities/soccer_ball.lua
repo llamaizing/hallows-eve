@@ -39,6 +39,8 @@ end
 
 function entity:fire(angle)
   sprite:set_animation"rolling"
+  local shadow_sprite = entity:create_sprite"shadows/shadow_medium"
+  entity:bring_sprite_to_back(shadow_sprite)
   local m = sol.movement.create"straight"
   m:set_speed(190)
   m:set_angle(angle)

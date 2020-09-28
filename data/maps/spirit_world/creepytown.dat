@@ -16171,6 +16171,7 @@ destination{
 }
 
 teletransporter{
+  name = "warp_portal",
   layer = 0,
   x = 1608,
   y = 200,
@@ -16178,16 +16179,6 @@ teletransporter{
   height = 16,
   destination_map = "suburbs/cemetery",
   destination = "from_spirit_world",
-}
-
-custom_entity{
-  name = "warp_portal",
-  layer = 0,
-  x = 1616,
-  y = 213,
-  width = 16,
-  height = 16,
-  direction = 0,
   sprite = "entities/portal",
 }
 

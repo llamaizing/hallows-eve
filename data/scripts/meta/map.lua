@@ -21,6 +21,13 @@ map_meta:register_event("on_started", function(self)
   --manage enemy respawns
   require("scripts/misc/enemy_respawn_manager"):manage_spawns(map)
 
+  --Enemies activated
+  if not game:get_value("enemies_enabled") then
+    for enemy in map:get_entities_by_type"enemy" do
+      --enemy:set_enabled(false)
+    end
+  end
+
   --make invisible stairs invisible
   for stairs in map:get_entities("^invisible_stairs") do
     stairs:set_visible(false)
@@ -57,6 +64,10 @@ map_meta:register_event("on_started", function(self)
   --warp portals
   for portal in map:get_entities("warp_portal") do
     portal:get_sprite():set_blend_mode("add")
+
+    function portal:on_activated()
+      sol.audio.play_sound"world_warp"
+    end
   end
 
 

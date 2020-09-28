@@ -1,9 +1,11 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
+map{ id = "outskirts/forest", description = "Forest" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 
+tileset{ id = "dapple", description = "Dappled Light" }
 tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "halloween", description = "Halloween" }
@@ -331,6 +333,8 @@ file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
+file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
@@ -618,5 +622,4 @@ file{ path = "tilesets/oceanset_outside.tiles.png", author = "Max Mraz", license
 file{ path = "tilesets/oceanset_trees.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_trees.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/suburbs.dat", author = "Max Mraz", }
-file{ path = "tilesets/suburbs.entities.png", author = "Max Mraz", }
 file{ path = "tilesets/suburbs.tiles.png", author = "Max Mraz", }

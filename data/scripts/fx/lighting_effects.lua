@@ -40,7 +40,7 @@ function get_darkness_color_from_level(level)
   elseif level == "morning" then
     color = {240,240,255}
   elseif level == "misty_forest" then
-    color = {190,210,230}
+    color = {160,190,220}
   else
     color = level
   end
