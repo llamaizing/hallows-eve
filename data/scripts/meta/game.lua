@@ -1,5 +1,3 @@
-require"scripts/multi_events"
-
 local game_meta = sol.main.get_metatable"game"
 
 function game_meta:dx(offset)

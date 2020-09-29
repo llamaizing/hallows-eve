@@ -1,0 +1,10 @@
+{
+  "dialog_box":{
+    "text":{
+      "line":{
+        "letter_sound":"dialog_test_sfx_assets/Checkout_Scanner_Beep",
+        "letter_sound_delay":100
+      }
+    }
+  }
+}

@@ -26,7 +26,6 @@ function dialog_box_graphics:create()
   --
   -- Returns nothing
   function box_graphics:update(config)
-    config = config or {}
     box_graphics.box_img = sol.surface.create(screen_width - 16, screen_height/3) -- Dialog box surface
     box_graphics.sprite = {
       animation = '',

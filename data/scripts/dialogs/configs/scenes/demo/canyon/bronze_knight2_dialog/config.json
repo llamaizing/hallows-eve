@@ -1,0 +1,10 @@
+{
+	"dialog_box": {
+		"name_box": {
+			"image": {
+				"path": "demo/hud/dialog_boxes/name_box.png",
+				"position": "truecenter"
+			}
+		}
+	}
+}

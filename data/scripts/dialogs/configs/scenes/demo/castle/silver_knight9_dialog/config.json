@@ -1,0 +1,13 @@
+{
+	"characters": {
+		"silver_knight_5": {
+			"transitions": {
+				"enter": {
+					"type": "slide_in",
+					"slide_direction":"left",
+					"delay": 35
+				  }
+			}
+		}
+	}
+}

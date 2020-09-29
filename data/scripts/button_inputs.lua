@@ -1,4 +1,3 @@
-require("scripts/multi_events")
 local dash_manager = require("scripts/action/dash_manager")
 
 local menu = {}

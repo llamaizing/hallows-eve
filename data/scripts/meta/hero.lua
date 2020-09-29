@@ -1,7 +1,5 @@
 -- Initialize hero behavior specific to this quest.
 
-require("scripts/multi_events")
-
 local hero_meta = sol.main.get_metatable("hero")
 
 hero_meta:register_event("on_created", function(self)

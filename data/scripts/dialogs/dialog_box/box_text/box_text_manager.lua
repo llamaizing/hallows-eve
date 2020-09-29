@@ -35,7 +35,6 @@ function dialog_box_text:create(game)
   --
   -- Returns nothing
   function box_text:update(dialog, config)
-    config = config or {}
     for k,v in pairs(config) do
       if box_text[k] ~= v and box_text[k] ~= nil then 
         box_text[k] = v

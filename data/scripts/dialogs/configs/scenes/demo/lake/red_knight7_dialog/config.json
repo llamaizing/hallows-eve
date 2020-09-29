@@ -1,0 +1,28 @@
+{
+  "dialog_box":{
+    "close_delay":1000,
+		"text": {
+      "question":{
+        "cursor":{
+          "image":{
+            "path": "demo/hud/cursor/icons/spritesheet.png",
+            "icon":{
+              "width":16, 
+              "height":16,
+              "row":7,
+              "column":2
+            }
+          }
+        },
+        "answer": {
+          "image": {
+            "path": "demo/hud/cursor/sprites/ball_shrunk",
+            "sprite": {
+              "animation": "confirmation"
+            }
+          }
+        }  
+      }
+    }  
+  }
+}

@@ -34,8 +34,6 @@ function line_wrapper:create(game)
   --
   -- Returns nothing
   function line_config:update(config)
-    config = config or {}
-
     -- These values were copied from the Solaurs 1.6 docs. If they change in the future this list will need to updated.
     -- I hate doing this but I can't figure out how to dynamically get these from a text_surface object.
     for _index, value in pairs({ 'horizontal_alignment', 'vertical_alignment', 'font', 'rendering_mode', 'color', 'font_size', 'text', 'text_key' }) do

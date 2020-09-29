@@ -17,8 +17,6 @@
 	Add an entry to hud_config.lua for this script along with the desired properties
 --]]
 
-require"scripts/multi_events"
-
 local hud_submenu = {}
 
 local MAX_COUNT = 5 --max number of panels to show at one time

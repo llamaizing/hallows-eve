@@ -34,8 +34,6 @@ outsideleft |                          truecenter                       | outsid
 --
 -- Returns the xy coordinates
 function compute_position(object_to_compute, position, window_object)
-  position = position or 'center'
-
   -- If you'd like to make your own custom position you can add them to the positions list here,
   -- Then add the function in this file
   -- then you should be able to use them in your config files.

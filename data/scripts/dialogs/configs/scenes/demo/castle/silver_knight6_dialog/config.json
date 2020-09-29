@@ -1,0 +1,12 @@
+{
+	"characters": {
+		"silver_knight_5": {
+			"transitions": {
+				"exit": {
+					"type": "fade_out",
+					"delay": 70
+				  }
+			}
+		}
+	}
+}

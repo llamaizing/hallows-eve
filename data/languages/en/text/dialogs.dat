@@ -1,7 +1,7 @@
 dialog{
-  id = "test",
+  id = "tests.1",
   text = [[
-Entrepôt complètement légal de Bartholomé
+dialog tes test test sts 
 ]],
 }
 

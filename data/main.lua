@@ -2,7 +2,7 @@
 -- See the Lua API! http://www.solarus-games.org/doc/latest
 
 require("scripts/features")
-require("scripts/multi_events")
+require("scripts/multiple_events")
 
 -- Edit scripts/menus/initial_menus_config.lua to add or change menus before starting a game.
 local initial_menus_config = require("scripts/menus/initial_menus_config")

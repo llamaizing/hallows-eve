@@ -32,7 +32,6 @@ function dialog_box_manager:create(game, display_position)
   --
   -- Returns nothing 
   function dialog_box:update(dialog, config)
-    config = config or {image = {}}
     dialog_box.close_delay = 0 -- the amount of time to wait before closing the dialog box (1000 = 1 second)
     dialog_box.box_graphic = require("scripts/dialogs/dialog_box/box_graphic"):create()
     dialog_box.dialog_text = require("scripts/dialogs/dialog_box/box_text/box_text_manager"):create(game)

@@ -1,0 +1,19 @@
+{
+	"dialog_box": {
+    "text":{
+      "question": {
+        "cursor": {
+          "image": {
+            "path": "demo/hud/cursor/icons/spritesheet.png",
+            "icon": {
+              "width": 16,
+              "height": 16,
+              "row": 7,
+              "column": 2
+            }
+          }
+        }
+      }
+    }
+	}
+}

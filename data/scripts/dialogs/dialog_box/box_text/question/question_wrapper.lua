@@ -41,7 +41,6 @@ function question_wrapper:create()
   --
   -- Returns nothing
   function question:update(config, dialog)
-    config = config or {}
     for k,v in pairs(config) do
       if question[k] ~= v and question[k] ~= nil then 
         question[k] = v 

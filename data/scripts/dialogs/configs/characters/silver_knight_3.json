@@ -1,0 +1,15 @@
+{
+  "image": {
+    "path": "demo/visual_novel_art/characters/silver_knight/SilverKnightSingle.png",
+    "position": "right",
+    "x_offset": 0,
+    "y_offset": 0
+  },
+    "dialog_box":{
+      "image":{
+        "position":"center",
+        "path":"demo/hud/dialog_boxes/dialog_box.png"
+      }
+    }
+  }
+  

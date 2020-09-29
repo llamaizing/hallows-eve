@@ -31,8 +31,6 @@ function lines_wrapper:create(game)
   --
   -- Returns nothing 
   function lines_config:update(config, num_of_lines)
-    config = config or {}
-
     for k,v in pairs(config) do
       if lines_config[k] ~= v and lines_config[k] ~= nil then
         -- if the speed passed was a string (e.g. fast, medium, slow etc.) we use the mapped value

@@ -49,7 +49,7 @@ end
     end
 
     -- This error means that you probably messed up your paths.
-    if next(scene_config) == nil then print("WARNING: No Configuration Info Found For Scene: ".. id) end
+    if next(scene_config) == nil then error("No Configuration Info Found For Scene: ".. id) end
 
     return scene_config
   end

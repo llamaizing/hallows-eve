@@ -51,7 +51,7 @@ local function initialize_vn(game)
     sol.timer.start(game, delay + 10, function() -- gave an extra 10 miliseconds for scene to wrap up past it's close
       scene_manager:set_scene(conversation, load_scene(conversation))
       sol.menu.start(game, scene_manager)
-    end)
+    end)  
   end)
 
   -- Stop scene when dialog is finished

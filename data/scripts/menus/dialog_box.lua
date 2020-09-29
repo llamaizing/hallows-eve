@@ -3,7 +3,6 @@
 -- Usage:
 -- require("scripts/menus/dialog_box")
 
-require("scripts/multi_events")
 local language_manager = require("scripts/language_manager")
 
 -- Creates and sets up a dialog box for the specified game.

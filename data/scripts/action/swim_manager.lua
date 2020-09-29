@@ -3,7 +3,6 @@
 --Also, you'll need an animation called "drowning_water"
 --To use this, just require the in features.lua or elsewhere
 
-require"scripts/multi_events"
 local manager = {}
 
 local DEPLETION_RATE = 100 --how often a chunk of oxygen is removed, in ms

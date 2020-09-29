@@ -1,0 +1,12 @@
+{
+  "background": {
+    "image":{
+      "path": "demo/clear_background.png"
+    }
+  },
+  "dialog_box": {
+    "image": {
+      "path":""
+    }
+  }
+}

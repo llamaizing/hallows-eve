@@ -1,5 +1,3 @@
-require("scripts/multi_events")
-
 local item = ...
 local game = item:get_game()
 

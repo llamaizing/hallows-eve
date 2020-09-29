@@ -1,0 +1,16 @@
+{
+    "image":{
+      "path":"demo/visual_novel_art/characters/portaits/SilverKnightPortrait.png",
+      "position": "outsideright",
+      "relative_to_dialog_box": true,
+      "x_offset":0,
+      "y_offset":0
+    },
+    "dialog_box":{
+      "image":{
+        "position":"left",
+        "path":"demo/hud/dialog_boxes/smaller_dialog_box.png"
+      }
+    }
+  }
+  

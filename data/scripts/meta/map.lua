@@ -1,7 +1,5 @@
 --Initialize map behavior specific to this quest.
 
-require"scripts/multi_events"
-
 local map_meta = sol.main.get_metatable"map"
 
 --===================================================================================--

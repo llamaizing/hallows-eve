@@ -5,7 +5,6 @@
 -- local game = game_manager:create("savegame_file_name")
 -- game:start()
 
-require("scripts/multi_events")
 local initial_game = require("scripts/initial_game")
 
 local game_manager = {}
@@ -23,7 +22,7 @@ function game_manager:create(file)
 
   require("scripts/fx/lighting_effects"):initialize()
   require("scripts/button_inputs"):initialize(game)
-  require("scripts/menus/inventory/test_inventory"):init(game)
+--  require("scripts/menus/inventory/test_inventory"):init(game)
   require("scripts/game_over"):init(game)
 
   return game

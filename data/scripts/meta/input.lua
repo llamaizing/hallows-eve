@@ -1,5 +1,3 @@
-require"scripts/multi_events"
-
 --Return direction 0-7 of fist two joypad axis (should be left stick), or nil if no direction
 function sol.input.get_left_stick_direction8()
   --Axis 0 = left stick x-axis, axis 1 = left stick y axis

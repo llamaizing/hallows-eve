@@ -83,29 +83,29 @@ function scene_manager:create(game)
 
   -- check the see if exit transition delay is greater then the  dialog box close delay if so update close close_delay_override
   --
-  -- state: enter or exit
+  -- config: contains the exit tranistion dely
   --
   -- Example:
-  --  close_delay_override('enter')
+  -- close_delay_override({'delay'})
   --
   -- Reterns nothing
   function scene:transition_delay(state)
     config = scene.config
     delay = 0
 
-    if type(config) == 'table' then 
+    if scene.config ~= nil then 
       for _index, type in pairs({[1] = 'background', [2] = 'dialog_box'}) do
-        if config[type] and config[type]['transitions'] ~= nil and config[type]['transitions'][state] ~= nil and config[type]['transitions'][state]['delay'] ~= nil then
-          if config[type]['transitions'][state]['delay'] > delay then delay = config[type]['transitions'][state]['delay'] end
+        if scene.config[type]['transitions'] ~= nil and scene.config[type]['transitions'][state] ~= nil and scene.config[type]['transitions'][state]['delay'] ~= nil then
+          if scene.config[type]['transitions'][state]['delay'] > delay then delay = scene.config[type]['transitions'][state]['delay'] end
         end
       end
-    end
 
-    if type(scene.characters) == 'table' and type(scene.characters.character_sprites) == 'table' then
-      for name, _object in pairs(scene.characters.character_sprites) do
-        char_config = config['characters']
-        if type(char_config) == 'table' and type(char_config[name]) == 'table' and type(char_config[name]['transitions']) == 'table' and type(char_config[name]['transitions'][state]) == 'table' and char_config[name]['transitions'][state]['delay'] ~= nil then
-          if char_config[name]['transitions'][state]['delay'] > delay then delay = char_config[name]['transitions'][state]['delay'] end
+      if type(scene.characters) == 'table' and type(scene.characters.character_sprites) then
+        for name, _object in pairs(scene.characters.character_sprites) do
+          char_config = config['characters']
+          if type(char_config) == 'table' and type(char_config[name]) == 'table' and type(char_config[name]['transitions']) == 'table' and type(char_config[name]['transitions'][state]) == 'table' and char_config[name]['transitions'][state]['delay'] ~= nil then
+            if char_config[name]['transitions'][state]['delay'] > delay then delay = char_config[name]['transitions'][state]['delay'] end
+          end
         end
       end
     end
