@@ -2900,16 +2900,6 @@ custom_entity{
   model = "foliage",
 }
 
-npc{
-  layer = 0,
-  x = 224,
-  y = 173,
-  direction = 3,
-  subtype = 1,
-  sprite = "hero/tunic1",
-  behavior = "dialog#test",
-}
-
 custom_entity{
   layer = 0,
   x = 656,
@@ -3139,6 +3129,16 @@ custom_entity{
   direction = 0,
   sprite = "foliage/brown_thistle",
   model = "foliage",
+}
+
+npc{
+  name = "test_npc",
+  layer = 0,
+  x = 224,
+  y = 189,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/zach",
 }
 
 tile{

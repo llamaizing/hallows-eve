@@ -10,7 +10,7 @@ local DETECTION_DISTANCE = 120
 local MELEE_RANGE = 64
 local CHASE_SPEED = 70
 local WANDER_SPEED = 40
-local WIND_UP_TIME = 700
+local WIND_UP_TIME = 500
 
 
 function enemy:on_created()

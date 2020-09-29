@@ -28,7 +28,7 @@ function entity:on_created()
           end)
         end
         sol.timer.start(entity, 200, function()
-          if entity:get_distance(other_entity) < 24 then
+          if entity:get_distance(other_entity) < 24 and other_entity:exists() then
             return true
           else
             entity.shaking = false
