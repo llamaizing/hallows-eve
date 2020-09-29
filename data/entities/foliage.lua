@@ -5,6 +5,8 @@ local sprite
 local sound_manager = require("entities/foliage_sound_manager")
  entity.can_burn = true
 
+entity:set_optimization_distance(16)
+
 -- Event called when the custom entity is initialized.
 function entity:on_created()
   sprite = entity:get_sprite()

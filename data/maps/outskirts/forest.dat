@@ -541,6 +541,24 @@ custom_entity{
   model = "foliage",
 }
 
+destination{
+  name = "from_ravine",
+  layer = -1,
+  x = 1224,
+  y = 509,
+  direction = 2,
+}
+
+teletransporter{
+  layer = -1,
+  x = 1232,
+  y = 464,
+  width = 16,
+  height = 80,
+  destination_map = "outskirts/farm",
+  destination = "from_ravine",
+}
+
 tile{
   layer = 0,
   x = 480,
@@ -6763,6 +6781,24 @@ tile{
   width = 32,
   height = 8,
   pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = -24,
+  width = 16,
+  height = 16,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = -24,
+  width = 32,
+  height = 16,
+  pattern = "79",
 }
 
 teletransporter{

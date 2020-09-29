@@ -2808,8 +2808,8 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "outskirts/forest",
-  destination = "from_cemetery",
+  destination_map = "outskirts/farm",
+  destination = "from_forest",
 }
 
 custom_entity{

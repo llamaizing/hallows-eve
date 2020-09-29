@@ -425,7 +425,7 @@ tile_pattern{
 
 tile_pattern{
   id = "114",
-  ground = "empty",
+  ground = "wall",
   default_layer = 1,
   x = 16,
   y = 672,
@@ -436,7 +436,7 @@ tile_pattern{
 
 tile_pattern{
   id = "114_2",
-  ground = "empty",
+  ground = "wall",
   default_layer = 1,
   x = 24,
   y = 672,
@@ -447,7 +447,7 @@ tile_pattern{
 
 tile_pattern{
   id = "114_3",
-  ground = "empty",
+  ground = "wall",
   default_layer = 1,
   x = 32,
   y = 672,
@@ -458,7 +458,7 @@ tile_pattern{
 
 tile_pattern{
   id = "114_4",
-  ground = "empty",
+  ground = "wall",
   default_layer = 1,
   x = 40,
   y = 672,

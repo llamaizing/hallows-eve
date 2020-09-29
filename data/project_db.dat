@@ -7,6 +7,7 @@ map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 
 tileset{ id = "dapple", description = "Dappled Light" }
+tileset{ id = "farm", description = "Farm" }
 tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "halloween", description = "Halloween" }
@@ -87,6 +88,7 @@ sprite{ id = "foliage/generic" }
 sprite{ id = "foliage/goldenrod", description = "Goldenrod" }
 sprite{ id = "foliage/grass_seed_short", description = "Grass Seed Short" }
 sprite{ id = "foliage/hookseed", description = "Hookseed" }
+sprite{ id = "foliage/ironweed", description = "ironweed" }
 sprite{ id = "foliage/leaf_burst", description = "Leaf Burst" }
 sprite{ id = "foliage/nettle_short", description = "Nettle-Short" }
 sprite{ id = "foliage/pumpkin_leaves", description = "Pumpkin Leaves" }
@@ -94,6 +96,7 @@ sprite{ id = "foliage/skeletonreed", description = "Skeletonreed" }
 sprite{ id = "foliage/sprig", description = "sprig" }
 sprite{ id = "foliage/sunflower", description = "Sunflower" }
 sprite{ id = "foliage/water_reed", description = "Water Reed" }
+sprite{ id = "foliage/yarrow", description = "Yarrow" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
 sprite{ id = "ground_effects/leaves", description = "Leaves" }
@@ -563,6 +566,7 @@ file{ path = "sprites/foliage/fern_big.dat", author = "Max Mraz", license = "CC-
 file{ path = "sprites/foliage/goldenrod.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/hookseed.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/ironweed.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/leaf_burst.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/nettle_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/pumpkin_leaves.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -570,6 +574,7 @@ file{ path = "sprites/foliage/skeletonreed.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/sprig.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/sunflower.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/water_reed.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/yarrow.dat", author = "Max Mraz", }
 file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -615,6 +620,9 @@ file{ path = "sprites/shadows/shadow_small.dat", author = "Max Mraz", license = 
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/farm.dat", author = "Max Mraz", }
+file{ path = "tilesets/farm.entities.png", author = "Max Mraz", }
+file{ path = "tilesets/farm.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/ghost_town.dat", author = "Max Mraz", }
 file{ path = "tilesets/ghost_town.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/halloween.dat", author = "Max Mraz", license = "All Rights Reserved" }
