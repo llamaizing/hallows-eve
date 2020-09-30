@@ -5,7 +5,7 @@
 -- Features can be enabled to disabled independently by commenting
 -- or uncommenting lines below.
 
---require"scripts/multi_events"
+--require"scripts/multiple_events"
 require"scripts/multi_events"
 
 require"scripts/action/swim_manager"

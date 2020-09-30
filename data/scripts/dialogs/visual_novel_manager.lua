@@ -3,7 +3,7 @@
 require("scripts/dialogs/conversation_manager")
 require("scripts/dialogs/libs/config_loader")
 require("scripts/dialogs/libs/table_helpers")
-require("scripts/multiple_events")
+require("scripts/multi_events")
 
 local function initialize_vn(game)
   -- Creates a scene object
