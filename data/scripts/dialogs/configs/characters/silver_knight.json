@@ -9,7 +9,7 @@
     "dialog_box":{
       "image":{
         "position":"left",
-        "path":"demo/hud/dialog_boxes/smaller_dialog_box.png"
+        "path":"hud/dialog_box_background.png"
       }
     }
   }

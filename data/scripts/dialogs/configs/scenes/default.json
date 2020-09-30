@@ -20,7 +20,7 @@
         "horizontal_alignment": "left",
         "vertical_alignment": "middle",
         "font": "enter_command",
-        "font_size": 12
+        "font_size": 16
       },
       "question": {
         "line_buffer": 7,
@@ -37,16 +37,16 @@
     },
     "name_box": {
       "image": {
-        "path": "demo/hud/dialog_boxes/name_box.png",
+        "path": "hud/dialog_box_name.png",
         "position": "outsidetopleft"
       },
       "line": {
-        "x_offset": 3,
-        "y_offset": 10,
+        "x_offset": 8,
+        "y_offset": 7,
         "horizontal_alignment": "left",
         "vertical_alignment": "middle",
-        "font": "ComicNeue-Angular-Bold",
-        "font_size": 10
+        "font": "enter_command",
+        "font_size": 16 
       }
     }
   }

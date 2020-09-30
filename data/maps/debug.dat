@@ -3139,7 +3139,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npcs/zach",
-  behavior = "dialog#tests.1",
+  behavior = "dialog#test.1",
 }
 
 tile{

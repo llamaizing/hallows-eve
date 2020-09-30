@@ -59,7 +59,7 @@ function builder:build(props)
   menu.scroll_steps = 0
 
   --Enable multi_events for the menu so on_started can be defined differently for each instance
-  require("scripts/multiple_events"):enable(menu)
+  require("scripts/multi_events"):enable(menu)
 
 
   menu:register_event("on_started", function()

@@ -32,7 +32,7 @@ function background_manager:create(game)
 
     if config['image']['path'] == 'default' then
       background.image = sol.surface.create(sol.video.get_quest_size())
-      background.image:fill_color({0, 0, 64, 192})
+      background.image:fill_color({10, 10, 10, 0})
     else
       background.image = image_helper:get_image(config['image'])
     end

@@ -6,7 +6,7 @@
 -- or uncommenting lines below.
 
 --require"scripts/multi_events"
-require"scripts/multiple_events"
+require"scripts/multi_events"
 
 require"scripts/action/swim_manager"
 require"scripts/dialogs/visual_novel_manager"

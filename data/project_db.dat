@@ -298,6 +298,7 @@ entity{ id = "toss_ball", description = "Toss Ball" }
 language{ id = "en", description = "English" }
 
 font{ id = "8_bit", description = "8 bit" }
+font{ id = "ComicNeue-Angular-Bold", description = "ComicNeue-Angular-Bold" }
 font{ id = "enter_command", description = "Enter Command" }
 font{ id = "white_digits", description = "White digits" }
 
@@ -340,7 +341,6 @@ file{ path = "items/inventory/library/hookshot_config.lua", author = "Christopho
 file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
-file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
@@ -369,6 +369,7 @@ file{ path = "scripts/menus/dialog_box.lua", author = "Christopho", license = "G
 file{ path = "scripts/menus/initial_menus_config.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/menus/solarus_logo.lua", author = "Maxs", license = "GPL v3" }
 file{ path = "scripts/menus/start_game.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", license = "GPL v3" }
 file{ path = "scripts/text_fx_helper.lua", author = "Olivier Cléro", license = "GPL v3" }
 file{ path = "shaders/grayscale.dat", author = "Christopho", license = "GPL v3" }
 file{ path = "shaders/grayscale.frag.glsl", author = "Vlag", license = "GPL v3" }
