@@ -2808,7 +2808,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "outskirts/farm",
+  destination_map = "haunted_house/outside",
   destination = "from_forest",
 }
 
