@@ -7034,6 +7034,14 @@ custom_entity{
   model = "foliage",
 }
 
+destination{
+  name = "from_haunted_house",
+  layer = 0,
+  x = 720,
+  y = 205,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 952,
