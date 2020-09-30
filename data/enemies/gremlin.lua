@@ -86,12 +86,15 @@ function enemy:attack()
 	--stuff
 	enemy.attacking = true
 	enemy:stop_movement()
+  local attack_angle = enemy:get_angle(hero)
 	sprite:set_animation("wind_up")
 	sol.timer.start(enemy, WIND_UP_TIME, function()
+    --animation
 		sprite:set_animation("attack", function()
 			sprite:set_animation"walking"
 			enemy:go_hero()
 		end)
+    --attack sprite
 		local attack_sprite = enemy:create_sprite("enemies/misc/slash")
 		sol.audio.play_sound"swipe_1"
 		enemy:set_invincible_sprite(attack_sprite)
@@ -100,5 +103,11 @@ function enemy:attack()
 			enemy:remove_sprite(attack_sprite)
 			enemy.attacking = false
 		end)
+    --movement
+    local m = sol.movement.create"straight"
+    m:set_max_distance(24)
+    m:set_speed(100)
+    m:set_angle(attack_angle)
+    m:start(enemy)
 	end)
 end

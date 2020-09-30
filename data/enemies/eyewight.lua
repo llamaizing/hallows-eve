@@ -6,10 +6,10 @@ local sprite
 local ghost_sprite
 local movement
 
-local DETECTION_DISTANCE = 120
-local SHOOTING_RANGE = 100
-local CHASE_SPEED = 70
-local WANDER_SPEED = 40
+local DETECTION_DISTANCE = 160
+local SHOOTING_RANGE = 180
+local CHASE_SPEED = 60
+local WANDER_SPEED = 30
 local WIND_UP_TIME = 700
 local COOLDOWN = 2000
 

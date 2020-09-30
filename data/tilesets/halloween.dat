@@ -302,6 +302,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "28",
+  ground = "empty",
+  default_layer = 0,
+  x = 16,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "29",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "2_2",
   ground = "traversable",
   default_layer = 0,
@@ -365,6 +385,26 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "30",
+  ground = "empty",
+  default_layer = 0,
+  x = 16,
+  y = 176,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "31",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{

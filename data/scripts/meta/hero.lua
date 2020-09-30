@@ -73,8 +73,10 @@ hero_meta:register_event("on_state_changed", function(self, state)
     hero:set_invincible(true,1500)
   end
 
+
   if state == "sword loading" then
     game:simulate_command_released("attack")
+    hero:start_attack_loading(0)
   end
 
   --weird bad fire sword
