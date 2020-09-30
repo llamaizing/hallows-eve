@@ -18,3 +18,11 @@ map:register_event("on_started", function()
   }
   sol.menu.start(map, fog2)
 end)
+
+
+function test_npc:on_interaction()
+  map:start_coroutine(function()
+    dialog("test.1")
+    dialog("test.2")
+  end)
+end

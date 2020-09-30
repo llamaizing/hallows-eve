@@ -350,6 +350,7 @@ file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.lua", author = "Max Mraz", }
+file{ path = "scripts/coroutine_helper.lua", author = "std::gregwar", license = "GPL v3" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud/consumables.lua", author = "Llamazing", license = "GPL v3" }

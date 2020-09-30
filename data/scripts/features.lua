@@ -8,6 +8,7 @@
 --require"scripts/multiple_events"
 require"scripts/multi_events"
 
+require"scripts/coroutine_helper"
 require"scripts/action/swim_manager"
 require"scripts/dialogs/visual_novel_manager"
 require"scripts/fx/hero_shadow"

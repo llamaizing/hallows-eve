@@ -809,12 +809,19 @@ in your own game
 
 dialog{
   id = "test.1",
+  next = "test.2",
   text = [[
 @Zach
 test est est est ets et
-===|
+===
+]],
+}
+
+dialog{
+  id = "test.2",
+  text = [[
 @Ichabod
-more more
+More more more
 ===
 ]],
 }
