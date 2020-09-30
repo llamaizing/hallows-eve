@@ -15,15 +15,15 @@ local hud_config = {
   -- Hearts meter.
   {
     menu_script = "scripts/hud/hearts",
-    x = 5,
-    y = -250,
+    x = 20,
+    y = -253,
   },
 
     --magic meter
     {
       menu_script = "scripts/hud/magic_bar",
-      x = 5,
-      y = 1,
+      x = 2,
+      y = 4,
     },
 
   --[[ Rupee counter.

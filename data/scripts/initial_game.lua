@@ -18,13 +18,19 @@ function initial_game:initialize_new_savegame(game)
 
   game:set_max_life(6)
   game:set_life(game:get_max_life())
+  game:set_max_magic(40)
+  game:set_magic(game:get_max_magic())
   game:set_max_money(100)
   game:set_ability("lift", 1)
   game:set_ability("sword", 1)
   --game:set_ability("swim", 1)
 
+  game:get_item("seed_shoot"):set_variant(1)
   game:get_item("soccer_kick"):set_variant(1)
-  game:set_item_assigned(1, game:get_item("soccer_kick"))
+  game:get_item("heal"):set_variant(1)
+
+  game:set_item_assigned(1, game:get_item("seed_shoot"))
+  game:set_item_assigned(2, game:get_item("heal"))
 
   game:set_value("darkness_level", "evening")
 

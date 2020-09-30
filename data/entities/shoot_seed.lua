@@ -4,7 +4,7 @@ local map = entity:get_map()
 local sprite
 
 function entity:on_created()
-  sprite = entity:create_sprite("entities/soccer_ball")
+  sprite = entity:create_sprite("entities/shoot_seed")
   entity:set_can_traverse("hero", true)
   entity:set_can_traverse("crystal", true)
   entity:set_can_traverse("crystal_block", true)
@@ -24,7 +24,6 @@ function entity:on_created()
 
   entity.damage = 1
 
-  sprite:set_animation"bouncing"
 end
 
 function entity:on_movement_changed(m)
@@ -38,11 +37,10 @@ end
 
 
 function entity:fire(angle)
-  sprite:set_animation"rolling"
-  local shadow_sprite = entity:create_sprite"shadows/shadow_medium"
-  entity:bring_sprite_to_back(shadow_sprite)
+--  local shadow_sprite = entity:create_sprite"shadows/shadow_small"
+--  entity:bring_sprite_to_back(shadow_sprite)
   local m = sol.movement.create"straight"
-  m:set_speed(190)
+  m:set_speed(250)
   m:set_angle(angle)
   m:set_smooth(false)
   m:start(entity)
@@ -50,6 +48,7 @@ function entity:fire(angle)
   function m:on_obstacle_reached()
     m:stop()
     sol.audio.play_sound("arrow_hit")
+    if entity.type then entity:create_effect() end
     entity:pop()
   end
 
@@ -57,7 +56,6 @@ end
 
 
 function entity:pop()
-  if entity.type then entity:create_effect() end
   entity:stop_movement()
   entity:clear_collision_tests()
   sol.audio.play_sound"pop"
@@ -71,6 +69,7 @@ function entity:create_effect()
     local x, y, z = entity:get_position()
     map:create_fire{x=x+game:dx(8)[dir], y=y+game:dy(8)[dir], layer=z}
     entity:get_sprite():set_color_modulation{50,50,50}
+    entity:pop()
 
   elseif entity.type == "ice" then
     map:create_ice_sparkle(entity:get_position())
@@ -84,6 +83,7 @@ function entity:create_effect()
     local x, y, z = entity:get_position()
     map:create_explosion{x=x, y=y, layer=z}
     sol.audio.play_sound"explosion"
+    entity:pop()
 
   end
 end
@@ -93,8 +93,8 @@ entity:add_collision_test("sprite", function(entity, other_entity, sprite, other
   local type = other_entity:get_type()
 
   if type == "enemy" then
-    entity:pop()
     other_entity:hurt(entity.damage)
+    entity:pop()
   end
 
   if type == "destructible" and other_entity:get_sprite():get_animation_set() == "destructibles/pot" then

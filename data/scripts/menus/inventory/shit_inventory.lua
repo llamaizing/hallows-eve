@@ -6,20 +6,8 @@ function menu:init(game)
 end
 
 local possible_items = {
-  "inventory/flame_spell",
-  "inventory/spark_spell",
-  "inventory/frostseed_satchel",
-  "inventory/hookseed_satchel",
-  "inventory/feather",
-  "inventory/metal_block_cane",
-  "inventory/hookshot",
-  "inventory/boomerang",
-  "inventory/bombs_counter",
-  "inventory/bow",
-  "inventory/bow_fire",
-  "inventory/bow_ice",
-  "inventory/bow_electric",
-  "inventory/bow_bomb",
+  "seed_shoot",
+  "soccer_kick",
 }
 
 local held_items = {} --will look same as possible_items table, minus unobtained items

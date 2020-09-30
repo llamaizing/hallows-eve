@@ -3,6 +3,7 @@ local game = item:get_game()
 
 
 local SPEED_DELTA = 40
+local MAGIC_COST = 13
 
 function item:on_started()
   item:set_savegame_variable("possession_soccer_kick")
@@ -14,6 +15,14 @@ function item:on_using(props)
   local map = item:get_map()
   local hero = map:get_hero()
   local slot_assigned = (props and props.slot_assigned) or (game:get_item_assigned(1) == item and 1 or 2)
+
+  local enough_magic = game:get_magic() - MAGIC_COST >= 0
+  if not enough_magic then
+    sol.audio.play_sound"wrong"
+    item:set_finished()
+    return
+  end
+  game:remove_magic(MAGIC_COST)
 
   hero:set_animation"dribbling"
   local state = item:get_dribbling_state()
@@ -76,8 +85,9 @@ function item:on_using(props)
     if hero:get_state_object() == state then
       dribbles = dribbles + 1
       sol.audio.play_sound"ball_kick"
-      --[[
-      if dribbles == 6 then
+
+      --
+      if dribbles == 3 then
         local flame_sprite = ball:create_sprite"entities/soccer_ball_flame"
         ball:bring_sprite_to_back(flame_sprite)
         sol.audio.play_sound"fuse"

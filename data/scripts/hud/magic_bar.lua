@@ -8,7 +8,7 @@ function magic_bar_builder:new(game, config)
 
   magic_bar.dst_x, magic_bar.dst_y = config.x, config.y
 
-  magic_bar.surface = sol.surface.create(120, 6)
+  magic_bar.surface = sol.surface.create(64, 16)
   magic_bar.magic_bar_img = sol.surface.create("hud/magic_bar.png")
   magic_bar.magic_bar_background = sol.surface.create("hud/magic_bar_background.png")
   magic_bar.magic_displayed = game:get_magic()
@@ -66,7 +66,8 @@ function magic_bar_builder:new(game, config)
       --draw background
       magic_bar.magic_bar_background:draw(dst_surface, x, y)
       -- Current magic. x, y, width, height, surface
-      magic_bar.magic_bar_img:draw_region(0, 0, magic_bar.magic_displayed, 4, dst_surface, x, y)
+      magic_bar.magic_bar_img:draw_region(0, 0, magic_bar.magic_displayed, 16, dst_surface, x + 14, y)
+--      magic_bar.magic_bar_img:draw(dst_surface, x, y)
     end
   end
 
