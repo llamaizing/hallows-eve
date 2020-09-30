@@ -10,7 +10,7 @@ function magic_bar_builder:new(game, config)
 
   magic_bar.surface = sol.surface.create(64, 16)
   magic_bar.magic_bar_img = sol.surface.create("hud/magic_bar.png")
-  magic_bar.magic_bar_background = sol.surface.create("hud/magic_bar_background.png")
+  magic_bar.magic_bar_background = sol.surface.create("hud/magic_bar_background_2.png")
   magic_bar.magic_displayed = game:get_magic()
 --  magic_bar.max_magic_displayed = 0
 
@@ -66,8 +66,10 @@ function magic_bar_builder:new(game, config)
       --draw background
       magic_bar.magic_bar_background:draw(dst_surface, x, y)
       -- Current magic. x, y, width, height, surface
+      --the line below is for the gothic wrought iron magic bar:
       magic_bar.magic_bar_img:draw_region(0, 0, magic_bar.magic_displayed, 16, dst_surface, x + 14, y)
---      magic_bar.magic_bar_img:draw(dst_surface, x, y)
+      --the line below is for the experimenting with another magic bar:
+      --magic_bar.magic_bar_img:draw_region(0, 0, magic_bar.magic_displayed, 16, dst_surface, x + 17, y + 1)
     end
   end
 

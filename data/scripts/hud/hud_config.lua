@@ -12,19 +12,19 @@
 
 local hud_config = {
 
+  --magic meter
+  {
+    menu_script = "scripts/hud/magic_bar",
+    x = 2,
+    y = 4,
+  },
+
   -- Hearts meter.
   {
     menu_script = "scripts/hud/hearts",
-    x = 20,
+    x = 19,
     y = -253,
   },
-
-    --magic meter
-    {
-      menu_script = "scripts/hud/magic_bar",
-      x = 2,
-      y = 4,
-    },
 
   --[[ Rupee counter.
   {
