@@ -240,17 +240,6 @@ animation{
   },
 }
 animation{
-  name = "heal",
-  src_image = "hero/caspian.png",
-  frame_delay = 120,
-  directions = {
-    { x = 304, y = 432, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
-    { x = 304, y = 464, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
-    { x = 304, y = 496, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
-    { x = 304, y = 528, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
-  },
-}
-animation{
   name = "hookshot",
   src_image = "hero/ichabod.png",
   directions = {

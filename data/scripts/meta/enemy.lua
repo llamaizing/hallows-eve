@@ -31,6 +31,6 @@ function enemy_meta:on_hurt(attack)
 
   --Recharge ammo if it was a kick attac
   if attack == "sword" then
-    game:add_magic(5)
+    game:add_magic(8)
   end
 end
