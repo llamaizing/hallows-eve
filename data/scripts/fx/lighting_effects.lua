@@ -41,6 +41,8 @@ function get_darkness_color_from_level(level)
     color = {240,240,255}
   elseif level == "misty_forest" then
     color = {160,190,220}
+  elseif level == "haunted_house" then
+    color = {180,170,140}
   else
     color = level
   end

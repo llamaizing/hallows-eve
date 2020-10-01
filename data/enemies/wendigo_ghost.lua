@@ -26,6 +26,8 @@ function enemy:on_created()
   enemy:set_size(32,32)
   enemy:set_origin(16,29)
   enemy:set_attacking_collision_mode"overlapping"
+
+  enemy:set_obstacle_behavior"flying"
 end
 
 function enemy:on_restarted()
@@ -33,6 +35,20 @@ function enemy:on_restarted()
   movement:set_target(hero)
   movement:set_speed(SPEED)
   movement:start(enemy)
+
+  sol.timer.start(enemy, 100, function()
+    local dist = enemy:get_distance(hero)
+    if dist < 60 then
+      movement:set_speed(75)
+    elseif dist < 100 then
+      movement:set_speed(115)
+    elseif dist < 150 then
+      movement:set_speed(150)
+    elseif dist < 180 then
+      movement:set_speed(250)
+    end
+    return true
+  end)
 end
 
 function enemy:on_movement_changed(movement)

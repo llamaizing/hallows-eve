@@ -7042,6 +7042,16 @@ destination{
   direction = 3,
 }
 
+teletransporter{
+  layer = 0,
+  x = 712,
+  y = 176,
+  width = 16,
+  height = 16,
+  destination_map = "haunted_house/foyer",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 952,

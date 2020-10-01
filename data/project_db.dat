@@ -1,6 +1,10 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
+map{ id = "haunted_house/empty_room", description = "Empty Room" }
+map{ id = "haunted_house/foyer", description = "Foyer" }
 map{ id = "haunted_house/outside", description = "Outside" }
+map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" }
+map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
 map{ id = "outskirts/farm", description = "Farm" }
 map{ id = "outskirts/forest", description = "Forest" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
@@ -13,6 +17,7 @@ tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "halloween", description = "Halloween" }
 tileset{ id = "haunted_forest", description = "Haunted Forest" }
+tileset{ id = "haunted_house", description = "Haunted House" }
 tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
@@ -354,8 +359,16 @@ file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "items/spin_kick.lua", author = "Max Mraz", }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "maps/haunted_house/empty_room.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/empty_room.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/foyer.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/foyer.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_illusion.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_illusion.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_short.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_short.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
@@ -647,6 +660,8 @@ file{ path = "tilesets/ghost_town.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/halloween.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "tilesets/haunted_forest.dat", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
 file{ path = "tilesets/haunted_forest.tiles.png", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
+file{ path = "tilesets/haunted_house.dat", author = "Max Mraz", }
+file{ path = "tilesets/haunted_house.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/oceanset_desert.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }

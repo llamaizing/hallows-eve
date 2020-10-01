@@ -1,7 +1,7 @@
 local item = ...
 local game = item:get_game()
 
-local MAGIC_COST = 20
+local MAGIC_COST = 30
 local HEAL_TIME = 1500
 
 function item:on_started()

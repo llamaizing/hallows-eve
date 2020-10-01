@@ -1,4 +1,13 @@
 dialog{
+  id = "_treasure.seed_shoot.1",
+  text = [[
+You found pocket seeds! Keep them in your pocket
+and thow them at your enemies! It takes spirit energy
+to summon them from their pocket dimension.
+]],
+}
+
+dialog{
   id = "demo.cabin.green_knight10_dialog",
   text = [[
 If you don't like any of our preset speeds. 
@@ -804,6 +813,15 @@ Each knight is a test of each of the Visual
 Novel Dialog System. But remember you
 can mix and match any or all of these features
 in your own game
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.1-wendigo",
+  text = [[
+@Ichabod
+Oh no. It's one of those thing. I gotta get out of here.
+===
 ]],
 }
 
