@@ -12,6 +12,7 @@ function enemy:on_created()
   enemy:set_life(1)
   enemy:set_invincible()
   enemy:set_damage(2)
+  enemy:set_obstacle_behavior"flying"
 end
 
 function enemy:go(angle)

@@ -28,5 +28,9 @@ function manager:manage_spawns(map)
 
 end
 
+function manager:clear_killed_enemies()
+  local game = sol.main.get_game()
+  game.enemies_killed = {}
+end
 
 return manager

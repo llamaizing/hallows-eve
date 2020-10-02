@@ -8,5 +8,11 @@ map:register_event("on_started", function()
 end)
 
 function map:on_opening_transition_finished()
-game:start_dialog("haunted_house.observations.1-wendigo")
+  map:focus_on(wendigo, function()
+    game:start_dialog("haunted_house.observations.1-wendigo")
+  end)
+end
+
+function escape_teleporter:on_activated()
+  game:set_value("haunted_house_west_windigo_escaped", true)
 end

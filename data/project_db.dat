@@ -2,7 +2,9 @@ map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
 map{ id = "haunted_house/empty_room", description = "Empty Room" }
 map{ id = "haunted_house/foyer", description = "Foyer" }
+map{ id = "haunted_house/key_room", description = "Key Room" }
 map{ id = "haunted_house/outside", description = "Outside" }
+map{ id = "haunted_house/west_wing_final", description = "WestWing-Final" }
 map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" }
 map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
 map{ id = "outskirts/farm", description = "Farm" }
@@ -363,8 +365,12 @@ file{ path = "maps/haunted_house/empty_room.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/empty_room.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/foyer.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/foyer.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/key_room.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/key_room.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_final.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_final.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_illusion.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_illusion.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_short.dat", author = "Max Mraz", }

@@ -51,5 +51,8 @@ animation{
   frame_delay = 80,
   directions = {
     { x = 256, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 8 },
+    { x = 256, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 8 },
+    { x = 256, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 8 },
+    { x = 256, y = 48, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 8 },
   },
 }

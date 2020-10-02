@@ -1215,6 +1215,7 @@ destination{
 }
 
 teletransporter{
+  name = "west_wing_teleporter",
   layer = 0,
   x = 48,
   y = 352,

@@ -1,7 +1,7 @@
 properties{
   x = 0,
   y = 0,
-  width = 416,
+  width = 480,
   height = 240,
   min_layer = 0,
   max_layer = 2,
@@ -12,23 +12,23 @@ tile{
   layer = 0,
   x = 0,
   y = 0,
-  width = 416,
+  width = 480,
   height = 240,
   pattern = "8_9",
 }
 
 tile{
   layer = 0,
-  x = 16,
+  x = 32,
   y = 112,
-  width = 384,
+  width = 432,
   height = 48,
   pattern = "7",
 }
 
 tile{
   layer = 0,
-  x = 384,
+  x = 448,
   y = 96,
   width = 16,
   height = 16,
@@ -37,7 +37,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 448,
   y = 64,
   width = 16,
   height = 32,
@@ -46,7 +46,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
+  x = 32,
   y = 64,
   width = 16,
   height = 32,
@@ -55,7 +55,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
+  x = 32,
   y = 96,
   width = 16,
   height = 16,
@@ -64,34 +64,34 @@ tile{
 
 tile{
   layer = 0,
-  x = 32,
+  x = 48,
   y = 64,
-  width = 352,
+  width = 400,
   height = 32,
   pattern = "5_2",
 }
 
 tile{
   layer = 0,
-  x = 32,
+  x = 48,
   y = 96,
-  width = 352,
+  width = 400,
   height = 16,
   pattern = "2_2",
 }
 
 tile{
   layer = 0,
-  x = 16,
+  x = 32,
   y = 48,
-  width = 384,
+  width = 432,
   height = 16,
   pattern = "10",
 }
 
 tile{
   layer = 0,
-  x = 0,
+  x = 16,
   y = 64,
   width = 16,
   height = 96,
@@ -100,7 +100,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
+  x = 464,
   y = 64,
   width = 16,
   height = 96,
@@ -109,16 +109,16 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
+  x = 32,
   y = 160,
-  width = 384,
+  width = 432,
   height = 16,
   pattern = "9",
 }
 
 tile{
   layer = 0,
-  x = 0,
+  x = 16,
   y = 48,
   width = 16,
   height = 16,
@@ -127,7 +127,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
+  x = 464,
   y = 48,
   width = 16,
   height = 16,
@@ -136,7 +136,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
+  x = 16,
   y = 160,
   width = 16,
   height = 16,
@@ -145,7 +145,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
+  x = 464,
   y = 160,
   width = 16,
   height = 16,
@@ -154,7 +154,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 448,
   y = 120,
   width = 16,
   height = 32,
@@ -163,7 +163,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
+  x = 432,
   y = 120,
   width = 16,
   height = 16,
@@ -172,7 +172,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
+  x = 432,
   y = 136,
   width = 16,
   height = 16,
@@ -181,7 +181,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 448,
   y = 120,
   width = 16,
   height = 16,
@@ -190,7 +190,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 448,
   y = 136,
   width = 16,
   height = 16,
@@ -199,7 +199,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
+  x = 208,
   y = 88,
   width = 8,
   height = 24,
@@ -209,7 +209,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
+  x = 184,
   y = 88,
   width = 8,
   height = 24,
@@ -219,7 +219,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
+  x = 192,
   y = 88,
   width = 16,
   height = 24,
@@ -229,7 +229,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 320,
+  x = 384,
   y = 72,
   width = 32,
   height = 24,
@@ -238,7 +238,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 288,
+  x = 352,
   y = 72,
   width = 16,
   height = 24,
@@ -247,7 +247,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 272,
+  x = 336,
   y = 72,
   width = 16,
   height = 16,
@@ -256,7 +256,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 248,
+  x = 312,
   y = 80,
   width = 16,
   height = 16,
@@ -265,7 +265,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 216,
+  x = 280,
   y = 72,
   width = 24,
   height = 24,
@@ -274,17 +274,74 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
+  x = 232,
   y = 80,
   width = 32,
   height = 16,
   pattern = "38",
 }
 
+tile{
+  layer = 0,
+  x = 96,
+  y = 88,
+  width = 8,
+  height = 24,
+  pattern = "64",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 88,
+  width = 8,
+  height = 24,
+  pattern = "65",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 88,
+  width = 16,
+  height = 24,
+  pattern = "63",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 120,
+  width = 32,
+  height = 24,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 144,
+  width = 32,
+  height = 8,
+  pattern = "35",
+}
+
 destination{
   name = "from_foyer",
   layer = 0,
-  x = 376,
+  x = 440,
   y = 141,
   direction = 2,
 }
@@ -292,14 +349,14 @@ destination{
 destination{
   name = "from_empty_room",
   layer = 0,
-  x = 136,
+  x = 200,
   y = 125,
   direction = 3,
 }
 
 teletransporter{
   layer = 0,
-  x = 128,
+  x = 192,
   y = 96,
   width = 16,
   height = 16,
@@ -309,7 +366,7 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 384,
+  x = 448,
   y = 120,
   width = 16,
   height = 32,
@@ -317,9 +374,81 @@ teletransporter{
   destination = "from_west_wing",
 }
 
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/grass_seed_short",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 64,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/grass_seed_short",
+  model = "foliage",
+}
+
+destination{
+  name = "from_key_room",
+  layer = 0,
+  x = 88,
+  y = 125,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 80,
+  y = 96,
+  width = 16,
+  height = 16,
+  destination_map = "haunted_house/key_room",
+  destination = "from_west_wing",
+}
+
 tile{
   layer = 1,
-  x = 120,
+  x = 184,
+  y = 80,
+  width = 32,
+  height = 8,
+  pattern = "66_3",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 72,
   y = 80,
   width = 32,
   height = 8,

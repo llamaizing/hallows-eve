@@ -7,6 +7,9 @@ function game_over:init(game)
     local hero = map:get_hero()
     local x, y, z = hero:get_position()
 
+    --Clear defeated enemies table so all will respawn
+    require("scripts/misc/enemy_respawn_manager"):clear_killed_enemies()
+
     hero:set_visible(false)
 
     local cam_surface = map:get_camera():get_surface()
