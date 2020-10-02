@@ -3,6 +3,7 @@ map{ id = "debug", description = "debug" }
 map{ id = "haunted_house/empty_room", description = "Empty Room" }
 map{ id = "haunted_house/foyer", description = "Foyer" }
 map{ id = "haunted_house/key_room", description = "Key Room" }
+map{ id = "haunted_house/library", description = "Library" }
 map{ id = "haunted_house/outside", description = "Outside" }
 map{ id = "haunted_house/west_wing_final", description = "WestWing-Final" }
 map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" }
@@ -369,6 +370,8 @@ file{ path = "maps/haunted_house/foyer.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/foyer.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/key_room.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/key_room.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/library.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/library.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_final.dat", author = "Max Mraz", }
