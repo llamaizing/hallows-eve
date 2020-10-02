@@ -1225,6 +1225,19 @@ teletransporter{
   destination = "from_foyer",
 }
 
+door{
+  layer = 0,
+  x = 200,
+  y = 240,
+  direction = 3,
+  sprite = "doors/locked_door",
+  savegame_variable = "haunted_house_foyer_locked_door",
+  opening_method = "interaction_if_item",
+  opening_condition = "small_key",
+  opening_condition_consumed = true,
+  cannot_open_dialog = "general.locked_door",
+}
+
 tile{
   layer = 1,
   x = 192,

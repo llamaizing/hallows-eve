@@ -137,6 +137,13 @@ animation{
   },
 }
 animation{
+  name = "small_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "soccer_kick",
   src_image = "entities/soccer_ball.png",
   directions = {

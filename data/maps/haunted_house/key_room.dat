@@ -2654,3 +2654,12 @@ enemy{
   breed = "gremlin",
 }
 
+chest{
+  layer = 0,
+  x = 624,
+  y = 77,
+  treasure_name = "small_key",
+  treasure_savegame_variable = "haunted_house_west_wing_key_chest",
+  sprite = "chests/chest",
+}
+

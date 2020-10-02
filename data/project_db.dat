@@ -30,7 +30,6 @@ tileset{ id = "yarntown", description = "yarntown" }
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "blocks/cracked_block", description = "cracked block" }
 sprite{ id = "chests/chest", description = "Chest" }
-sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/bush2", description = "bush2" }
 sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
@@ -38,6 +37,7 @@ sprite{ id = "destructibles/pot", description = "Pot" }
 sprite{ id = "destructibles/pumpkin_big", description = "Pumpkin - Big" }
 sprite{ id = "destructibles/pumpkin_small", description = "Pumpkin - Small" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
+sprite{ id = "doors/locked_door", description = "Locked Door" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
 sprite{ id = "elements/ice_block", description = "Ice Block" }
@@ -279,6 +279,7 @@ item{ id = "inventory/hookshot", description = "Hookshot" }
 item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 item{ id = "seed_shoot", description = "Seed Shoot" }
+item{ id = "small_key", description = "Small Key" }
 item{ id = "soccer_kick", description = "Soccer Kick Attack" }
 item{ id = "spin_kick", description = "Spin Kick" }
 
@@ -358,6 +359,7 @@ file{ path = "items/inventory/library/hookshot_config.lua", author = "Christopho
 file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
+file{ path = "items/small_key.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "items/spin_kick.lua", author = "Max Mraz", }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
@@ -527,7 +529,6 @@ file{ path = "sprites/blocks/cracked_block.dat", author = "Max Mraz", }
 file{ path = "sprites/chests", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/chest.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/chests/chest.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/chests/chest_big.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush2.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -538,6 +539,7 @@ file{ path = "sprites/destructibles/pumpkin_small.dat", author = "Max Mraz", lic
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
+file{ path = "sprites/doors/locked_door.dat", author = "Max Mraz", license = "CC-0" }
 file{ path = "sprites/elements/battery_orb.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/electric.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/ice_block.dat", author = "Max Mraz", }

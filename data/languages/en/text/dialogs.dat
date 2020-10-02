@@ -8,6 +8,13 @@ to summon them from their pocket dimension.
 }
 
 dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+You found a key. Probably it unlocks a nearby door.
+]],
+}
+
+dialog{
   id = "demo.cabin.green_knight10_dialog",
   text = [[
 If you don't like any of our preset speeds. 
@@ -817,10 +824,28 @@ in your own game
 }
 
 dialog{
+  id = "general.locked_door",
+  text = [[
+The door is locked.
+]],
+}
+
+dialog{
   id = "haunted_house.observations.1-wendigo",
   text = [[
 @Ichabod
-Oh no. It's one of those thing. I gotta get out of here.
+Oh no. It's one of those things. I gotta get out of here.
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.2_west_wing_again",
+  text = [[
+@Ichabod
+Huh, back here again somehow? This isn't how they
+normally build houses...
+Was that door there before?
 ===
 ]],
 }
