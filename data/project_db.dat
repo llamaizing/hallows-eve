@@ -5,6 +5,7 @@ map{ id = "haunted_house/foyer", description = "Foyer" }
 map{ id = "haunted_house/key_room", description = "Key Room" }
 map{ id = "haunted_house/library", description = "Library" }
 map{ id = "haunted_house/outside", description = "Outside" }
+map{ id = "haunted_house/statue_garden_empty", description = "StatueGarden-Empty" }
 map{ id = "haunted_house/west_wing_final", description = "WestWing-Final" }
 map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" }
 map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
@@ -279,6 +280,7 @@ item{ id = "inventory/hookseed_satchel", description = "Hookseed Satchel" }
 item{ id = "inventory/hookshot", description = "Hookshot" }
 item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
+item{ id = "library_statue_gear", description = "Library Statue Gear" }
 item{ id = "seed_shoot", description = "Seed Shoot" }
 item{ id = "small_key", description = "Small Key" }
 item{ id = "soccer_kick", description = "Soccer Kick Attack" }
@@ -359,6 +361,7 @@ file{ path = "items/inventory/hookshot.lua", author = "Christopho, Mehdi Khelifi
 file{ path = "items/inventory/library/hookshot_config.lua", author = "Christopho, , Mehdi Khelifi", license = "GPL v3" }
 file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
+file{ path = "items/library_statue_gear.lua", author = "Max Mraz", }
 file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
 file{ path = "items/small_key.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
@@ -374,6 +377,8 @@ file{ path = "maps/haunted_house/library.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/library.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_empty.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_empty.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_final.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_final.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_illusion.dat", author = "Max Mraz", }

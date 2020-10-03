@@ -831,10 +831,53 @@ The door is locked.
 }
 
 dialog{
+  id = "haunted_house.cutscenes.library_1",
+  text = [[
+@Zach
+Zach report: lizard isn't anywhere in the house. Also
+I lost the lizard bell in the stampede so we're back to
+searching manually. Think the 'zard is in the garden?
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_2",
+  text = [[
+@Toby
+I guess? That definitely doesn't make any less sense
+than the lizard being in a haunted house. Maybe it
+likes to garden? Or like, dig for bugs?
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_3",
+  text = [[
+@Zach
+Oh, like with little lizard tools!? That'd be $font_size=22$SICK!
+Let's see if it has a little lizard shovel!
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_4",
+  text = [[
+@Ichabod
+Did that statue just spin around? Whatever, that
+Jurassic Park kid has nowhere to run this time!
+===
+]],
+}
+
+dialog{
   id = "haunted_house.observations.1-wendigo",
   text = [[
 @Ichabod
-Oh no. It's one of those things. I gotta get out of here.
+Oh no. It's one of those things. You absolutely can't kick
+those, I gotta get out of here.
 ===
 ]],
 }
@@ -847,6 +890,14 @@ Huh, back here again somehow? This isn't how they
 normally build houses...
 Was that door there before?
 ===
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.3_library_statue_mechanism",
+  text = [[
+There's a little mechanism that looks like it could spin the
+statue around, but it's missing a piece. Seems sus.
 ]],
 }
 

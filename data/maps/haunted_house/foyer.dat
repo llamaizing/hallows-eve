@@ -1225,6 +1225,37 @@ teletransporter{
   destination = "from_foyer",
 }
 
+destination{
+  name = "from_library",
+  layer = 0,
+  x = 208,
+  y = 269,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 200,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "haunted_house/library",
+  destination = "from_foyer",
+}
+
+wall{
+  layer = 0,
+  x = 200,
+  y = 232,
+  width = 16,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 door{
   layer = 0,
   x = 200,
