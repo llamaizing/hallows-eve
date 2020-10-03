@@ -86,3 +86,12 @@ destructible{
   weight = 2,
 }
 
+enemy{
+  name = "blackbird_2",
+  layer = 1,
+  x = 16,
+  y = 173,
+  direction = 0,
+  breed = "misc/bird",
+}
+

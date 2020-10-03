@@ -12,19 +12,19 @@
 
 local hud_config = {
 
+  --magic meter
+  {
+    menu_script = "scripts/hud/magic_bar",
+    x = 2,
+    y = 4,
+  },
+
   -- Hearts meter.
   {
     menu_script = "scripts/hud/hearts",
-    x = 5,
-    y = -250,
+    x = 19,
+    y = -253,
   },
-
-    --magic meter
-    {
-      menu_script = "scripts/hud/magic_bar",
-      x = 5,
-      y = 1,
-    },
 
   --[[ Rupee counter.
   {
@@ -34,7 +34,7 @@ local hud_config = {
   },
 --]]
 
-
+--[[
   -- Item assigned to slot 1.
   {
     menu_script = "scripts/hud/item",
@@ -52,7 +52,7 @@ local hud_config = {
     y = 8,
     slot = 2,  -- Item slot (1 or 2).
   },
-
+--]]
 
 
  -- Consumables picked-up.

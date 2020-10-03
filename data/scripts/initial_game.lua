@@ -16,32 +16,24 @@ function initial_game:initialize_new_savegame(game)
   -- and the starting location.
   game:set_starting_location("debug", "destination")  -- Starting location.
 
-  game:set_max_life(12)
+  game:set_max_life(6)
   game:set_life(game:get_max_life())
+  game:set_max_magic(40)
+  game:set_magic(game:get_max_magic())
   game:set_max_money(100)
   game:set_ability("lift", 1)
   game:set_ability("sword", 1)
-  game:set_ability("swim", 1)
+  --game:set_ability("swim", 1)
 
+  game:get_item("seed_shoot"):set_variant(1)
+  game:get_item("soccer_kick"):set_variant(1)
+  game:get_item("heal"):set_variant(1)
 
+  game:set_item_assigned(1, game:get_item("seed_shoot"))
+  game:set_item_assigned(2, game:get_item("heal"))
 
-  --temporary stuff for testing:
-  game:get_item("inventory/flame_spell"):set_variant(1)
-  game:get_item("inventory/spark_spell"):set_variant(1)
-  game:get_item("inventory/hookseed_satchel"):set_variant(1)
-  game:get_item("inventory/hookshot"):set_variant(1)
-  game:get_item("inventory/boomerang"):set_variant(1)
-  game:get_item("inventory/bombs_counter"):set_variant(1)
-  game:get_item("inventory/feather"):set_variant(1)
-  game:get_item("inventory/metal_block_cane"):set_variant(1)
-  game:get_item("inventory/frostseed_satchel"):set_variant(1)
-  game:get_item("inventory/bow"):set_variant(1)
-  game:get_item("inventory/bow_fire"):set_variant(1)
-  game:get_item("inventory/bow_ice"):set_variant(1)
-  game:get_item("inventory/bow_electric"):set_variant(1)
-  game:get_item("inventory/bow_bomb"):set_variant(1)
-  game:set_item_assigned(1, game:get_item("inventory/bow"))
-  game:set_item_assigned(2, game:get_item("inventory/feather"))
+  game:set_value("darkness_level", "evening")
+
 
 end
 

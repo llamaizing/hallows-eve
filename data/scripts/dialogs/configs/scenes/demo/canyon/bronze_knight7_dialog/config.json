@@ -1,0 +1,12 @@
+{
+	"dialog_box": {
+		"image": {
+			"y_offset": -17
+		},
+		"name_box": {
+			"image": {
+				"position": "outsidebottom"
+			}
+		}
+	}
+}

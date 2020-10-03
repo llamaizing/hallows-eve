@@ -16,6 +16,13 @@ animation{
   },
 }
 animation{
+  name = "heal",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "inventory/bombs_counter",
   src_image = "entities/items.png",
   directions = {
@@ -111,5 +118,35 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "seed_shoot",
+  src_image = "entities/shoot_seed.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "shoot_seed",
+  src_image = "entities/shoot_seed.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "small_key",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "soccer_kick",
+  src_image = "entities/soccer_ball.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }

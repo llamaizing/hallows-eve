@@ -1,0 +1,10 @@
+ {
+  "dialog_box":{
+    "text":{
+      "line":{
+        "font":"ComicNeue-Angular-Bold",
+        "font_size":20
+      }
+    }
+  }
+}

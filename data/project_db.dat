@@ -1,18 +1,37 @@
-map{ id = ".templates/entities" }
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
+map{ id = "haunted_house/empty_room", description = "Empty Room" }
+map{ id = "haunted_house/foyer", description = "Foyer" }
+map{ id = "haunted_house/key_room", description = "Key Room" }
+map{ id = "haunted_house/library", description = "Library" }
+map{ id = "haunted_house/outside", description = "Outside" }
+map{ id = "haunted_house/statue_garden_empty", description = "StatueGarden-Empty" }
+map{ id = "haunted_house/west_wing_final", description = "WestWing-Final" }
+map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" }
+map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
+map{ id = "outskirts/farm", description = "Farm" }
+map{ id = "outskirts/forest", description = "Forest" }
+map{ id = "spirit_world/creepytown", description = "Creepytown" }
+map{ id = "suburbs/cemetery", description = "Cemetery" }
+map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 
+tileset{ id = "dapple", description = "Dappled Light" }
+tileset{ id = "farm", description = "Farm" }
+tileset{ id = "ghost_town", description = "Ghost Town" }
 tileset{ id = "grass_green_large", description = "GrassPattern(Green)" }
 tileset{ id = "halloween", description = "Halloween" }
+tileset{ id = "haunted_forest", description = "Haunted Forest" }
+tileset{ id = "haunted_house", description = "Haunted House" }
 tileset{ id = "oceanset_desert", description = "Desert" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
+tileset{ id = "suburbs", description = "Suburbs" }
+tileset{ id = "yarntown", description = "yarntown" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "blocks/cracked_block", description = "cracked block" }
 sprite{ id = "chests/chest", description = "Chest" }
-sprite{ id = "chests/chest_big", description = "Chest-Big" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/bush2", description = "bush2" }
 sprite{ id = "destructibles/bush_brambles", description = "Brambles" }
@@ -20,6 +39,7 @@ sprite{ id = "destructibles/pot", description = "Pot" }
 sprite{ id = "destructibles/pumpkin_big", description = "Pumpkin - Big" }
 sprite{ id = "destructibles/pumpkin_small", description = "Pumpkin - Small" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
+sprite{ id = "doors/locked_door", description = "Locked Door" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
 sprite{ id = "elements/ice_block", description = "Ice Block" }
@@ -33,37 +53,15 @@ sprite{ id = "elements/lightning_zap_big", description = "Lightning Zap Big" }
 sprite{ id = "elements/snowflake_frisbee" }
 sprite{ id = "elements/water_puddle_s", description = "Puddle-Small" }
 sprite{ id = "elements/water_splash", description = "Splash" }
-sprite{ id = "enemies/chameleon", description = "Chameleon" }
-sprite{ id = "enemies/clucko", description = "Clucko white" }
-sprite{ id = "enemies/crow", description = "Crow" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
-sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
-sprite{ id = "enemies/flame", description = "Flame" }
-sprite{ id = "enemies/goblin_axe", description = "Goblin Axe" }
-sprite{ id = "enemies/goblin_club", description = "Goblin Club" }
-sprite{ id = "enemies/goblin_green", description = "Goblin Green" }
-sprite{ id = "enemies/goblin_green_slingshot", description = "Goblin Slingshot" }
-sprite{ id = "enemies/ice_block", description = "Ice block" }
-sprite{ id = "enemies/iceball", description = "Iceball" }
+sprite{ id = "enemies/eyewight", description = "Eyewight" }
+sprite{ id = "enemies/ghost_projectile", description = "Ghost Projectile" }
+sprite{ id = "enemies/gremlin", description = "Gremlin" }
+sprite{ id = "enemies/misc/bird", description = "Blackbird" }
+sprite{ id = "enemies/misc/slash", description = "slash" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
-sprite{ id = "enemies/pterobat", description = "Pterobat" }
-sprite{ id = "enemies/shamablin_fire", description = "Goblin Shaman Fire" }
-sprite{ id = "enemies/skelfos", description = "Skelfos" }
-sprite{ id = "enemies/skullbat", description = "Skullbat" }
-sprite{ id = "enemies/slime_cyan", description = "Slime (cyan)" }
-sprite{ id = "enemies/slime_egg", description = "Slime egg" }
-sprite{ id = "enemies/slime_egg_blue", description = "Slime Egg Blue" }
-sprite{ id = "enemies/slime_green", description = "Slime (green)" }
-sprite{ id = "enemies/slime_green_small", description = "Small slime (green)" }
-sprite{ id = "enemies/slime_purple", description = "Slime (purple)" }
-sprite{ id = "enemies/slime_red", description = "Slime (red)" }
-sprite{ id = "enemies/slime_yellow", description = "Slime (yellow)" }
-sprite{ id = "enemies/slimy_green", description = "Slimy Green" }
-sprite{ id = "enemies/soldier", description = "Soldier" }
-sprite{ id = "enemies/soldier_feather", description = "Soldier Feather" }
-sprite{ id = "enemies/soldier_sword", description = "Soldier Sword" }
-sprite{ id = "enemies/spiderskull", description = "Spiderskull" }
-sprite{ id = "enemies/wings_evil", description = "Wings evil" }
+sprite{ id = "enemies/spider_thing", description = "Spider Thing" }
+sprite{ id = "enemies/wendigo_ghost", description = "Wendigo Ghost" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_warp", description = "arrow warp" }
@@ -80,19 +78,36 @@ sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/leaf_blowing", description = "Leaf-Blowing" }
+sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
+sprite{ id = "entities/portal", description = "Portal" }
+sprite{ id = "entities/rolling_log", description = "Rolling Log" }
 sprite{ id = "entities/shadow", description = "Shadow" }
+sprite{ id = "entities/shoot_seed", description = "Shoot Seed" }
+sprite{ id = "entities/small_explosion", description = "Small Explosion" }
+sprite{ id = "entities/soccer_ball", description = "Soccer Ball" }
+sprite{ id = "entities/soccer_ball_flame", description = "Soccer ball flame" }
+sprite{ id = "foliage/autumn_grass_clump", description = "AutumnGrass-Clump" }
+sprite{ id = "foliage/autumnlily", description = "Autumnlily" }
 sprite{ id = "foliage/barley", description = "Barley" }
 sprite{ id = "foliage/barley_dark", description = "Barley-Dark" }
+sprite{ id = "foliage/brown_thistle", description = "Brown Thistle" }
 sprite{ id = "foliage/corn", description = "Corn" }
 sprite{ id = "foliage/fern_big", description = "Fern-Big" }
 sprite{ id = "foliage/generic" }
+sprite{ id = "foliage/goldenrod", description = "Goldenrod" }
 sprite{ id = "foliage/grass_seed_short", description = "Grass Seed Short" }
 sprite{ id = "foliage/hookseed", description = "Hookseed" }
+sprite{ id = "foliage/ironweed", description = "ironweed" }
 sprite{ id = "foliage/leaf_burst", description = "Leaf Burst" }
 sprite{ id = "foliage/nettle_short", description = "Nettle-Short" }
 sprite{ id = "foliage/pumpkin_leaves", description = "Pumpkin Leaves" }
+sprite{ id = "foliage/skeletonreed", description = "Skeletonreed" }
 sprite{ id = "foliage/sprig", description = "sprig" }
+sprite{ id = "foliage/sunflower", description = "Sunflower" }
+sprite{ id = "foliage/water_reed", description = "Water Reed" }
+sprite{ id = "foliage/yarrow", description = "Yarrow" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
 sprite{ id = "ground_effects/leaves", description = "Leaves" }
@@ -114,8 +129,10 @@ sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
-sprite{ id = "shadows/shadow_big", description = "Big shadow" }
-sprite{ id = "shadows/shadow_big_dynamic", description = "Big dynamic shadow" }
+sprite{ id = "npcs/toby", description = "Toby" }
+sprite{ id = "npcs/toby_hat", description = "Toby-Hat" }
+sprite{ id = "npcs/zach", description = "Zach" }
+sprite{ id = "shadows/shadow_medium", description = "Big shadow" }
 sprite{ id = "shadows/shadow_small", description = "Small shadow" }
 sprite{ id = "switches/lightning_switch", description = "Lightning Switch" }
 sprite{ id = "switches/switch_plate", description = "Switch-Plate" }
@@ -123,10 +140,13 @@ sprite{ id = "utility/climbing_wall", description = "climbing_wall" }
 
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
+sound{ id = "ball_kick", description = "Ball Kick" }
 sound{ id = "bird_chirp", description = "bird_chirp" }
 sound{ id = "bird_chirp1", description = "bird_chirp1" }
 sound{ id = "bird_chirp2", description = "bird_chirp2" }
 sound{ id = "bird_cute", description = "bird_cute" }
+sound{ id = "bird_flying_away", description = "bird_flying_away" }
+sound{ id = "bird_many_birds", description = "bird_many_birds" }
 sound{ id = "bomb", description = "bomb" }
 sound{ id = "boomerang", description = "boomerang" }
 sound{ id = "boss_charge", description = "boss_charge" }
@@ -147,6 +167,8 @@ sound{ id = "crystal", description = "crystal" }
 sound{ id = "crystal2", description = "crystal2" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "danger", description = "danger" }
+sound{ id = "dash", description = "dash" }
+sound{ id = "dash_big", description = "dash_big" }
 sound{ id = "diarandor/solarus_logo", description = "Solarus logo" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
@@ -243,6 +265,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
+item{ id = "heal", description = "Heal" }
 item{ id = "inventory/bombs_counter", description = "Bombs" }
 item{ id = "inventory/boomerang", description = "Boomerang" }
 item{ id = "inventory/bow", description = "Bow" }
@@ -257,26 +280,18 @@ item{ id = "inventory/hookseed_satchel", description = "Hookseed Satchel" }
 item{ id = "inventory/hookshot", description = "Hookshot" }
 item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
+item{ id = "library_statue_gear", description = "Library Statue Gear" }
+item{ id = "seed_shoot", description = "Seed Shoot" }
+item{ id = "small_key", description = "Small Key" }
+item{ id = "soccer_kick", description = "Soccer Kick Attack" }
+item{ id = "spin_kick", description = "Spin Kick" }
 
-enemy{ id = "chameleon", description = "Chameleon" }
-enemy{ id = "explosion", description = "Explosion" }
-enemy{ id = "flame", description = "Flame" }
-enemy{ id = "generic_projectile", description = "Projectile" }
-enemy{ id = "goblin_green", description = "Goblin" }
-enemy{ id = "iceball", description = "Iceball" }
-enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red" }
-enemy{ id = "pterobat", description = "Pterobat" }
-enemy{ id = "shamablin_fire", description = "Goblin Shaman Fire" }
-enemy{ id = "skelfos", description = "Skelfos" }
-enemy{ id = "skullbat", description = "Skullbat" }
-enemy{ id = "slime_cyan", description = "Slime (cyan)" }
-enemy{ id = "slime_egg", description = "Slime egg" }
-enemy{ id = "slime_green", description = "Slime (green)" }
-enemy{ id = "slime_green_small", description = "Small Slime (green)" }
-enemy{ id = "slime_purple", description = "Slime (purple)" }
-enemy{ id = "slime_red", description = "Slime (red)" }
-enemy{ id = "slime_yellow", description = "Slime (yellow)" }
-enemy{ id = "slimy_green", description = "Slimy Green" }
+enemy{ id = "eyewight", description = "Eyewight" }
+enemy{ id = "ghost_projectile", description = "Ghost Projectile" }
+enemy{ id = "gremlin", description = "Gremlin" }
+enemy{ id = "misc/bird", description = "Bird" }
+enemy{ id = "spider_thing", description = "Spider Thing" }
+enemy{ id = "wendigo_ghost", description = "Wendigo Ghost" }
 
 entity{ id = "arrow_player" }
 entity{ id = "climbing_wall", description = "Climbing Wall" }
@@ -295,35 +310,25 @@ entity{ id = "foliage", description = "Foliage" }
 entity{ id = "hookseed", description = "Hookseed Plant" }
 entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
+entity{ id = "shoot_seed", description = "Shoot Seed" }
+entity{ id = "soccer_ball", description = "Soccer Ball" }
 entity{ id = "toss_ball", description = "Toss Ball" }
 
 language{ id = "en", description = "English" }
 
 font{ id = "8_bit", description = "8 bit" }
+font{ id = "ComicNeue-Angular-Bold", description = "ComicNeue-Angular-Bold" }
 font{ id = "enter_command", description = "Enter Command" }
 font{ id = "white_digits", description = "White digits" }
 
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
-file{ path = "enemies/chameleon.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/explosion.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/flame.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/generic_projectile.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/goblin_green.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/iceball.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/pterobat.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/shamablin_fire.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/skelfos.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/skullbat.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_cyan.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_egg.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_green.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_green_small.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_purple.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_red.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_yellow.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slimy_green.lua", author = "Diarandor", license = "GPL v3" }
+file{ path = "enemies/eyewight.lua", author = "Max Mraz", }
+file{ path = "enemies/ghost_projectile.lua", author = "Max Mraz", }
+file{ path = "enemies/gremlin.lua", author = "Max Mraz", }
+file{ path = "enemies/spider_thing.lua", author = "Max Mraz", }
+file{ path = "enemies/wendigo_ghost.lua", author = "Max Mraz", }
 file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
 file{ path = "entities/conductive_block.lua", author = "Max Mraz", }
 file{ path = "entities/elements/battery_orb.lua", author = "Max Mraz", }
@@ -337,8 +342,11 @@ file{ path = "entities/elements/lightning_switch.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_zap.lua", author = "Max Mraz", }
 file{ path = "entities/foliage.lua", author = "Max Mraz", }
 file{ path = "entities/hookseed.lua", author = "Max Mraz", }
+file{ path = "entities/shoot_seed.lua", author = "Max Mraz", }
+file{ path = "entities/soccer_ball.lua", author = "Max Mraz", }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
+file{ path = "items/heal.lua", author = "Max Mraz", }
 file{ path = "items/inventory/bombs_counter.lua", author = "Max Mraz", }
 file{ path = "items/inventory/boomerang.lua", author = "Max Mraz", }
 file{ path = "items/inventory/bow.lua", author = "Max Mraz", }
@@ -353,8 +361,39 @@ file{ path = "items/inventory/hookshot.lua", author = "Christopho, Mehdi Khelifi
 file{ path = "items/inventory/library/hookshot_config.lua", author = "Christopho, , Mehdi Khelifi", license = "GPL v3" }
 file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
-file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
+file{ path = "items/library_statue_gear.lua", author = "Max Mraz", }
+file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
+file{ path = "items/small_key.lua", author = "Max Mraz", }
+file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
+file{ path = "items/spin_kick.lua", author = "Max Mraz", }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "maps/haunted_house/empty_room.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/empty_room.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/foyer.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/foyer.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/key_room.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/key_room.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/library.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/library.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/outside.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/outside.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_empty.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_empty.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_final.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_final.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_illusion.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_illusion.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_short.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/west_wing_short.lua", author = "Max Mraz", }
+file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
+file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
+file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
+file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
+file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
+file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/neighborhood.lua", author = "Max Mraz", }
+file{ path = "scripts/coroutine_helper.lua", author = "std::gregwar", license = "GPL v3" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud/consumables.lua", author = "Llamazing", license = "GPL v3" }
@@ -381,6 +420,7 @@ file{ path = "shaders/grayscale.frag.glsl", author = "Vlag", license = "GPL v3" 
 file{ path = "shaders/hq2x.dat", author = "Christopho", license = "GPL v3" }
 file{ path = "shaders/hq2x.frag.glsl", author = "slime73, Vlag", license = "GPL v3" }
 file{ path = "sounds/arrow_hit.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sounds/ball_kick.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/bird_chirp.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/bird_chirp1.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/bird_chirp2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -393,13 +433,11 @@ file{ path = "sounds/boss_hurt.ogg", author = "Diarandor", license = "CC BY-SA 4
 file{ path = "sounds/boss_killed.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/bounce.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/bow.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/bush.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cane.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cane2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cane3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cat.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/chest_appears.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/chest_open.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/cricket.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/crystal.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/crystal2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -413,7 +451,7 @@ file{ path = "sounds/door_unlocked.ogg", author = "Diarandor", license = "CC BY-
 file{ path = "sounds/electrified.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/electrified2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/enemy_awake.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/enemy_hurt.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sounds/enemy_hurt.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/enemy_killed.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/explosion.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/falling_on_hole.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -426,9 +464,8 @@ file{ path = "sounds/heart.ogg", author = "Diarandor", license = "CC BY-SA 4.0" 
 file{ path = "sounds/heart_container.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hero_dying.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hero_falls.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/hero_hurt.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sounds/hero_hurt.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/hero_lands.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/hero_pushes.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hero_seen.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/hookshot.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/item_fall.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -452,7 +489,6 @@ file{ path = "sounds/picked_money.ogg", author = "Diarandor", license = "CC BY-S
 file{ path = "sounds/picked_small_key.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/quake.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/running.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/running_obstacle.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/shield.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/shield2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/shield3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -466,7 +502,7 @@ file{ path = "sounds/stone.ogg", author = "Diarandor", license = "CC BY-SA 4.0" 
 file{ path = "sounds/swim.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/switch.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/switch_hero.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/sword1.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sounds/sword1.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/sword2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/sword3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/sword4.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -501,7 +537,6 @@ file{ path = "sprites/blocks/cracked_block.dat", author = "Max Mraz", }
 file{ path = "sprites/chests", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/chest.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/chests/chest.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/chests/chest_big.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush2.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -512,6 +547,7 @@ file{ path = "sprites/destructibles/pumpkin_small.dat", author = "Max Mraz", lic
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
+file{ path = "sprites/doors/locked_door.dat", author = "Max Mraz", license = "CC-0" }
 file{ path = "sprites/elements/battery_orb.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/electric.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/ice_block.dat", author = "Max Mraz", }
@@ -526,54 +562,13 @@ file{ path = "sprites/elements/snowflake_frisbee.dat", author = "Max Mraz", }
 file{ path = "sprites/elements/water_puddle_s.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/water_splash.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/chameleon.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/chameleon.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/clucko.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/clucko.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/crow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/crow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/enemy_killed.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/enemy_killed.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/flame.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_axe.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_club.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_green.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_green_slingshot.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/goblin_shaman_fire.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/ice_block.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/iceball.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/pterobat.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/pterobat.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/shamablin_fire.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skelfos.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skelfos.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skullbat.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/skullbat.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_cyan.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_cyan.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_egg.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_egg_blue.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_egg_blue.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_green.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_green_small.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_purple.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_purple.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_red.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_red.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_yellow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slime_yellow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slimy_green.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/slimy_green.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier_feather.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier_sword.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/soldier_sword.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/spiderskull.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/spiderskull.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/enemies/wings_evil.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/enemies/enemy_killed.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/eyewight.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/ghost_projectile.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/gremlin.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/misc/slash.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/spider_thing.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/wendigo_ghost.dat", author = "Max Mraz", }
 file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -597,19 +592,35 @@ file{ path = "sprites/entities/effects/light_xl.png", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/explosion_4.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/fountain v1.1.ase", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/items.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/leaf_blowing.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/entities/portal.dat", author = "Max Mraz", license = "CC0" }
+file{ path = "sprites/entities/rolling_log.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/shadow.dat", author = "Zane Kukta", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/shoot_seed.dat", author = "Max Mraz", }
+file{ path = "sprites/entities/small_explosion.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/entities/soccer_ball.dat", author = "Max Mraz", }
+file{ path = "sprites/entities/soccer_ball_flame.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/autumn_grass_clump.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/autumnlily.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/barley_dark.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/brown_thistle.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/corn.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/fern_big.dat", author = "Max Mraz", license = "CC-BY 4.0" }
+file{ path = "sprites/foliage/goldenrod.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/grass_seed_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/hookseed.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/ironweed.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/leaf_burst.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/nettle_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/pumpkin_leaves.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/skeletonreed.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/sprig.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/sunflower.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/water_reed.dat", author = "Max Mraz", }
+file{ path = "sprites/foliage/yarrow.dat", author = "Max Mraz", }
 file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -622,34 +633,6 @@ file{ path = "sprites/ground_effects/water_splash.dat", author = "Diarandor", li
 file{ path = "sprites/ground_effects/water_splash_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/caspian.png", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_boomerang v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_bow v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_hookshot v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_running_on_sword v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_seashell_flute v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_shovel v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_spin_attack v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_brandish v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_loading v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_sword_tapping v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/eldran_victory v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/hero_on_shield v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne v2.2.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_boomerang v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_bow v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_grabbing v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_hookshot v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_miscellaneous v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_plunging v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_running v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_running_on_sword v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_shovel v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_spin_attack v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_swimming v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_brandish v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_loading v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_sword_tapping v2.0.ase", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero/robyne_victory v2.0.ase", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/tunic1.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/button_icon.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -676,15 +659,25 @@ file{ path = "sprites/menus/solarus_logo.png", author = "Olivier Cléro", licens
 file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
+file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/toby_hat.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/zach.dat", author = "Max Mraz", }
 file{ path = "sprites/shadows", license = "CC BY-SA 4.0" }
-file{ path = "sprites/shadows/shadow.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/shadows/shadow_big.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/shadows/shadow_big_dynamic.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/shadows/shadow_small.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/shadows/shadow.png", author = "Max Mraz", license = "CC0" }
+file{ path = "sprites/shadows/shadow_medium.dat", author = "Max Mraz", license = "CC0" }
+file{ path = "sprites/shadows/shadow_small.dat", author = "Max Mraz", license = "CC0" }
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/farm.dat", author = "Max Mraz", }
+file{ path = "tilesets/farm.tiles.png", author = "Max Mraz", }
+file{ path = "tilesets/ghost_town.dat", author = "Max Mraz", }
+file{ path = "tilesets/ghost_town.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/halloween.dat", author = "Max Mraz", license = "All Rights Reserved" }
+file{ path = "tilesets/haunted_forest.dat", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
+file{ path = "tilesets/haunted_forest.tiles.png", author = "Max Mraz", license = "Copyright Max Mraz 2020" }
+file{ path = "tilesets/haunted_house.dat", author = "Max Mraz", }
+file{ path = "tilesets/haunted_house.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/oceanset_desert.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_desert.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_inside.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
@@ -693,3 +686,5 @@ file{ path = "tilesets/oceanset_outside.dat", author = "Max Mraz", license = "CC
 file{ path = "tilesets/oceanset_outside.tiles.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "tilesets/oceanset_trees.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/oceanset_trees.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/suburbs.dat", author = "Max Mraz", }
+file{ path = "tilesets/suburbs.tiles.png", author = "Max Mraz", }

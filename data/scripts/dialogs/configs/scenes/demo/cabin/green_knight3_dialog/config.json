@@ -1,0 +1,10 @@
+{
+  "dialog_box":{
+    "text":{
+      "x_offset": 290,
+      "line":{
+        "horizontal_alignment":"right"
+      }
+    }
+  }
+}

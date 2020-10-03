@@ -11,6 +11,26 @@ end
 
 function item:on_using()
   local hero = game:get_hero()
+
+  hero:set_animation("jumping_2")
+  local shadow_sprite = hero:create_sprite("shadows/shadow_big")
+
+  local state = item:get_jumping_state()
+
+  sol.audio.play_sound"jump"
+  hero:set_walking_speed(hero:get_walking_speed() + SPEED_BOOST)
+  hero:start_state(state)
+
+  sol.timer.start(hero, 400, function()
+    hero:set_animation"stopped"
+    hero:remove_sprite(shadow_sprite)
+    hero:set_walking_speed(hero:get_walking_speed() - SPEED_BOOST)
+    hero:unfreeze()
+  end)
+  item:set_finished()
+end
+
+function item:get_jumping_state()
   local state = sol.state.create("jumping")
   state:set_can_control_direction(false)
   state:set_can_control_movement(true)
@@ -36,18 +56,5 @@ function item:on_using()
   state:set_can_use_jumper(false)
   state:set_carried_object_action("throw")
 
-  hero:set_animation("jumping_2")
-  local shadow_sprite = hero:create_sprite("shadows/shadow_big")
-
-  sol.audio.play_sound"jump"
-  hero:set_walking_speed(hero:get_walking_speed() + SPEED_BOOST)
-  hero:start_state(state)
-
-  sol.timer.start(hero, 400, function()
-    hero:set_animation"stopped"
-    hero:remove_sprite(shadow_sprite)
-    hero:set_walking_speed(hero:get_walking_speed() - SPEED_BOOST)
-    hero:unfreeze()
-  end)
-  item:set_finished()
+  return state
 end

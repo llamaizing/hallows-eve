@@ -1,4 +1,3 @@
-require("scripts/multi_events")
 local dash_manager = require("scripts/action/dash_manager")
 
 local menu = {}
@@ -39,7 +38,6 @@ function menu:initialize(game)
     local handled = false
     local ignoring_obstacles
     local hero = game:get_hero()
-
     --Roll / Dash
     if action == "action" then
       local effect = game:get_command_effect("action")

@@ -1,0 +1,12 @@
+background_color{ 255, 255, 255 }
+tile_pattern{
+  id = "2",
+  ground = "empty",
+  default_layer = 0,
+  x = { 16, 16, 16, 16 },
+  y = { 0, 240, 480, 720 },
+  width = 416,
+  height = 240,
+  frame_delay = 500,
+}
+

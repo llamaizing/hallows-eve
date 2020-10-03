@@ -1,0 +1,55 @@
+animation{
+  name = "standing",
+  src_image = "enemies/misc/birds.png",
+  directions = {
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "bobbing",
+  src_image = "enemies/misc/birds.png",
+  frame_delay = 300,
+  directions = {
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "flying",
+  src_image = "enemies/misc/birds.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+  },
+}
+animation{
+  name = "hopping",
+  src_image = "enemies/misc/birds.png",
+  frame_delay = 110,
+  directions = {
+    { x = 32, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 32, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 32, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 32, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+  },
+}
+animation{
+  name = "pecking",
+  src_image = "enemies/misc/birds.png",
+  frame_delay = 280,
+  directions = {
+    { x = 128, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 128, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 128, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+    { x = 128, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+  },
+}

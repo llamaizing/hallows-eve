@@ -1,10 +1,10 @@
 quest{
   solarus_version = "1.6",
-  write_dir = "trillium_saves",
-  title = "Trillium",
-  short_description = "Project to develop some systems",
+  write_dir = "hallows-eve-saves",
+  title = "Hallow's Eve",
+  short_description = "A Pumpkin Man tries to rent Jurassic Park",
   long_description = [[
-Side project to develop various ARPG systems. Not planned to be a full game.]],
+Play as Ichabod as he goes to the human world to rent Jurassic Park on the night of a Witch's Curse.]],
   author = "Max Mraz",
   quest_version = "0",
   release_date = "",

@@ -1,0 +1,946 @@
+dialog{
+  id = "_treasure.seed_shoot.1",
+  text = [[
+You found pocket seeds! Keep them in your pocket
+and thow them at your enemies! It takes spirit energy
+to summon them from their pocket dimension.
+]],
+}
+
+dialog{
+  id = "_treasure.small_key.1",
+  text = [[
+You found a key. Probably it unlocks a nearby door.
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight10_dialog",
+  text = [[
+If you don't like any of our preset speeds. 
+Just give it a number instead and it will use that 
+instead!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight11_dialog",
+  text = [[
+Spaces appear instantly by default. Meaning speed
+only appliest to characters but you can change that
+if you want!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight12_dialog",
+  text = [[
+Check it out! Now there's some sound FXs added
+to character displays. You just gotta specify the
+sound to use and how often it should sound and
+you're in business!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight13_dialog",
+  text = [[
+You can add your custom ending sound when the
+text is done displaying keep a listen out at the end
+of this text and see if you can hear it!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight14_dialog",
+  text = [[
+You can control where exactly inside your dialog
+box your text should start displaying from too.
+Maybe you'd like it a little lower or a little higher
+It's entirely up to you!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight14_dialog_reject",
+  text = [[
+Eager to leave eh! Not so fast I'm afriad. Talk to the
+other knights first. Then we can move on to other
+cool stuff!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight15_dialog",
+  text = [[
+You can control even the number of lines you'd like
+to display! This dialog box has 5.
+The knights ahead will demonstrate all the cool
+features you can add to question boxes! It's super
+neat and we hope you enjoy them!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight1_dialog",
+  text = [[
+Behold! With a quick config. Different 
+fonts can quickly be applied to your 
+dialog!
+ 
+Special shoutout to my bro Eric for 
+these sweet maps! This one is my 
+fav!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight2_dialog",
+  text = [[
+Hey check out this super
+large font size!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight3_dialog",
+  text = [[
+We allow for horizontal alignment too.
+Everything that solarus does we tried to
+account for
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight4_dialog",
+  text = [[
+It's hard to see but you can also verically
+align the text.
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight5_dialog",
+  text = [[
+This color is pretty ugly but it proves you can
+use RGB values to change your text colors! 
+Just use an array of RGB values. This crazy color
+is \[255,0,255\]
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight6_dialog",
+  text = [[
+If specifying colors via arrays isn't your thing
+we've set up a few color keywords for you. this
+one is red!
+Check the README for more info!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight7_dialog",
+  text = [[
+You can even change how fast the speed of the
+text displayed. We coded some speeds for you.
+This one is fast!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight8_dialog",
+  text = [[
+This is slow speed. Kinda of aggrevating but use it 
+if you need it!
+]],
+}
+
+dialog{
+  id = "demo.cabin.green_knight9_dialog",
+  text = [[
+This is medium! We've set the default speed to fast.
+Because the default consensus seems to be people
+like text going fast!
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight10_dialog",
+  text = [[
+@Sir Bronze
+Interior upper right of dialog box baby!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight11_dialog",
+  text = [[
+@Sir Bronze
+Yo! Outside the box and in the center reporting in!
+It's pretty neat!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight12_dialog",
+  text = [[
+@Sir Bronze
+Check this out top of the box but still inside it and
+in the center
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight13_dialog",
+  text = [[
+@Sir Bronze
+Gotta love the crazy 
+places we can stick this thing
+outside left hype!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight14_dialog",
+  text = [[
+@Sir Bronze
+Check this wacky thing. We can 
+actully put directly right of the dialog 
+box! Man that's wild!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight15_dialog",
+  text = [[
+@Sir Bronze
+Surely you understand the greatness of
+having your name displayed within the
+dialog box on the top left.
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight16_dialog",
+  text = [[
+@Sir Bronze
+Aha! To the top and left and outer. 
+This is the default position of the name box.
+However this isn't all of the possible positions!
+But unfortunately that's all we have time to show!
+===
+
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight16_dialog_reject",
+  text = [[
+@Sir Bronze
+Please seek me out once you have talked
+ with my other brothers in arms.
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight17_dialog",
+  text = [[
+@Sir Bronze
+Behold an ANIMATED NAME BOX!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight18_dialog",
+  text = [[
+@Sir Bronze
+And of couse any name you can't color
+isn't any good at all!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight19_dialog",
+  text = [[
+@Sir Bronze
+And of course font and color too!
+
+*NO midline options allowed in names though
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight1_dialog",
+  text = [[
+@Bronze Knight
+Look upon my name! See it is without
+a box! And know that that is AWESOME!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight20_dialog",
+  text = [[
+@Sir Bronze
+And size too! Can't forget to make it large!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight21_dialog",
+  text = [[
+@Sir Bronze
+And you can always apply custom offsets to your
+name box. Just like all of the other display objects
+we've shown you. Cause we cool like that!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight2_dialog",
+  text = [[
+@Sir Bronze
+Behold a name box! It's not a great place for one
+But the other knights will show more sane positions
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight3_dialog",
+  text = [[
+@Sir Bronze
+Yo name box on the outside right of the dialog
+box
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight4_dialog",
+  text = [[
+@Sir Bronze
+Inside lower right of the dialog box!
+*psst did you know that you can actually detach
+a name box from the dialog box entirely? It's just
+a boolean setting
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight5_dialog",
+  text = [[
+@Sir Bronze
+Outside bottom left. Yeah cause
+we all about the outside box life!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight6_dialog",
+  text = [[
+@Sir Bronze
+Inside the box, the lower left side.
+Man we're taking this namebox every
+which way!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight7_dialog",
+  text = [[
+@Sir Bronze
+Notice I've modified the dialog box position
+so you can see names under it?
+Outside bottom 
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight8_dialog",
+  text = [[
+@Sir Bronze
+How about some interior center name box action!
+About to go all over with this thing!
+===
+]],
+}
+
+dialog{
+  id = "demo.canyon.bronze_knight9_dialog",
+  text = [[
+@Sir Bronze
+Outside top right. This is gonna be a common
+spot! Especially here in a bit when we introduce
+charac-- oops don't want to give away the surpise!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight10_dialog",
+  text = [[
+@silver_knight_5
+Enter and exit transitions you have the control.
+You can specify any config at the character or scene
+level.
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight11_dialog",
+  text = [[
+And of course we can have characters without a
+background. This one here is called 
+starry night over the rhone by Vincent van Gogh
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight12_dialog",
+  text = [[
+And of course we can animate it too!
+ 
+ 
+ 
+Unfortunately this is where the demo ends.
+This took a year and a half of off and on work.
+We very much hope you find this vn system
+useful. We think it's fantastic and could make
+life easier for future game devs. So until we meet
+again
+ 
+ 
+Wherever you may go.
+Whatever you may do.
+May good fortune follow you!
+~ The Brothers Mackensen
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight1_dialog",
+  text = [[
+@silver_knight
+What ho! A knight I spy but cannot
+ see! A portrait is what you need!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight2_dialog",
+  text = [[
+@silver_knight
+Static portraits are no good at all! 
+Some locomotion is what you 
+require!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight3_dialog",
+  text = [[
+@silver_knight_3
+Look upon me! A full characher complete with my
+own image, no need of any portrait here!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight4_dialog",
+  text = [[
+@silver_knight_3
+And look upon me! A character as a sprite with my
+own animations!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight5_dialog",
+  text = [[
+@silver_knight_5
+The pieces are all in play! 
+But still sir, there is more! 
+Behold a fade transition!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight6_dialog",
+  text = [[
+@silver_knight_5
+Of course you can always fade out as well!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight7_dialog",
+  text = [[
+@silver_knight_5
+I prefer to SLIDE in to conversations!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight8_dialog",
+  text = [[
+@silver_knight_5
+I like to fade in and slide out approach! 
+Also I've been waiting for hours and I haven't had 
+a drink yet!
+===
+]],
+}
+
+dialog{
+  id = "demo.castle.silver_knight9_dialog",
+  text = [[
+@silver_knight_5
+Check this out in addition to these transitions you 
+can decide how long they should take
+===
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight1_dialog",
+  text = [[
+This next section is $font=minish_green$FANTASTIC
+You can adjust $font=minish_red$EACH LINE$font=ComicNeue-Angular-Bold$ individually
+I'm not changing the font in this line
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight2_dialog",
+  text = [[
+There's something wrong with this $font=minish_green$cactus
+$font=minish_red$ I just can't put my FINGER on it!
+Oh and if wanna hear another joke well...
+$font=Pacha$The joke is on you!
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight3_dialog",
+  text = [[
+I $font_size=20$HATE$font_size=12$ that joke!
+ 
+(psst you can change font size too)
+*vector fonts only
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight4_dialog",
+  text = [[
+$color={200,200,0}$While we have some quick colors for you
+$color={0,200,200}$you can use RGB values to make your own
+$color={200,0,200}$Pretty slick eh?
+*vector font only
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight5_dialog",
+  text = [[
+And of course there are the $color=red$color$color=blue$ shortcuts$color=yellow$ too!
+also uh, don't mind the dead guy. It's a prop.
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight6_dialog",
+  text = [[
+Man I wanted to give this guy a $image=gift_01a.png$
+I did find this $image=key_01c.png$ though
+Oh hey did you know that you can put images
+in the middle of lines?
+]],
+}
+
+dialog{
+  id = "demo.desert.purple_knight7_dialog",
+  text = [[
+I'm about to$sprite=boom3_shrunk$ your mind!
+That was a sprite! In the middle of a line!
+Check it $image=staff_01b.png$ $sprite=boom3_shrunk$ Whoo!
+Dude I just used an image AND a sprite!
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight1_dialog",
+  text = [[
+Behold a dialog box! If you don't specify a position
+then your dialog box shall appear here. 
+
+
+Ahead you'll see a bunch of knights that will change 
+the position on screen of the dialog box. This will 
+work for ANY image or sprite you designate as the 
+dialog box.
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight2_dialog",
+  text = [[
+We did our best to cover all the common position
+of the boxes. 
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight3_dialog",
+  text = [[
+Top right of course!
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight4_dialog",
+  text = [[
+Top center dialog boxes always seemed kinda
+of weird spot but hey it's here if you need it.
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight5_dialog",
+  text = [[
+Left top here. There are quite a few positions you
+can set the box to. Check the README for the full
+list.
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight6_dialog",
+  text = [[
+This box is located to the bottom right. See how
+cool this is. Just change one line in a config file
+and the box moves!
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight7_dialog",
+  text = [[
+This box looks very similiar to the one from before. 
+However this one has it's position set to "center" in 
+it's config. We'd recommend being explicit in your 
+config whereever possible.
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight8_dialog",
+  text = [[
+If none of the positions you've seen are quite what 
+you need. You can set a position to be close to 
+where you need.  Then use x_offset and y_offset to 
+fine tune the position to your hearts content
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight8_dialog_reject",
+  text = [[
+Before you venture further. Check with the other 
+knights and see all of the positions you can set 
+your dialog box to.
+]],
+}
+
+dialog{
+  id = "demo.forest.blue_knight9_dialog",
+  text = [[
+And as a final flourish. You can use a sprite
+as a dialog box too! Complete with animations!
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight10_dialog",
+  text = [[
+And of course we all love an answer sound! Select
+an answer and listen for it!
+$? Ready!
+$? Whoo!
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight1_dialog",
+  text = [[
+If you have a single image from a larger png. You
+can give the width and height and it will divvie up
+the png into rows and columns. Give the row and 
+column and it will use that image for the cursor!
+Is that pretty sweet or what?! 
+$? Heck yeah!
+$? Not really.
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight2_dialog",
+  text = [[
+If you already got a png to use. Then put that baby
+in as your question cursor and we'll handle the rest
+ 
+ 
+Impressed yet?
+$? Yeah, my dude!
+$? Nah bro
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight3_dialog",
+  text = [[
+OK. Check this out. You can use sprites too.
+Forgive the rough art but look close and you can
+see it's playing an animation
+ 
+Check it out!
+$? I see it!
+$? See what?
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight4_dialog",
+  text = [[
+As with everything else We've shown you thus far
+You can apply x and y offsets to your cursor so
+they appear exactly where YOU want them to
+
+You dig this cursor placement?
+$? Whoa I dig it!
+$? Nah, it kinda sucks...
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight5_dialog",
+  text = [[
+Cursors for selecting are all well and good. But
+what if you hand a answer cursor!
+We got you! Answer the question and watch the
+cursor change!
+You ready for this?
+$? Yep
+$? Nope
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight6_dialog",
+  text = [[
+The answer cursor can be specified the exact same
+way as a normal cursor. From giant images, or in
+this case a single image
+ 
+Is that cool or what?
+$? Yes
+$? No
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight7_dialog",
+  text = [[
+And of course you can use sprites for your answer
+cursor too!
+ 
+ 
+Do you wish to continue to take to this
+ knight?
+$? No
+$? No
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight8_dialog",
+  text = [[
+Check this out. You can specify offsets and images
+for the question and answer cursor individually
+giving you the maximum flexibility
+ 
+You ready to see some differences?
+$? Yeah
+$? No
+]],
+}
+
+dialog{
+  id = "demo.lake.red_knight9_dialog",
+  text = [[
+Let's add some sound when your cursor moves. Do
+you hear it?
+$? Yes!
+$? No!
+]],
+}
+
+dialog{
+  id = "demo.start_dialog",
+  text = [[
+Welcome to the Knight Demo Game!
+Each knight is a test of each of the Visual
+Novel Dialog System. But remember you
+can mix and match any or all of these features
+in your own game
+]],
+}
+
+dialog{
+  id = "general.locked_door",
+  text = [[
+The door is locked.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_1",
+  text = [[
+@Zach
+Zach report: lizard isn't anywhere in the house. Also
+I lost the lizard bell in the stampede so we're back to
+searching manually. Think the 'zard is in the garden?
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_2",
+  text = [[
+@Toby
+I guess? That definitely doesn't make any less sense
+than the lizard being in a haunted house. Maybe it
+likes to garden? Or like, dig for bugs?
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_3",
+  text = [[
+@Zach
+Oh, like with little lizard tools!? That'd be $font_size=22$SICK!
+Let's see if it has a little lizard shovel!
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.library_4",
+  text = [[
+@Ichabod
+Did that statue just spin around? Whatever, that
+Jurassic Park kid has nowhere to run this time!
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.1-wendigo",
+  text = [[
+@Ichabod
+Oh no. It's one of those things. You absolutely can't kick
+those, I gotta get out of here.
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.2_west_wing_again",
+  text = [[
+@Ichabod
+Huh, back here again somehow? This isn't how they
+normally build houses...
+Was that door there before?
+===
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.3_library_statue_mechanism",
+  text = [[
+There's a little mechanism that looks like it could spin
+the statue around, but it's missing a piece. 
+Seems sus.
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.4_statue_garden_1",
+  text = [[
+@Ichabod
+WA HA! Hey Jurassic Park kid! I'm here to collect
+your overdue video!
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.4_statue_garden_2",
+  text = [[
+@Ichabod
+Wait, where'd they go? I wasted that really
+cool line on nobody...
+
+Well, they would have been here if this house
+made any euclidian sense so it definitely doesn't.
+Better keep looking around.
+===
+]],
+}
+
+dialog{
+  id = "test.1",
+  next = "test.2",
+  text = [[
+@Zach
+test est est est ets et
+===
+]],
+}
+
+dialog{
+  id = "test.2",
+  text = [[
+@Ichabod
+More more more
+===
+]],
+}
+

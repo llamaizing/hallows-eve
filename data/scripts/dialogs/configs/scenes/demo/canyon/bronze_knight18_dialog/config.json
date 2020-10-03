@@ -1,0 +1,18 @@
+{
+	"dialog_box": {
+		"name_box": {
+			"image": {
+				"path": "demo/hud/dialog_boxes/animated_name_box",
+				"position": "outsidetopleft",
+				"sprite": {
+					"animation": "default"
+				}
+			},
+			"line": {
+				"y_offset": -5,
+				"color":[255,0,255]
+			}
+		}
+	}
+}
+

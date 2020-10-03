@@ -1,0 +1,9 @@
+{
+  "dialog_box": {
+    "image":{
+      "position":"truecenter",
+      "x_offset":10,
+      "y_offset":-15
+    }
+  }
+}

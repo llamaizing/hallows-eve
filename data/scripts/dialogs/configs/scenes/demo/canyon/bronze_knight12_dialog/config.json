@@ -1,0 +1,12 @@
+{
+	"dialog_box": {
+    "text":{
+      "y_offset":23
+    },
+		"name_box": {
+			"image": {
+				"position": "top"
+			}
+		}
+	}
+}

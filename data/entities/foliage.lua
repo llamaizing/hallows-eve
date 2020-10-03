@@ -5,6 +5,8 @@ local sprite
 local sound_manager = require("entities/foliage_sound_manager")
  entity.can_burn = true
 
+entity:set_optimization_distance(16)
+
 -- Event called when the custom entity is initialized.
 function entity:on_created()
   sprite = entity:get_sprite()
@@ -16,7 +18,8 @@ function entity:on_created()
 
 
     entity:add_collision_test("overlapping", function(entity, other_entity)
-      if other_entity:get_type() == "hero" and not entity.shaking then
+      if (other_entity:get_type() == "hero" or (other_entity:get_type() == "enemy" and map:is_on_screen(other_entity) ))
+      and not entity.shaking then
         entity.shaking = true
         sound_manager:play_sound("walk_on_grass")
         if sprite:has_animation"shaking" then
@@ -25,7 +28,7 @@ function entity:on_created()
           end)
         end
         sol.timer.start(entity, 200, function()
-          if entity:get_distance(other_entity) < 24 then
+          if entity:get_distance(other_entity) < 24 and other_entity:exists() then
             return true
           else
             entity.shaking = false

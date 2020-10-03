@@ -1,0 +1,26 @@
+{
+  "dialog_box":{
+    "close_delay":1000,
+		"text": {
+      "question":{
+        "cursor": {
+					"image": {
+						"path": "demo/hud/cursor/sprites/ball_shrunk",
+						"y_offset": 5,
+						"x_offset": 15,
+						"sprite": {
+							"animation": "idle"
+						}
+					}
+				},
+        "answer": {
+          "image": {
+            "path":  "demo/hud/cursor/icons/individual_icons/book_02e.png",
+						"y_offset": -8,
+						"x_offset": 0
+          }
+        }  
+      }
+    }  
+  }
+}

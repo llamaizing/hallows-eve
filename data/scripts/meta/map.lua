@@ -1,7 +1,5 @@
 --Initialize map behavior specific to this quest.
 
-require"scripts/multi_events"
-
 local map_meta = sol.main.get_metatable"map"
 
 --===================================================================================--
@@ -11,8 +9,22 @@ map_meta:register_event("on_started", function(self)
   local game = map:get_game()
   local map_id = map:get_id()
 
+
+  --Initialize Lighting Effects:
+  map.light_fx = require"scripts/fx/lighting_effects"
+  sol.menu.start(map, map.light_fx)
+
+
+
   --manage enemy respawns
   require("scripts/misc/enemy_respawn_manager"):manage_spawns(map)
+
+  --Enemies activated
+  if not game:get_value("enemies_enabled") then
+    for enemy in map:get_entities_by_type"enemy" do
+      --enemy:set_enabled(false)
+    end
+  end
 
   --make invisible stairs invisible
   for stairs in map:get_entities("^invisible_stairs") do
@@ -47,10 +59,30 @@ map_meta:register_event("on_started", function(self)
     end
   end
 
+  --warp portals
+  for portal in map:get_entities("warp_portal") do
+    portal:get_sprite():set_blend_mode("add")
+
+    function portal:on_activated()
+      sol.audio.play_sound"world_warp"
+    end
+  end
+
 
 end) --end of on_started registered event
 --==================================================================================--
 
+
+function map_meta:is_on_screen(entity)
+  local map = entity:get_map()
+  local camera = map:get_camera()
+  local camx, camy = camera:get_position()
+  local camwi, camhi = camera:get_size()
+  local entityx, entityy = entity:get_position()
+
+  local on_screen = entityx >= camx and entityx <= (camx + camwi) and entityy >= camy and entityy <= (camy + camhi)
+  return on_screen
+end
 
 
 

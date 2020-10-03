@@ -1,0 +1,11 @@
+{
+  "dialog_box":{
+    "image":{
+      "path": "demo/hud/dialog_boxes/animated_dialog_box",
+      "sprite":{
+        "animation": "blur",
+        "direction": 0
+      }
+    }
+  }
+}
