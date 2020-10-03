@@ -30,3 +30,28 @@ map:register_event("on_started", function()
   }
   sol.menu.start(map, fog2)
 end)
+
+
+function sensor:on_activated()
+  if not game:get_value("haunted_house_statue_garden_empty") then
+    game:set_value("haunted_house_statue_garden_empty", true)
+    map:start_coroutine(function()
+      hero:freeze()
+      dialog("haunted_house.observations.4_statue_garden_1")
+      local camera = map:get_camera()
+      local m = sol.movement.create"straight"
+      m:set_speed(70)
+      m:set_max_distance(192)
+      m:set_angle(math.pi / 2)
+      movement(m, camera)
+      dialog("haunted_house.observations.4_statue_garden_2")
+      m = sol.movement.create"straight"
+      m:set_speed(100)
+      m:set_max_distance(192)
+      m:set_angle(math.pi / 2 * 3)
+      movement(m, camera)
+      camera:start_tracking(hero)
+      hero:unfreeze()
+    end)
+  end
+end

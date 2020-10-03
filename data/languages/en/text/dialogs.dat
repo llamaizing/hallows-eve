@@ -896,8 +896,32 @@ Was that door there before?
 dialog{
   id = "haunted_house.observations.3_library_statue_mechanism",
   text = [[
-There's a little mechanism that looks like it could spin the
-statue around, but it's missing a piece. Seems sus.
+There's a little mechanism that looks like it could spin
+the statue around, but it's missing a piece. 
+Seems sus.
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.4_statue_garden_1",
+  text = [[
+@Ichabod
+WA HA! Hey Jurassic Park kid! I'm here to collect
+your overdue video!
+]],
+}
+
+dialog{
+  id = "haunted_house.observations.4_statue_garden_2",
+  text = [[
+@Ichabod
+Wait, where'd they go? I wasted that really
+cool line on nobody...
+
+Well, they would have been here if this house
+made any euclidian sense so it definitely doesn't.
+Better keep looking around.
+===
 ]],
 }
 

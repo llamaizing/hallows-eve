@@ -12,7 +12,7 @@
       "path":"hud/dialog_box_background.png"
     },
     "text": {
-      "max_displayed_lines": 4,
+      "max_displayed_lines": 3,
       "x_offset": 8,
       "y_offset": 14,
       "line_space": 14,
