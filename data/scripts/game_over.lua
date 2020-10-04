@@ -39,6 +39,8 @@ function game_over:init(game)
 
   function game_over:step2()
     local hero = game:get_hero()
+    game:set_value("times_died", (game:get_value"times_died" or 0) + 1)
+    game:save()
     sol.timer.start(sol.main, 1500, function()
       --send the player to a different map to ensure the one they died on resets
       hero:teleport("respawn_map", "destination")

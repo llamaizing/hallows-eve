@@ -1287,6 +1287,43 @@ destination{
   x = 208,
   y = 165,
   direction = 3,
+  default = true,
+}
+
+destination{
+  name = "from_east_wing_up",
+  layer = 0,
+  x = 344,
+  y = 181,
+  direction = 2,
+}
+
+destination{
+  name = "from_east_wing_down",
+  layer = 0,
+  x = 344,
+  y = 373,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 160,
+  width = 16,
+  height = 32,
+  destination_map = "haunted_house/east_wing",
+  destination = "from_foyer_up",
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 352,
+  width = 16,
+  height = 32,
+  destination_map = "haunted_house/east_wing",
+  destination = "from_foyer_down",
 }
 
 tile{

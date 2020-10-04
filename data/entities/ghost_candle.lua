@@ -37,7 +37,7 @@ function entity:on_interaction()
   end)
   game:set_life(game:get_max_life())
   game:set_magic(game:get_max_magic())
-  game:save()
   game:set_starting_location(map:get_id(), "ghost_candle_destination")
   game:set_value("respawn_map", map:get_id())
+  game:save()
 end

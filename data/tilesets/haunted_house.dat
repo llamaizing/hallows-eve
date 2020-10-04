@@ -565,6 +565,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "46",
+  ground = "empty",
+  default_layer = 0,
+  x = 128,
+  y = 192,
+  width = 32,
+  height = 64,
+}
+
+tile_pattern{
+  id = "46_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 160,
+  y = 192,
+  width = 32,
+  height = 64,
+}
+
+tile_pattern{
   id = "4_2",
   ground = "wall",
   default_layer = 0,

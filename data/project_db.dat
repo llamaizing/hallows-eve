@@ -1,6 +1,7 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
 map{ id = "haunted_house/basement", description = "Basement" }
+map{ id = "haunted_house/east_wing", description = "East Wing" }
 map{ id = "haunted_house/empty_room", description = "Empty Room" }
 map{ id = "haunted_house/foyer", description = "Foyer" }
 map{ id = "haunted_house/garden_hallway", description = "Garden Hallway" }
@@ -378,6 +379,8 @@ file{ path = "items/spin_kick.lua", author = "Max Mraz", }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "maps/haunted_house/basement.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/basement.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/east_wing.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/east_wing.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/empty_room.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/empty_room.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/foyer.dat", author = "Max Mraz", }
