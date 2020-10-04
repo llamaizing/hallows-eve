@@ -16162,14 +16162,6 @@ custom_entity{
   model = "foliage",
 }
 
-destination{
-  name = "from_mortal_world",
-  layer = 0,
-  x = 1616,
-  y = 229,
-  direction = 3,
-}
-
 teletransporter{
   name = "warp_portal",
   layer = 0,
@@ -16178,8 +16170,25 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "suburbs/cemetery",
-  destination = "from_spirit_world",
+  destination = "ghost_candle_destination",
   sprite = "entities/portal",
+}
+
+sensor{
+  name = "warped_sensor",
+  layer = 0,
+  x = 1616,
+  y = 229,
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 1616,
+  y = 229,
+  direction = 3,
 }
 
 tile{

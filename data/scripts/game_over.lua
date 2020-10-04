@@ -17,7 +17,7 @@ function game_over:init(game)
     local darkDelta = 5
     sol.timer.start(sol.main, 40, function()
       local rgb = cam_surface:get_color_modulation()
-      cam_surface:set_color_modulation({rgb[1]-darkDelta,rgb[2]-darkDelta,rgb[3]-darkDelta})
+      cam_surface:set_color_modulation({math.max(rgb[1]-darkDelta, 0), math.max(rgb[2]-darkDelta, 0), math.max(rgb[3]-darkDelta, 0)})
       dark_steps = dark_steps + 1
       if dark_steps <= 20 then
         return true
@@ -38,8 +38,18 @@ function game_over:init(game)
 
 
   function game_over:step2()
-    sol.timer.start(sol.main, 2000, function()
-      game:start()
+    local hero = game:get_hero()
+    sol.timer.start(sol.main, 1500, function()
+      --send the player to a different map to ensure the one they died on resets
+      hero:teleport("respawn_map", "destination")
+      sol.timer.start(sol.main, 1000, function()
+        game:set_life(game:get_max_life())
+        game:set_magic(game:get_max_magic())
+        hero:teleport(game:get_value"respawn_map", "ghost_candle_destination", "immediate")
+        hero:set_visible()
+        game:stop_game_over()
+        hero:set_blinking(true, 500)
+      end)
     end)
   end
 

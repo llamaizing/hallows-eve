@@ -3148,6 +3148,26 @@ pickable{
   treasure_name = "seed_shoot",
 }
 
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 80,
+  y = 325,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 80,
+  y = 341,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 232,

@@ -8475,6 +8475,15 @@ tile{
   pattern = "30",
 }
 
+sensor{
+  name = "warped_sensor",
+  layer = 0,
+  x = 696,
+  y = 205,
+  width = 16,
+  height = 16,
+}
+
 custom_entity{
   layer = 0,
   x = 752,
@@ -8685,7 +8694,7 @@ custom_entity{
 }
 
 destination{
-  name = "from_spirit_world",
+  name = "ghost_candle_destination",
   layer = 0,
   x = 696,
   y = 205,
@@ -9522,7 +9531,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "spirit_world/creepytown",
-  destination = "from_mortal_world",
+  destination = "ghost_candle_destination",
   sprite = "entities/portal",
 }
 

@@ -25,6 +25,7 @@ function game_manager:create(file)
   require("scripts/menus/inventory/shit_inventory"):init(game)
   require("scripts/game_over"):init(game)
 
+
   return game
 end
 

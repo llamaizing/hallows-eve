@@ -1269,6 +1269,26 @@ door{
   cannot_open_dialog = "general.locked_door",
 }
 
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 208,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 208,
+  y = 165,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 192,

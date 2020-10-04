@@ -121,6 +121,13 @@ animation{
   },
 }
 animation{
+  name = "library_statue_gear",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "seed_shoot",
   src_image = "entities/shoot_seed.png",
   directions = {
