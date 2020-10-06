@@ -6,8 +6,10 @@ require("scripts/dialogs/libs/table_helpers")
 require("scripts/multi_events")
 
 local function initialize_vn(game)
-  -- Creates a scene object
+  -- Creates a scene object if one doesn't already exist
+  if scene_manager ~= nil then return end
   local scene_manager = require("scripts/dialogs/scene_manager"):create(game)
+
 
   -- Loads all the information for the scene manager to do his job
   -- e.g. which background, characters, transitions, etc

@@ -12,3 +12,11 @@ map:register_event("on_started", function()
   }
   sol.menu.start(map, fog2)
 end)
+
+function warped_sensor:on_activated()
+  game:set_life(game:get_max_life())
+  game:set_magic(game:get_max_magic())
+  game:set_value("respawn_map", map:get_id())
+  game:set_starting_location(map:get_id(), "ghost_candle_destination")
+  game:save()
+end

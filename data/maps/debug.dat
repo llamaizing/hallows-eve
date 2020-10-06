@@ -387,15 +387,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
-  y = 272,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 312,
   width = 16,
@@ -1958,6 +1949,15 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 216,
+  width = 8,
+  height = 48,
+  pattern = "low_stone_wall_4",
+}
+
 destructible{
   layer = 0,
   x = 208,
@@ -2808,8 +2808,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "haunted_house/foyer",
-  destination = "from_outside",
+  destination_map = "suburbs/neighborhood",
 }
 
 custom_entity{
@@ -3141,11 +3140,24 @@ npc{
   sprite = "npcs/zach",
 }
 
-pickable{
+custom_entity{
+  name = "ghost_candle",
   layer = 0,
-  x = 152,
-  y = 181,
-  treasure_name = "seed_shoot",
+  x = 80,
+  y = 325,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 80,
+  y = 341,
+  direction = 3,
 }
 
 tile{
@@ -3291,42 +3303,6 @@ tile{
   layer = 1,
   x = -16,
   y = 264,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 240,
-  width = 16,
-  height = 32,
-  pattern = "91",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 272,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 200,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 232,
   width = 48,
   height = 48,
   pattern = "76_2",

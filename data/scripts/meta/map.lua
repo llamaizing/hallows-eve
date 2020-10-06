@@ -14,8 +14,6 @@ map_meta:register_event("on_started", function(self)
   map.light_fx = require"scripts/fx/lighting_effects"
   sol.menu.start(map, map.light_fx)
 
-
-
   --manage enemy respawns
   require("scripts/misc/enemy_respawn_manager"):manage_spawns(map)
 
@@ -63,9 +61,9 @@ map_meta:register_event("on_started", function(self)
   for portal in map:get_entities("warp_portal") do
     portal:get_sprite():set_blend_mode("add")
 
-    function portal:on_activated()
+    portal:register_event("on_activated", function()
       sol.audio.play_sound"world_warp"
-    end
+    end)
   end
 
 

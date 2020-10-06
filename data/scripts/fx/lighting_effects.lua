@@ -181,6 +181,11 @@ function lighting_effects:on_draw(dst_surface)
       local x,y = e:get_center_position()
       effects.torch:draw(light_surface, x - cam_x, y - cam_y)
     end
+  --Save points:
+    if e:get_model() == "ghost_candle" and e:is_enabled() and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.candle:draw(light_surface, x - cam_x, y - cam_y)
+    end
   end
 
   --enemies

@@ -6,6 +6,7 @@ properties{
   min_layer = -1,
   max_layer = 2,
   tileset = "halloween",
+  music = "haunted_forest",
 }
 
 tile{

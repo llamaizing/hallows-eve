@@ -9,7 +9,29 @@ map:register_event("on_started", function()
     toby:remove()
   end
 
+  --statue faces left by default
+  if game:get_value("haunted_house_statue_twisted") then
+    statue_right_1:set_enabled()
+    statue_right_2:set_enabled()
+    statue_left_1:set_enabled(false)
+    statue_left_2:set_enabled(false)
+  end
+  --If the cutscene hasn't been viewed yet, twist it to the right so it can go to default
+  if not game:get_value("haunted_house_library_scene_viewed") then
+    statue_right_1:set_enabled()
+    statue_right_2:set_enabled()
+    statue_left_1:set_enabled(false)
+    statue_left_2:set_enabled(false)
+  end
+
+  --Set teleporter
+  if game:get_value("haunted_house_statue_twisted") then
+    garden_door_teleporter:set_destination_map("haunted_house/statue_garden_final")
+  else
+    garden_door_teleporter:set_destination_map("haunted_house/statue_garden_empty")
+  end
 end)
+
 
 
 function map:on_opening_transition_finished()
@@ -21,7 +43,19 @@ function statue_mechanism:on_interaction()
   if not game:has_item("library_statue_gear") then
     game:start_dialog("haunted_house.observations.3_library_statue_mechanism")
   else
-
+    game:start_dialog("haunted_house.observations.5_library_gear", function()
+        sol.audio.play_sound"switch"
+        game:set_value("haunted_house_statue_twisted", not game:get_value("haunted_house_statue_twisted"))
+        for e in map:get_entities("statue_") do
+          e:set_enabled(not e:is_enabled())
+        end
+        --Set teleporter
+        if game:get_value("haunted_house_statue_twisted") then
+          garden_door_teleporter:set_destination_map("haunted_house/statue_garden_final")
+        else
+          garden_door_teleporter:set_destination_map("haunted_house/statue_garden_empty")
+        end
+    end)
   end
 end
 
@@ -30,6 +64,7 @@ end
 function map:kid_scene()
   if not game:get_value("haunted_house_library_scene_viewed") then
     game:set_value("haunted_house_library_scene_viewed", true)
+    game:set_value("haunted_house_statue_twisted", false)
 
     hero:freeze()
 
@@ -53,11 +88,14 @@ function map:kid_scene()
         m:set_path{6,6,6}
         movement(m, camera)
         wait(800)
-        statue_left_1:set_enabled(false) statue_left_2:set_enabled(false)
-        statue_right_1:set_enabled(true) statue_right_2:set_enabled(true)
+        for e in map:get_entities("statue_") do
+          e:set_enabled(not e:is_enabled())
+        end
         sol.audio.play_sound"switch"
         sparkle:set_enabled(true)
         wait(1000)
+        m = sol.movement.create"path"
+        m:set_speed(100)
         m:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6}
         movement(m, camera)
         wait(400)

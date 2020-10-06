@@ -1,20 +1,27 @@
 map{ id = "aaa_templates/entities" }
 map{ id = "debug", description = "debug" }
+map{ id = "haunted_house/basement", description = "Basement" }
+map{ id = "haunted_house/east_wing", description = "East Wing" }
 map{ id = "haunted_house/empty_room", description = "Empty Room" }
 map{ id = "haunted_house/foyer", description = "Foyer" }
+map{ id = "haunted_house/garden_hallway", description = "Garden Hallway" }
 map{ id = "haunted_house/key_room", description = "Key Room" }
 map{ id = "haunted_house/library", description = "Library" }
 map{ id = "haunted_house/outside", description = "Outside" }
 map{ id = "haunted_house/statue_garden_empty", description = "StatueGarden-Empty" }
+map{ id = "haunted_house/statue_garden_final", description = "Statue Garden Final" }
+map{ id = "haunted_house/statue_garden_illusion", description = "StatueGardenIllusion" }
 map{ id = "haunted_house/west_wing_final", description = "WestWing-Final" }
 map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" }
 map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
 map{ id = "outskirts/farm", description = "Farm" }
 map{ id = "outskirts/forest", description = "Forest" }
+map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 
+tileset{ id = "cars", description = "Cars" }
 tileset{ id = "dapple", description = "Dappled Light" }
 tileset{ id = "farm", description = "Farm" }
 tileset{ id = "ghost_town", description = "Ghost Town" }
@@ -28,6 +35,7 @@ tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
 tileset{ id = "suburbs", description = "Suburbs" }
 tileset{ id = "yarntown", description = "yarntown" }
+tileset{ id = "yarntown_props", description = "Yarntown Props" }
 
 sprite{ id = "blocks/conductive_block", description = "Conductive Block" }
 sprite{ id = "blocks/cracked_block", description = "cracked block" }
@@ -76,6 +84,7 @@ sprite{ id = "entities/effects/light_m", description = "Light M" }
 sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/ghost_candle", description = "Ghost Candle" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_blowing", description = "Leaf-Blowing" }
@@ -88,6 +97,7 @@ sprite{ id = "entities/shoot_seed", description = "Shoot Seed" }
 sprite{ id = "entities/small_explosion", description = "Small Explosion" }
 sprite{ id = "entities/soccer_ball", description = "Soccer Ball" }
 sprite{ id = "entities/soccer_ball_flame", description = "Soccer ball flame" }
+sprite{ id = "entities/suspicion_indicator", description = "Question Mark" }
 sprite{ id = "foliage/autumn_grass_clump", description = "AutumnGrass-Clump" }
 sprite{ id = "foliage/autumnlily", description = "Autumnlily" }
 sprite{ id = "foliage/barley", description = "Barley" }
@@ -129,6 +139,7 @@ sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
+sprite{ id = "npcs/neighborhood_adult_1", description = "Neighborhood Adult 1" }
 sprite{ id = "npcs/toby", description = "Toby" }
 sprite{ id = "npcs/toby_hat", description = "Toby-Hat" }
 sprite{ id = "npcs/zach", description = "Zach" }
@@ -138,6 +149,14 @@ sprite{ id = "switches/lightning_switch", description = "Lightning Switch" }
 sprite{ id = "switches/switch_plate", description = "Switch-Plate" }
 sprite{ id = "utility/climbing_wall", description = "climbing_wall" }
 
+music{ id = "creepytown", description = "creepytown" }
+music{ id = "fields", description = "fields" }
+music{ id = "funky-fresh-credits", description = "funky-fresh-credits" }
+music{ id = "haunted_forest", description = "haunted_forest" }
+music{ id = "haunted_house_exploration", description = "haunted_house_exploration" }
+music{ id = "haunted_house_monster_chase", description = "haunted_house_monster_chase" }
+music{ id = "malice", description = "malice" }
+music{ id = "malice-and-crickets", description = "malice-and-crickets" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "ball_kick", description = "Ball Kick" }
@@ -307,9 +326,11 @@ entity{ id = "elements/lightning_static", description = "LightningStatic" }
 entity{ id = "elements/lightning_switch", description = "Lightning Switch" }
 entity{ id = "elements/lightning_zap", description = "Lightning Zap" }
 entity{ id = "foliage", description = "Foliage" }
+entity{ id = "ghost_candle", description = "Ghost Candle" }
 entity{ id = "hookseed", description = "Hookseed Plant" }
 entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
+entity{ id = "sentry", description = "Sentry" }
 entity{ id = "shoot_seed", description = "Shoot Seed" }
 entity{ id = "soccer_ball", description = "Soccer Ball" }
 entity{ id = "toss_ball", description = "Toss Ball" }
@@ -341,7 +362,9 @@ file{ path = "entities/elements/lightning_static.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_switch.lua", author = "Max Mraz", }
 file{ path = "entities/elements/lightning_zap.lua", author = "Max Mraz", }
 file{ path = "entities/foliage.lua", author = "Max Mraz", }
+file{ path = "entities/ghost_candle.lua", author = "Max Mraz", }
 file{ path = "entities/hookseed.lua", author = "Max Mraz", }
+file{ path = "entities/sentry.lua", author = "Max Mraz", }
 file{ path = "entities/shoot_seed.lua", author = "Max Mraz", }
 file{ path = "entities/soccer_ball.lua", author = "Max Mraz", }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
@@ -367,10 +390,16 @@ file{ path = "items/small_key.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "items/spin_kick.lua", author = "Max Mraz", }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "maps/haunted_house/basement.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/basement.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/east_wing.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/east_wing.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/empty_room.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/empty_room.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/foyer.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/foyer.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/garden_hallway.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/garden_hallway.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/key_room.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/key_room.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/library.dat", author = "Max Mraz", }
@@ -379,6 +408,10 @@ file{ path = "maps/haunted_house/outside.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/outside.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/statue_garden_empty.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/statue_garden_empty.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_final.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_final.lua", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_illusion.dat", author = "Max Mraz", }
+file{ path = "maps/haunted_house/statue_garden_illusion.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_final.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_final.lua", author = "Max Mraz", }
 file{ path = "maps/haunted_house/west_wing_illusion.dat", author = "Max Mraz", }
@@ -389,10 +422,20 @@ file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
+file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
+file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.lua", author = "Max Mraz", }
+file{ path = "musics/creepytown.ogg", author = "Max Mraz", }
+file{ path = "musics/fields.ogg", author = "Max Mraz", }
+file{ path = "musics/funky-fresh-credits.ogg", author = "Max Mraz", }
+file{ path = "musics/haunted_forest.ogg", author = "Max Mraz", }
+file{ path = "musics/haunted_house_exploration.ogg", author = "Max Mraz", }
+file{ path = "musics/haunted_house_monster_chase.ogg", author = "Max Mraz", }
+file{ path = "musics/malice-and-crickets.ogg", author = "Max Mraz", }
+file{ path = "musics/malice.ogg", author = "Max Mraz", }
 file{ path = "scripts/coroutine_helper.lua", author = "std::gregwar", license = "GPL v3" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
@@ -591,6 +634,7 @@ file{ path = "sprites/entities/effects/light_xl.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/effects/light_xl.png", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/explosion_4.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/fountain v1.1.ase", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/ghost_candle.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/items.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/leaf_blowing.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/miscellaneous.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -602,6 +646,7 @@ file{ path = "sprites/entities/shoot_seed.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/small_explosion.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/soccer_ball.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/soccer_ball_flame.dat", author = "Max Mraz", }
+file{ path = "sprites/entities/suspicion_indicator.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/autumn_grass_clump.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/autumnlily.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -659,6 +704,7 @@ file{ path = "sprites/menus/solarus_logo.png", author = "Olivier Cléro", licens
 file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
+file{ path = "sprites/npcs/neighborhood_adult_1.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby_hat.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/zach.dat", author = "Max Mraz", }
@@ -669,6 +715,9 @@ file{ path = "sprites/shadows/shadow_small.dat", author = "Max Mraz", license = 
 file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/cars.dat", author = "Max Mraz", }
+file{ path = "tilesets/cars.entities.png", author = "Max Mraz", }
+file{ path = "tilesets/cars.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/farm.dat", author = "Max Mraz", }
 file{ path = "tilesets/farm.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/ghost_town.dat", author = "Max Mraz", }

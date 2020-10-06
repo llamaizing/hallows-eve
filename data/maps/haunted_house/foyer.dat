@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "haunted_house",
+  music = "haunted_house_exploration",
 }
 
 tile{
@@ -1267,6 +1268,63 @@ door{
   opening_condition = "small_key",
   opening_condition_consumed = true,
   cannot_open_dialog = "general.locked_door",
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 208,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 208,
+  y = 165,
+  direction = 3,
+  default = true,
+}
+
+destination{
+  name = "from_east_wing_up",
+  layer = 0,
+  x = 344,
+  y = 181,
+  direction = 2,
+}
+
+destination{
+  name = "from_east_wing_down",
+  layer = 0,
+  x = 344,
+  y = 373,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 160,
+  width = 16,
+  height = 32,
+  destination_map = "haunted_house/east_wing",
+  destination = "from_foyer_up",
+}
+
+teletransporter{
+  layer = 0,
+  x = 352,
+  y = 352,
+  width = 16,
+  height = 32,
+  destination_map = "haunted_house/east_wing",
+  destination = "from_foyer_down",
 }
 
 tile{

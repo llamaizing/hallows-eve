@@ -926,6 +926,14 @@ Better keep looking around.
 }
 
 dialog{
+  id = "haunted_house.observations.5_library_gear",
+  text = [[
+Using the gear you found, you activate the
+spinny statue mechanism.
+]],
+}
+
+dialog{
   id = "test.1",
   next = "test.2",
   text = [[
