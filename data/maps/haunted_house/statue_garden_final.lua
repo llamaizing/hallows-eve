@@ -1,24 +1,33 @@
--- Lua script of map haunted_house/statue_garden_final.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  map.light_fx:set_darkness_level(game:get_value("darkness_level"))
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
+  local fog1 = require("scripts/fx/fog").new()
+  fog1:set_props{
+  	fog_texture = {png = "fogs/pollen_1.png", mode = "blend", opacity = 10},
+  	opacity_range = {20,80},
+    drift = {10, 0, -1, 1},
+    parallax_speed = 1.2,
+  }
+  sol.menu.start(map, fog1)
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+  local fog3 = require("scripts/fx/fog").new()
+  fog3:set_props{
+  	fog_texture = {png = "fogs/pollen_2.png", mode = "blend", opacity = 10},
+  	opacity_range = {30,70},
+    drift = {20, 0, -1, 1},
+    parallax_speed = 1.5,
+  }
+  sol.menu.start(map, fog3)
+  
+  local fog2 = require("scripts/fx/fog").new()
+  fog2:set_props{
+  	fog_texture = {png = "fogs/fog_2.png", mode = "blend", opacity = 60},
+  	opacity_range = {0,40},
+    drift = {15, 0, -1, 1}
+  }
+  sol.menu.start(map, fog2)
+end)
 
-end

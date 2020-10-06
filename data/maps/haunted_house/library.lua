@@ -26,9 +26,9 @@ map:register_event("on_started", function()
 
   --Set teleporter
   if game:get_value("haunted_house_statue_twisted") then
-    garden_door_teleporter:set_destination_map("statue_garden_final")
+    garden_door_teleporter:set_destination_map("haunted_house/statue_garden_final")
   else
-    garden_door_teleporter:set_destination_map("statue_garden_final")
+    garden_door_teleporter:set_destination_map("haunted_house/statue_garden_empty")
   end
 end)
 
@@ -51,9 +51,9 @@ function statue_mechanism:on_interaction()
         end
         --Set teleporter
         if game:get_value("haunted_house_statue_twisted") then
-          garden_door_teleporter:set_destination_map("statue_garden_final")
+          garden_door_teleporter:set_destination_map("haunted_house/statue_garden_final")
         else
-          garden_door_teleporter:set_destination_map("statue_garden_empty")
+          garden_door_teleporter:set_destination_map("haunted_house/statue_garden_empty")
         end
     end)
   end
