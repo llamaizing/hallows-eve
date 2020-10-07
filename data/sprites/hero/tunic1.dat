@@ -195,6 +195,9 @@ animation{
   frame_delay = 70,
   directions = {
     { x = 192, y = 496, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 14, num_columns = 7 },
+    { x = 192, y = 496, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 14, num_columns = 7 },
+    { x = 192, y = 496, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 14, num_columns = 7 },
+    { x = 192, y = 496, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 14, num_columns = 7 },
   },
 }
 animation{

@@ -952,3 +952,93 @@ More more more
 ]],
 }
 
+dialog{
+  id = "video_store.1",
+  text = [[
+@Ichabod
+Hey, do you guys have Jurassic Park?
+===
+]],
+}
+
+dialog{
+  id = "video_store.2",
+  text = [[
+@Caleb
+Ooh, actually my teammate on the varsity minigolf
+team, Zach? He has the only copy. It's also super
+overdue. I guess you could try to track him down,
+because he's super irresponsible and he is NOT
+going to bring it back on his own. How bad do you
+want to watch it?
+===
+]],
+}
+
+dialog{
+  id = "video_store.3",
+  text = [[
+@Ichabod
+I uh, I made a pretty big trip just to pick it up.
+===
+]],
+}
+
+dialog{
+  id = "video_store.4",
+  text = [[
+@Caleb
+Then I'll let you in on a secret. Zach came by a
+few minutes ago to borrow something from me.
+He said he was going to the pumpkin patch on the
+outskirts of town. You can get there through the
+forest east of the graveyard.
+===
+]],
+}
+
+dialog{
+  id = "video_store.5",
+  text = [[
+@Ichabod
+Cut through the forest east of the graveyard?...
+Hey, you aren't going to judge me for hunting down
+a teenager because I want this movie?
+]],
+}
+
+dialog{
+  id = "video_store.6",
+  text = [[
+@Caleb
+Nah, honestly it's probably the only way to get the
+video back from him anyway. Just bring it back
+when you've watched it!
+===
+]],
+}
+
+dialog{
+  id = "video_store.forgot_directions",
+  text = [[
+@Ichabod
+Hey, sorry, I'm just trying to remember what you
+said. That kid with the movie went where?
+===
+@Caleb
+He went to the pumpkin patch- you can get there
+through the forest east of the cemetery. Just head
+east down the road, and you'll eventually find it.
+]],
+}
+
+dialog{
+  id = "video_store.welcome",
+  text = [[
+@Caleb
+Oh, welcome to Auburn Video, how can
+I help you?
+===
+]],
+}
+

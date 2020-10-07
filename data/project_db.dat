@@ -20,6 +20,7 @@ map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
+map{ id = "suburbs/video_store", description = "Video Store" }
 
 tileset{ id = "cars", description = "Cars" }
 tileset{ id = "dapple", description = "Dappled Light" }
@@ -34,6 +35,7 @@ tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "oceanset_trees", description = "Trees" }
 tileset{ id = "suburbs", description = "Suburbs" }
+tileset{ id = "video_store", description = "Video Store" }
 tileset{ id = "yarntown", description = "yarntown" }
 tileset{ id = "yarntown_props", description = "Yarntown Props" }
 
@@ -65,6 +67,7 @@ sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/eyewight", description = "Eyewight" }
 sprite{ id = "enemies/ghost_projectile", description = "Ghost Projectile" }
 sprite{ id = "enemies/gremlin", description = "Gremlin" }
+sprite{ id = "enemies/hand", description = "Hand" }
 sprite{ id = "enemies/misc/bird", description = "Blackbird" }
 sprite{ id = "enemies/misc/slash", description = "slash" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
@@ -139,9 +142,13 @@ sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
+sprite{ id = "npcs/caleb", description = "Caleb" }
 sprite{ id = "npcs/neighborhood_adult_1", description = "Neighborhood Adult 1" }
 sprite{ id = "npcs/toby", description = "Toby" }
 sprite{ id = "npcs/toby_hat", description = "Toby-Hat" }
+sprite{ id = "npcs/treater_ghost", description = "Treater-Ghost" }
+sprite{ id = "npcs/treater_vampire", description = "Treater-Vampire" }
+sprite{ id = "npcs/treater_witch", description = "Treater-Witch" }
 sprite{ id = "npcs/zach", description = "Zach" }
 sprite{ id = "shadows/shadow_medium", description = "Big shadow" }
 sprite{ id = "shadows/shadow_small", description = "Small shadow" }
@@ -308,6 +315,7 @@ item{ id = "spin_kick", description = "Spin Kick" }
 enemy{ id = "eyewight", description = "Eyewight" }
 enemy{ id = "ghost_projectile", description = "Ghost Projectile" }
 enemy{ id = "gremlin", description = "Gremlin" }
+enemy{ id = "hand", description = "Hand" }
 enemy{ id = "misc/bird", description = "Bird" }
 enemy{ id = "spider_thing", description = "Spider Thing" }
 enemy{ id = "wendigo_ghost", description = "Wendigo Ghost" }
@@ -348,6 +356,7 @@ shader{ id = "hq2x", description = "hq2x" }
 file{ path = "enemies/eyewight.lua", author = "Max Mraz", }
 file{ path = "enemies/ghost_projectile.lua", author = "Max Mraz", }
 file{ path = "enemies/gremlin.lua", author = "Max Mraz", }
+file{ path = "enemies/hand.lua", author = "Max Mraz", }
 file{ path = "enemies/spider_thing.lua", author = "Max Mraz", }
 file{ path = "enemies/wendigo_ghost.lua", author = "Max Mraz", }
 file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
@@ -428,6 +437,8 @@ file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.lua", author = "Max Mraz", }
+file{ path = "maps/suburbs/video_store.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/video_store.lua", author = "Max MRaz", }
 file{ path = "musics/creepytown.ogg", author = "Max Mraz", }
 file{ path = "musics/fields.ogg", author = "Max Mraz", }
 file{ path = "musics/funky-fresh-credits.ogg", author = "Max Mraz", }
@@ -609,6 +620,7 @@ file{ path = "sprites/enemies/enemy_killed.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/eyewight.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/ghost_projectile.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/gremlin.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/hand.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/misc/slash.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/spider_thing.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/wendigo_ghost.dat", author = "Max Mraz", }
@@ -704,9 +716,13 @@ file{ path = "sprites/menus/solarus_logo.png", author = "Olivier Cléro", licens
 file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
+file{ path = "sprites/npcs/caleb.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/neighborhood_adult_1.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby_hat.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/treater_ghost.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/treater_vampire.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/treater_witch.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/zach.dat", author = "Max Mraz", }
 file{ path = "sprites/shadows", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow.png", author = "Max Mraz", license = "CC0" }
@@ -716,7 +732,6 @@ file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/cars.dat", author = "Max Mraz", }
-file{ path = "tilesets/cars.entities.png", author = "Max Mraz", }
 file{ path = "tilesets/cars.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/farm.dat", author = "Max Mraz", }
 file{ path = "tilesets/farm.tiles.png", author = "Max Mraz", }
@@ -737,3 +752,6 @@ file{ path = "tilesets/oceanset_trees.dat", author = "Max Mraz", license = "CC-B
 file{ path = "tilesets/oceanset_trees.tiles.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "tilesets/suburbs.dat", author = "Max Mraz", }
 file{ path = "tilesets/suburbs.tiles.png", author = "Max Mraz", }
+file{ path = "tilesets/video_store.dat", author = "Max Mraz", }
+file{ path = "tilesets/video_store.entities.png", author = "Max Mraz", }
+file{ path = "tilesets/video_store.tiles.png", author = "Max Mraz", }

@@ -1493,7 +1493,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 1072,
+  y = 1080,
   width = 16,
   height = 24,
   pattern = "15_2",
@@ -1577,6 +1577,4274 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 640,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 872,
+  width = 176,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 856,
+  width = 176,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "11_23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "11_24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "11_22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "11_19",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 888,
+  width = 176,
+  height = 16,
+  pattern = "11_20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 904,
+  width = 176,
+  height = 16,
+  pattern = "11_21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 864,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "94_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "94",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "97_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "97",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "97_4",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "97_3",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "93",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "93_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 912,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 912,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 912,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 912,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 928,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 272,
+  width = 16,
+  height = 48,
+  pattern = "11_12",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "11_7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 320,
+  width = 192,
+  height = 16,
+  pattern = "11_9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "11_11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 272,
+  width = 16,
+  height = 48,
+  pattern = "11_10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 272,
+  width = 192,
+  height = 48,
+  pattern = "11_8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 360,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 392,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 392,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 384,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 392,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 448,
+  width = 144,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 464,
+  width = 144,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 448,
+  width = 16,
+  height = 32,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 448,
+  width = 16,
+  height = 32,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 464,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 496,
+  width = 16,
+  height = 48,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 448,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 488,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 512,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 912,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 240,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 752,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 720,
+  width = 160,
+  height = 32,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 720,
+  width = 16,
+  height = 32,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 752,
+  width = 160,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 720,
+  width = 16,
+  height = 32,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 752,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 760,
+  width = 160,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 776,
+  width = 160,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 792,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 792,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 792,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 792,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 800,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 816,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 824,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 824,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 832,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 872,
+  width = 80,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 888,
+  width = 80,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 896,
+  width = 80,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 864,
+  width = 80,
+  height = 32,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 864,
+  width = 16,
+  height = 32,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 864,
+  width = 16,
+  height = 32,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 904,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 904,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 904,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 896,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 896,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 896,
+  width = 16,
+  height = 64,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 920,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 1104,
+  width = 16,
+  height = 32,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 1104,
+  width = 16,
+  height = 32,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1136,
+  width = 144,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 1104,
+  width = 144,
+  height = 32,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 1136,
+  width = 8,
+  height = 16,
+  pattern = "16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 1144,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 24,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 24,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 80,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 56,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 96,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 56,
+  width = 32,
+  height = 16,
+  pattern = "11_8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11_10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 72,
+  width = 32,
+  height = 16,
+  pattern = "11_9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 72,
+  width = 48,
+  height = 16,
+  pattern = "11_9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11_12",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 56,
+  width = 48,
+  height = 16,
+  pattern = "11_8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "11_10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "11_7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "11_12",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "11_8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "11_11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 48,
+  width = 80,
+  height = 16,
+  pattern = "11_9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 80,
+  width = 80,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 64,
+  width = 80,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 56,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 328,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 40,
+  width = 64,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 80,
+  width = 144,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 64,
+  width = 144,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 56,
+  width = 64,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 64,
+  width = 80,
+  height = 16,
+  pattern = "11_20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 48,
+  width = 80,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "11_19",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "11_23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 80,
+  width = 80,
+  height = 16,
+  pattern = "11_21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 72,
+  width = 48,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 56,
+  width = 48,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 80,
+  width = 64,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 96,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 72,
+  width = 96,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 24,
+  width = 16,
+  height = 48,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 24,
+  width = 16,
+  height = 48,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 24,
+  width = 96,
+  height = 48,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 48,
+  width = 64,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 64,
+  width = 64,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 80,
+  width = 16,
+  height = 48,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 72,
+  width = 80,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 56,
+  width = 80,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 72,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 72,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 80,
+  width = 16,
+  height = 48,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 312,
+  width = 176,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 328,
+  width = 176,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 264,
+  width = 96,
+  height = 32,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 296,
+  width = 96,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 360,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 368,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 360,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 408,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 400,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 408,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 392,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 432,
+  width = 80,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 448,
+  width = 160,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 464,
+  width = 160,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 448,
+  width = 32,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 480,
+  width = 32,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 464,
+  width = 32,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 472,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 480,
+  width = 16,
+  height = 64,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 472,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 464,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 504,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 744,
+  width = 144,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 728,
+  width = 144,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 656,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 744,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 768,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 776,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 776,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 776,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 808,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 808,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 808,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 816,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 840,
+  width = 80,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 856,
+  width = 80,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 872,
+  width = 64,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 856,
+  width = 64,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 856,
+  width = 32,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 872,
+  width = 32,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 872,
+  width = 80,
+  height = 16,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 888,
+  width = 80,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 896,
+  width = 16,
+  height = 64,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 872,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 880,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 880,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 896,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 896,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 880,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 912,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 912,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 1128,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1160,
+  width = 16,
+  height = 16,
+  pattern = "11_17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 1160,
+  width = 16,
+  height = 16,
+  pattern = "11_13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 1112,
+  width = 16,
+  height = 48,
+  pattern = "11_16",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1160,
+  width = 208,
+  height = 16,
+  pattern = "11_15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 1096,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 1112,
+  width = 16,
+  height = 48,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1112,
+  width = 208,
+  height = 48,
+  pattern = "11_14",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1128,
+  width = 16,
+  height = 32,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 1160,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1160,
+  width = 64,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1128,
+  width = 64,
+  height = 32,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 1128,
+  width = 16,
+  height = 32,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1160,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1136,
+  width = 64,
+  height = 16,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1152,
+  width = 64,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 1072,
+  width = 16,
+  height = 32,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 1104,
+  width = 16,
+  height = 48,
+  pattern = "11_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1104,
+  width = 192,
+  height = 48,
+  pattern = "11_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "11_5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "11_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1152,
+  width = 192,
+  height = 16,
+  pattern = "11_6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1104,
+  width = 16,
+  height = 48,
+  pattern = "11",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 1184,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 1176,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 1184,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 1176,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 1216,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 1216,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 1216,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 1200,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 1208,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 1200,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 1224,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 1232,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 1232,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1200,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1200,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 1224,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 1232,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1232,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1232,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 1184,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 1192,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1224,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 1224,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 1232,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 1224,
+  width = 16,
+  height = 24,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 976,
+  width = 64,
+  height = 32,
+  pattern = "1_7",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 1024,
+  width = 64,
+  height = 32,
+  pattern = "1_4",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 88,
+  width = 32,
+  height = 16,
+  pattern = "23",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 104,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 104,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 240,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 240,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 104,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 656,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 656,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 240,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 240,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 872,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 1080,
+  width = 64,
+  height = 32,
+  pattern = "1_10",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 976,
+  width = 64,
+  height = 32,
+  pattern = "1",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 608,
+  width = 64,
+  height = 32,
+  pattern = "1_4",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 560,
+  width = 64,
+  height = 32,
+  pattern = "1_3",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 608,
+  width = 64,
+  height = 32,
+  pattern = "1_4",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 992,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "32",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 552,
+  width = 64,
+  height = 32,
+  pattern = "1",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 976,
+  width = 64,
+  height = 32,
+  pattern = "1_3",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 144,
+  width = 64,
+  height = 32,
+  pattern = "1_9",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 192,
+  width = 64,
+  height = 32,
+  pattern = "1_6",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 936,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 144,
+  width = 64,
+  height = 32,
+  pattern = "1_7",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 712,
+  width = 32,
+  height = 32,
+  pattern = "32",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 704,
+  width = 32,
+  height = 32,
+  pattern = "32",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 728,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 296,
+  width = 32,
+  height = 32,
+  pattern = "32",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "24",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "32",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 1024,
+  width = 64,
+  height = 32,
+  pattern = "1_8",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 1024,
+  width = 64,
+  height = 32,
+  pattern = "1_5",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1080,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "suburbs",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle_1",
   layer = 0,
@@ -1621,18 +5889,6 @@ dynamic_tile{
   tileset = "suburbs",
 }
 
-custom_entity{
-  name = "sentry_adult_2",
-  layer = 0,
-  x = 504,
-  y = 685,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "npcs/neighborhood_adult_1",
-  model = "sentry",
-}
-
 dynamic_tile{
   name = "^lighting_effect_candle_5",
   layer = 0,
@@ -1653,18 +5909,6 @@ dynamic_tile{
   height = 24,
   pattern = "12",
   tileset = "suburbs",
-}
-
-custom_entity{
-  name = "sentry_adult",
-  layer = 0,
-  x = 632,
-  y = 557,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npcs/neighborhood_adult_1",
-  model = "sentry",
 }
 
 dynamic_tile{
@@ -1703,21 +5947,9 @@ dynamic_tile{
 destination{
   name = "destination",
   layer = 0,
-  x = 936,
+  x = 312,
   y = 1181,
   direction = 1,
-}
-
-custom_entity{
-  name = "sentry_adult_3",
-  layer = 0,
-  x = 816,
-  y = 629,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "npcs/neighborhood_adult_1",
-  model = "sentry",
 }
 
 dynamic_tile{
@@ -1751,6 +5983,1675 @@ dynamic_tile{
   height = 16,
   pattern = "pumpkin_10",
   tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_22",
+  layer = 0,
+  x = 648,
+  y = 856,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_23",
+  layer = 0,
+  x = 688,
+  y = 856,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_24",
+  layer = 0,
+  x = 672,
+  y = 896,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_25",
+  layer = 0,
+  x = 776,
+  y = 896,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_26",
+  layer = 0,
+  x = 792,
+  y = 856,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_27",
+  layer = 0,
+  x = 1040,
+  y = 448,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_28",
+  layer = 0,
+  x = 1152,
+  y = 448,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_29",
+  layer = 0,
+  x = 1032,
+  y = 872,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_30",
+  layer = 0,
+  x = 1136,
+  y = 864,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_31",
+  layer = 0,
+  x = 1184,
+  y = 864,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_32",
+  layer = 0,
+  x = 1040,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_33",
+  layer = 0,
+  x = 1088,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_34",
+  layer = 0,
+  x = 1072,
+  y = 64,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_35",
+  layer = 0,
+  x = 984,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_36",
+  layer = 0,
+  x = 1152,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_37",
+  layer = 0,
+  x = 824,
+  y = 64,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_38",
+  layer = 0,
+  x = 720,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_39",
+  layer = 0,
+  x = 768,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_40",
+  layer = 0,
+  x = 488,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_41",
+  layer = 0,
+  x = 536,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_42",
+  layer = 0,
+  x = 520,
+  y = 64,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_43",
+  layer = 0,
+  x = 600,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_44",
+  layer = 0,
+  x = 280,
+  y = 56,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_45",
+  layer = 0,
+  x = 144,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_46",
+  layer = 0,
+  x = 224,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_47",
+  layer = 0,
+  x = 56,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_48",
+  layer = 0,
+  x = 152,
+  y = 464,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_49",
+  layer = 0,
+  x = 40,
+  y = 448,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_50",
+  layer = 0,
+  x = 144,
+  y = 440,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_51",
+  layer = 0,
+  x = 48,
+  y = 840,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_52",
+  layer = 0,
+  x = 96,
+  y = 840,
+  width = 32,
+  height = 24,
+  pattern = "12",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_53",
+  layer = 0,
+  x = 160,
+  y = 856,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_54",
+  layer = 0,
+  x = 40,
+  y = 872,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_55",
+  layer = 0,
+  x = 720,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin_5",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_56",
+  layer = 0,
+  x = 1072,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin_4",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_57",
+  layer = 0,
+  x = 1056,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin_2",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_58",
+  layer = 0,
+  x = 1064,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_59",
+  layer = 0,
+  x = 520,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin_3",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_60",
+  layer = 0,
+  x = 536,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin_9",
+  tileset = "suburbs",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_61",
+  layer = 0,
+  x = 80,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "pumpkin_8",
+  tileset = "suburbs",
+}
+
+custom_entity{
+  name = "sentry_adult",
+  layer = 0,
+  x = 1072,
+  y = 989,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a",
+  layer = 0,
+  x = 512,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_2",
+  layer = 0,
+  x = 536,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_3",
+  layer = 0,
+  x = 496,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+sensor{
+  name = "waypoint_a_1",
+  layer = 0,
+  x = 360,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_a_2",
+  layer = 0,
+  x = 360,
+  y = 653,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_a_3",
+  layer = 0,
+  x = 888,
+  y = 653,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_a_4",
+  layer = 0,
+  x = 888,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_b_1",
+  layer = 0,
+  x = 888,
+  y = 557,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_b_2",
+  layer = 0,
+  x = 888,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_b_3",
+  layer = 0,
+  x = 360,
+  y = 237,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_b_4",
+  layer = 0,
+  x = 360,
+  y = 557,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_c_1",
+  layer = 0,
+  x = 264,
+  y = 973,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_c_2",
+  layer = 0,
+  x = 264,
+  y = 653,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_c_3",
+  layer = 0,
+  x = 264,
+  y = 141,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_c_4",
+  layer = 0,
+  x = 984,
+  y = 141,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_c_5",
+  layer = 0,
+  x = 984,
+  y = 557,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "waypoint_c_6",
+  layer = 0,
+  x = 984,
+  y = 1069,
+  width = 16,
+  height = 16,
+}
+
+custom_entity{
+  name = "sentry_treater_a_4",
+  layer = 0,
+  x = 888,
+  y = 885,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_5",
+  layer = 0,
+  x = 888,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_6",
+  layer = 0,
+  x = 832,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_7",
+  layer = 0,
+  x = 808,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_8",
+  layer = 0,
+  x = 752,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_9",
+  layer = 0,
+  x = 720,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  layer = 0,
+  x = 552,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 568,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 560,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 576,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  name = "sentry_treater_a_10",
+  layer = 0,
+  x = 360,
+  y = 701,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_a_11",
+  layer = 0,
+  x = 360,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_1",
+  layer = 0,
+  x = 264,
+  y = 701,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_2",
+  layer = 0,
+  x = 264,
+  y = 717,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_3",
+  layer = 0,
+  x = 264,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_4",
+  layer = 0,
+  x = 984,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_5",
+  layer = 0,
+  x = 984,
+  y = 405,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_6",
+  layer = 0,
+  x = 984,
+  y = 421,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_4",
+  layer = 0,
+  x = 824,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_3",
+  layer = 0,
+  x = 800,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_2",
+  layer = 0,
+  x = 776,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b",
+  layer = 0,
+  x = 744,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_7",
+  layer = 0,
+  x = 1072,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_8",
+  layer = 0,
+  x = 1048,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_9",
+  layer = 0,
+  x = 1024,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_10",
+  layer = 0,
+  x = 232,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_11",
+  layer = 0,
+  x = 208,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_12",
+  layer = 0,
+  x = 184,
+  y = 1069,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 829,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+sensor{
+  name = "waypoint_c_7",
+  layer = 0,
+  x = 360,
+  y = 1069,
+  width = 16,
+  height = 16,
+}
+
+custom_entity{
+  name = "sentry_treater_c_13",
+  layer = 0,
+  x = 256,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_14",
+  layer = 0,
+  x = 264,
+  y = 181,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_c_15",
+  layer = 0,
+  x = 248,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 1117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 1125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 1141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 1157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 1165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 405,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 413,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  name = "sentry_adult_2",
+  layer = 0,
+  x = 504,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_5",
+  layer = 0,
+  x = 888,
+  y = 277,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_6",
+  layer = 0,
+  x = 896,
+  y = 301,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_7",
+  layer = 0,
+  x = 568,
+  y = 229,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_8",
+  layer = 0,
+  x = 544,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_9",
+  layer = 0,
+  x = 528,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_10",
+  layer = 0,
+  x = 360,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_11",
+  layer = 0,
+  x = 352,
+  y = 509,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_witch",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_12",
+  layer = 0,
+  x = 784,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_13",
+  layer = 0,
+  x = 760,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_treater_b_14",
+  layer = 0,
+  x = 744,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_3",
+  layer = 0,
+  x = 720,
+  y = 957,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_4",
+  layer = 0,
+  x = 520,
+  y = 1085,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_5",
+  layer = 0,
+  x = 592,
+  y = 541,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_horizontal",
+  layer = 0,
+  x = 320,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_7",
+  layer = 0,
+  x = 712,
+  y = 253,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+destination{
+  name = "from_hand_grab",
+  layer = 0,
+  x = 1216,
+  y = 1021,
+  direction = 2,
+}
+
+custom_entity{
+  name = "sentry_adult_8",
+  layer = 0,
+  x = 336,
+  y = 437,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_9",
+  layer = 0,
+  x = 288,
+  y = 437,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_10",
+  layer = 0,
+  x = 312,
+  y = 405,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_11",
+  layer = 0,
+  x = 912,
+  y = 765,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 872,
+  y = 405,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 856,
+  y = 413,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 864,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 277,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 285,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/sunflower",
+  model = "foliage",
+}
+
+custom_entity{
+  name = "sentry_adult_12",
+  layer = 0,
+  x = 944,
+  y = 765,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_6",
+  layer = 0,
+  x = 952,
+  y = 773,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npcs/treater_vampire",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_horizontal_2",
+  layer = 0,
+  x = 600,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_horizontal_3",
+  layer = 0,
+  x = 632,
+  y = 189,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_13",
+  layer = 0,
+  x = 1080,
+  y = 1021,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+custom_entity{
+  name = "sentry_adult_spin",
+  layer = 0,
+  x = 928,
+  y = 365,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/neighborhood_adult_1",
+  model = "sentry",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1048,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1080,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 1064,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 1096,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 1064,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 328,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 256,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 288,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
 }
 
 tile{
@@ -3449,15 +9350,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 792,
-  y = 832,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
   x = 784,
   y = 776,
   width = 64,
@@ -3709,6 +9601,5903 @@ tile{
   pattern = "76_2",
 }
 
+tile{
+  layer = 1,
+  x = 832,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 848,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 832,
+  width = 176,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 848,
+  width = 176,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 816,
+  width = 176,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 848,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 824,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 808,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 832,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 712,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 696,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 720,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 696,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 704,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 696,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 704,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 288,
+  width = 64,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 304,
+  width = 64,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 272,
+  width = 64,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 360,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 304,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 296,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 296,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1176,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 296,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 296,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 392,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 336,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 392,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1072,
+  y = 336,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 384,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 328,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 392,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 336,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 408,
+  width = 144,
+  height = 32,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 408,
+  width = 16,
+  height = 32,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 392,
+  width = 144,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 408,
+  width = 16,
+  height = 32,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 440,
+  width = 144,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 440,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 440,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 448,
+  width = 32,
+  height = 16,
+  pattern = "20_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 448,
+  width = 32,
+  height = 16,
+  pattern = "20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 448,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 376,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 408,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 488,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 416,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 448,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 512,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 440,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 472,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 912,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 840,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 872,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 408,
+  width = 16,
+  height = 24,
+  pattern = "16",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 688,
+  width = 32,
+  height = 32,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 672,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 672,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 688,
+  width = 32,
+  height = 32,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 704,
+  width = 160,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 704,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 712,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 792,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 720,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 752,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 792,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 720,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 752,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 792,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 720,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 752,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 792,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 720,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 752,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1160,
+  y = 800,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 744,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1064,
+  y = 816,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 760,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 824,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 768,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1000,
+  y = 824,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 768,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 832,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 776,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 832,
+  width = 80,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 864,
+  width = 80,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 864,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 848,
+  width = 80,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 824,
+  width = 80,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 856,
+  width = 80,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 856,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 840,
+  width = 80,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 856,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 920,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 864,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 1104,
+  width = 64,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 1088,
+  width = 64,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 1120,
+  width = 64,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 1120,
+  width = 48,
+  height = 8,
+  pattern = "18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "17",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "19",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 1120,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1072,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1072,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1072,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 1128,
+  width = 8,
+  height = 8,
+  pattern = "15",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 24,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = -48,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = -16,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 24,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = -48,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = -16,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 80,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1200,
+  y = 40,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1072,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1072,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 904,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 904,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 904,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 936,
+  y = 32,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 936,
+  y = -40,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 936,
+  y = -8,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 56,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = -16,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 16,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 96,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 24,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 56,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = -8,
+  width = 80,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 8,
+  width = 80,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 24,
+  width = 80,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 16,
+  width = 48,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 48,
+  width = 48,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 48,
+  width = 32,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1000,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1000,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1000,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 16,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = -56,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = -24,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = -64,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = -32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 16,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = -56,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = -24,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 56,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = -16,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 664,
+  y = 16,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = -48,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = -48,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = -48,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = -56,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = -48,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 8,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = -48,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = -56,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = -56,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 344,
+  y = 32,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = -24,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 32,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = -24,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = -40,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = -56,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 16,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = -40,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = -56,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 16,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = -40,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = -40,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 32,
+  width = 64,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 0,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 16,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 56,
+  width = 64,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 24,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 40,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "11_18",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 8,
+  width = 80,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = -8,
+  width = 80,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 24,
+  width = 80,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 16,
+  width = 48,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 48,
+  width = 48,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 72,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 72,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 32,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 96,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 24,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 56,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 16,
+  width = 80,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 32,
+  width = 64,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 48,
+  width = 64,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 8,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 8,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = -8,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 8,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = -8,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 8,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 16,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "67",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 32,
+  width = 48,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 16,
+  width = 80,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 48,
+  width = 48,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "20_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 24,
+  width = 32,
+  height = 16,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 8,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 8,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "20_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "20_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 304,
+  width = 64,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 288,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 272,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 280,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 312,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 360,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 288,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 320,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 368,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 296,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 328,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 352,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 280,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 312,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 360,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 288,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 320,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 392,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 336,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 352,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 400,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 344,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 408,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 352,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 408,
+  width = 80,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 392,
+  width = 80,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 424,
+  width = 80,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 440,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 424,
+  width = 64,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 440,
+  width = 64,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 408,
+  width = 64,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -40,
+  y = 464,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -48,
+  y = 408,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 504,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 448,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 672,
+  width = 144,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 688,
+  width = 16,
+  height = 32,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 688,
+  width = 144,
+  height = 32,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 688,
+  width = 16,
+  height = 32,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 720,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 720,
+  width = 144,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 720,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 400,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 408,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 680,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 688,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 744,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 688,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 768,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 712,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 776,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 720,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 776,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 720,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 776,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 720,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 808,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 752,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 808,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -40,
+  y = 752,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 808,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 752,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 816,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 760,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 832,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 800,
+  width = 80,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 832,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 832,
+  width = 80,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 816,
+  width = 80,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 848,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 816,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 848,
+  width = 64,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 832,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 816,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 848,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 848,
+  width = 32,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 832,
+  width = 32,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 912,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 840,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 872,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 912,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 840,
+  width = 48,
+  height = 32,
+  pattern = "77_2",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 872,
+  width = 48,
+  height = 48,
+  pattern = "76_2",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 1128,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 1072,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 1080,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 1112,
+  width = 32,
+  height = 16,
+  pattern = "20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 1080,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 1096,
+  width = 32,
+  height = 16,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 1112,
+  width = 32,
+  height = 16,
+  pattern = "20_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 1096,
+  width = 32,
+  height = 16,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 1096,
+  width = 32,
+  height = 16,
+  pattern = "22_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 1128,
+  width = 32,
+  height = 16,
+  pattern = "20",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 1096,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 1112,
+  width = 32,
+  height = 16,
+  pattern = "21_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 832,
+  y = 1128,
+  width = 32,
+  height = 16,
+  pattern = "20_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 1112,
+  width = 32,
+  height = 16,
+  pattern = "21",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 1144,
+  width = 80,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1144,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 1144,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 1112,
+  width = 96,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 1128,
+  width = 80,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 704,
+  y = 1112,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 704,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 704,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 1088,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 1104,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 1120,
+  width = 64,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1104,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1136,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1120,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1136,
+  width = 64,
+  height = 8,
+  pattern = "3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1120,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 1120,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "21_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "20_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1088,
+  width = 32,
+  height = 16,
+  pattern = "21_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1104,
+  width = 32,
+  height = 16,
+  pattern = "20_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "22_4",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "22_3",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 1136,
+  width = 16,
+  height = 8,
+  pattern = "2_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "10_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "7_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 1120,
+  width = 64,
+  height = 16,
+  pattern = "6_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "5_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "8_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 1136,
+  width = 64,
+  height = 8,
+  pattern = "3_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 1136,
+  width = 16,
+  height = 8,
+  pattern = "4_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 1104,
+  width = 64,
+  height = 16,
+  pattern = "9_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1112,
+  width = 16,
+  height = 8,
+  pattern = "71",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "70",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1120,
+  width = 16,
+  height = 8,
+  pattern = "72",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 1184,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 1128,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 1176,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 1120,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 1184,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 1128,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 1176,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1208,
+  y = 1120,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 1216,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 1160,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 1216,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 1160,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 1216,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 1160,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 1200,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 1144,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 1192,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 744,
+  y = 1136,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 1208,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 1152,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 1200,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 616,
+  y = 1144,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 1224,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 1168,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 1232,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 1176,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 1232,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 1176,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 1200,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 1144,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 1200,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 488,
+  y = 1144,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 1192,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 1136,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 1224,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 392,
+  y = 1168,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 1232,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 1176,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 520,
+  y = 1232,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 1176,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 1232,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 1176,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1192,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 1136,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 1192,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 1136,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 1184,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 24,
+  y = 1128,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 1192,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -40,
+  y = 1136,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 1224,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = -8,
+  y = 1168,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 1224,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 1168,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 1232,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 1176,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 1224,
+  width = 48,
+  height = 32,
+  pattern = "12",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1168,
+  width = 64,
+  height = 64,
+  pattern = "14",
+}
+
+tile{
+  layer = 1,
+  x = 776,
+  y = 968,
+  width = 64,
+  height = 8,
+  pattern = "2_10",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 1016,
+  width = 64,
+  height = 8,
+  pattern = "2_5",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 1072,
+  width = 64,
+  height = 8,
+  pattern = "2_8",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 968,
+  width = 64,
+  height = 8,
+  pattern = "2",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 1032,
+  y = 600,
+  width = 64,
+  height = 8,
+  pattern = "2_5",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 552,
+  width = 64,
+  height = 8,
+  pattern = "2_3",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 600,
+  width = 64,
+  height = 8,
+  pattern = "2_5",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 544,
+  width = 64,
+  height = 8,
+  pattern = "2",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 968,
+  width = 64,
+  height = 8,
+  pattern = "2_3",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 136,
+  width = 64,
+  height = 8,
+  pattern = "2_7",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 184,
+  width = 64,
+  height = 8,
+  pattern = "2_6",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 136,
+  width = 64,
+  height = 8,
+  pattern = "2_10",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 512,
+  width = 16,
+  height = 8,
+  pattern = "31",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 928,
+  width = 16,
+  height = 8,
+  pattern = "31",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "31",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 1096,
+  y = 1016,
+  width = 64,
+  height = 8,
+  pattern = "2_9",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 1016,
+  width = 64,
+  height = 8,
+  pattern = "2_4",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 536,
+  y = 1072,
+  width = 16,
+  height = 8,
+  pattern = "31",
+  tileset = "suburbs",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle_6",
   layer = 1,
@@ -3801,7 +15590,7 @@ dynamic_tile{
   name = "^lighting_effect_candle_18",
   layer = 1,
   x = 768,
-  y = 1048,
+  y = 1056,
   width = 16,
   height = 24,
   pattern = "16_2",
@@ -3813,6 +15602,116 @@ dynamic_tile{
   layer = 1,
   x = 480,
   y = 1048,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_62",
+  layer = 1,
+  x = 368,
+  y = 80,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_63",
+  layer = 1,
+  x = 864,
+  y = 80,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_64",
+  layer = 1,
+  x = 640,
+  y = 80,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_65",
+  layer = 1,
+  x = 768,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_66",
+  layer = 1,
+  x = 480,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_67",
+  layer = 1,
+  x = 992,
+  y = 632,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_68",
+  layer = 1,
+  x = 240,
+  y = 632,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_69",
+  layer = 1,
+  x = 240,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_70",
+  layer = 1,
+  x = 992,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "16_2",
+  tileset = "ghost_town",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_71",
+  layer = 1,
+  x = 864,
+  y = 704,
   width = 16,
   height = 24,
   pattern = "16_2",
