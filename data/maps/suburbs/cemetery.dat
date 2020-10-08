@@ -8576,6 +8576,15 @@ tile{
   tileset = "ghost_town",
 }
 
+tile{
+  layer = 0,
+  x = 1000,
+  y = 280,
+  width = 32,
+  height = 16,
+  pattern = "26",
+}
+
 sensor{
   name = "warped_sensor",
   layer = 0,
@@ -8795,11 +8804,12 @@ custom_entity{
 }
 
 destination{
-  name = "ghost_candle_destination",
+  name = "from_spirit_world",
   layer = 0,
   x = 696,
   y = 205,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 custom_entity{
@@ -9632,7 +9642,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "spirit_world/creepytown",
-  destination = "ghost_candle_destination",
+  destination = "from_human_world",
   sprite = "entities/portal",
 }
 
@@ -11444,7 +11454,7 @@ custom_entity{
 }
 
 destination{
-  name = "ghost_candle_destination_2",
+  name = "ghost_candle_destination",
   layer = 0,
   x = 504,
   y = 413,

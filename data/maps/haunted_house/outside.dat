@@ -548,6 +548,7 @@ destination{
   x = 968,
   y = 501,
   direction = 2,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -5877,68 +5878,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
-  y = 784,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
   x = 864,
   y = 808,
   width = 16,
   height = 24,
   pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 784,
-  width = 48,
-  height = 16,
-  pattern = "26",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 816,
-  width = 16,
-  height = 16,
-  pattern = "12_2",
-  tileset = "yarntown",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 800,
-  width = 16,
-  height = 16,
-  pattern = "13_2",
-  tileset = "yarntown",
-}
-
-tile{
-  layer = 0,
-  x = 776,
-  y = 800,
-  width = 16,
-  height = 16,
-  pattern = "96",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 824,
-  width = 16,
-  height = 16,
-  pattern = "13_2",
-  tileset = "yarntown",
 }
 
 tile{
@@ -6037,6 +5981,7 @@ destination{
   x = 816,
   y = 829,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 destination{
@@ -6045,6 +5990,7 @@ destination{
   x = 968,
   y = 413,
   direction = 2,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -7107,6 +7053,7 @@ destination{
   x = 720,
   y = 205,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -9326,33 +9273,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 832,
-  y = 712,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 784,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 744,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
   x = 848,
   y = 736,
   width = 48,
@@ -9395,35 +9315,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "93",
-  tileset = "yarntown",
-}
-
-tile{
-  layer = 1,
-  x = 776,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "95",
-  tileset = "yarntown",
-}
-
-tile{
-  layer = 1,
-  x = 776,
-  y = 792,
-  width = 16,
-  height = 16,
-  pattern = "96",
-}
-
-tile{
-  layer = 1,
-  x = 760,
-  y = 808,
-  width = 16,
-  height = 16,
-  pattern = "95",
   tileset = "yarntown",
 }
 

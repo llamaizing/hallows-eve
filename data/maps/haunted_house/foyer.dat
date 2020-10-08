@@ -1173,6 +1173,7 @@ destination{
   x = 208,
   y = 445,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -1213,6 +1214,7 @@ destination{
   x = 72,
   y = 373,
   direction = 0,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -1232,6 +1234,7 @@ destination{
   x = 208,
   y = 269,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -1297,6 +1300,7 @@ destination{
   x = 344,
   y = 181,
   direction = 2,
+  starting_location_mode = "no",
 }
 
 destination{
@@ -1305,6 +1309,7 @@ destination{
   x = 344,
   y = 373,
   direction = 2,
+  starting_location_mode = "no",
 }
 
 teletransporter{

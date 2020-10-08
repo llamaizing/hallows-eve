@@ -1,0 +1,290 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "8_9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "37",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 96,
+  height = 16,
+  pattern = "40",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 128,
+  width = 32,
+  height = 48,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 64,
+  height = 48,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 128,
+  width = 48,
+  height = 48,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "43",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "44",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 64,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "36",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 128,
+  width = 48,
+  height = 48,
+  pattern = "34",
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 109,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 256,
+  y = 133,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 141,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 176,
+  y = 117,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 93,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+destructible{
+  layer = 0,
+  x = 160,
+  y = 117,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 125,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 240,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 141,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+teletransporter{
+  layer = 0,
+  x = 192,
+  y = 160,
+  width = 32,
+  height = 16,
+  destination_map = "outskirts/farm",
+  destination = "from_pumpkin",
+}
+
+destination{
+  name = "from_outside",
+  layer = 0,
+  x = 208,
+  y = 157,
+  direction = 1,
+}
+
+chest{
+  layer = 0,
+  x = 208,
+  y = 109,
+  sprite = "chests/chest",
+}
+

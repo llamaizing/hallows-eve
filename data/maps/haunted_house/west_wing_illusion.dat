@@ -1150,6 +1150,7 @@ destination{
   x = 2120,
   y = 2285,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 enemy{

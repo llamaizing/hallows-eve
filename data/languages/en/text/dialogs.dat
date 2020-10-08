@@ -1,4 +1,13 @@
 dialog{
+  id = "_treasure.pumpkin_jordans.1",
+  text = [[
+You found a pair of Pumpkin Jordans!
+Press the action button with these sick kicks on
+to do a pumpkin dash.
+]],
+}
+
+dialog{
   id = "_treasure.seed_shoot.1",
   text = [[
 You found pocket seeds! Keep them in your pocket
@@ -108,8 +117,8 @@ Why are you already in your costume anyway?
 We can't go to the halloween party until we feed
 Chelsea's lizard. I was trusted with this lizard, Toby.
 I have a sacred duty to care for this lizard if I want
-Chelsea to date me. Would you turn your back
-on your boy like that just to dress up early?
+to be considered boyfriend material. And you would
+endanger that just to dress up early?
 ]],
 }
 
@@ -119,9 +128,9 @@ dialog{
 @Toby
 I just didn't know how long finding worms
 would take so I figured I'd strawberry up
-now and just be ready. Anyway, are you
-sure that there's worms in the cemetery?
-I don't see any.
+now and just be ready.
+Anyway, are you sure that there's worms in
+the cemetery? I don't see any.
 ]],
 }
 
@@ -153,6 +162,14 @@ waiting for this moment? To get my revenge on this town?
 ALL OF AUBURN SHALL BE CURSED! Monsters shall
 torment you until my curse is broken!
 Ahahahahahahaha!
+]],
+}
+
+dialog{
+  id = "controls.healing",
+  text = [[
+Hold V to heal. This uses energy, which you
+can replenish by kicking ghosts.
 ]],
 }
 

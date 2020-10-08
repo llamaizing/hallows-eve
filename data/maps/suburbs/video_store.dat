@@ -410,6 +410,7 @@ destination{
   x = 208,
   y = 205,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 npc{

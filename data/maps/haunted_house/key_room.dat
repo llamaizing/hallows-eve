@@ -2381,6 +2381,7 @@ destination{
   x = 720,
   y = 461,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 teletransporter{

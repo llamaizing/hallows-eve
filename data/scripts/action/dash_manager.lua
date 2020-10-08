@@ -7,6 +7,9 @@ local movement_id = 1
 local current_movement
 
 function dash_manager:dash(game)
+    if not game:has_item"pumpkin_jordans" then
+      return
+    end
     --create movement
     local hero = game:get_hero()
     local dir = hero:get_direction()

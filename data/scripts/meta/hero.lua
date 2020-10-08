@@ -47,7 +47,21 @@ function hero_meta:on_taking_damage(damage)
   local iframe_length = 1000
   hero:set_invincible(true, iframe_length)
   hero:set_blinking(true, iframe_length)
+
+
+    --If this is the first time you've been hurt, explain healing
+    if not game:get_value("healing_explained") then
+      game:set_value("healing_explained", true)
+      game:start_dialog("controls.healing", function()
+        hero:set_invincible(true, 1000)
+        hero:set_blinking(true, 1000)
+      end)
+    end
+
 end
+
+
+
 
 
 hero_meta:register_event("on_state_changed", function(self, state)
@@ -78,6 +92,8 @@ hero_meta:register_event("on_state_changed", function(self, state)
     game:simulate_command_released("attack")
     hero:start_attack_loading(0)
   end
+
+
 
   --weird bad fire sword
   if state == "sword swinging" and game.sword_on_fire then

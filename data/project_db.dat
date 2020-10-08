@@ -16,6 +16,7 @@ map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" 
 map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
 map{ id = "outskirts/farm", description = "Farm" }
 map{ id = "outskirts/forest", description = "Forest" }
+map{ id = "outskirts/pumpkin_inside", description = "Pumpkin Inside" }
 map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
@@ -314,6 +315,7 @@ item{ id = "inventory/hookshot", description = "Hookshot" }
 item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 item{ id = "library_statue_gear", description = "Library Statue Gear" }
+item{ id = "pumpkin_jordans", description = "Pumpkin Jordans" }
 item{ id = "seed_shoot", description = "Seed Shoot" }
 item{ id = "small_key", description = "Small Key" }
 item{ id = "soccer_kick", description = "Soccer Kick Attack" }
@@ -401,6 +403,7 @@ file{ path = "items/inventory/library/hookshot_config.lua", author = "Christopho
 file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/library_statue_gear.lua", author = "Max Mraz", }
+file{ path = "items/pumpkin_jordans.lua", author = "Max Mraz", }
 file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
 file{ path = "items/small_key.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
@@ -438,6 +441,8 @@ file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
+file{ path = "maps/outskirts/pumpkin_inside.dat", author = "Max Mraz", }
+file{ path = "maps/outskirts/pumpkin_inside.lua", author = "Max Mraz", }
 file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
 file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }

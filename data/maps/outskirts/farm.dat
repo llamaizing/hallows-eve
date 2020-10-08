@@ -7904,6 +7904,7 @@ destination{
   x = 24,
   y = 613,
   direction = 0,
+  starting_location_mode = "no",
 }
 
 custom_entity{
@@ -15595,6 +15596,7 @@ destination{
   x = 24,
   y = 957,
   direction = 0,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -16966,6 +16968,24 @@ custom_entity{
   direction = 0,
   sprite = "foliage/autumn_grass_clump",
   model = "foliage",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1112,
+  y = 616,
+  width = 16,
+  height = 16,
+  destination_map = "outskirts/pumpkin_inside",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_pumpkin",
+  layer = 0,
+  x = 1120,
+  y = 645,
+  direction = 3,
 }
 
 tile{

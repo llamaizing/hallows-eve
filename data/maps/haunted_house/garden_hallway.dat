@@ -1031,6 +1031,7 @@ destination{
   x = 208,
   y = 1405,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 enemy{

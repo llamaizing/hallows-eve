@@ -5950,6 +5950,7 @@ destination{
   x = 312,
   y = 1181,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 dynamic_tile{
@@ -7394,6 +7395,7 @@ destination{
   x = 1216,
   y = 1021,
   direction = 2,
+  starting_location_mode = "no",
 }
 
 custom_entity{

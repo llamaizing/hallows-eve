@@ -16189,7 +16189,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "suburbs/cemetery",
-  destination = "ghost_candle_destination",
+  destination = "from_spirit_world",
   sprite = "entities/portal",
 }
 
@@ -16203,11 +16203,12 @@ sensor{
 }
 
 destination{
-  name = "ghost_candle_destination",
+  name = "from_human_world",
   layer = 0,
   x = 1616,
   y = 229,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -16233,7 +16234,7 @@ custom_entity{
 }
 
 destination{
-  name = "ghost_candle_destination_2",
+  name = "ghost_candle_destination",
   layer = 0,
   x = 1440,
   y = 253,

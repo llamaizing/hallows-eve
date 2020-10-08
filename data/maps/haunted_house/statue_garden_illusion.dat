@@ -2530,6 +2530,7 @@ destination{
   x = 208,
   y = 37,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 tile{

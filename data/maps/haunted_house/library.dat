@@ -3239,6 +3239,7 @@ destination{
   x = 416,
   y = 429,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -3277,6 +3278,7 @@ destination{
   x = 416,
   y = 149,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 destination{
@@ -3285,6 +3287,7 @@ destination{
   x = 176,
   y = 365,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 stairs{
