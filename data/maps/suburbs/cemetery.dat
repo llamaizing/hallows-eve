@@ -2256,8 +2256,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 656,
-  y = 304,
+  x = 744,
+  y = 320,
   width = 16,
   height = 24,
   pattern = "11",
@@ -2265,8 +2265,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 616,
-  y = 328,
+  x = 704,
+  y = 344,
   width = 16,
   height = 24,
   pattern = "11",
@@ -2310,8 +2310,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 568,
-  y = 344,
+  x = 656,
+  y = 360,
   width = 24,
   height = 24,
   pattern = "88",
@@ -2320,8 +2320,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 360,
+  x = 680,
+  y = 376,
   width = 24,
   height = 24,
   pattern = "88_2",
@@ -2330,8 +2330,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 640,
-  y = 352,
+  x = 728,
+  y = 368,
   width = 32,
   height = 24,
   pattern = "86",
@@ -2340,7 +2340,27 @@ tile{
 
 tile{
   layer = 0,
-  x = 624,
+  x = 712,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "83",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 760,
   y = 368,
   width = 16,
   height = 16,
@@ -2350,28 +2370,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
-  y = 360,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "ghost_town",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "83",
-  tileset = "ghost_town",
-}
-
-tile{
-  layer = 0,
-  x = 680,
-  y = 368,
+  x = 768,
+  y = 384,
   width = 16,
   height = 16,
   pattern = "81",
@@ -2380,8 +2380,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 696,
-  y = 352,
+  x = 784,
+  y = 368,
   width = 16,
   height = 16,
   pattern = "81_2",
@@ -3663,8 +3663,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 680,
-  y = 312,
+  x = 768,
+  y = 328,
   width = 32,
   height = 40,
   pattern = "75_2",
@@ -8476,6 +8476,106 @@ tile{
   pattern = "30",
 }
 
+tile{
+  layer = 0,
+  x = 352,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "199",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "195",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "198",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "200",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "201",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "202",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "197",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "196",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "12",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "85",
+  tileset = "ghost_town",
+}
+
 sensor{
   name = "warped_sensor",
   layer = 0,
@@ -8946,8 +9046,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 712,
-  y = 373,
+  x = 800,
+  y = 389,
   width = 16,
   height = 16,
   direction = 0,
@@ -8957,8 +9057,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 704,
-  y = 381,
+  x = 792,
+  y = 397,
   width = 16,
   height = 16,
   direction = 0,
@@ -9310,8 +9410,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 800,
-  y = 373,
+  x = 688,
+  y = 357,
   width = 16,
   height = 16,
   direction = 0,
@@ -9486,24 +9586,24 @@ custom_entity{
 
 enemy{
   layer = 0,
-  x = 400,
-  y = 437,
+  x = 224,
+  y = 365,
   direction = 0,
   breed = "spider_thing",
 }
 
 enemy{
   layer = 0,
-  x = 176,
-  y = 269,
+  x = 296,
+  y = 213,
   direction = 0,
   breed = "spider_thing",
 }
 
 enemy{
   layer = 0,
-  x = 152,
-  y = 285,
+  x = 376,
+  y = 205,
   direction = 0,
   breed = "spider_thing",
 }
@@ -9576,6 +9676,7 @@ destination{
   x = 1024,
   y = 29,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 teletransporter{
@@ -11279,6 +11380,127 @@ enemy{
   breed = "gremlin",
 }
 
+npc{
+  name = "witch_obelisk",
+  layer = 0,
+  x = 344,
+  y = 237,
+  direction = 0,
+  subtype = 0,
+  sprite = "entities/witch_obelisk",
+}
+
+npc{
+  name = "zach",
+  layer = 0,
+  x = 152,
+  y = 253,
+  direction = 0,
+  subtype = 1,
+  sprite = "npcs/zach",
+}
+
+npc{
+  name = "lizard",
+  layer = 0,
+  x = 152,
+  y = 269,
+  direction = 0,
+  subtype = 1,
+  sprite = "npcs/lizard",
+}
+
+npc{
+  name = "toby",
+  layer = 0,
+  x = 128,
+  y = 261,
+  direction = 0,
+  subtype = 1,
+  sprite = "npcs/toby",
+}
+
+npc{
+  name = "acimonia",
+  layer = 0,
+  x = 328,
+  y = 197,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/acimonia",
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 504,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination_2",
+  layer = 0,
+  x = 504,
+  y = 413,
+  direction = 3,
+  default = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 672,
+  y = 349,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 632,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 640,
+  y = 397,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+enemy{
+  layer = 0,
+  x = 752,
+  y = 549,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 720,
+  y = 565,
+  direction = 0,
+  breed = "spider_thing",
+}
+
 tile{
   layer = 1,
   x = -64,
@@ -12967,16 +13189,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 320,
-  y = 152,
-  width = 16,
-  height = 8,
-  pattern = "85",
-  tileset = "ghost_town",
-}
-
-tile{
-  layer = 1,
   x = 496,
   y = 352,
   width = 16,
@@ -13014,8 +13226,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 304,
+  x = 728,
+  y = 320,
   width = 48,
   height = 32,
   pattern = "12",
@@ -13023,8 +13235,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 232,
+  x = 728,
+  y = 248,
   width = 48,
   height = 32,
   pattern = "77_2",
@@ -13032,8 +13244,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 264,
+  x = 728,
+  y = 280,
   width = 48,
   height = 48,
   pattern = "76_2",
@@ -13041,8 +13253,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 600,
-  y = 328,
+  x = 688,
+  y = 344,
   width = 48,
   height = 32,
   pattern = "12",
@@ -13050,8 +13262,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 600,
-  y = 256,
+  x = 688,
+  y = 272,
   width = 48,
   height = 32,
   pattern = "77_2",
@@ -13059,8 +13271,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 600,
-  y = 288,
+  x = 688,
+  y = 304,
   width = 48,
   height = 48,
   pattern = "76_2",
@@ -13176,8 +13388,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 568,
-  y = 336,
+  x = 656,
+  y = 352,
   width = 24,
   height = 8,
   pattern = "89",
@@ -13186,8 +13398,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 592,
-  y = 352,
+  x = 680,
+  y = 368,
   width = 24,
   height = 8,
   pattern = "89_2",
@@ -13196,8 +13408,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 640,
-  y = 344,
+  x = 728,
+  y = 360,
   width = 32,
   height = 8,
   pattern = "87",
@@ -13206,8 +13418,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 680,
-  y = 352,
+  x = 768,
+  y = 368,
   width = 16,
   height = 16,
   pattern = "82",
@@ -13216,8 +13428,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 696,
-  y = 336,
+  x = 784,
+  y = 352,
   width = 16,
   height = 16,
   pattern = "82_2",
@@ -13803,8 +14015,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 680,
-  y = 288,
+  x = 768,
+  y = 304,
   width = 32,
   height = 24,
   pattern = "78_2",

@@ -11884,7 +11884,7 @@ tile{
 tile{
   layer = 0,
   x = 1408,
-  y = 320,
+  y = 328,
   width = 48,
   height = 32,
   pattern = "18",
@@ -11893,7 +11893,7 @@ tile{
 tile{
   layer = 0,
   x = 1416,
-  y = 320,
+  y = 328,
   width = 32,
   height = 24,
   pattern = "92",
@@ -11902,7 +11902,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1432,
+  x = 1464,
   y = 256,
   width = 16,
   height = 16,
@@ -11911,8 +11911,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1456,
-  y = 248,
+  x = 1480,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "83",
@@ -11920,8 +11920,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1472,
-  y = 256,
+  x = 1496,
+  y = 264,
   width = 16,
   height = 16,
   pattern = "84",
@@ -12010,8 +12010,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1496,
-  y = 256,
+  x = 1520,
+  y = 264,
   width = 16,
   height = 16,
   pattern = "81_2",
@@ -12019,8 +12019,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1512,
-  y = 264,
+  x = 1536,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "84",
@@ -12136,15 +12136,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1432,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "81_2",
-}
-
-tile{
-  layer = 0,
   x = 1400,
   y = 184,
   width = 32,
@@ -12246,7 +12237,7 @@ tile{
 tile{
   layer = 0,
   x = 1408,
-  y = 336,
+  y = 344,
   width = 16,
   height = 24,
   pattern = "15_2",
@@ -14167,11 +14158,38 @@ tile{
   pattern = "102",
 }
 
+tile{
+  layer = 0,
+  x = 1544,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "83",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 224,
+  width = 24,
+  height = 24,
+  pattern = "88_2",
+}
+
+sensor{
+  name = "see_portal_sensor",
+  layer = 0,
+  x = 1568,
+  y = 301,
+  width = 96,
+  height = 16,
+}
+
 destination{
   name = "from_apartment",
   layer = 0,
   x = 296,
-  y = 117,
+  y = 133,
   direction = 3,
 }
 
@@ -15798,7 +15816,7 @@ dynamic_tile{
 dynamic_tile{
   name = "^lighting_effect_candle_60",
   layer = 0,
-  x = 1488,
+  x = 1472,
   y = 256,
   width = 16,
   height = 24,
@@ -16190,6 +16208,46 @@ destination{
   x = 1616,
   y = 229,
   direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 288,
+  y = 104,
+  width = 16,
+  height = 16,
+  destination_map = "spirit_world/apartment",
+  destination = "from_outside",
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 1440,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination_2",
+  layer = 0,
+  x = 1440,
+  y = 253,
+  direction = 3,
+  default = true,
+}
+
+sensor{
+  name = "see_ghost_candle_sensor",
+  layer = 0,
+  x = 1512,
+  y = 381,
+  width = 80,
+  height = 16,
 }
 
 tile{
@@ -19740,7 +19798,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1432,
+  x = 1464,
   y = 240,
   width = 16,
   height = 16,
@@ -19749,8 +19807,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1472,
-  y = 248,
+  x = 1496,
+  y = 256,
   width = 16,
   height = 8,
   pattern = "85",
@@ -19812,8 +19870,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1496,
-  y = 240,
+  x = 1520,
+  y = 248,
   width = 16,
   height = 16,
   pattern = "82_2",
@@ -19821,8 +19879,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1512,
-  y = 256,
+  x = 1536,
+  y = 264,
   width = 16,
   height = 8,
   pattern = "85",
@@ -19844,15 +19902,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "85",
-}
-
-tile{
-  layer = 1,
-  x = 1432,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "82_2",
 }
 
 tile{
@@ -19904,7 +19953,7 @@ tile{
 tile{
   layer = 1,
   x = 1400,
-  y = 264,
+  y = 272,
   width = 64,
   height = 56,
   pattern = "93",
@@ -21709,6 +21758,15 @@ tile{
   pattern = "66_2",
 }
 
+tile{
+  layer = 1,
+  x = 1480,
+  y = 216,
+  width = 24,
+  height = 8,
+  pattern = "89_2",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle",
   layer = 1,
@@ -21983,7 +22041,7 @@ dynamic_tile{
   name = "^lighting_effect_candle_50",
   layer = 1,
   x = 1408,
-  y = 312,
+  y = 320,
   width = 16,
   height = 24,
   pattern = "16_2",

@@ -17,6 +17,7 @@ map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
 map{ id = "outskirts/farm", description = "Farm" }
 map{ id = "outskirts/forest", description = "Forest" }
 map{ id = "respawn_map", description = "Respawn Map" }
+map{ id = "spirit_world/apartment", description = "Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
@@ -86,6 +87,7 @@ sprite{ id = "entities/effects/light_l", description = "Light - L" }
 sprite{ id = "entities/effects/light_m", description = "Light M" }
 sprite{ id = "entities/effects/light_s", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
+sprite{ id = "entities/effects/tv_light", description = "Tv Light" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/ghost_candle", description = "Ghost Candle" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
@@ -101,6 +103,7 @@ sprite{ id = "entities/small_explosion", description = "Small Explosion" }
 sprite{ id = "entities/soccer_ball", description = "Soccer Ball" }
 sprite{ id = "entities/soccer_ball_flame", description = "Soccer ball flame" }
 sprite{ id = "entities/suspicion_indicator", description = "Question Mark" }
+sprite{ id = "entities/witch_obelisk", description = "Witch Obelisk" }
 sprite{ id = "foliage/autumn_grass_clump", description = "AutumnGrass-Clump" }
 sprite{ id = "foliage/autumnlily", description = "Autumnlily" }
 sprite{ id = "foliage/barley", description = "Barley" }
@@ -142,8 +145,11 @@ sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
+sprite{ id = "npcs/acimonia", description = "Acimonia" }
 sprite{ id = "npcs/caleb", description = "Caleb" }
+sprite{ id = "npcs/lizard", description = "Lizard" }
 sprite{ id = "npcs/neighborhood_adult_1", description = "Neighborhood Adult 1" }
+sprite{ id = "npcs/ralph", description = "Ralph" }
 sprite{ id = "npcs/toby", description = "Toby" }
 sprite{ id = "npcs/toby_hat", description = "Toby-Hat" }
 sprite{ id = "npcs/treater_ghost", description = "Treater-Ghost" }
@@ -272,6 +278,7 @@ sound{ id = "throw", description = "throw" }
 sound{ id = "thunder1", description = "thunder1" }
 sound{ id = "thunder2", description = "thunder2" }
 sound{ id = "thunder3", description = "thunder3" }
+sound{ id = "thunder4_short", description = "thunder4_short" }
 sound{ id = "thunder_double", description = "thunder_double" }
 sound{ id = "thunder_far", description = "thunder_far" }
 sound{ id = "timer", description = "timer" }
@@ -433,6 +440,8 @@ file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
 file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
 file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
@@ -567,8 +576,6 @@ file{ path = "sounds/sword_tapping_weak_wall.ogg", author = "Diarandor", license
 file{ path = "sounds/teleporter.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/throw.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/thunder1.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/thunder2.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sounds/thunder3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/thunder_double.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/thunder_far.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/timer.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -644,6 +651,7 @@ file{ path = "sprites/entities/effects/light_s.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/effects/light_s.png", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/effects/light_xl.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/effects/light_xl.png", license = "CC BY-SA 4.0" }
+file{ path = "sprites/entities/effects/tv_light.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/explosion_4.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/fountain v1.1.ase", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/ghost_candle.dat", author = "Max Mraz", }
@@ -659,6 +667,7 @@ file{ path = "sprites/entities/small_explosion.dat", author = "Max Mraz", licens
 file{ path = "sprites/entities/soccer_ball.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/soccer_ball_flame.dat", author = "Max Mraz", }
 file{ path = "sprites/entities/suspicion_indicator.dat", author = "Max Mraz", }
+file{ path = "sprites/entities/witch_obelisk.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/autumn_grass_clump.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/autumnlily.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/barley.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -716,8 +725,11 @@ file{ path = "sprites/menus/solarus_logo.png", author = "Olivier Cléro", licens
 file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
+file{ path = "sprites/npcs/acimonia.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/caleb.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/lizard.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/neighborhood_adult_1.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/ralph.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby_hat.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/treater_ghost.dat", author = "Max Mraz", }

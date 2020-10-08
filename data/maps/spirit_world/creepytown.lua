@@ -23,10 +23,39 @@ map:register_event("on_started", function()
 end)
 
 
+function map:on_opening_transition_finished()
+    if not game:get_value("creepytown_seen_warp") then
+      game:start_dialog("spirit_world.directions_to_warp")
+    end
+end
+
+
+function see_ghost_candle_sensor:on_activated()
+  if not game:get_value("ghost_candle_explanation") then
+    game:set_value("ghost_candle_explanation", true)
+    map:focus_on(ghost_candle, function()
+      game:start_dialog("spirit_world.see_ghost_candle")
+    end)
+  end
+end
+
+
+function see_portal_sensor:on_activated()
+  if not game:get_value("creepytown_seen_warp") then
+    map:focus_on(warp_portal, function()
+      game:start_dialog("spirit_world.see_warp")
+      game:set_value("creepytown_seen_warp", true)
+    end)
+  end
+end
+
+
 function warped_sensor:on_activated()
+--[[
   game:set_life(game:get_max_life())
   game:set_magic(game:get_max_magic())
   game:set_value("respawn_map", map:get_id())
   game:set_starting_location(map:get_id(), "ghost_candle_destination")
   game:save()
+--]]
 end

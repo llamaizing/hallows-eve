@@ -15,6 +15,155 @@ You found a key. Probably it unlocks a nearby door.
 }
 
 dialog{
+  id = "cemetery.curse_scene.1",
+  text = [[
+@Ichabod
+Welcome to the human world, me. The coast looks clear,
+nobody around to see-
+Oh shoot, what's that?
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.10",
+  text = [[
+@Zach
+Hey, so I'm like, actually really busy trying to
+find worms for this lizard right now?
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.11",
+  text = [[
+@Zach
+Oh hey wait! The lizard is getting away!
+Toby, head it off!
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.12",
+  text = [[
+@Toby
+Ahhhhhh!
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.13",
+  text = [[
+@Acimonia
+Does nobody want to know how to break the curse?
+Ugh, this is why I hate this town... Anyway.
+Spirits of darkness! I summon thee!
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.14",
+  text = [[
+@Ichabod
+Of course the town gets cursed the day I need
+to run errands. Well, the video store is south of
+here and west down the road.
+And I guess there's gonna be some ghosts
+in my way. Shoot.
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.2",
+  text = [[
+@Zach
+Alright lizard, this is the cemetery. You eat like, worms
+and shit, so this is basically gonna be a fancy lizard
+buffet with all the worms that grow in corpses I think.
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.3",
+  text = [[
+@Zach
+Where did Toby go? Toooooobbbbbyyy!
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.4",
+  text = [[
+@Toby
+Sorry Zach! *puff puff*...
+The strawberry costume...
+It's not designed for performance...
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.5",
+  text = [[
+@Zach
+Why are you already in your costume anyway?
+We can't go to the halloween party until we feed
+Chelsea's lizard. I was trusted with this lizard, Toby.
+I have a sacred duty to care for this lizard if I want
+Chelsea to date me. Would you turn your back
+on your boy like that just to dress up early?
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.6",
+  text = [[
+@Toby
+I just didn't know how long finding worms
+would take so I figured I'd strawberry up
+now and just be ready. Anyway, are you
+sure that there's worms in the cemetery?
+I don't see any.
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.7",
+  text = [[
+@Zach
+Yeah, worms grow inside dead bodies, I saw
+it on TV. Maybe there's some behind this
+foreboding obelisk over here.
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.8",
+  text = [[
+@Zach
+Oops, what a wobbly obelisk.
+]],
+}
+
+dialog{
+  id = "cemetery.curse_scene.9",
+  text = [[
+@Acimonia
+Well, well, well, a foolish mortal has finally freed me
+from my prison. Do you know how long I've been
+waiting for this moment? To get my revenge on this town?
+ALL OF AUBURN SHALL BE CURSED! Monsters shall
+torment you until my curse is broken!
+Ahahahahahahaha!
+]],
+}
+
+dialog{
+  id = "controls.kick",
+  text = [[
+Press C to kick ghosts
+]],
+}
+
+dialog{
   id = "demo.cabin.green_knight10_dialog",
   text = [[
 If you don't like any of our preset speeds. 
@@ -930,6 +1079,96 @@ dialog{
   text = [[
 Using the gear you found, you activate the
 spinny statue mechanism.
+]],
+}
+
+dialog{
+  id = "spirit_world.apartment.ralph_beginning",
+  text = [[
+@Ralph
+Hey, you're back. How's the human world?
+===
+@Ichabod
+Uh, it got a bit weird. I'm still working on getting
+Jurassic Park.
+===
+@Ralph
+Hey, I believe in you and stuff.
+]],
+}
+
+dialog{
+  id = "spirit_world.directions_to_warp",
+  text = [[
+@Ichabod
+Alright, the portal to the human world is east
+of here in the cemetery.
+]],
+}
+
+dialog{
+  id = "spirit_world.intro_scene.1",
+  text = [[
+@Ichabod
+Hey, I'm going to the human world, you need anything?
+]],
+}
+
+dialog{
+  id = "spirit_world.intro_scene.2",
+  text = [[
+@Ralph
+Oh, is it Halloween already? What are
+you going across the barrier to get?
+]],
+}
+
+dialog{
+  id = "spirit_world.intro_scene.3",
+  text = [[
+@Ichabod
+I'm going to rent Jurassic Park. Dracula just got the
+sequel somehow and I haven't seen the first one yet.
+]],
+}
+
+dialog{
+  id = "spirit_world.intro_scene.4",
+  text = [[
+@Ralph
+Bodacious, man. I don't know, if you see some
+human cereal, could you grab that? Like some
+Frosted Flakes?
+]],
+}
+
+dialog{
+  id = "spirit_world.intro_scene.5",
+  text = [[
+@Ichabod
+Yeah, no problem. I'll see you later.
+]],
+}
+
+dialog{
+  id = "spirit_world.see_ghost_candle",
+  text = [[
+@Ichabod
+Oh, a ghost candle, I thought those only showed up
+in the moral world. Must be because the barrier is
+thin tonight.
+Touching a ghost candle will heal me. And if I got
+smashed into pieces or killed by a ghost, I could
+come back to the last candle I touched.
+]],
+}
+
+dialog{
+  id = "spirit_world.see_warp",
+  text = [[
+@Ichabod
+Bingo. Old crack between dimensions is opened
+up for the day. Here I come, dinosaurs.
 ]],
 }
 

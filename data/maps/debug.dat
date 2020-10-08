@@ -2808,7 +2808,8 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "suburbs/neighborhood",
+  destination_map = "spirit_world/apartment",
+  destination = "start",
 }
 
 custom_entity{

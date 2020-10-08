@@ -6,6 +6,7 @@ local effects = {
   explosion = sol.sprite.create"entities/effects/light_xl",
   hero_aura = sol.sprite.create"entities/effects/light_m",
   lantern = sol.sprite.create"entities/effects/light_l",
+  tv = sol.sprite.create"entities/effects/tv_light",
 }
 
 local shadow_surface
@@ -160,6 +161,13 @@ function lighting_effects:on_draw(dst_surface)
     if e:is_enabled() and e:get_distance(hero) <= 450 then
       local x,y = e:get_center_position()
       effects.candle:draw(light_surface, x - cam_x, y - cam_y)
+    end
+  end
+  --TV
+  for e in map:get_entities("^lighting_effect_tv") do
+    if e:is_enabled() and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.tv:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
   --explosions

@@ -14,6 +14,9 @@ function sol.main:on_started()
   sol.main.load_settings()
   math.randomseed(os.time())
 
+  --Set window title
+  sol.video.set_window_title("Hallow's Eve")
+
   -- Show the initial menus.
   if #initial_menus_config == 0 then
     return

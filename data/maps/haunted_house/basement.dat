@@ -1926,6 +1926,7 @@ destination{
   x = 128,
   y = 509,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 stairs{

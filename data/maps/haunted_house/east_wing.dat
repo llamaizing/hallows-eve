@@ -758,6 +758,7 @@ destination{
   x = 72,
   y = 373,
   direction = 0,
+  starting_location_mode = "no",
 }
 
 custom_entity{

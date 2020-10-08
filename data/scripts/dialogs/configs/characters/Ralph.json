@@ -1,8 +1,8 @@
 {
     "image":{
-      "path":"portraits/toby.png",
+      "path":"portraits/ralph.png",
       "position": "right",
-      "x_offset":16,
+      "x_offset":0,
       "y_offset":0
     }
   }

@@ -1,0 +1,23 @@
+animation{
+  name = "standing",
+  src_image = "entities/witch_obelisk.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 5 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 5 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 5 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 5 },
+  },
+}
+animation{
+  name = "falling",
+  src_image = "entities/witch_obelisk.png",
+  frame_delay = 60,
+  directions = {
+    { x = 320, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 8 },
+    { x = 320, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 8 },
+    { x = 320, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 8 },
+    { x = 320, y = 0, frame_width = 64, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 8 },
+  },
+}
