@@ -65,6 +65,7 @@ sprite{ id = "elements/lightning_zap_big", description = "Lightning Zap Big" }
 sprite{ id = "elements/snowflake_frisbee" }
 sprite{ id = "elements/water_puddle_s", description = "Puddle-Small" }
 sprite{ id = "elements/water_splash", description = "Splash" }
+sprite{ id = "enemies/big_lizard", description = "Big Lizard" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/eyewight", description = "Eyewight" }
 sprite{ id = "enemies/ghost_projectile", description = "Ghost Projectile" }
@@ -321,6 +322,7 @@ item{ id = "small_key", description = "Small Key" }
 item{ id = "soccer_kick", description = "Soccer Kick Attack" }
 item{ id = "spin_kick", description = "Spin Kick" }
 
+enemy{ id = "big_lizard", description = "Big Lizard" }
 enemy{ id = "eyewight", description = "Eyewight" }
 enemy{ id = "ghost_projectile", description = "Ghost Projectile" }
 enemy{ id = "gremlin", description = "Gremlin" }
@@ -345,6 +347,7 @@ entity{ id = "elements/lightning_zap", description = "Lightning Zap" }
 entity{ id = "foliage", description = "Foliage" }
 entity{ id = "ghost_candle", description = "Ghost Candle" }
 entity{ id = "hookseed", description = "Hookseed Plant" }
+entity{ id = "lizard", description = "Lizard" }
 entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
 entity{ id = "sentry", description = "Sentry" }
@@ -362,6 +365,7 @@ font{ id = "white_digits", description = "White digits" }
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
+file{ path = "enemies/big_lizard.lua", author = "Max Mraz", }
 file{ path = "enemies/eyewight.lua", author = "Max Mraz", }
 file{ path = "enemies/ghost_projectile.lua", author = "Max Mraz", }
 file{ path = "enemies/gremlin.lua", author = "Max Mraz", }
@@ -382,6 +386,7 @@ file{ path = "entities/elements/lightning_zap.lua", author = "Max Mraz", }
 file{ path = "entities/foliage.lua", author = "Max Mraz", }
 file{ path = "entities/ghost_candle.lua", author = "Max Mraz", }
 file{ path = "entities/hookseed.lua", author = "Max Mraz", }
+file{ path = "entities/lizard.lua", author = "Max Mraz", }
 file{ path = "entities/sentry.lua", author = "Max Mraz", }
 file{ path = "entities/shoot_seed.lua", author = "Max Mraz", }
 file{ path = "entities/soccer_ball.lua", author = "Max Mraz", }
@@ -628,6 +633,7 @@ file{ path = "sprites/elements/snowflake_frisbee.dat", author = "Max Mraz", }
 file{ path = "sprites/elements/water_puddle_s.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/water_splash.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
+file{ path = "sprites/enemies/big_lizard.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/enemy_killed.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/eyewight.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/ghost_projectile.dat", author = "Max Mraz", }

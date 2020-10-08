@@ -9,6 +9,15 @@ animation{
   },
 }
 animation{
+  name = "ring_bell",
+  src_image = "npcs/zach.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 5, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
   name = "walking",
   src_image = "npcs/zach.png",
   frame_delay = 100,

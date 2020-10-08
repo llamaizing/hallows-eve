@@ -30,3 +30,8 @@ map:register_event("on_started", function()
   }
   sol.menu.start(map, fog2)
 end)
+
+
+function flood_end_sensor:on_activated()
+  game:set_value("lizard_flood_finished", true)
+end

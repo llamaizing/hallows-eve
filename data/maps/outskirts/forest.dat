@@ -580,6 +580,24 @@ teletransporter{
   destination = "from_ravine",
 }
 
+sensor{
+  name = "lizard_target",
+  layer = -1,
+  x = 1256,
+  y = 477,
+  width = 16,
+  height = 80,
+}
+
+sensor{
+  name = "lizard_emitter_2",
+  layer = -1,
+  x = 104,
+  y = 509,
+  width = 16,
+  height = 16,
+}
+
 tile{
   layer = 0,
   x = 480,

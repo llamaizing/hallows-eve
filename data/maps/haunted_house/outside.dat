@@ -822,6 +822,15 @@ enemy{
   breed = "eyewight",
 }
 
+sensor{
+  name = "flood_end_sensor",
+  layer = -1,
+  x = 952,
+  y = 477,
+  width = 32,
+  height = 64,
+}
+
 tile{
   layer = 0,
   x = 352,

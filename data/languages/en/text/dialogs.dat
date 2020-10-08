@@ -990,6 +990,101 @@ in your own game
 }
 
 dialog{
+  id = "farm.lizard_scene.1",
+  text = [[
+@Zach
+So here's how this will work. The lizard probably
+came here, because a pumpkin patch is full of
+worms. That's basic farming knowledge.
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.10",
+  text = [[
+@Toby
+$font_size=32$LIZARD FLOOD!
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.11",
+  text = [[
+@Ichabod
+This ghost lizard is absolutely too big to kick,
+we're gonna have to run from this bad boy.
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.2",
+  text = [[
+@Toby
+Right!
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.3",
+  text = [[
+@Zach
+So when I ring this lizard bell, it should attact
+all the farm lizards, and we can just pick
+Chelsea's lizard out from the flock. Lizard flock.
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.4",
+  text = [[
+@Toby
+Makes sense to me!
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.5",
+  text = [[
+@Zach
+Alright! Ring a ding ding, lizards!
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.6",
+  text = [[
+@Toby
+Do you think that's enough?
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.7",
+  text = [[
+@Zach
+Probably. Now we just wait for the lizards
+to roll in, baby.
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.8",
+  text = [[
+@Toby
+This is more lizards than expected.
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.9",
+  text = [[
+@Zach
+This is more lizards than I can handle.
+We gotta get out of here!
+]],
+}
+
+dialog{
   id = "general.locked_door",
   text = [[
 The door is locked.

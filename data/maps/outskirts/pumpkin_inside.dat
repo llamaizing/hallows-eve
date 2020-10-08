@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "halloween",
+  music = "fields",
 }
 
 tile{
@@ -172,8 +173,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 232,
-  y = 93,
+  x = 168,
+  y = 141,
   sprite = "destructibles/pumpkin_small",
   weight = 1,
 }
@@ -221,8 +222,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 224,
-  y = 101,
+  x = 160,
+  y = 149,
   width = 16,
   height = 16,
   direction = 0,
@@ -232,8 +233,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 240,
-  y = 101,
+  x = 176,
+  y = 149,
   width = 16,
   height = 16,
   direction = 0,
@@ -285,6 +286,29 @@ chest{
   layer = 0,
   x = 208,
   y = 109,
+  treasure_name = "pumpkin_jordans",
+  treasure_savegame_variable = "pumpkin_jordans_chest",
   sprite = "chests/chest",
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 232,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 232,
+  y = 117,
+  direction = 3,
+  default = true,
 }
 
