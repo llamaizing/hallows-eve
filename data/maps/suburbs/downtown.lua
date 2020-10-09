@@ -7,9 +7,9 @@ map:register_event("on_started", function()
   
   local fog2 = require("scripts/fx/fog").new()
   fog2:set_props{
-  	fog_texture = {png = "fogs/pollen_1.png", mode = "blend", opacity = 60},
-  	opacity_range = {40,100},
+  	fog_texture = {png = "fogs/pollen_1.png", mode = "blend", opacity = 0},
+  	opacity_range = {0,40},
     drift = {15, 0, -1, 1}
   }
-  sol.menu.start(map, fog2)
+  --sol.menu.start(map, fog2)
 end)

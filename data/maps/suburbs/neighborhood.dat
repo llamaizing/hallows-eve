@@ -5845,6 +5845,66 @@ tile{
   tileset = "suburbs",
 }
 
+tile{
+  layer = 0,
+  x = 256,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 1200,
+  width = 80,
+  height = 16,
+  pattern = "26",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 1200,
+  width = 80,
+  height = 16,
+  pattern = "26",
+  tileset = "suburbs",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle_1",
   layer = 0,
@@ -15498,6 +15558,16 @@ tile{
   height = 8,
   pattern = "31",
   tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 1168,
+  width = 64,
+  height = 64,
+  pattern = "14",
+  tileset = "halloween",
 }
 
 dynamic_tile{

@@ -1,6 +1,6 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 4000,
+  y = 4000,
   width = 1664,
   height = 848,
   min_layer = 0,
@@ -4436,16 +4436,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 232,
-  y = 616,
-  width = 16,
-  height = 24,
-  pattern = "15_2",
-  tileset = "ghost_town",
-}
-
-tile{
-  layer = 0,
   x = 1072,
   y = 792,
   width = 32,
@@ -4815,110 +4805,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
+  x = 128,
   y = 752,
-  width = 128,
+  width = 96,
   height = 8,
   pattern = "86",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 792,
-  width = 64,
-  height = 16,
-  pattern = "79",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 760,
-  width = 16,
-  height = 32,
-  pattern = "83",
-}
-
-tile{
-  layer = 0,
-  x = -48,
-  y = 760,
-  width = 16,
-  height = 64,
-  pattern = "82",
-}
-
-tile{
-  layer = 0,
-  x = -32,
-  y = 744,
-  width = 128,
-  height = 8,
-  pattern = "86",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 744,
-  width = 16,
-  height = 16,
-  pattern = "84",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 792,
-  width = 16,
-  height = 16,
-  pattern = "80",
-}
-
-tile{
-  layer = 0,
-  x = -48,
-  y = 744,
-  width = 16,
-  height = 16,
-  pattern = "85",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 792,
-  width = 16,
-  height = 16,
-  pattern = "90",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 808,
-  width = 16,
-  height = 16,
-  pattern = "80",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 808,
-  width = 16,
-  height = 16,
-  pattern = "90",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 824,
-  width = 16,
-  height = 16,
-  pattern = "80",
 }
 
 tile{
@@ -5570,24 +5461,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 800,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 824,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
   x = 488,
   y = 800,
   width = 16,
@@ -5669,35 +5542,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 840,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
   x = 216,
   y = 864,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 40,
-  y = 760,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = -8,
-  y = 776,
   width = 16,
   height = 24,
   pattern = "11",
@@ -8583,6 +8429,334 @@ tile{
   width = 32,
   height = 16,
   pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 608,
+  width = 128,
+  height = 32,
+  pattern = "25",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 616,
+  width = 16,
+  height = 24,
+  pattern = "15_2",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 544,
+  width = 128,
+  height = 64,
+  pattern = "25",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "68_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "67_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "71_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "72_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "69_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "70_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "68_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "67_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 560,
+  width = 32,
+  height = 32,
+  pattern = "71_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "72_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 584,
+  width = 48,
+  height = 16,
+  pattern = "68_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 568,
+  width = 48,
+  height = 16,
+  pattern = "71_2",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 568,
+  width = 32,
+  height = 32,
+  pattern = "74",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 544,
+  width = 128,
+  height = 16,
+  pattern = "53",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "64",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 552,
+  width = 128,
+  height = 16,
+  pattern = "65",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 568,
+  width = 32,
+  height = 24,
+  pattern = "73",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 568,
+  width = 32,
+  height = 24,
+  pattern = "73",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "75",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 560,
+  width = 80,
+  height = 112,
+  pattern = "26",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 544,
+  width = 16,
+  height = 96,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 544,
+  width = 80,
+  height = 16,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "85",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 768,
+  width = 16,
+  height = 80,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 752,
+  width = 128,
+  height = 64,
+  pattern = "25",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 560,
+  width = 64,
+  height = 32,
+  pattern = "1",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "100",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "99",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 640,
+  width = 32,
+  height = 16,
+  pattern = "282",
+  tileset = "oceanset_outside",
 }
 
 sensor{
@@ -11509,6 +11683,520 @@ enemy{
   y = 565,
   direction = 0,
   breed = "spider_thing",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 421,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 429,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 0,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 445,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 56,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 32,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 477,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 64,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 485,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 501,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 509,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 152,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+wall{
+  layer = 0,
+  x = 0,
+  y = 512,
+  width = 128,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 0,
+  y = 496,
+  width = 112,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 112,
+  y = 504,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 0,
+  y = 784,
+  width = 112,
+  height = 64,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -15130,42 +15818,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 96,
-  y = 800,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 96,
-  y = 760,
-  width = 48,
-  height = 48,
-  pattern = "13",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 824,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 56,
-  y = 784,
-  width = 48,
-  height = 48,
-  pattern = "13",
-}
-
-tile{
-  layer = 1,
   x = 472,
   y = 800,
   width = 48,
@@ -15364,33 +16016,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 128,
-  y = 840,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 128,
-  y = 768,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
-}
-
-tile{
-  layer = 1,
-  x = 128,
-  y = 800,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
   x = 200,
   y = 864,
   width = 48,
@@ -15411,60 +16036,6 @@ tile{
   layer = 1,
   x = 200,
   y = 824,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
-  x = 24,
-  y = 760,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 24,
-  y = 688,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
-}
-
-tile{
-  layer = 1,
-  x = 24,
-  y = 720,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
-  x = -24,
-  y = 776,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = -24,
-  y = 704,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
-}
-
-tile{
-  layer = 1,
-  x = -24,
-  y = 736,
   width = 48,
   height = 48,
   pattern = "76_2",
@@ -17162,6 +17733,186 @@ tile{
   pattern = "18",
 }
 
+tile{
+  layer = 1,
+  x = -16,
+  y = 488,
+  width = 128,
+  height = 48,
+  pattern = "59",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 480,
+  width = 128,
+  height = 8,
+  pattern = "62",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 488,
+  width = 16,
+  height = 48,
+  pattern = "60",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 480,
+  width = 16,
+  height = 8,
+  pattern = "61",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 536,
+  width = 128,
+  height = 8,
+  pattern = "56",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "55",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 768,
+  width = 16,
+  height = 8,
+  pattern = "61",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 776,
+  width = 16,
+  height = 64,
+  pattern = "58",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 840,
+  width = 80,
+  height = 8,
+  pattern = "56",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 840,
+  width = 16,
+  height = 8,
+  pattern = "55",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 768,
+  width = 80,
+  height = 8,
+  pattern = "62",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 776,
+  width = 16,
+  height = 64,
+  pattern = "60",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 840,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 776,
+  width = 80,
+  height = 64,
+  pattern = "59",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 768,
+  width = 16,
+  height = 8,
+  pattern = "63",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 552,
+  width = 64,
+  height = 8,
+  pattern = "2",
+  tileset = "cars",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "101",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 584,
+  width = 32,
+  height = 56,
+  pattern = "102",
+  tileset = "suburbs",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle_6",
   layer = 1,
@@ -17176,7 +17927,7 @@ dynamic_tile{
 dynamic_tile{
   name = "^lighting_effect_candle_8",
   layer = 1,
-  x = 232,
+  x = 224,
   y = 592,
   width = 16,
   height = 24,
@@ -17226,5 +17977,15 @@ dynamic_tile{
   height = 24,
   pattern = "16_2",
   tileset = "ghost_town",
+}
+
+teletransporter{
+  layer = 1,
+  x = -16,
+  y = 432,
+  width = 16,
+  height = 384,
+  destination_map = "suburbs/downtown",
+  destination = "_side",
 }
 

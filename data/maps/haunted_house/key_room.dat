@@ -2476,15 +2476,6 @@ enemy{
 }
 
 enemy{
-  name = "group_b_enemy_4",
-  layer = 0,
-  x = 152,
-  y = 421,
-  direction = 0,
-  breed = "gremlin",
-}
-
-enemy{
   name = "group_b_enemy_5",
   layer = 0,
   x = 256,
