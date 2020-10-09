@@ -7075,6 +7075,26 @@ teletransporter{
   destination = "from_outside",
 }
 
+npc{
+  name = "zach",
+  layer = 0,
+  x = 800,
+  y = 429,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/zach",
+}
+
+npc{
+  name = "toby",
+  layer = 0,
+  x = 784,
+  y = 461,
+  direction = 1,
+  subtype = 1,
+  sprite = "npcs/toby",
+}
+
 tile{
   layer = 1,
   x = 952,

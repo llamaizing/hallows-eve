@@ -71,7 +71,8 @@ function lizard_scene_sensor:on_activated()
     zach:get_sprite():set_animation("stopped")
     ring_sound = false
     dialog"farm.lizard_scene.7"
-    wait(1000)
+    wait(500)
+    toby:get_sprite():set_direction(0)
     for e in map:get_entities("lizard_spawner") do
       local x,y,z = e:get_position()
       local liz = map:create_custom_entity{

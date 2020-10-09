@@ -16,11 +16,13 @@ map{ id = "haunted_house/west_wing_illusion", description = "WestWing-Illusion" 
 map{ id = "haunted_house/west_wing_short", description = "West Wing-Short" }
 map{ id = "outskirts/farm", description = "Farm" }
 map{ id = "outskirts/forest", description = "Forest" }
+map{ id = "outskirts/pumpkin_cove", description = "Pumpkin Cove" }
 map{ id = "outskirts/pumpkin_inside", description = "Pumpkin Inside" }
 map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
+map{ id = "suburbs/downtown", description = "Downtown" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 map{ id = "suburbs/video_store", description = "Video Store" }
 
@@ -446,6 +448,8 @@ file{ path = "maps/outskirts/farm.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/farm.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/forest.lua", author = "Max Mraz", }
+file{ path = "maps/outskirts/pumpkin_cove.dat", author = "Max Mraz", }
+file{ path = "maps/outskirts/pumpkin_cove.lua", author = "Max Mraz", }
 file{ path = "maps/outskirts/pumpkin_inside.dat", author = "Max Mraz", }
 file{ path = "maps/outskirts/pumpkin_inside.lua", author = "Max Mraz", }
 file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
@@ -454,6 +458,8 @@ file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
+file{ path = "maps/suburbs/downtown.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/downtown.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/video_store.dat", author = "Max Mraz", }
@@ -776,5 +782,4 @@ file{ path = "tilesets/oceanset_trees.tiles.png", author = "Max Mraz", license =
 file{ path = "tilesets/suburbs.dat", author = "Max Mraz", }
 file{ path = "tilesets/suburbs.tiles.png", author = "Max Mraz", }
 file{ path = "tilesets/video_store.dat", author = "Max Mraz", }
-file{ path = "tilesets/video_store.entities.png", author = "Max Mraz", }
 file{ path = "tilesets/video_store.tiles.png", author = "Max Mraz", }

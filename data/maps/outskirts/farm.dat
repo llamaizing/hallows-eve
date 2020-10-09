@@ -4796,15 +4796,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1224,
-  y = 608,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
   x = 968,
   y = 528,
   width = 16,
@@ -5421,25 +5412,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1192,
-  y = 584,
-  width = 16,
-  height = 24,
-  pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 1192,
-  y = 608,
-  width = 16,
-  height = 24,
-  pattern = "9",
-  tileset = "oceanset_trees",
-}
-
-tile{
-  layer = 0,
   x = 1040,
   y = 496,
   width = 16,
@@ -5545,86 +5517,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1152,
-  y = 608,
-  width = 32,
-  height = 16,
-  pattern = "17",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1072,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "14",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1112,
-  y = 608,
-  width = 16,
-  height = 32,
-  pattern = "13",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 608,
-  width = 32,
-  height = 16,
-  pattern = "15",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1128,
-  y = 608,
-  width = 24,
-  height = 32,
-  pattern = "12_2",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 576,
-  width = 128,
-  height = 32,
-  pattern = "11",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1152,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "16",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 608,
-  width = 24,
-  height = 32,
-  pattern = "12",
-  tileset = "farm",
-}
-
-tile{
-  layer = 0,
   x = 1176,
   y = 512,
   width = 16,
@@ -5686,15 +5578,6 @@ tile{
   width = 16,
   height = 24,
   pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 760,
-  width = 48,
-  height = 16,
-  pattern = "26",
 }
 
 tile{
@@ -6302,6 +6185,140 @@ tile{
   height = 24,
   pattern = "10",
   tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 704,
+  width = 32,
+  height = 16,
+  pattern = "17",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 704,
+  width = 16,
+  height = 32,
+  pattern = "13",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 704,
+  width = 32,
+  height = 16,
+  pattern = "15",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 704,
+  width = 24,
+  height = 32,
+  pattern = "12_2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 672,
+  width = 128,
+  height = 32,
+  pattern = "11",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 704,
+  width = 24,
+  height = 32,
+  pattern = "12",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "low_stone_wall_5",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 656,
+  width = 8,
+  height = 48,
+  pattern = "low_stone_wall_4",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 664,
+  width = 80,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 648,
+  width = 8,
+  height = 16,
+  pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "15_2",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "16_2",
 }
 
 custom_entity{
@@ -14140,146 +14157,6 @@ custom_entity{
 
 destructible{
   layer = 0,
-  x = 1088,
-  y = 637,
-  sprite = "destructibles/pumpkin_small",
-  weight = 1,
-}
-
-custom_entity{
-  layer = 0,
-  x = 1136,
-  y = 645,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1144,
-  y = 653,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1160,
-  y = 637,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-destructible{
-  layer = 0,
-  x = 1152,
-  y = 645,
-  sprite = "destructibles/pumpkin_small",
-  weight = 1,
-}
-
-custom_entity{
-  layer = 0,
-  x = 1056,
-  y = 613,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1048,
-  y = 621,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-destructible{
-  layer = 0,
-  x = 1064,
-  y = 637,
-  properties = {
-    {
-      key = "height",
-      value = "24",
-    },
-  },
-  sprite = "destructibles/pumpkin_big",
-  weight = 2,
-}
-
-custom_entity{
-  layer = 0,
-  x = 1080,
-  y = 645,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1064,
-  y = 645,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1048,
-  y = 637,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1176,
-  y = 629,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1184,
-  y = 621,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/pumpkin_leaves",
-  model = "foliage",
-}
-
-destructible{
-  layer = 0,
   x = 1016,
   y = 989,
   sprite = "destructibles/pumpkin_small",
@@ -16928,24 +16805,6 @@ custom_entity{
   model = "foliage",
 }
 
-teletransporter{
-  layer = 0,
-  x = 1112,
-  y = 616,
-  width = 16,
-  height = 16,
-  destination_map = "outskirts/pumpkin_inside",
-  destination = "from_outside",
-}
-
-destination{
-  name = "from_pumpkin",
-  layer = 0,
-  x = 1120,
-  y = 645,
-  direction = 3,
-}
-
 sensor{
   name = "lizard_emitter",
   layer = 0,
@@ -17404,6 +17263,182 @@ sensor{
   y = 909,
   width = 16,
   height = 16,
+}
+
+destructible{
+  layer = 0,
+  x = 1440,
+  y = 733,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 1488,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1496,
+  y = 749,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1512,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+destructible{
+  layer = 0,
+  x = 1504,
+  y = 741,
+  sprite = "destructibles/pumpkin_small",
+  weight = 1,
+}
+
+custom_entity{
+  layer = 0,
+  x = 1408,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1400,
+  y = 717,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+destructible{
+  layer = 0,
+  x = 1416,
+  y = 733,
+  properties = {
+    {
+      key = "height",
+      value = "24",
+    },
+  },
+  sprite = "destructibles/pumpkin_big",
+  weight = 2,
+}
+
+custom_entity{
+  layer = 0,
+  x = 1432,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1416,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1400,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1528,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1536,
+  y = 717,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/pumpkin_leaves",
+  model = "foliage",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1464,
+  y = 712,
+  width = 16,
+  height = 16,
+  destination_map = "outskirts/pumpkin_inside",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_pumpkin",
+  layer = 0,
+  x = 1472,
+  y = 741,
+  direction = 3,
+}
+
+destination{
+  name = "from_pumpkin_cove",
+  layer = 0,
+  x = 1224,
+  y = 621,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1232,
+  y = 592,
+  width = 16,
+  height = 48,
+  destination_map = "outskirts/pumpkin_cove",
+  destination = "from_farm",
 }
 
 tile{
@@ -18950,51 +18985,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1176,
-  y = 584,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 1176,
-  y = 544,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
-  x = 1208,
-  y = 608,
-  width = 48,
-  height = 32,
-  pattern = "12",
-}
-
-tile{
-  layer = 1,
-  x = 1208,
-  y = 536,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
-}
-
-tile{
-  layer = 1,
-  x = 1208,
-  y = 568,
-  width = 48,
-  height = 48,
-  pattern = "76_2",
-}
-
-tile{
-  layer = 1,
   x = 952,
   y = 528,
   width = 48,
@@ -20210,16 +20200,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1184,
-  y = 552,
-  width = 32,
-  height = 56,
-  pattern = "11",
-  tileset = "oceanset_trees",
-}
-
-tile{
-  layer = 1,
   x = 1160,
   y = 616,
   width = 32,
@@ -20317,25 +20297,6 @@ tile{
   width = 48,
   height = 48,
   pattern = "76_2",
-}
-
-tile{
-  layer = 1,
-  x = 1056,
-  y = 544,
-  width = 128,
-  height = 32,
-  pattern = "10",
-  tileset = "farm",
-}
-
-tile{
-  layer = 1,
-  x = 1176,
-  y = 512,
-  width = 48,
-  height = 32,
-  pattern = "77_2",
 }
 
 tile{
@@ -20484,25 +20445,6 @@ tile{
   height = 56,
   pattern = "11",
   tileset = "oceanset_trees",
-}
-
-tile{
-  layer = 1,
-  x = 1104,
-  y = 592,
-  width = 32,
-  height = 16,
-  pattern = "18",
-  tileset = "farm",
-}
-
-tile{
-  layer = 1,
-  x = 1064,
-  y = 696,
-  width = 8,
-  height = 8,
-  pattern = "18",
 }
 
 tile{
@@ -21140,5 +21082,43 @@ tile{
   height = 56,
   pattern = "12",
   tileset = "oceanset_trees",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 640,
+  width = 128,
+  height = 32,
+  pattern = "10",
+  tileset = "farm",
+}
+
+tile{
+  layer = 1,
+  x = 1456,
+  y = 688,
+  width = 32,
+  height = 16,
+  pattern = "18",
+  tileset = "farm",
+}
+
+tile{
+  layer = 1,
+  x = 1064,
+  y = 696,
+  width = 8,
+  height = 8,
+  pattern = "18",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "18",
 }
 

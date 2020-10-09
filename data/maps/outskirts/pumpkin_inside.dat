@@ -173,8 +173,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 168,
-  y = 141,
+  x = 232,
+  y = 93,
   sprite = "destructibles/pumpkin_small",
   weight = 1,
 }
@@ -222,8 +222,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 160,
-  y = 149,
+  x = 224,
+  y = 101,
   width = 16,
   height = 16,
   direction = 0,
@@ -233,8 +233,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 176,
-  y = 149,
+  x = 240,
+  y = 101,
   width = 16,
   height = 16,
   direction = 0,
@@ -270,7 +270,7 @@ teletransporter{
   y = 160,
   width = 32,
   height = 16,
-  destination_map = "outskirts/farm",
+  destination_map = "outskirts/pumpkin_cove",
   destination = "from_pumpkin",
 }
 
@@ -289,26 +289,5 @@ chest{
   treasure_name = "pumpkin_jordans",
   treasure_savegame_variable = "pumpkin_jordans_chest",
   sprite = "chests/chest",
-}
-
-custom_entity{
-  name = "ghost_candle",
-  layer = 0,
-  x = 232,
-  y = 101,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/ghost_candle",
-  model = "ghost_candle",
-}
-
-destination{
-  name = "ghost_candle_destination",
-  layer = 0,
-  x = 232,
-  y = 117,
-  direction = 3,
-  default = true,
 }
 

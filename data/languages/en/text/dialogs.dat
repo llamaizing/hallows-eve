@@ -1,4 +1,13 @@
 dialog{
+  id = "_treasure.library_statue_gear.1",
+  text = [[
+You found a metal gear. It looks like the
+mechanisms on the statue in the library.
+It smells like the inside of a dream.
+]],
+}
+
+dialog{
   id = "_treasure.pumpkin_jordans.1",
   text = [[
 You found a pair of Pumpkin Jordans!
