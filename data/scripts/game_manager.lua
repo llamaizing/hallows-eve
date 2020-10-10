@@ -25,6 +25,7 @@ function game_manager:create(file)
   require("scripts/menus/inventory/shit_inventory"):init(game)
   require("scripts/game_over"):init(game)
 
+--function game:on_joypad_button_pressed(btn) print(btn) end
 
   return game
 end

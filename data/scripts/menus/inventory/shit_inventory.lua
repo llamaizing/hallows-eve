@@ -1,7 +1,7 @@
 local menu = {}
 
 function menu:init(game)
-  function game:on_paused() sol.menu.start(game, menu) end
+--  function game:on_paused() sol.menu.start(game, menu) end
   function game:on_unpaused() sol.menu.stop(menu) end
 end
 
@@ -74,9 +74,6 @@ function menu:on_command_pressed(cmd)
     game:set_item_assigned(1, game:get_item(held_items[cursor_index]))
     menu:update_equipped_item_sprites()
 
-  elseif cmd == "item_2" then
-    game:set_item_assigned(2, game:get_item(held_items[cursor_index]))
-    menu:update_equipped_item_sprites()
 
   end
 end

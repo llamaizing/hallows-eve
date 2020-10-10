@@ -946,6 +946,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "41",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 248,
+  width = 16,
+  height = 24,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "42",
   ground = "wall",
   default_layer = 0,
@@ -1471,6 +1482,7 @@ tile_pattern{
   y = 248,
   width = 48,
   height = 24,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -1481,6 +1493,7 @@ tile_pattern{
   y = 232,
   width = 48,
   height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -1569,6 +1582,17 @@ tile_pattern{
   width = 16,
   height = 8,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "81",
+  ground = "wall",
+  default_layer = 1,
+  x = 112,
+  y = 232,
+  width = 16,
+  height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{

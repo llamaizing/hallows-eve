@@ -6817,8 +6817,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 240,
-  y = 741,
+  x = 208,
+  y = 733,
   width = 16,
   height = 16,
   direction = 0,
@@ -6828,8 +6828,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 248,
-  y = 749,
+  x = 192,
+  y = 741,
   width = 16,
   height = 16,
   direction = 0,
@@ -15365,7 +15365,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 288,
+  x = 304,
   y = 741,
   width = 48,
   height = 24,
@@ -15883,6 +15883,71 @@ custom_entity{
   layer = 0,
   x = 440,
   y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 280,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 280,
+  y = 757,
+  direction = 3,
+  default = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 264,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 256,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 749,
   width = 16,
   height = 16,
   direction = 0,

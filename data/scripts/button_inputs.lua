@@ -15,13 +15,19 @@ function menu:initialize(game)
   end
 
   --Default key bindings
-  local wasd = false
+  local wasd = true
   local function controls(game)
   	if not wasd then return end
     game:set_command_keyboard_binding("action", "down")
     game:set_command_keyboard_binding("attack", "right")
     game:set_command_keyboard_binding("item_1", "left")
-    game:set_command_keyboard_binding("item_1", "up")
+    game:set_command_keyboard_binding("item_2", "up")
+
+    game:set_command_keyboard_binding("action", "k")
+    game:set_command_keyboard_binding("attack", "l")
+    game:set_command_keyboard_binding("item_1", "j")
+    game:set_command_keyboard_binding("item_2", "i")
+
 
     game:set_command_keyboard_binding("up", "w")
     game:set_command_keyboard_binding("left", "a")
