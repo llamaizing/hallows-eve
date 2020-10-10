@@ -1104,9 +1104,9 @@ dialog{
   id = "haunted_house.cutscenes.library_1",
   text = [[
 @Zach
-Zach report: lizard isn't anywhere in the house. Also
-I lost the lizard bell in the stampede so we're back to
-searching manually. Think the 'zard is in the garden?
+Zach report: lizard isn't anywhere in the house.
+And I'm not into another lizard stampede.
+Think the 'zard went into the garden?
 ===
 ]],
 }
