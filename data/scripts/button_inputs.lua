@@ -15,7 +15,7 @@ function menu:initialize(game)
   end
 
   --Default key bindings
-  local wasd = true
+  local wasd = false
   local function controls(game)
   	if not wasd then return end
     game:set_command_keyboard_binding("action", "down")

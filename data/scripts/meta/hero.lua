@@ -67,9 +67,10 @@ end
 hero_meta:register_event("on_state_changed", function(self, state)
   local hero = self
   local game = sol.main.get_game()
+  local map = hero:get_map()
 
-  -- Makes sure that the sword is drawn behind the hero when the hero is facing north
   if state == "sword swinging" then
+    -- Makes sure that the sword is drawn behind the hero when the hero is facing north
     local main_sprite = self:get_sprite("tunic")
     local sword_sprite = self:get_sprite("sword")
     local direction4 = self:get_direction4_to(self:get_facing_position())
@@ -79,6 +80,13 @@ hero_meta:register_event("on_state_changed", function(self, state)
     else
       self:bring_sprite_to_front(sword_sprite)
       self:bring_sprite_to_back(main_sprite)
+    end
+    --Damage entities that overlap with the hero
+    local x,y,z = hero:get_position()
+    for entity in map:get_entities_in_rectangle(x-8, y-13, 16, 16) do
+      if entity:get_type() == "enemy" then
+        entity:hurt(1)
+      end
     end
   end
 
