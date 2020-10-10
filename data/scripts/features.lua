@@ -9,7 +9,6 @@
 require"scripts/multi_events"
 
 require"scripts/coroutine_helper"
-require"scripts/action/swim_manager"
 require"scripts/dialogs/visual_novel_manager"
 require"scripts/fx/hero_shadow"
 require"scripts/hud/hud"
@@ -22,7 +21,5 @@ require"scripts/meta/input"
 require"scripts/meta/game"
 require"scripts/meta/hero"
 require"scripts/meta/map"
-require"scripts/meta/map_elemental_effects"
-require"scripts/misc/solid_ground_manager"
 
 return true

@@ -2833,6 +2833,26 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 848,
+  y = -16,
+  width = 192,
+  height = 16,
+  destination_map = "suburbs/neighborhood",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 192,
+  y = -16,
+  width = 256,
+  height = 16,
+  destination_map = "suburbs/neighborhood",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 64,

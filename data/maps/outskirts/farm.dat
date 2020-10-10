@@ -6321,6 +6321,60 @@ tile{
   pattern = "16_2",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 616,
+  width = 192,
+  height = 8,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 624,
+  width = 8,
+  height = 192,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 624,
+  width = 8,
+  height = 192,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 816,
+  width = 192,
+  height = 8,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 624,
+  width = 208,
+  height = 192,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 624,
+  width = 192,
+  height = 192,
+  pattern = "5",
+}
+
 custom_entity{
   layer = 0,
   x = 752,
@@ -6334,106 +6388,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 656,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 624,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 640,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 592,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 560,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 528,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 496,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 464,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 432,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 368,
   y = 669,
   width = 16,
   height = 16,
@@ -6466,116 +6421,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 104,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 168,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 176,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 160,
-  y = 717,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 168,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 176,
-  y = 717,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 717,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 200,
   y = 677,
   width = 16,
@@ -6587,272 +6432,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 224,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 248,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 685,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 685,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 693,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 693,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 208,
   y = 693,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 248,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 693,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 741,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 248,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 741,
   width = 16,
   height = 16,
   direction = 0,
@@ -6895,94 +6476,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 264,
-  y = 621,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 629,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 637,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 637,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 645,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 653,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 661,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 168,
   y = 749,
   width = 16,
@@ -6996,28 +6489,6 @@ custom_entity{
   layer = 0,
   x = 152,
   y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 160,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 781,
   width = 16,
   height = 16,
   direction = 0,
@@ -7049,85 +6520,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 168,
-  y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 136,
   y = 813,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 144,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 128,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 120,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 112,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 96,
-  y = 845,
   width = 16,
   height = 16,
   direction = 0,
@@ -7170,336 +6564,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 72,
-  y = 885,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 160,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 168,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 160,
-  y = 853,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 781,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 264,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 781,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 789,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 797,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 805,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 805,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 264,
   y = 813,
   width = 16,
@@ -7511,28 +6575,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 248,
-  y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 256,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 232,
   y = 829,
   width = 16,
@@ -7556,51 +6598,7 @@ custom_entity{
 custom_entity{
   layer = 0,
   x = 232,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 240,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 232,
   y = 853,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 853,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 208,
-  y = 861,
   width = 16,
   height = 16,
   direction = 0,
@@ -7645,39 +6643,6 @@ custom_entity{
   layer = 0,
   x = 184,
   y = 861,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 176,
-  y = 869,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 869,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 877,
   width = 16,
   height = 16,
   direction = 0,
@@ -7698,45 +6663,12 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 136,
-  y = 861,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 120,
   y = 869,
   width = 16,
   height = 16,
   direction = 0,
   sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 128,
-  y = 877,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
   model = "foliage",
 }
 
@@ -7926,260 +6858,7 @@ destination{
 
 custom_entity{
   layer = 0,
-  x = 280,
-  y = 741,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 741,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 741,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 328,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 344,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 360,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 749,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 757,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 328,
-  y = 765,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 781,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 781,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 789,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 328,
-  y = 781,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 789,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
   y = 781,
   width = 16,
   height = 16,
@@ -8201,151 +6880,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 280,
-  y = 797,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 789,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 797,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 797,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 805,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 320,
   y = 805,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 272,
-  y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
-  y = 829,
   width = 16,
   height = 16,
   direction = 0,
@@ -8366,105 +6902,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 272,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 280,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 709,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 312,
-  y = 717,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 296,
   y = 725,
   width = 16,
@@ -8476,96 +6913,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 336,
-  y = 717,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 352,
   y = 717,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 344,
-  y = 725,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 352,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 685,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 685,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 693,
   width = 16,
   height = 16,
   direction = 0,
@@ -8597,96 +6946,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 336,
-  y = 805,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 344,
   y = 821,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 829,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 837,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 328,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 853,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 288,
-  y = 853,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 296,
-  y = 861,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 320,
-  y = 861,
   width = 16,
   height = 16,
   direction = 0,
@@ -8709,17 +6970,6 @@ custom_entity{
   layer = 0,
   x = 368,
   y = 845,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 304,
-  y = 733,
   width = 16,
   height = 16,
   direction = 0,
@@ -8971,525 +7221,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 416,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 384,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 352,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 512,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 480,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 448,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 608,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 576,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 544,
-  y = 701,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 464,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 432,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 400,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 560,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 528,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 496,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 656,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 624,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 592,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 464,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 432,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 400,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 560,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 528,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 496,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 656,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 624,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 592,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 472,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 440,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 408,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 568,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 536,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 504,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 656,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 624,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 592,
-  y = 813,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 456,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 424,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 392,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 552,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 520,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 488,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 648,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 616,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 584,
-  y = 845,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 184,
-  y = 517,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 216,
   y = 485,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 224,
-  y = 493,
   width = 16,
   height = 16,
   direction = 0,
@@ -9543,17 +7276,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 216,
-  y = 509,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 200,
   y = 509,
   width = 16,
@@ -9587,85 +7309,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 168,
+  x = 184,
   y = 549,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 176,
-  y = 557,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 160,
-  y = 565,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 557,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
-  y = 565,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 136,
-  y = 581,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 120,
-  y = 581,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 128,
-  y = 589,
   width = 16,
   height = 16,
   direction = 0,
@@ -9686,85 +7331,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 152,
-  y = 661,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 144,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/goldenrod",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 120,
   y = 669,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 136,
-  y = 677,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 152,
-  y = 573,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 168,
-  y = 565,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 176,
-  y = 573,
   width = 16,
   height = 16,
   direction = 0,
@@ -9852,28 +7420,6 @@ custom_entity{
 custom_entity{
   layer = 0,
   x = 224,
-  y = 621,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 216,
-  y = 629,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 200,
   y = 621,
   width = 16,
   height = 16,
@@ -10066,17 +7612,6 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "foliage/brown_thistle",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 400,
-  y = 669,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "foliage/corn",
   model = "foliage",
 }
 
@@ -14638,17 +12173,6 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 184,
-  y = 773,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/yarrow",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
   x = 152,
   y = 741,
   width = 16,
@@ -14793,18 +12317,7 @@ custom_entity{
 custom_entity{
   layer = 0,
   x = 104,
-  y = 733,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/yarrow",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 96,
-  y = 741,
+  y = 749,
   width = 16,
   height = 16,
   direction = 0,
@@ -14902,30 +12415,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 200,
+  x = 168,
   y = 549,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/yarrow",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 192,
-  y = 573,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "foliage/yarrow",
-  model = "foliage",
-}
-
-custom_entity{
-  layer = 0,
-  x = 112,
-  y = 589,
   width = 16,
   height = 16,
   direction = 0,
@@ -17439,6 +14930,964 @@ teletransporter{
   height = 48,
   destination_map = "outskirts/pumpkin_cove",
   destination = "from_farm",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 669,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 669,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 669,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 669,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 624,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 624,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 725,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 624,
+  y = 757,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 464,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 544,
+  y = 789,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 584,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 624,
+  y = 789,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "foliage/corn",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 557,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 669,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 685,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 693,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 693,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 709,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 717,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 757,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 765,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 773,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 176,
+  y = 829,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 136,
+  y = 837,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 184,
+  y = 845,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 845,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 741,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 757,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 765,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 781,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 280,
+  y = 821,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 837,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 717,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 725,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 224,
+  y = 805,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 861,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 312,
+  y = 709,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 669,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 677,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 693,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 709,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 717,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 749,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 757,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 789,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 821,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 829,
+  width = 48,
+  height = 24,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  tiled = true,
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 288,
+  y = 789,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 765,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 773,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 432,
+  y = 837,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 853,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 861,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 200,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 869,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/goldenrod",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 765,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 448,
+  y = 829,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 733,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 821,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 805,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
 }
 
 tile{

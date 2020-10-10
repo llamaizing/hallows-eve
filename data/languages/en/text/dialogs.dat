@@ -1143,6 +1143,33 @@ Jurassic Park kid has nowhere to run this time!
 }
 
 dialog{
+  id = "haunted_house.cutscenes.outside_1",
+  text = [[
+@Zach
+I know it's wild, but I checked every one of those
+lizards as we ran by, and none of them were
+Chelsea's lizard.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.outside_2",
+  text = [[
+@Toby
+Okay. You think it went into that haunted house
+over there maybe?
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.outside_3",
+  text = [[
+@Zach
+Might as well check!
+]],
+}
+
+dialog{
   id = "haunted_house.observations.1-wendigo",
   text = [[
 @Ichabod

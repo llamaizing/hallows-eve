@@ -29,9 +29,34 @@ map:register_event("on_started", function()
     drift = {15, 0, -1, 1}
   }
   sol.menu.start(map, fog2)
+
+  if game:get_value"lizard_flood_finished" then
+    zach:set_enabled(false)
+    toby:set_enabled(false)
+  end
 end)
 
 
 function flood_end_sensor:on_activated()
-  game:set_value("lizard_flood_finished", true)
+  if not game:get_value"lizard_flood_finished" then
+    game:set_value("lizard_flood_finished", true)
+    map:start_coroutine(function()
+      hero:freeze()
+      dialog"haunted_house.cutscenes.outside_1"
+      dialog"haunted_house.cutscenes.outside_2"
+      dialog"haunted_house.cutscenes.outside_3"
+      local m = sol.movement.create"target"
+      m:set_target(kid_disappear_sensor)
+      m:set_speed(90)
+      m:start(toby)
+      local m2 = sol.movement.create"target"
+      m2:set_target(kid_disappear_sensor)
+      m2:set_speed(90)
+      movement(m2, zach)
+      zach:set_enabled(false)
+      toby:set_enabled(false)
+      hero:unfreeze()
+
+    end)
+  end
 end

@@ -7095,6 +7095,15 @@ npc{
   sprite = "npcs/toby",
 }
 
+sensor{
+  name = "kid_disappear_sensor",
+  layer = 0,
+  x = 752,
+  y = 309,
+  width = 16,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 952,
