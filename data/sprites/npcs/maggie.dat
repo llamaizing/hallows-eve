@@ -1,0 +1,17 @@
+animation{
+  name = "stopped",
+  src_image = "npcs/maggie.png",
+  directions = {
+    { x = 0, y = 128, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 128, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "jumping",
+  src_image = "npcs/maggie.png",
+  directions = {
+    { x = 16, y = 128, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}

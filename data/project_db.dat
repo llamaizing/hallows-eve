@@ -157,6 +157,7 @@ sprite{ id = "menus/title_screen" }
 sprite{ id = "npcs/acimonia", description = "Acimonia" }
 sprite{ id = "npcs/caleb", description = "Caleb" }
 sprite{ id = "npcs/lizard", description = "Lizard" }
+sprite{ id = "npcs/maggie", description = "Maggie" }
 sprite{ id = "npcs/neighborhood_adult_1", description = "Neighborhood Adult 1" }
 sprite{ id = "npcs/ralph", description = "Ralph" }
 sprite{ id = "npcs/toby", description = "Toby" }
@@ -755,6 +756,7 @@ file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", lice
 file{ path = "sprites/npcs/acimonia.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/caleb.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/lizard.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/maggie.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/neighborhood_adult_1.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/ralph.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }

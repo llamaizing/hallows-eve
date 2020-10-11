@@ -12594,6 +12594,15 @@ enemy{
   breed = "gremlin",
 }
 
+sensor{
+  name = "turn_back_sensor",
+  layer = 0,
+  x = 1448,
+  y = 445,
+  width = 80,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = -64,

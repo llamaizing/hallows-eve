@@ -9,6 +9,17 @@ animation{
   },
 }
 animation{
+  name = "kick",
+  src_image = "npcs/zach.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 25, num_frames = 5 },
+  },
+}
+animation{
   name = "ring_bell",
   src_image = "npcs/zach.png",
   frame_delay = 80,

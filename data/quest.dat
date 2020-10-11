@@ -11,6 +11,6 @@ Play as Ichabod as he goes to the human world to rent Jurassic Park on the night
   website = "",
   normal_quest_size = "416x240",
   min_quest_size = "416x240",
-  max_quest_size = "512x288",
+  max_quest_size = "416x240",
 }
 

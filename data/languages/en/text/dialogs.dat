@@ -183,6 +183,15 @@ Ahahahahahahaha!
 }
 
 dialog{
+  id = "cemetery.forest_too_early",
+  text = [[
+@Ichabod
+Wait, this isn't the way to the video store.
+I need to be headed the other way down this road.
+]],
+}
+
+dialog{
   id = "controls.healing",
   text = [[
 Hold V to heal. This uses energy, which you
@@ -1164,6 +1173,213 @@ dialog{
 Did that statue just spin around? Whatever, that
 Jurassic Park kid has nowhere to run this time!
 ===
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.1",
+  text = [[
+@Maggie
+...that's right. And if you ever want to see that
+lizard again, you'll do what I tell you.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.10",
+  text = [[
+@Toby
+You're really giving up on the championship
+to get Chelsea's lizard back?
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.11",
+  text = [[
+@Zach
+Yeah Toby. This is what true love looks like.
+You'll understand when you're older.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.12",
+  text = [[
+@Toby
+Zach, I'm three months older than you.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.13",
+  text = [[
+@Zach
+Ssh. Not now, Toby.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.14",
+  text = [[
+@Ichabod
+Hey there.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.15",
+  text = [[
+@Zach
+Uh.... hi? Are you the ghost of this haunted house
+or something?
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.16",
+  text = [[
+@Ichabod
+No, no. I'm just here from the spirit world.
+You've a debt that's come due, Zach. I need you
+to hand over what you've held onto for too long.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.17",
+  text = [[
+@Toby
+IT'S THE GRIM REAPER!
+ZACH, YOU MUST HAVE BEEN SUPPOSED TO
+DIE IN THAT CIRCUS ACCIDENT!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.18",
+  text = [[
+@Zach
+YO! NOT TODAY, DEATH!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.19",
+  text = [[
+@Ichabod
+Oh shit, no, I mean Jurassic Park!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.2",
+  text = [[
+@Zach
+All right! Fine! What do you want, anyway?
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.20",
+  text = [[
+@Toby
+He wants to devour your soul like he's a T-Rex!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.21",
+  text = [[
+@Zach
+Hi-yah!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.22",
+  text = [[
+@Ichabod
+Ouch!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.23",
+  text = [[
+@Ichabod
+Damnit. Where were they going? The parking lot
+behind Denny's? I can just spectate your throwdown,
+kid.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.3",
+  text = [[
+@Maggie
+The minigolf championship. I don't want you to play.
+It's simple: you don't have to throw the game, don't
+have to cheat. Just don't come.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.4",
+  text = [[
+@Zach
+$font_size=32$WHAT?
+???
+$font_size=32$SKIP THE GAME??
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.5",
+  text = [[
+@Toby
+But Zach's the best on the varsity minigolf team!
+It's his passion!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.6",
+  text = [[
+@Maggie
+I know! Zach, you're too good at mini golf! It's weird!
+I don't even think you're cheating because the way
+you hit the ball doesn't make sense!
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.7",
+  text = [[
+@Zach
+...
+...
+...
+Fine. I'll stay out of it. Now where's the lizard!?
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.8",
+  text = [[
+@Maggie
+Meet me in the parking lot behind the Denny's
+in an hour. Bring your clubs. I don't want you
+changing your mind once you have the lizard.
+]],
+}
+
+dialog{
+  id = "haunted_house.cutscenes.lizardnapper.9",
+  text = [[
+@Zach
+...
+Alright Toby. I'm going home to get my golf clubs.
 ]],
 }
 

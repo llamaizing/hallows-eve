@@ -22,6 +22,15 @@ function map:on_opening_transition_finished()
 end
 
 
+function turn_back_sensor:on_activated()
+  if not game:get_value"caleb_convo_counter" then
+    game:start_dialog("cemetery.forest_too_early", function()
+        hero:walk("66")
+    end)
+  end
+end
+
+
 function shortcut_switch:on_activated()
   map:open_doors"shortcut_gate"
 end
