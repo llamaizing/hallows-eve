@@ -22,10 +22,6 @@ local item_square = sol.surface.create(24, 24)
 item_square:fill_color{40,40,40}
 item_square:set_opacity(150)
 
-local equipped_item_1_sprite = sol.sprite.create("entities/items")
-equipped_item_1_sprite:set_animation"empty"
-local equipped_item_2_sprite = sol.sprite.create("entities/items")
-equipped_item_2_sprite:set_animation"empty"
 
 function menu:on_started()
   local game = sol.main.get_game()
@@ -36,7 +32,7 @@ function menu:on_started()
   for _, item_name in pairs(possible_items) do
     if game:get_item(item_name):get_variant() > 0 then
       table.insert(held_items, item_name)
-      item_sprites[item_name] = sol.sprite.create("entities/items")
+      item_sprites[item_name] = sol.sprite.create("menus/inventory/items")
       item_sprites[item_name]:set_animation(item_name)
       item_sprites[item_name]:set_direction(game:get_item(item_name):get_variant() - 1)
     end
@@ -49,14 +45,7 @@ end
 
 function menu:update_equipped_item_sprites()
   local game = sol.main.get_game()
-  if game:get_item_assigned(1) then
-    equipped_item_1_sprite:set_animation(game:get_item_assigned(1):get_name())
-    equipped_item_1_sprite:set_direction(game:get_item_assigned(1):get_variant() - 1)
-  end
-  if game:get_item_assigned(2) then
-    equipped_item_2_sprite:set_animation(game:get_item_assigned(2):get_name())
-    equipped_item_2_sprite:set_direction(game:get_item_assigned(2):get_variant() - 1)
-  end
+
 end
 
 
@@ -75,7 +64,6 @@ function menu:on_command_pressed(cmd)
     game:set_item_assigned(1, game:get_item(held_items[cursor_index]))
     menu:update_equipped_item_sprites()
 
-
   end
 end
 
@@ -89,8 +77,6 @@ function menu:on_draw(dst)
     item_sprites[item_name]:draw(dst, i * SPACING + 12, 156)
   end
   cursor_sprite:draw(dst, 8 + SPACING * (cursor_index or 1), 170)
-  equipped_item_1_sprite:draw(dst, 200, 20)
-  equipped_item_2_sprite:draw(dst, 224, 20)
 end
 
 

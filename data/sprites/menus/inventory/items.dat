@@ -1,0 +1,21 @@
+animation{
+  name = "soccer_kick",
+  src_image = "entities/soccer_ball.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "seed_shoot",
+  src_image = "entities/shoot_seed.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "spin_kick",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 176, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 21 },
+  },
+}

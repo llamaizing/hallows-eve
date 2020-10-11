@@ -1,0 +1,1476 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 480,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "halloween",
+  music = "fields",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 480,
+  pattern = "8_9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 112,
+  width = 256,
+  height = 320,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 160,
+  height = 32,
+  pattern = "1_6",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 80,
+  width = 160,
+  height = 16,
+  pattern = "1_2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "1_2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "1_6",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 224,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 224,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 224,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 224,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_7",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "8_8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "8_10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_7",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "8_8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "8_10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "8_11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "8_7",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "8_8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "8_10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "8_11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "8_7",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "8_8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "8_10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 96,
+  width = 192,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 32,
+  width = 192,
+  height = 16,
+  pattern = "10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "8_4",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 80,
+  width = 48,
+  height = 16,
+  pattern = "10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 96,
+  width = 16,
+  height = 336,
+  pattern = "8_4",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 432,
+  width = 96,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 432,
+  width = 96,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 448,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "8_5",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "8_11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "8_5",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "8_3",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "8_8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "8_10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "8_6",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "8_3",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "8_6",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 256,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 256,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 384,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 384,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 128,
+  width = 48,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 104,
+  width = 48,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 80,
+  width = 176,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 56,
+  width = 176,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 96,
+  width = 40,
+  height = 16,
+  pattern = "225",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 96,
+  width = 40,
+  height = 16,
+  pattern = "225",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 112,
+  width = 40,
+  height = 16,
+  pattern = "225",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 96,
+  width = 24,
+  height = 16,
+  pattern = "223",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 112,
+  width = 24,
+  height = 16,
+  pattern = "223",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 144,
+  width = 24,
+  height = 16,
+  pattern = "223",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 160,
+  width = 24,
+  height = 16,
+  pattern = "223",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "274",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "286",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 8,
+  height = 24,
+  pattern = "274",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 48,
+  width = 8,
+  height = 24,
+  pattern = "286",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "221_2",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "221_2",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "221_2",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "222_2",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "222_2",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "222_2",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 40,
+  height = 16,
+  pattern = "226",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 80,
+  width = 40,
+  height = 16,
+  pattern = "226",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 96,
+  width = 40,
+  height = 16,
+  pattern = "226",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 88,
+  width = 24,
+  height = 8,
+  pattern = "224",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 104,
+  width = 24,
+  height = 8,
+  pattern = "224",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 136,
+  width = 24,
+  height = 8,
+  pattern = "224",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 152,
+  width = 24,
+  height = 8,
+  pattern = "224",
+  tileset = "oceanset_outside",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 384,
+  pattern = "8_2",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "96_2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 208,
+  width = 32,
+  height = 64,
+  pattern = "46",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 336,
+  width = 32,
+  height = 64,
+  pattern = "46_2",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 32,
+  height = 64,
+  pattern = "46_2",
+  tileset = "haunted_house",
+}
+
+chest{
+  name = "seed_chest",
+  layer = 0,
+  x = 200,
+  y = 101,
+  treasure_name = "seed_shoot",
+  treasure_savegame_variable = "farm_found_shoot_seeds",
+  sprite = "chests/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 248,
+  y = 197,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 277,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "eyewight",
+}
+
+destination{
+  name = "from_outside",
+  layer = 0,
+  x = 208,
+  y = 429,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 192,
+  y = 432,
+  width = 32,
+  height = 16,
+  destination_map = "outskirts/farm",
+  destination = "from_barn",
+}
+
+enemy{
+  layer = 0,
+  x = 240,
+  y = 389,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "eyewight",
+}
+
+enemy{
+  layer = 0,
+  x = 160,
+  y = 253,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 317,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 96,
+  y = 325,
+  enabled_at_start = false,
+  direction = 0,
+  breed = "spider_thing",
+}
+
