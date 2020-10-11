@@ -25,6 +25,7 @@ map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/downtown", description = "Downtown" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 map{ id = "suburbs/video_store", description = "Video Store" }
+map{ id = "title_screen", description = "title_screen" }
 
 tileset{ id = "cars", description = "Cars" }
 tileset{ id = "dapple", description = "Dappled Light" }
@@ -150,6 +151,7 @@ sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
+sprite{ id = "menus/title_screen" }
 sprite{ id = "npcs/acimonia", description = "Acimonia" }
 sprite{ id = "npcs/caleb", description = "Caleb" }
 sprite{ id = "npcs/lizard", description = "Lizard" }
