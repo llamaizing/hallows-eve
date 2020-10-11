@@ -22,6 +22,11 @@ function map:on_opening_transition_finished()
 end
 
 
+function shortcut_switch:on_activated()
+  map:open_doors"shortcut_gate"
+end
+
+
 function warped_sensor:on_activated()
 --[[
   game:set_life(game:get_max_life())

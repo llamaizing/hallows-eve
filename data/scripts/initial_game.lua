@@ -27,9 +27,10 @@ function initial_game:initialize_new_savegame(game)
 
   game:get_item("seed_shoot"):set_variant(1)
   game:get_item("soccer_kick"):set_variant(1)
+  game:get_item("spin_kick"):set_variant(1)
   game:get_item("heal"):set_variant(1)
 
-  game:set_item_assigned(1, game:get_item("seed_shoot"))
+  game:set_item_assigned(1, game:get_item("spin_kick"))
   game:set_item_assigned(2, game:get_item("heal"))
 
   game:set_value("darkness_level", "evening")

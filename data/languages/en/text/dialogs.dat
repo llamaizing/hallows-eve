@@ -17,6 +17,14 @@ to do a pumpkin dash.
 }
 
 dialog{
+  id = "_treasure.pumpkin_seed.1",
+  text = [[
+You found a Pumpkin Seed!
+Collect 5 to increase your maximum life!
+]],
+}
+
+dialog{
   id = "_treasure.seed_shoot.1",
   text = [[
 You found pocket seeds! Keep them in your pocket
@@ -1060,6 +1068,14 @@ Alright! Ring a ding ding, lizards!
 }
 
 dialog{
+  id = "farm.lizard_scene.5-5",
+  text = [[
+@Ichabod
+Hey, excuse me kid-
+]],
+}
+
+dialog{
   id = "farm.lizard_scene.6",
   text = [[
 @Toby
@@ -1073,6 +1089,15 @@ dialog{
 @Zach
 Probably. Now we just wait for the lizards
 to roll in, baby.
+]],
+}
+
+dialog{
+  id = "farm.lizard_scene.7-5",
+  text = [[
+@Ichabod
+Hey- did you hear me? I have a-
+oh wait, what's that?
 ]],
 }
 
@@ -1406,6 +1431,17 @@ when you've watched it!
 }
 
 dialog{
+  id = "video_store.costume_response",
+  text = [[
+@Ichabod
+...
+...
+...
+Yes.
+]],
+}
+
+dialog{
   id = "video_store.forgot_directions",
   text = [[
 @Ichabod
@@ -1420,11 +1456,36 @@ east down the road, and you'll eventually find it.
 }
 
 dialog{
+  id = "video_store.seen_zach",
+  text = [[
+@Caleb
+Hey, did you find Zach?
+===
+@Ichabod
+I saw him at the pumpkin patch, but
+he ran off. I'm still looking for him.
+===
+@Caleb
+Hey, good luck dude. He's a slippery one.
+]],
+}
+
+dialog{
   id = "video_store.welcome",
   text = [[
 @Caleb
-Oh, welcome to Auburn Video, how can
-I help you?
+Welcome to Auburn Home Video.
+Can I help you?
+]],
+}
+
+dialog{
+  id = "video_store.welcome_costume",
+  text = [[
+@Caleb
+Oh, welcome to Auburn Video!
+...
+Is that a costume?
 ===
 ]],
 }

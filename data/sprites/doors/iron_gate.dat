@@ -1,0 +1,21 @@
+animation{
+  name = "closing",
+  src_image = "doors/iron_gate.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8, num_frames = 4 },
+  },
+}
+animation{
+  name = "closed",
+  src_image = "doors/iron_gate.png",
+  directions = {
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
+    { x = 0, y = 8, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
+  },
+}

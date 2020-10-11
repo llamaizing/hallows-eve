@@ -58,6 +58,9 @@ function lizard_scene_sensor:on_activated()
     dialog"farm.lizard_scene.3"
     dialog"farm.lizard_scene.4"
     dialog"farm.lizard_scene.5"
+    hero:set_direction(2)
+    wait(100)
+    dialog"farm.lizard_scene.5-5"
     wait(300)
     zach:get_sprite():set_animation"ring_bell"
     local ring_sound = true
@@ -71,7 +74,17 @@ function lizard_scene_sensor:on_activated()
     zach:get_sprite():set_animation("stopped")
     ring_sound = false
     dialog"farm.lizard_scene.7"
-    wait(500)
+    wait(300)
+    m = sol.movement.create"path"
+    m:set_path{6}
+    hero:set_animation"walking"
+    hero:set_direction(3)
+    movement(m, hero)
+    hero:set_animation"stopped"
+    hero:set_direction(2)
+    dialog"farm.lizard_scene.7-5"
+    hero:set_direction(0)
+    wait(200)
     toby:get_sprite():set_direction(0)
     for e in map:get_entities("lizard_spawner") do
       local x,y,z = e:get_position()
@@ -129,6 +142,8 @@ function lizard_scene_sensor:on_activated()
     function m2:on_obstacle_reached() toby:remove() end
     wait(200)
     camera:start_tracking(hero)
+    wait(200)
+    dialog("farm.lizard_scene.11")
     hero:unfreeze()
     game.lizard_flood_started = true
     map:start_spawning_lizards()
@@ -150,7 +165,7 @@ function map:start_spawning_lizards()
       local lm = sol.movement.create"target"
       lm:set_ignore_obstacles(true)
       lm:set_target(lizard_target)
-      lm:set_speed(90)
+      lm:set_speed(110)
       lm:start(liz, function() liz:remove() end)
       return true
     end)

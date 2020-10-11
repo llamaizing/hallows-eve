@@ -53,6 +53,7 @@ sprite{ id = "destructibles/pot", description = "Pot" }
 sprite{ id = "destructibles/pumpkin_big", description = "Pumpkin - Big" }
 sprite{ id = "destructibles/pumpkin_small", description = "Pumpkin - Small" }
 sprite{ id = "doors/door_shutter_stone", description = "Door-Shutter-Stone" }
+sprite{ id = "doors/iron_gate", description = "Iron Gate" }
 sprite{ id = "doors/locked_door", description = "Locked Door" }
 sprite{ id = "elements/battery_orb", description = "Battery Orb" }
 sprite{ id = "elements/fire", description = "Fire" }
@@ -319,6 +320,7 @@ item{ id = "inventory/metal_block_cane", description = "Metal Block Cane" }
 item{ id = "inventory/spark_spell", description = "Spark Spell" }
 item{ id = "library_statue_gear", description = "Library Statue Gear" }
 item{ id = "pumpkin_jordans", description = "Pumpkin Jordans" }
+item{ id = "pumpkin_seed", description = "Pumpkin Seed" }
 item{ id = "seed_shoot", description = "Seed Shoot" }
 item{ id = "small_key", description = "Small Key" }
 item{ id = "soccer_kick", description = "Soccer Kick Attack" }
@@ -411,6 +413,7 @@ file{ path = "items/inventory/metal_block_cane.lua", author = "Max Mraz", }
 file{ path = "items/inventory/spark_spell.lua", author = "Max Mraz", }
 file{ path = "items/library_statue_gear.lua", author = "Max Mraz", }
 file{ path = "items/pumpkin_jordans.lua", author = "Max Mraz", }
+file{ path = "items/pumpkin_seed.lua", author = "Max Mraz", }
 file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
 file{ path = "items/small_key.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
@@ -624,6 +627,7 @@ file{ path = "sprites/destructibles/pumpkin_small.dat", author = "Max Mraz", lic
 file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
+file{ path = "sprites/doors/iron_gate.dat", author = "Max Mraz", }
 file{ path = "sprites/doors/locked_door.dat", author = "Max Mraz", license = "CC-0" }
 file{ path = "sprites/elements/battery_orb.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/electric.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }

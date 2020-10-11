@@ -1,13 +1,14 @@
 local menu = {}
 
 function menu:init(game)
---  function game:on_paused() sol.menu.start(game, menu) end
+  function game:on_paused() sol.menu.start(game, menu) end
   function game:on_unpaused() sol.menu.stop(menu) end
 end
 
 local possible_items = {
   "seed_shoot",
   "soccer_kick",
+  "spin_kick"
 }
 
 local held_items = {} --will look same as possible_items table, minus unobtained items

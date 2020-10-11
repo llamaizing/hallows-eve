@@ -39,7 +39,13 @@ end)
 
 function flood_end_sensor:on_activated()
   if not game:get_value"lizard_flood_finished" then
+    --checkpoint:
+    game:set_starting_location(map:get_id(), "from_ravine")
+    game:set_value("respawn_map", map:get_id())
+    game:save()
+
     game:set_value("lizard_flood_finished", true)
+    game:set_value("caleb_convo_counter", 2)
     map:start_coroutine(function()
       hero:freeze()
       dialog"haunted_house.cutscenes.outside_1"

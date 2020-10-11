@@ -443,6 +443,15 @@ tile{
   tileset = "grass_green_large",
 }
 
+sensor{
+  name = "flood_end_sensor",
+  layer = -1,
+  x = 952,
+  y = 477,
+  width = 32,
+  height = 64,
+}
+
 wall{
   layer = -1,
   x = 616,
@@ -820,15 +829,6 @@ enemy{
   y = 477,
   direction = 0,
   breed = "eyewight",
-}
-
-sensor{
-  name = "flood_end_sensor",
-  layer = -1,
-  x = 952,
-  y = 477,
-  width = 32,
-  height = 64,
 }
 
 tile{
