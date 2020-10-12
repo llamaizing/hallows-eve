@@ -23,6 +23,7 @@ map:register_event("on_started", function()
   --Lizard situation:
   if game.lizard_flood_started and not game:get_value("lizard_flood_finished") then
     map:start_spawning_lizards()
+    game:set_value("darkness_level", "sunset")
   end
 
 

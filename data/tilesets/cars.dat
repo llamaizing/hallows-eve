@@ -199,3 +199,13 @@ tile_pattern{
   height = 8,
 }
 
+tile_pattern{
+  id = "3",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 168,
+  width = 72,
+  height = 48,
+}
+

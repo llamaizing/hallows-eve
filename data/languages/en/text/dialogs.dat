@@ -1016,6 +1016,198 @@ in your own game
 }
 
 dialog{
+  id = "dennys.1",
+  text = [[
+@Maggie
+Set your golf clubs down in the parking space.
+I'm gonna run them over with a car to make sure
+you can't play.
+]],
+}
+
+dialog{
+  id = "dennys.10",
+  text = [[
+@Zach
+That ghost lizard just ate the real lizard!
+]],
+}
+
+dialog{
+  id = "dennys.11",
+  text = [[
+@Ichabod
+Looks like you boys are in a tight spot.
+]],
+}
+
+dialog{
+  id = "dennys.12",
+  text = [[
+@Toby
+AHHHHH! IT'S THE GRIM REAPER!
+]],
+}
+
+dialog{
+  id = "dennys.13",
+  text = [[
+@Ichabod
+Stop it! I'm not the grim reaper!
+Zach, did you rent Jurassic Park from the
+video store?
+]],
+}
+
+dialog{
+  id = "dennys.14",
+  text = [[
+@Zach
+Uh, yeah. Last month or something.
+]],
+}
+
+dialog{
+  id = "dennys.15",
+  text = [[
+@Ichabod
+Can I have it?
+]],
+}
+
+dialog{
+  id = "dennys.16",
+  text = [[
+@Zach
+You watch movies when you aren't harvesting souls?
+...
+...
+How about a deal? If you can bring back that lizard
+from hell, I'll let you have the movie.
+]],
+}
+
+dialog{
+  id = "dennys.17",
+  text = [[
+@Toby
+And that girl! We can't just leave our classmates in hell.
+]],
+}
+
+dialog{
+  id = "dennys.18",
+  text = [[
+@Ichabod
+I'm not the grim reaper.
+...
+But I think I can get your lizard back.
+Things that get devoured by ghosts end up in
+the spirit world. It happens to me, and I can just
+come back. But that means,
+if I go to the spirit world, I should be able to
+find your lizard.
+]],
+}
+
+dialog{
+  id = "dennys.19",
+  text = [[
+@Zach
+If you get that lizard back, I'll let you have
+Jurassic Park. But I won't pay the overdue
+fine.
+]],
+}
+
+dialog{
+  id = "dennys.2",
+  text = [[
+@Toby
+Zach, this girl is metal. Maybe just do
+what she wants so we can get the lizard
+back safely.
+]],
+}
+
+dialog{
+  id = "dennys.20",
+  text = [[
+@Ichabod
+It's a deal. I'll find you again when I have
+your lizard.
+]],
+}
+
+dialog{
+  id = "dennys.21",
+  text = [[
+@Toby
+Cool, then we should go. We'll see you later,
+Mr. Reaper!
+]],
+}
+
+dialog{
+  id = "dennys.3",
+  text = [[
+@Zach
+Sure sure. I have just one thing to say to you.
+I'll see you in bell.
+]],
+}
+
+dialog{
+  id = "dennys.4",
+  text = [[
+@Maggie
+What!?
+===
+]],
+}
+
+dialog{
+  id = "dennys.5",
+  text = [[
+@Zach
+Huh, why isn't the lizard coming?
+This is a lizard bell, it's supposed to attract lizards.
+]],
+}
+
+dialog{
+  id = "dennys.6",
+  text = [[
+@Maggie
+You idiot. Lizards don't have any ears.
+]],
+}
+
+dialog{
+  id = "dennys.7",
+  text = [[
+@Zach
+Wait, then how... Do they?
+]],
+}
+
+dialog{
+  id = "dennys.8",
+  text = [[
+@Zach
+OH NO!
+]],
+}
+
+dialog{
+  id = "dennys.9",
+  text = [[
+@Toby
+I think that ghost lizard just ate Maggie!
+]],
+}
+
+dialog{
   id = "downtown.scared_guys",
   text = [[
 @Some Dude

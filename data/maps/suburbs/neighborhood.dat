@@ -150,16 +150,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 392,
-  y = 560,
-  width = 64,
-  height = 32,
-  pattern = "1_9",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 608,
   width = 64,
@@ -5177,16 +5167,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 776,
-  y = 976,
-  width = 64,
-  height = 32,
-  pattern = "1_7",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
   x = 672,
   y = 1024,
   width = 64,
@@ -5337,16 +5317,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
-  y = 976,
-  width = 64,
-  height = 32,
-  pattern = "1",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
   x = 1032,
   y = 608,
   width = 64,
@@ -5357,51 +5327,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1120,
-  y = 560,
-  width = 64,
-  height = 32,
-  pattern = "1_3",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
   x = 160,
   y = 608,
   width = 64,
   height = 32,
   pattern = "1_4",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 552,
-  width = 64,
-  height = 32,
-  pattern = "1",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 976,
-  width = 64,
-  height = 32,
-  pattern = "1_3",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 136,
-  width = 64,
-  height = 32,
-  pattern = "1_9",
   tileset = "cars",
 }
 
@@ -5433,16 +5363,6 @@ tile{
   height = 16,
   pattern = "30",
   tileset = "suburbs",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 144,
-  width = 64,
-  height = 32,
-  pattern = "1_7",
-  tileset = "cars",
 }
 
 tile{
@@ -5677,7 +5597,7 @@ tile{
 tile{
   layer = 0,
   x = -8,
-  y = 48,
+  y = 56,
   width = 64,
   height = 24,
   pattern = "41",
@@ -6075,16 +5995,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1072,
-  y = 144,
-  width = 64,
-  height = 32,
-  pattern = "1_2",
-  tileset = "cars",
-}
-
-tile{
-  layer = 0,
   x = 1200,
   y = 960,
   width = 16,
@@ -6127,16 +6037,6 @@ tile{
   width = 16,
   height = 24,
   pattern = "11",
-}
-
-tile{
-  layer = 0,
-  x = 1184,
-  y = 560,
-  width = 16,
-  height = 96,
-  pattern = "28",
-  tileset = "suburbs",
 }
 
 tile{
@@ -6559,6 +6459,176 @@ tile{
   height = 32,
   pattern = "24",
   tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 144,
+  width = 1184,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 144,
+  width = 64,
+  height = 32,
+  pattern = "1_2",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 144,
+  width = 64,
+  height = 32,
+  pattern = "1_7",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 136,
+  width = 64,
+  height = 32,
+  pattern = "1_9",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 560,
+  width = 192,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 552,
+  width = 64,
+  height = 32,
+  pattern = "1",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 560,
+  width = 544,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 560,
+  width = 64,
+  height = 32,
+  pattern = "1_9",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 560,
+  width = 224,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 560,
+  width = 64,
+  height = 32,
+  pattern = "1_3",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 560,
+  width = 16,
+  height = 96,
+  pattern = "28",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 976,
+  width = 224,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 976,
+  width = 64,
+  height = 32,
+  pattern = "1_3",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 976,
+  width = 544,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 976,
+  width = 64,
+  height = 32,
+  pattern = "1_7",
+  tileset = "cars",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 976,
+  width = 192,
+  height = 8,
+  pattern = "27",
+  tileset = "suburbs",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 976,
+  width = 64,
+  height = 32,
+  pattern = "1",
+  tileset = "cars",
 }
 
 dynamic_tile{
@@ -8640,6 +8710,599 @@ custom_entity{
   direction = 0,
   sprite = "foliage/sunflower",
   model = "foliage",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 80,
+  width = 16,
+  height = 192,
+  destination_map = "suburbs/dennys",
+  destination = "_side",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 472,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 576,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 792,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 800,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1008,
+  y = 405,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 413,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 421,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1056,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1040,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1048,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 760,
+  y = 677,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 768,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 48,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 40,
+  y = 533,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 736,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 728,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1192,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1208,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 400,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 408,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1064,
+  y = 1085,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1048,
+  y = 1093,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1056,
+  y = 1101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/autumn_grass_clump",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1192,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1200,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1176,
+  y = 949,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 512,
+  y = 925,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 520,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1112,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1096,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1104,
+  y = 701,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 984,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 968,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 976,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 104,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 96,
+  y = 261,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 269,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 277,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 16,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 8,
+  y = 109,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+wall{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 80,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 16,
+  width = 48,
+  height = 32,
+  pattern = "12",
 }
 
 tile{
@@ -16320,7 +16983,7 @@ tile{
 tile{
   layer = 1,
   x = -8,
-  y = 32,
+  y = 40,
   width = 64,
   height = 16,
   pattern = "81",

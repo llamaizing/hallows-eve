@@ -3,7 +3,6 @@ local game = map:get_game()
 
 map:register_event("on_started", function()
   map.light_fx:set_darkness_level(game:get_value("darkness_level"))
-  map.light_fx:set_darkness_level("dusk")
 
   require("maps/suburbs/treater_routes")(map)
 end)

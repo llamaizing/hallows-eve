@@ -10,3 +10,15 @@ animation{
     { x = 0, y = 0, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 69, num_frames = 6 },
   },
 }
+animation{
+  name = "stopped",
+  src_image = "enemies/big_lizard.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 96, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 69, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 69, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 69, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 69, num_frames = 6 },
+  },
+}

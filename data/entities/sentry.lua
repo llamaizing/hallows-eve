@@ -49,7 +49,7 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
-local alert_threshold = 14
+local alert_threshold = 15
 local too_close_distance = 32 --distance to sentry at which angle doesn't matter, you're too close
 
 function entity:on_created()
