@@ -49,7 +49,7 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
-local alert_threshold = 12
+local alert_threshold = 14
 local too_close_distance = 32 --distance to sentry at which angle doesn't matter, you're too close
 
 function entity:on_created()
@@ -106,7 +106,7 @@ function entity:start_watch()
     -- if delta between enemy facing angle and angle to hero is greater than vision threshold, or if hero is too far away
     if ( math.abs(normalize(sentry_angle) - normalize(entity:get_angle(hero)) ) > math.rad(entity.vision_angle)
     and entity:get_distance(hero) > too_close_distance )
-    or not map:is_on_screen(entity) then
+    or not entity:is_on_screen() then
       return true
     end
 
@@ -130,7 +130,7 @@ function entity:shoot_ray()
   local x, y, z = entity:get_position()
   local ray = map:create_custom_entity{
     x = x, y = y, layer = z, direction = 0,
-    width = 8, height = 8, sprite = "shadows/shadow_small"
+    width = 8, height = 8,
   }
   ray:set_can_traverse("hero", true)
   ray:set_can_traverse("custom_entity", true)
@@ -209,4 +209,19 @@ function entity:on_attacked_by_sword()
 end
 
 function entity:on_suspicion_lost()
+end
+
+
+function entity:is_on_screen()
+  local map = entity:get_map()
+  local camera = map:get_camera()
+  local camx, camy = camera:get_position()
+  local camwid, camhigh = camera:get_size()
+  local entityx, entityy = entity:get_position()
+
+  local on_screen = entityx >= camx + 16
+  and entityx <= (camx + camwid - 16)
+  and entityy >= camy + 16
+  and entityy <= (camy + camhigh - 16)
+  return on_screen
 end

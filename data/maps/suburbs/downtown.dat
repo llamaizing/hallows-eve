@@ -2810,6 +2810,56 @@ tile{
   tileset = "ghost_town",
 }
 
+tile{
+  layer = 0,
+  x = 976,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "halloween",
+}
+
 wall{
   layer = 0,
   x = 0,
@@ -2845,9 +2895,9 @@ teletransporter{
 
 teletransporter{
   layer = 0,
-  x = 192,
+  x = 272,
   y = -16,
-  width = 256,
+  width = 80,
   height = 16,
   destination_map = "suburbs/neighborhood",
   destination = "_side",
@@ -2869,6 +2919,161 @@ teletransporter{
   height = 16,
   destination_map = "suburbs/video_store",
   destination = "from_outside",
+}
+
+npc{
+  name = "dude_1",
+  layer = 0,
+  x = 1024,
+  y = 189,
+  direction = 0,
+  subtype = 1,
+  sprite = "npcs/neighborhood_adult_1",
+}
+
+npc{
+  name = "dude_2",
+  layer = 0,
+  x = 1056,
+  y = 189,
+  direction = 2,
+  subtype = 1,
+  sprite = "npcs/neighborhood_adult_2",
+}
+
+enemy{
+  layer = 0,
+  x = 1008,
+  y = 237,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 1032,
+  y = 285,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 648,
+  y = 221,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 576,
+  y = 277,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 504,
+  y = 237,
+  direction = 0,
+  breed = "spider_thing",
+}
+
+enemy{
+  layer = 0,
+  x = 576,
+  y = 237,
+  direction = 0,
+  breed = "gremlin",
+}
+
+enemy{
+  layer = 0,
+  x = 224,
+  y = 285,
+  direction = 0,
+  breed = "gremlin",
+}
+
+sensor{
+  name = "scared_guys_run_target",
+  layer = 0,
+  x = 920,
+  y = 13,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "turn_back_sensor",
+  layer = 0,
+  x = 264,
+  y = 61,
+  width = 112,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 112,
+  y = 48,
+  width = 144,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "turn_back_sensor_2",
+  layer = 0,
+  x = 888,
+  y = 45,
+  width = 112,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 992,
+  y = 16,
+  width = 72,
+  height = 40,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 848,
+  y = 16,
+  width = 32,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 368,
+  y = 0,
+  width = 48,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

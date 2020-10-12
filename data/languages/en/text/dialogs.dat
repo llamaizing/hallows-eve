@@ -1016,6 +1016,26 @@ in your own game
 }
 
 dialog{
+  id = "downtown.scared_guys",
+  text = [[
+@Some Dude
+Dave, do you see that fucked up dog?
+===
+@Dave
+That's not a normal dog! Too many legs!
+I'm getting freaked out, let's bounce!
+]],
+}
+
+dialog{
+  id = "downtown.too_early",
+  text = [[
+@Ichabod
+This isn't the direction I need to be headed.
+]],
+}
+
+dialog{
   id = "farm.lizard_scene.1",
   text = [[
 @Zach
@@ -1468,6 +1488,74 @@ dialog{
   text = [[
 Using the gear you found, you activate the
 spinny statue mechanism.
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.1",
+  text = [[
+@Acimonia
+So. You think you can break my curse, do you?
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.2",
+  text = [[
+@Ichabod
+I am so sorry, I don't know who you are.
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.3",
+  text = [[
+@Acimonia
+Don't play coy. Unthering the Ghost Dragon?
+Breaking the Labyrinth Curse on Auburn Manor?
+You're trying to undo my power.
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.4",
+  text = [[
+@Ichabod
+I am trying to get to a Denny's.
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.5",
+  text = [[
+@Acimonia
+You notice everyone blissfully walking around the
+neighborhood? Wonder why they aren't cowering
+in fear from the monsters I've brought down?
+I've bewitched everyone on the block. What they
+don't realize is their own shadows are ready to
+come alive, feeding off their fear.
+You're a bit spooky dear. Better hope none of them
+see you. The creatures in their shadows might just
+decide to pull you into the darkness.
+This this be a lesson not to try and interfere with
+my plans, pumpkin man.
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.6",
+  text = [[
+@Ichabod
+Again, I don't know who you are.
+]],
+}
+
+dialog{
+  id = "neighborhood.acimonia_scene.7",
+  text = [[
+@Acimonia
+Ehehehehehehe! Fuck you.
 ]],
 }
 

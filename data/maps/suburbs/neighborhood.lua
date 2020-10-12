@@ -9,6 +9,12 @@ map:register_event("on_started", function()
 end)
 
 
+function map:on_opening_transition_finished()
+  if not game:get_value("seen_acimonia_neighborhood_scene") then
+    map:acimonia_cutscene()
+  end
+end
+
 
 
 for entity in map:get_entities("sentry") do
@@ -86,4 +92,32 @@ end
 
 for entity in map:get_entities("sentry_adult_spin") do
   spin_around(entity)
+end
+
+
+
+function map:acimonia_cutscene()
+  map:start_coroutine(function()
+    hero:freeze()
+    hero:set_animation"walking"
+    local m = sol.movement.create"path"
+    m:set_path{2,2,2,2,2,2,2,2}
+    movement(m, hero)
+    hero:set_animation"stopped"
+    local x,y,z = hero:get_position()
+    map:create_poof(x,y-48,z)
+    acimonia:set_position(x,y-48,z)
+    wait(1000)
+    dialog"neighborhood.acimonia_scene.1"
+    dialog"neighborhood.acimonia_scene.2"
+    dialog"neighborhood.acimonia_scene.3"
+    dialog"neighborhood.acimonia_scene.4"
+    dialog"neighborhood.acimonia_scene.5"
+    dialog"neighborhood.acimonia_scene.6"
+    dialog"neighborhood.acimonia_scene.7"
+    map:create_poof(acimonia:get_position())
+    acimonia:remove()
+    game:set_value("seen_acimonia_neighborhood_scene", true)
+    hero:unfreeze()
+  end)
 end

@@ -23,6 +23,7 @@ map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
+map{ id = "suburbs/dennys", description = "Dennys" }
 map{ id = "suburbs/downtown", description = "Downtown" }
 map{ id = "suburbs/neighborhood", description = "Neighborhood" }
 map{ id = "suburbs/video_store", description = "Video Store" }
@@ -159,6 +160,7 @@ sprite{ id = "npcs/caleb", description = "Caleb" }
 sprite{ id = "npcs/lizard", description = "Lizard" }
 sprite{ id = "npcs/maggie", description = "Maggie" }
 sprite{ id = "npcs/neighborhood_adult_1", description = "Neighborhood Adult 1" }
+sprite{ id = "npcs/neighborhood_adult_2", description = "Neighborhood Adult 2" }
 sprite{ id = "npcs/ralph", description = "Ralph" }
 sprite{ id = "npcs/toby", description = "Toby" }
 sprite{ id = "npcs/toby_hat", description = "Toby-Hat" }
@@ -468,6 +470,8 @@ file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
+file{ path = "maps/suburbs/dennys.dat", author = "Max Mraz", }
+file{ path = "maps/suburbs/dennys.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/downtown.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/downtown.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/neighborhood.dat", author = "Max Mraz", }
@@ -758,6 +762,7 @@ file{ path = "sprites/npcs/caleb.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/lizard.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/maggie.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/neighborhood_adult_1.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/neighborhood_adult_2.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/ralph.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby_hat.dat", author = "Max Mraz", }
