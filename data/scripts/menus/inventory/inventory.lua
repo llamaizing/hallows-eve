@@ -1,6 +1,6 @@
---[[ guess_analyzer.lua
+--[[ inventory.lua
 	version 0.1a1
-	12 Oct 2020
+	13 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -17,30 +17,59 @@
 
 local menu_manager = {}
 
+--convenience
+local math__pi = math.pi
+
 local ITEM_LIST = {
 	"seed_shoot",
 	"soccer_kick",
 	"spin_kick",
 }
 
+--NOTE: speed can't be >1000 so transition time can't be much less than 350ms (https://gitlab.com/solarus-games/solarus/-/issues/1307)
+local OPENING_TRANSITION_TIME = 350
+local CLOSING_TRANSITION_TIME = 350
+
 local CONFIGURATIONS = {
 	standard = {
 		max_items = 3,
 		max_passives = 1,
-		map_img = "standard",
-		bg_img = "standard",
-		coords = {
-			--TODO
-		}
+		bg_img_inv = "menus/inventory/bg_inv.png",
+		bg_img_map = "menus/inventory/bg_map.png",
 	},
 	--[[
 	dlc = {
 		max_items = 6,
 		max_passives = 2,
-		map_img = "TBD",
-		bg_img = "TBD"
+		bg_img_inv = "TBD",
+		bg_img_map = "TBD",
 	},
 	]]
+}
+
+local MAP_COORDS = {
+	--standard maps
+	['suburbs/cemetery'] = {"world_map", 22, 33},
+	['suburbs/dennys'] = {"world_map", 22, 33},
+	['suburbs/downtown'] = {"world_map", 22, 33},
+		['suburbs/video_store'] = {"world_map", 22, 33},
+	['suburbs/neighborhood'] = {"world_map", 22, 33},
+	['outskirts/barn'] = {"world_map", 212, 64},
+	['outskirts/farm'] = {"world_map", 22, 33},
+	['outskirts/forest'] = {"world_map", 22, 33},
+	['outskirts/pumpkin_cove'] = {"world_map", 22, 33},
+		['outskirts/pumpkin_inside'] = {"world_map", 22, 33},
+	['haunted_house/outside'] = {"world_map", 48, 18},
+		['haunted_house/'] = {"world_map", 48, 18},
+	
+	--DLC maps
+	--['some_dlc_map'] = {"dlc_map", 24, 8},
+}
+
+
+local MAP_BG_LIST = {
+	world_map = "menus/inventory/world_map.png",
+	--dlc_map = "menus/inventory/dlc_map.png",
 }
 
 local INPUTS = {
@@ -59,21 +88,29 @@ function menu_manager:init(game, config)
 	local item_sprites = {}
 	local passive_sprites = {}
 	
+	--apply movements to these tables to affect position of left and right menu halves (horizontal component only!)
+	local left_position = {x=0, y=0}
+	local right_position = {x=0, y=0}
+	
 	assert(sol.main.get_type(game)=="game", "Bad argument #1 to 'init' (sol.game expected)")
 	assert(type(config)=="string", "Bad argument #2 to 'init' (string or nil expected)")
 	local config_data = CONFIGURATIONS[config]
 	assert(config_data, "Bad argument #2 to 'init', invalid configuration name: "..config)
 	
 	local MAX_ITEMS = config_data.max_items
-	local MAP_IMG = config_data.map_img
-	local BG_IMG_INV = config_data.bg_img.."_inv"
-	local BG_IMG_MAP = config_data.bg_img.."_map"
+	local MAX_PASSIVES = config_data.max_passives
+	local BG_INV = config_data.bg_img_inv
+	local BG_MAP = config_data.bg_img_map
 	
 	if game.inventory_menu then return end --menu has already been initialized for game
 	game.inventory_menu = menu --save reference to menu
 	function game:on_paused() sol.menu.start(game, menu) end
 	
 	--// create menu sprites
+	local bg_img_inv = sol.surface.create(BG_INV)
+	local BG_INV_WIDTH = bg_img_inv:get_size()
+	local bg_img_map = sol.surface.create(BG_MAP)
+	local BG_MAP_WIDTH = bg_img_map:get_size()
 	local cursor_sprite = sol.sprite.create"menus/inventory/selector"
 	
 	function menu:move_cursor(dx, dy)
@@ -108,6 +145,22 @@ function menu_manager:init(game, config)
 		end
 		
 		--TODO opening animation
+		--menus start offscreen
+		left_position.x = -1*BG_INV_WIDTH
+		right_position.x = BG_MAP_WIDTH
+		
+		local movt_inv = sol.movement.create"straight"
+		movt_inv:set_speed(1000*BG_INV_WIDTH/OPENING_TRANSITION_TIME)
+		movt_inv:set_angle(0)
+		movt_inv:set_max_distance(BG_INV_WIDTH)
+		
+		local movt_map = sol.movement.create"straight"
+		movt_map:set_speed(1000*BG_MAP_WIDTH/OPENING_TRANSITION_TIME)
+		movt_map:set_angle(math__pi)
+		movt_map:set_max_distance(BG_MAP_WIDTH)
+		
+		movt_map:start(right_position)
+		movt_inv:start(left_position)
 	end
 	
 	function menu:on_command_pressed(command)
@@ -119,6 +172,18 @@ function menu_manager:init(game, config)
 			self[ list[1] ](self, unpack(list, 2))
 			return true
 		end
+	end
+	
+	function menu:on_draw(dst_surface)
+		--convenience
+		local left_x = left_position.x
+		local right_x = right_position.x
+		
+		--menu left side elements
+		bg_img_inv:draw(dst_surface, 0+left_x, 0)
+		
+		--menu right side elements
+		bg_img_map:draw(dst_surface, 92+right_x, 0)
 	end
 	
 	return menu
