@@ -1,6 +1,6 @@
 --[[ inventory.lua
 	version 0.1a1
-	13 Oct 2020
+	14 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -18,6 +18,8 @@
 local menu_manager = {}
 
 --convenience
+local math__floor = math.floor
+local math__ceil = math.ceil
 local math__pi = math.pi
 
 local ITEM_LIST = {
@@ -26,9 +28,9 @@ local ITEM_LIST = {
 	"spin_kick",
 }
 
---NOTE: speed can't be >1000 so transition time can't be much less than 350ms (https://gitlab.com/solarus-games/solarus/-/issues/1307)
-local OPENING_TRANSITION_TIME = 350
-local CLOSING_TRANSITION_TIME = 350
+local OPENING_TRANSITION_TIME = 180 --Note: choose multiple of 90ms (i.e. multiple of both 18 & 10)
+local CLOSING_TRANSITION_TIME = 90
+local INV_MAX_DIST = 108 --16 extra pixels beyond width to make multiple of 18
 
 local CONFIGURATIONS = {
 	standard = {
@@ -79,6 +81,73 @@ local INPUTS = {
 	down = {"move_cursor", 0, 1},
 	pause = "stop",
 }
+
+--// Use repeating timer to simulate a movement since Solarus cannot handle movements faster than 1000 pixels/sec
+	--properties (table) - list of properties for the slide movement
+		--object (table or userdata) - object to move
+		--context (timer context, optional) - see sol.timer for info; default: sol.main
+		--max_distance (number, positive) - distance of movement in pixels
+		--total_time (number, positive) - total time of movement in ms (use multiple of 10)
+		--direction (string) - 'left' or 'right' for direction of movement
+		--callback (function, optional) - callback function to call at end of movement, passes object
+--TODO make this its own script?
+local function slide(properties)
+	--TODO assumes a fast speed that needs update every 10ms; could be smarter by choosing a slower than 10ms refresh rate
+	
+	local DIRECTIONS = {
+		left = -1,
+		right = 1,
+	}
+	
+	assert(type(properties)=="table", "Bad argument #1 to 'slide' (table expected)")
+	local object = properties.object
+	assert(type(object)=="table" or type(object)=="userdata", "Bad property 'object' to 'slide' (table or userdata expected)")
+	local context = properties.context or sol.main
+	assert(type(context)=="table" or type(context)=="userdata", "Bad property 'context' to 'slide' (table or userdata or nil expected)")
+	local max_distance = tonumber(properties.distance)
+	assert(max_distance, "Bad property 'max_distance' to 'slide' (number expected)")
+	max_distance = math__floor(max_distance)
+	assert(max_distance > 0, "Bad property 'max_distance' to 'slide' (positive value expected)")
+	local total_time = tonumber(properties.time)
+	assert(total_time, "Bad property 'total_time' to 'slide' (number expected)")
+	total_time = math__ceil(total_time/10)*10 --round up total time to nearest 10ms
+	assert(total_time>0, "Bad property 'total_time' to 'slide' (positive value expected)")
+	local direction = properties.direction
+	assert(type(direction)=="string", "Bad property 'direction' to 'slide' (string expected)")
+	direction = DIRECTIONS[direction]
+	assert(direction, "Bad property 'direction' to 'slide' ('right' or 'left' expected)")
+	local callback = properties.callback
+	assert(not callback or type(callback)=="function", "Bad property 'callback' to 'slide' (function or nil expected)")
+	
+	--determine refresh rate (multiple of 10ms)
+	local refresh_rate = 10*max_distance/total_time
+	if refresh_rate <1 then
+		refresh_rate = math__ceil(1/refresh_rate)*10 --multiple of 10ms
+	else refresh_rate = 10 end --fastest refresh rate is 10ms
+	
+	total_time = math__ceil(total_time/refresh_rate)*refresh_rate --round up to nearest time interval
+	local speed = math__ceil(refresh_rate*max_distance/total_time) --pixels per time interval
+	local dir_speed = direction*speed --convenience
+	
+	local current_distance = 0
+	
+	--local max_time = math__ceil(max_distance/speed)*refresh_rate
+	--print("slide!", total_time, speed, refresh_rate, max_time, speed*max_time/refresh_rate, max_distance)
+	
+	local timer = sol.timer.start(context, refresh_rate, function()
+		current_distance = current_distance + speed
+		if current_distance > max_distance then --exceeded max dist, increment by smaller amount for last step
+			dir_speed = dir_speed - (current_distance - max_distance)
+			print("adjust:", dir_speed)
+		end
+		object.x = object.x + dir_speed
+		
+		local is_repeat = current_distance < max_distance --keep going if not reached full distance yet
+		if not is_repeat and callback then callback(object) end --call callback if done
+		
+		return is_repeat
+	end)
+end
 	
 function menu_manager:init(game, config)
 	local config = config or "standard"
@@ -89,8 +158,8 @@ function menu_manager:init(game, config)
 	local passive_sprites = {}
 	
 	--apply movements to these tables to affect position of left and right menu halves (horizontal component only!)
-	local left_position = {x=0, y=0}
-	local right_position = {x=0, y=0}
+	local left_position = {x=0}
+	local right_position = {x=0}
 	
 	assert(sol.main.get_type(game)=="game", "Bad argument #1 to 'init' (sol.game expected)")
 	assert(type(config)=="string", "Bad argument #2 to 'init' (string or nil expected)")
@@ -108,6 +177,8 @@ function menu_manager:init(game, config)
 	
 	--// create menu sprites
 	local bg_img_inv = sol.surface.create(BG_INV)
+	local bg_fill = sol.surface.create() --semi-transparent background behind menu
+	bg_fill:fill_color{0, 0, 0, 180}
 	local BG_INV_WIDTH = bg_img_inv:get_size()
 	local bg_img_map = sol.surface.create(BG_MAP)
 	local BG_MAP_WIDTH = bg_img_map:get_size()
@@ -118,12 +189,27 @@ function menu_manager:init(game, config)
 	end
 	
 	function menu:stop()
-		--TODO closing animation
+		--do closing animation
 		
-		print"stop!"
+		slide{ --movement to left for inventory pane
+			context = self,
+			object = left_position,
+			direction = "left",
+			distance = INV_MAX_DIST,
+			time = CLOSING_TRANSITION_TIME,
+		}
 		
-		sol.menu.stop(self)
-		game:set_paused(false)
+		slide{ --movement to right for map pane
+			context = self,
+			object = right_position,
+			direction = "right",
+			distance = BG_MAP_WIDTH,
+			time = CLOSING_TRANSITION_TIME,
+			callback = function() --close menu when animation complete
+				sol.menu.stop(self)
+				game:set_paused(false)
+			end,
+		}
 	end
 	
 	function menu:on_started()
@@ -144,23 +230,27 @@ function menu_manager:init(game, config)
 		for i=1,MAX_PASSIVES do
 		end
 		
-		--TODO opening animation
-		--menus start offscreen
-		left_position.x = -1*BG_INV_WIDTH
+		--start menus off-screen
+		left_position.x = -1*INV_MAX_DIST
 		right_position.x = BG_MAP_WIDTH
 		
-		local movt_inv = sol.movement.create"straight"
-		movt_inv:set_speed(1000*BG_INV_WIDTH/OPENING_TRANSITION_TIME)
-		movt_inv:set_angle(0)
-		movt_inv:set_max_distance(BG_INV_WIDTH)
+		--opening animation
 		
-		local movt_map = sol.movement.create"straight"
-		movt_map:set_speed(1000*BG_MAP_WIDTH/OPENING_TRANSITION_TIME)
-		movt_map:set_angle(math__pi)
-		movt_map:set_max_distance(BG_MAP_WIDTH)
+		slide{
+			context = self,
+			object = left_position,
+			direction = "right",
+			distance = INV_MAX_DIST,
+			time = OPENING_TRANSITION_TIME,
+		}
 		
-		movt_map:start(right_position)
-		movt_inv:start(left_position)
+		slide{
+			context = self,
+			object = right_position,
+			direction = "left",
+			distance = BG_MAP_WIDTH,
+			time = OPENING_TRANSITION_TIME,
+		}
 	end
 	
 	function menu:on_command_pressed(command)
@@ -178,6 +268,8 @@ function menu_manager:init(game, config)
 		--convenience
 		local left_x = left_position.x
 		local right_x = right_position.x
+		
+		bg_fill:draw(dst_surface)
 		
 		--menu left side elements
 		bg_img_inv:draw(dst_surface, 0+left_x, 0)
