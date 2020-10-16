@@ -1,6 +1,6 @@
 --[[ inventory.lua
 	version 0.1a1
-	14 Oct 2020
+	15 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -68,10 +68,13 @@ local MAP_COORDS = {
 	--['some_dlc_map'] = {"dlc_map", 24, 8},
 }
 
-
 local MAP_BG_LIST = {
 	world_map = "menus/inventory/world_map.png",
 	--dlc_map = "menus/inventory/dlc_map.png",
+}
+
+local PLACEMENTS = {
+	pumpkin_seeds = {18, 64},
 }
 
 local INPUTS = {
@@ -156,6 +159,7 @@ function menu_manager:init(game, config)
 	
 	local item_sprites = {}
 	local passive_sprites = {}
+	local pumpkin_seeds_sprite
 	
 	--apply movements to these tables to affect position of left and right menu halves (horizontal component only!)
 	local left_position = {x=0}
@@ -226,9 +230,17 @@ function menu_manager:init(game, config)
 			end
 		end
 		
+		--create item sprites for passive items
 		passive_sprites = {} --reset
 		for i=1,MAX_PASSIVES do
 		end
+		
+		--create sprite for pumpkin seeds
+		local seed_count = game:get_item"pumpkin_seed":get_amount() or 0
+		if seed_count>5 then seed_count = 5 end
+		pumpkin_seeds_sprite = sol.sprite.create"menus/pumpkin_seeds"
+		pumpkin_seeds_sprite:set_direction(seed_count)
+		pumpkin_seeds_sprite:set_xy(unpack(PLACEMENTS.pumpkin_seeds))
 		
 		--start menus off-screen
 		left_position.x = -1*INV_MAX_DIST
@@ -272,7 +284,8 @@ function menu_manager:init(game, config)
 		bg_fill:draw(dst_surface)
 		
 		--menu left side elements
-		bg_img_inv:draw(dst_surface, 0+left_x, 0)
+		bg_img_inv:draw(dst_surface, left_x, 0)
+		pumpkin_seeds_sprite:draw(dst_surface, left_x, 0)
 		
 		--menu right side elements
 		bg_img_map:draw(dst_surface, 92+right_x, 0)
