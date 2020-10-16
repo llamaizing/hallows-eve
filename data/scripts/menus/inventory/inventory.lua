@@ -298,7 +298,7 @@ function menu_manager:init(game, config)
 		local map_id = map and map:get_id() or ""
 		local world_map_name = MAP_COORDS[map_id]
 		if not world_map_name then --use upper directory as id instead of map_id
-			world_map_name = MAP_COORDS[map_id:match".-/"]
+			world_map_name = MAP_COORDS[map_id:match".-/"] or ""
 		end
 		world_map_name = world_map_name and world_map_name[1] or MAP_BG_LIST.default
 		local world_map_path = MAP_BG_LIST[world_map_name]
