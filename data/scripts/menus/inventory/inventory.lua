@@ -13,6 +13,12 @@
 	and a world map. The d-pad is used to select the active item. A marker for the hero is
 	placed on the world map based on the current map. An objective marker may appear on at
 	the world map location where the player must go in order to advance the story.
+	
+	Usage:
+	
+	Setting objectives:
+	game:set_value("current_objective", "outskirts/farm") --set an objective (go to map)
+	game:set_value("current_objective", nil) --remove the objective
 ]]
 
 local menu_manager = {}
@@ -31,6 +37,11 @@ local ITEM_LIST = {
 local OPENING_TRANSITION_TIME = 180 --Note: choose multiple of 90ms (i.e. multiple of both 18 & 10)
 local CLOSING_TRANSITION_TIME = 90
 local INV_MAX_DIST = 108 --16 extra pixels beyond width to make multiple of 18
+
+--TODO move these to language manager script
+local FONT = "ComicNeue-Angular-Bold"
+local FONT_SIZE = 16
+local FONT_COLOR = {191, 96, 0}
 
 local CONFIGURATIONS = {
 	standard = {
@@ -71,11 +82,20 @@ local MAP_COORDS = {
 local MAP_BG_LIST = {
 	world_map = "menus/inventory/world_map.png",
 	--dlc_map = "menus/inventory/dlc_map.png",
+	default = "world_map",
 }
 
 local PLACEMENTS = {
 	pumpkin_seeds = {18, 64},
+	
+	bg_img_map = {92, 0},
+	objective_marker = {92+16, 41},
+	map_title_text = {92+166, 32},
+	map_objective_text = {92+166, 224},
 }
+
+--y offset for bouncing objective marker, cycle through these using repeating timer
+local BOUNCE_Y = {[0] = 0, 1, 2, 1, 0} --last entry unused but ensures #BOUNCE_Y is correct size
 
 local INPUTS = {
 	right = {"move_cursor", 1, 0},
@@ -157,9 +177,39 @@ function menu_manager:init(game, config)
 	
 	local menu = {}
 	
+	local objective_x, objective_y = 0, 0 --coordinates of objective marker (if visible)
+	local bounce_index = 0 --increment with repeating timer, the current index from BOUNCE_Y
+	local objective_offset = 0 --vertical offset to apply to objective_marker, update via repeating timer
+	
+	--sprites
 	local item_sprites = {}
 	local passive_sprites = {}
 	local pumpkin_seeds_sprite
+	local objective_marker
+	
+	local world_map_surface
+	
+	--text
+	local map_title_text = sol.text_surface.create{
+		font = FONT,
+		font_size = FONT_SIZE,
+		color = FONT_COLOR,
+		rendering_mode = "solid",
+		horizontal_alignment = "center",
+		vertical_alignment = "bottom",
+		text_key = "menu.pause.map_title",
+	}
+	map_title_text:set_xy(unpack(PLACEMENTS.map_title_text))
+	local map_objective_text = sol.text_surface.create{
+		font = FONT,
+		font_size = FONT_SIZE,
+		color = FONT_COLOR,
+		rendering_mode = "solid",
+		horizontal_alignment = "center",
+		vertical_alignment = "bottom",
+		text = "",
+	}
+	map_objective_text:set_xy(unpack(PLACEMENTS.map_objective_text))
 	
 	--apply movements to these tables to affect position of left and right menu halves (horizontal component only!)
 	local left_position = {x=0}
@@ -185,6 +235,7 @@ function menu_manager:init(game, config)
 	bg_fill:fill_color{0, 0, 0, 180}
 	local BG_INV_WIDTH = bg_img_inv:get_size()
 	local bg_img_map = sol.surface.create(BG_MAP)
+	bg_img_map:set_xy(unpack(PLACEMENTS.bg_img_map))
 	local BG_MAP_WIDTH = bg_img_map:get_size()
 	local cursor_sprite = sol.sprite.create"menus/inventory/selector"
 	
@@ -242,6 +293,46 @@ function menu_manager:init(game, config)
 		pumpkin_seeds_sprite:set_direction(seed_count)
 		pumpkin_seeds_sprite:set_xy(unpack(PLACEMENTS.pumpkin_seeds))
 		
+		--update world map image
+		local map = game:get_map()
+		local world_map_name = MAP_COORDS[map and map:get_id()]
+		world_map_name = world_map_name and world_map_name[1] or MAP_BG_LIST.default
+		local world_map_path = MAP_BG_LIST[world_map_name]
+		if world_map_path then
+			world_map_surface = sol.surface.create(world_map_path)
+			world_map_surface:set_xy(unpack(PLACEMENTS.objective_marker))
+		else world_map_surface = nil end
+		
+		--update map objectives
+		local objective_map = game:get_value"current_objective"
+		objective_marker = sol.sprite.create"menus/arrow"
+		objective_marker:set_direction(3) --down
+		local objective_text = objective_map and sol.language.get_string"menu.pause.objective" or ""
+		if objective_map then
+			local sub_text = sol.language.get_string("map.location."..objective_map)
+			if sub_text then
+				objective_text = string.format(
+					objective_text,
+					sol.language.get_string("map.location."..objective_map)
+				)
+			else objective_text = "" end
+			
+			--update marker sprite position
+			local coords = MAP_COORDS[objective_map]
+			if coords then
+				objective_marker:set_opacity(255)
+				objective_x, objective_y = unpack(coords, 2)
+				
+				--create timer for bouncing objective_marker
+				sol.timer.start(self, 250, function()
+					bounce_index = (bounce_index + 1) % #BOUNCE_Y
+					objective_offset = BOUNCE_Y[bounce_index]
+					return true
+				end)
+			else objective_marker:set_opacity(0) end
+		else objective_marker:set_opacity(0) end
+		map_objective_text:set_text(objective_text)
+		
 		--start menus off-screen
 		left_position.x = -1*INV_MAX_DIST
 		right_position.x = BG_MAP_WIDTH
@@ -288,7 +379,11 @@ function menu_manager:init(game, config)
 		pumpkin_seeds_sprite:draw(dst_surface, left_x, 0)
 		
 		--menu right side elements
-		bg_img_map:draw(dst_surface, 92+right_x, 0)
+		bg_img_map:draw(dst_surface, right_x, 0)
+		if world_map_surface then world_map_surface:draw(dst_surface, right_x, 0) end
+		objective_marker:draw(dst_surface, objective_x+right_x, objective_y+objective_offset)
+		map_title_text:draw(dst_surface, right_x, 0)
+		map_objective_text:draw(dst_surface, right_x, 0)
 	end
 	
 	return menu
