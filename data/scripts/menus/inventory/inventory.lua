@@ -34,6 +34,10 @@ local ITEM_LIST = {
 	"spin_kick",
 }
 
+local PASSIVE_LIST = {
+	"pumpkin_jordans",
+}
+
 local OPENING_TRANSITION_TIME = 180 --Note: choose multiple of 90ms (i.e. multiple of both 18 & 10)
 local CLOSING_TRANSITION_TIME = 90
 local INV_MAX_DIST = 108 --16 extra pixels beyond width to make multiple of 18
@@ -86,7 +90,9 @@ local MAP_BG_LIST = {
 }
 
 local PLACEMENTS = {
+	passive_items = {24, 32, 36, 0},
 	pumpkin_seeds = {18, 64},
+	items = {24, 136, 36, 36},
 	
 	bg_img_map = {92, 0},
 	objective_marker = {92+16, 41},
@@ -180,6 +186,7 @@ function menu_manager:init(game, config)
 	local objective_x, objective_y = 0, 0 --coordinates of objective marker (if visible)
 	local bounce_index = 0 --increment with repeating timer, the current index from BOUNCE_Y
 	local objective_offset = 0 --vertical offset to apply to objective_marker, update via repeating timer
+	local cursor_index
 	
 	--sprites
 	local item_sprites = {}
@@ -245,7 +252,6 @@ function menu_manager:init(game, config)
 	
 	function menu:stop()
 		--do closing animation
-		
 		slide{ --movement to left for inventory pane
 			context = self,
 			object = left_position,
@@ -253,7 +259,6 @@ function menu_manager:init(game, config)
 			distance = INV_MAX_DIST,
 			time = CLOSING_TRANSITION_TIME,
 		}
-		
 		slide{ --movement to right for map pane
 			context = self,
 			object = right_position,
@@ -263,13 +268,20 @@ function menu_manager:init(game, config)
 			callback = function() --close menu when animation complete
 				sol.menu.stop(self)
 				game:set_paused(false)
+				
+				--remove sprites
+				item_sprites = {}
+				passive_sprites = {}
+				pumpkin_seeds_sprite = nil
+				world_map_surface = nil
+				objective_marker = nil
 			end,
 		}
 	end
 	
 	function menu:on_started()
 		--create item sprites for items player currently has in inventory
-		item_sprites = {} --reset
+		item_sprites = {max_count=0} --reset
 		for i=1,MAX_ITEMS do
 			local item_name = ITEM_LIST[i]
 			local item_variant = game:get_item(item_name):get_variant()
@@ -277,13 +289,29 @@ function menu_manager:init(game, config)
 				local item_sprite = sol.sprite.create"menus/inventory/items"
 				item_sprite:set_animation(item_name)
 				item_sprite:set_direction(item_variant-1)
+				local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.items)
+				local x = math__floor((i-1) / 3) --x position in grid (0-1)
+				local y = (i-1) % 3 --y position in grid (0-2)
+				item_sprite:set_xy(offset_x + dx*x, offset_y + dy*y)
 				item_sprites[i] = item_sprite
+				item_sprites.max_count = i --tentative
 			end
 		end
 		
 		--create item sprites for passive items
-		passive_sprites = {} --reset
+		passive_sprites = {max_count=0} --reset
 		for i=1,MAX_PASSIVES do
+			local item_name = PASSIVE_LIST[i]
+			local item_variant = game:get_item(item_name):get_variant()
+			if item_variant > 0 then
+				local item_sprite = sol.sprite.create"menus/inventory/items"
+				item_sprite:set_animation(item_name)
+				item_sprite:set_direction(item_variant-1)
+				local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.passive_items)
+				item_sprite:set_xy(offset_x+dx*(i-1), offset_y)
+				passive_sprites[i] = item_sprite
+				passive_sprites.max_count = i --tentative
+			end
 		end
 		
 		--create sprite for pumpkin seeds
@@ -380,7 +408,15 @@ function menu_manager:init(game, config)
 		
 		--menu left side elements
 		bg_img_inv:draw(dst_surface, left_x, 0)
+		for i=1,passive_sprites.max_count do
+			local item_sprite = passive_sprites[i]
+			if item_sprite then item_sprite:draw(dst_surface, left_x, 0) end
+		end
 		pumpkin_seeds_sprite:draw(dst_surface, left_x, 0)
+		for i=1,item_sprites.max_count do
+			local item_sprite = item_sprites[i]
+			if item_sprite then item_sprite:draw(dst_surface, left_x, 0) end
+		end
 		
 		--menu right side elements
 		bg_img_map:draw(dst_surface, right_x, 0)
