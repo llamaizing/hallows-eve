@@ -150,6 +150,7 @@ sprite{ id = "hud/heart", description = "Heart" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "hud/swim_meter", description = "Swim Meter Blob" }
 sprite{ id = "menus/arrow", description = "Arrow" }
+sprite{ id = "menus/inventory/hero" }
 sprite{ id = "menus/inventory/items", description = "Items(inventory menu)" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }

@@ -1,6 +1,6 @@
 --[[ inventory.lua
 	version 0.1a1
-	15 Oct 2020
+	16 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -15,6 +15,8 @@
 	the world map location where the player must go in order to advance the story.
 	
 	Usage:
+	local menu = require"scripts/menus/inventory/inventory":init(game, "DLC_keyword")
+	game.inventory_menu --access the menu from other scripts
 	
 	Setting objectives:
 	game:set_value("current_objective", "outskirts/farm") --set an objective (go to map)
@@ -63,6 +65,7 @@ local CONFIGURATIONS = {
 	},
 	]]
 }
+CONFIGURATIONS.DEFAULT = CONFIGURATIONS.standard
 
 local MAP_COORDS = {
 	--standard maps
@@ -86,8 +89,8 @@ local MAP_COORDS = {
 local MAP_BG_LIST = {
 	world_map = "menus/inventory/world_map.png",
 	--dlc_map = "menus/inventory/dlc_map.png",
-	default = "world_map",
 }
+MAP_BG_LIST.DEFAULT = MAP_BG_LIST.world_map
 
 local PLACEMENTS = {
 	passive_items = {24, 32, 36, 0},
@@ -179,8 +182,6 @@ local function slide(properties)
 end
 	
 function menu_manager:init(game, config)
-	local config = config or "standard"
-	
 	local menu = {}
 	
 	local objective_x, objective_y = 0, 0 --coordinates of objective marker (if visible)
@@ -192,6 +193,7 @@ function menu_manager:init(game, config)
 	local item_sprites = {}
 	local passive_sprites = {}
 	local pumpkin_seeds_sprite
+	local hero_marker
 	local objective_marker
 	
 	local world_map_surface
@@ -223,8 +225,8 @@ function menu_manager:init(game, config)
 	local right_position = {x=0}
 	
 	assert(sol.main.get_type(game)=="game", "Bad argument #1 to 'init' (sol.game expected)")
-	assert(type(config)=="string", "Bad argument #2 to 'init' (string or nil expected)")
-	local config_data = CONFIGURATIONS[config]
+	assert(not config or type(config)=="string", "Bad argument #2 to 'init' (string or nil expected)")
+	local config_data = CONFIGURATIONS[config] or CONFIGURATIONS.DEFAULT
 	assert(config_data, "Bad argument #2 to 'init', invalid configuration name: "..config)
 	
 	local MAX_ITEMS = config_data.max_items
@@ -274,6 +276,7 @@ function menu_manager:init(game, config)
 				passive_sprites = {}
 				pumpkin_seeds_sprite = nil
 				world_map_surface = nil
+				hero_marker = nil
 				objective_marker = nil
 			end,
 		}
@@ -324,16 +327,23 @@ function menu_manager:init(game, config)
 		--update world map image
 		local map = game:get_map()
 		local map_id = map and map:get_id() or ""
-		local world_map_name = MAP_COORDS[map_id]
-		if not world_map_name then --use upper directory as id instead of map_id
-			world_map_name = MAP_COORDS[map_id:match".-/"] or ""
+		local map_coords = MAP_COORDS[map_id]
+		if not map_coords then --use upper directory as id instead of map_id
+			map_coords = MAP_COORDS[map_id:match".-/" or ""]
 		end
-		world_map_name = world_map_name and world_map_name[1] or MAP_BG_LIST.default
-		local world_map_path = MAP_BG_LIST[world_map_name]
+		local world_map_x, world_map_y = unpack(PLACEMENTS.objective_marker)
+		local world_map_path = MAP_BG_LIST[map_coords and map_coords[1]] or MAP_BG_LIST.DEFAULT
 		if world_map_path then
 			world_map_surface = sol.surface.create(world_map_path)
-			world_map_surface:set_xy(unpack(PLACEMENTS.objective_marker))
+			world_map_surface:set_xy(world_map_x, world_map_y)
 		else world_map_surface = nil end
+		
+		--create sprite for hero marker
+		hero_marker = sol.sprite.create"menus/inventory/hero"
+		if map_coords then
+			local hero_x, hero_y = map_coords[2], map_coords[3]
+			hero_marker:set_xy(world_map_x + hero_x, world_map_y + hero_y)
+		else hero_marker:set_opacity(0) end
 		
 		--update map objectives
 		local objective_map = game:get_value"current_objective"
@@ -352,7 +362,6 @@ function menu_manager:init(game, config)
 			--update marker sprite position
 			local coords = MAP_COORDS[objective_map]
 			if coords then
-				objective_marker:set_opacity(255)
 				objective_x, objective_y = unpack(coords, 2)
 				
 				--create timer for bouncing objective_marker
@@ -421,6 +430,7 @@ function menu_manager:init(game, config)
 		--menu right side elements
 		bg_img_map:draw(dst_surface, right_x, 0)
 		if world_map_surface then world_map_surface:draw(dst_surface, right_x, 0) end
+		hero_marker:draw(dst_surface, right_x, 0)
 		objective_marker:draw(dst_surface, objective_x+right_x, objective_y+objective_offset)
 		map_title_text:draw(dst_surface, right_x, 0)
 		map_objective_text:draw(dst_surface, right_x, 0)
