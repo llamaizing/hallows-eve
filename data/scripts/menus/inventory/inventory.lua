@@ -1,5 +1,5 @@
 --[[ inventory.lua
-	version 0.1a1
+	version 1.0
 	16 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
@@ -58,15 +58,11 @@ local FONT_COLOR = {191, 96, 0}
 --allow different configuration options for menu (so can be different with DLC)
 local CONFIGURATIONS = {
 	standard = {
-		max_items = 3,
-		max_passives = 1,
 		bg_img_inv = "menus/inventory/bg_inv.png",
 		bg_img_map = "menus/inventory/bg_map.png",
 	},
 	--[[
 	dlc = {
-		max_items = 6,
-		max_passives = 2,
 		bg_img_inv = "TBD",
 		bg_img_map = "TBD",
 	},
@@ -272,8 +268,6 @@ function menu_manager:init(game, config)
 	local config_data = CONFIGURATIONS[config] or CONFIGURATIONS.DEFAULT
 	assert(config_data, "Bad argument #2 to 'init', invalid configuration name: "..config)
 	
-	local MAX_ITEMS = config_data.max_items
-	local MAX_PASSIVES = config_data.max_passives
 	local BG_INV = config_data.bg_img_inv
 	local BG_MAP = config_data.bg_img_map
 	
@@ -376,8 +370,7 @@ function menu_manager:init(game, config)
 			local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.items)
 			
 			item_sprites = {max_count=0} --reset
-			for i=1,MAX_ITEMS do
-				local item_name = ITEM_LIST[i]
+			for i,item_name in ipairs(ITEM_LIST) do
 				local item_variant = game:get_item(item_name):get_variant()
 				if item_variant > 0 then
 					local item_sprite = sol.sprite.create"menus/inventory/items"
@@ -412,8 +405,7 @@ function menu_manager:init(game, config)
 			local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.passive_items)
 			
 			passive_sprites = {max_count=0} --reset
-			for i=1,MAX_PASSIVES do
-				local item_name = PASSIVE_LIST[i]
+			for i,item_name in ipairs(PASSIVE_LIST) do
 				local item_variant = game:get_item(item_name):get_variant()
 				if item_variant > 0 then
 					local item_sprite = sol.sprite.create"menus/inventory/items"
