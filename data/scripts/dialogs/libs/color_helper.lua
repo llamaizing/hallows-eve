@@ -1,3 +1,5 @@
+local color_helper = {}
+
 -- this wrapper provides an easy way to select common colors
 -- if you'd like to set your own color short cut add it to the list
 -- below (the 3 numbers correspond to the RGB values)
@@ -12,7 +14,7 @@
 --     #=> {0,0,0}
 --
 -- Returns a 3 value array corresponding to the color
-function get_color(color)
+function color_helper:get_color(color)
   if type(color) == "string" then
     color = color:lower()
     if color == "white" then color = {255,255,255}
@@ -23,7 +25,7 @@ function get_color(color)
     elseif color == "pink" then color = {255,0,150}
     elseif color == "black" then color = {0,0,0}
     elseif string.match(color, "{%d+,%d+,%d+}") then
-      R,G,B = string.match(color, "{(%d+),(%d+),(%d+)}")
+      local R,G,B = string.match(color, "{(%d+),(%d+),(%d+)}")
       color = {R,G,B}
     else color = {255,255,255}
     end
@@ -33,3 +35,5 @@ function get_color(color)
 
   return color
 end
+
+return color_helper

@@ -4,9 +4,11 @@
 -- local name_box = require("scripts/name_box/name_box/name_box_manager"):create(game)
 
 local image_helper = require("scripts/dialogs/libs/image_helper")
+local display_position = require("scripts/dialogs/libs/display_position")
 
 local name_box_manager = {}
 
+local name_box
 -- name_box_manager handles all of the objects which makes up a name box. The box image, the text, animations, etc.
 function name_box_manager:create(game)
   name_box = {
@@ -24,8 +26,8 @@ function name_box_manager:create(game)
   -- Example
   --   name_box:update(
   --     {
-  --       name = 'Todd', 
-  --       dialog_id = 'todd.greeting',  
+  --       name = 'Todd',
+  --       dialog_id = 'todd.greeting',
   --       lines = ['my', 'spoken', 'lines']
   --     },
   --     {
@@ -39,7 +41,7 @@ function name_box_manager:create(game)
   function name_box:update(dialog, config, dialog_box_img)
     for k,v in pairs(config) do
       if name_box[k] ~= v and name_box[k] ~= nil and type(name_box[k]) ~= "table" then
-        name_box[k] = v 
+        name_box[k] = v
       end
     end
 
@@ -54,7 +56,7 @@ function name_box_manager:create(game)
     -- set name box to new name
     name_box.name_line:clear()
     name_box.name_line.text = dialog['name']
-    for i = 1, #name_box.name_line.text do name_box.name_line:add_next_character() end
+    for _ = 1, #name_box.name_line.text do name_box.name_line:add_next_character() end
   end
 
   -- Creates the name box image
@@ -64,13 +66,13 @@ function name_box_manager:create(game)
   -- Examples
   --   create_name_box({image = {...}, sprite = {...},...})
   --     #=> sol.sprite
-  --    
+  --
   --   create_name_box({image = {...},...})
   --     #=> sol.surface
   --
   -- Returns sol.sprite or sol.surface
   function name_box:create_name_box_image(config)
-    path = config['path']
+    local path = config['path']
     if type(path) ~= 'string' or path == '' then return end
     name_box.box_img = image_helper:get_image(config)
   end
@@ -79,12 +81,12 @@ function name_box_manager:create(game)
   -- final actions it needs to do
   --
   -- game - A Solarus Game Object
-  -- 
+  --
   -- Examples
   --   stop(sol.game.new())
-  -- 
+  --
   -- returns nothing
-  function name_box:stop(game)
+  function name_box:stop(_)
     name_box.dialog_text:stop()
   end
 
@@ -112,15 +114,16 @@ function name_box_manager:create(game)
     if name_box.box_img == nil or name_box.box_img['draw'] == nil or name_box.box_img['set_xy'] == nil then return end
     if type(name_box['image']) ~= 'table' then return end
 
-    position = (function() if name_box['image']['position'] ~= nil then return name_box['image']['position'] else return 'outsidetopleft' end end)()
+    local position = (function() if name_box['image']['position'] ~= nil then return name_box['image']['position'] else return 'outsidetopleft' end end)()
 
-    box_x,box_y = compute_position(name_box.box_img, position, name_box.dialog_box_img)
+    local box_x,box_y = display_position:compute_position(name_box.box_img, position, name_box.dialog_box_img)
     if name_box['image']['x_offset'] ~= nil then box_x = box_x + name_box['image']['x_offset'] end
     if name_box['image']['y_offset'] ~= nil then box_y = box_y + name_box['image']['y_offset'] end
     name_box.box_img:set_xy(box_x,box_y)
     name_box.box_img:draw(dst_surface)
 
     if type(name_box['line']) == 'table' then
+      local x, y
       if name_box['line']['x_offset'] ~= nil then x = box_x + name_box['line']['x_offset'] end
       if name_box['line']['y_offset'] ~= nil then y = box_y + name_box['line']['y_offset'] end
       name_box.name_line:set_xy(x,y)

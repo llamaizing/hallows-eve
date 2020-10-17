@@ -14,7 +14,7 @@ local image_helper = {}
 --
 -- Returns a sol.sprite object
 local function load_sprite(config)
-  sprite = sol.sprite.create(config['path'])
+  local sprite = sol.sprite.create(config['path'])
 
   if config['sprite'].animation ~= nil and sprite:get_animation() ~= config['sprite'].animation then
     sprite:set_animation(config['sprite'].animation)
@@ -56,9 +56,9 @@ function image_helper:get_image(config)
   if type(config) ~= 'table' then return end
 
   if type(config['sprite']) == 'table' then
-    return load_sprite(config) 
+    return load_sprite(config)
   else
-    return load_image(config) 
+    return load_image(config)
   end
 end
 

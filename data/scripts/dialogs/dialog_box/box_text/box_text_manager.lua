@@ -4,20 +4,21 @@
 -- require("scripts/dialogs/dialog_box/libs/dialog_box_text"):create()
 
 local dialog_box_text = {}
-
+local box_text = {}
 -- handles the dialog box text. e.g. the "text" displayed in the dialog box.
 function dialog_box_text:create(game)
+  local line_space = 14 -- The space between each line
   box_text = {
     dialog = nil, -- A table containing dialog information (speaker, lines, etc)
     dialog_surface = sol.surface.create(sol.video.get_quest_size()), -- the surface we are drawing the text surfaces on
-    lines_wrapper = require("scripts/dialogs/dialog_box/box_text/lines/lines_wrapper"):create(game), -- wrapper for line surfaces
+    lines_wrapper = require("scripts/dialogs/dialog_box/box_text/lines/lines_wrapper"):create(game, line_space), -- wrapper for line surfaces
     question_wrapper = require("scripts/dialogs/dialog_box/box_text/question/question_wrapper"):create(), -- wrapper for handling question specific logic
     max_displayed_lines = 4, -- The max number of lines to display at a time.
     last_displayed_line_index = 0, -- the index position of the last displayed line. (0 is the starting position so it increments correctly)
+    line_space = line_space, -- The space between each line
     x_offset = 8, -- The offset so the text appears inside the dialog box border
     y_offset = 8, -- The offset for the first line from the top of the box
-    line_space = 14, -- The space between each line
-    inline_options = {}, -- INTERNAL ONLY DO NOT SET! -- For midline changes (e.g. if we want to change the color midway through the line) populated from conversation_parser
+    inline_options = {}, -- INTERNAL ONLY DO NOT SET! --For midline changes (e.g. changing the color midway through the line) populated from conversation_parser
   }
   -- Updates the text in the dialog box and the dialog box config options
   --
@@ -26,8 +27,8 @@ function dialog_box_text:create(game)
   --
   -- Example
   --  update({
-  --     name = 'Todd', 
-  --     dialog_id = 'todd.greeting',  
+  --     name = 'Todd',
+  --     dialog_id = 'todd.greeting',
   --     lines = ['my', 'spoken', 'lines'],
   --     inline_options = {...}
   --  },
@@ -36,7 +37,7 @@ function dialog_box_text:create(game)
   -- Returns nothing
   function box_text:update(dialog, config)
     for k,v in pairs(config) do
-      if box_text[k] ~= v and box_text[k] ~= nil then 
+      if box_text[k] ~= v and box_text[k] ~= nil then
         box_text[k] = v
       end
     end
@@ -70,7 +71,7 @@ function dialog_box_text:create(game)
   --
   -- Returns a table containg the options for that line
   local function inline_options_for_line(line_index)
-    line_options = {}
+    local line_options = {}
     for option, locations in pairs(box_text.inline_options) do
       if locations[line_index] then line_options[option] = locations[line_index] end
     end
@@ -83,7 +84,7 @@ function dialog_box_text:create(game)
   -- Example
   --
   --   lines_to_display(
-  --     ['When life gives you lemons, don't make lemonade.', 
+  --     ['When life gives you lemons, don't make lemonade.',
   --      'Make life take the lemons back!',
   --      'Get mad!',
   --      'I don't want your damn lemons, what the hell am I supposed to do with these?',
@@ -94,20 +95,20 @@ function dialog_box_text:create(game)
   --      'With the lemons!',
   --      "I'm gonna get my engineers to invent a combustible lemon that burns your house down!"]
   --    )
-  --    #=> ['Demand to see life's manager!', 
+  --    #=> ['Demand to see life's manager!',
   --         'Make life rue the day it thought it could give Cave Johnson lemons!',
   --         'Do you know who I am?',
   --         'I'm the man who's gonna burn your house down!']
   --
   -- Returns a table containing the lines we are going to display next in the dialog box
   local function next_lines_to_display(lines)
-    lines_to_display = {}
-    for i = 1, box_text.max_displayed_lines do
+    local lines_to_display = {}
+    for _ = 1, box_text.max_displayed_lines do
       box_text.last_displayed_line_index = box_text.last_displayed_line_index + 1
-      line = lines[box_text.last_displayed_line_index]
+      local line = lines[box_text.last_displayed_line_index]
       if line == nil then line = '' end
 
-      line_info = {}
+      local line_info = {}
       line_info['line'] = line
       line_info['inline_options'] = inline_options_for_line(box_text.last_displayed_line_index)
       table.insert(lines_to_display, line_info)
@@ -124,7 +125,7 @@ function dialog_box_text:create(game)
   --
   -- Returns nothing
   function box_text:advance_text()
-    lines = box_text.dialog['lines']
+    local lines = box_text.dialog['lines']
     -- if no text passed in then do nothing
     if next(lines) == nil then return
     -- if user pressed button before we were done displaying text then display all text instantly
@@ -141,7 +142,7 @@ function dialog_box_text:create(game)
   function box_text:text_finished()
     if box_text.lines_wrapper:all_lines_filled() == false then return false end
 
-    display_index = box_text.last_displayed_line_index
+    local display_index = box_text.last_displayed_line_index
 
     if type(display_index) ~= 'number' or type(#box_text.dialog.lines) ~= 'number' then return false end
 
@@ -184,7 +185,7 @@ function dialog_box_text:create(game)
     return box_text.question_wrapper:get_answer()
   end
 
-  -- Gets the dialog surface. It requries the x and y coordinates of the dialog box 
+  -- Gets the dialog surface. It requries the x and y coordinates of the dialog box
   -- image so that it can draw the text on it correctly
   --
   -- box_x - the x position of the dialog box image
@@ -198,8 +199,8 @@ function dialog_box_text:create(game)
   function box_text:get_text_surface(box_x, box_y)
     box_text.dialog_surface:clear()
 
-    x = box_x + box_text.x_offset
-    y = box_y + box_text.y_offset
+    local x = box_x + box_text.x_offset
+    local y = box_y + box_text.y_offset
     box_text.lines_wrapper:draw_lines(box_text.dialog_surface, x, y)
 
     if box_text.question_wrapper:is_a_question() and box_text.lines_wrapper:all_lines_filled() then

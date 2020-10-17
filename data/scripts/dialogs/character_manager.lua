@@ -5,6 +5,7 @@
 
 local transition_manager = require("scripts/dialogs/libs/transitions")
 local image_helper = require("scripts/dialogs/libs/image_helper")
+--local display_position = require("scripts/dialogs/libs/display_position")
 
 local character_manager = {}
 
@@ -13,9 +14,9 @@ local character_manager = {}
 --
 -- game - a game object
 -- display_position - An instace of the display_position class
-function character_manager:create(game, display_position)
-  characters = {}
-  
+function character_manager:create(_, display_position)
+  local characters = {}
+
   -- Public: Draw character sprites on destination surface
   -- This is called by Solarus. DO NOT CALL MANUALLY!
   --
@@ -26,7 +27,7 @@ function character_manager:create(game, display_position)
   --
   -- Returns nothing
   function characters:on_draw(dst_surface)
-    for k,v in pairs(self.character_sprites) do
+    for k, _ in pairs(self.character_sprites) do
       self.character_sprites[k]:draw(dst_surface)
     end
   end
@@ -46,12 +47,10 @@ function character_manager:create(game, display_position)
   --
   -- Returns sprite or surface that has been set to the correct XY
   local function set_xy(character, config, dialog_box_grahic)
-    x, y = 0,0
+    local x, y = 0,0
     if config.position ~= nil then
-      origin_x, origin_y = 0,0
-      if character['get_origin'] ~= nil then origin_x, origin_y = character:get_origin() end
-      window = (function() if config['relative_to_dialog_box'] == true then return dialog_box_grahic else return nil end end)()
-      x, y = compute_position(character, config.position, window)
+      local window = (function() if config['relative_to_dialog_box'] == true then return dialog_box_grahic else return nil end end)()
+      x, y = display_position:compute_position(character, config.position, window)
     end
 
     if config['x_offset'] ~= nil then x = x + config['x_offset'] end
@@ -79,8 +78,8 @@ function character_manager:create(game, display_position)
     for name,attributes in pairs(config) do
       if type(attributes['image']) == 'table' then
         self.character_sprites[name] = set_xy(
-          image_helper:get_image(attributes['image']), 
-          attributes['image'], 
+          image_helper:get_image(attributes['image']),
+          attributes['image'],
           dialog_box_grahic
         )
       end
@@ -100,9 +99,9 @@ function character_manager:create(game, display_position)
   -- Returns nothing
   function characters:transition(state)
     for name, object in pairs(characters.character_sprites) do
-      char_config = characters.config[name]
+      local char_config = characters.config[name]
       if type(char_config) == 'table' and type(char_config['transitions']) == 'table' then
-        transition(state, object, char_config['transitions'])
+        transition_manager:transition(state, object, char_config['transitions'])
       end
     end
   end

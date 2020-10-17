@@ -6,6 +6,7 @@ local image_helper = require("scripts/dialogs/libs/image_helper")
 -- require("scripts/dialogs/dialog_box/libs/text/question_wrapper"):create()
 --
 local question_wrapper = {}
+local question
 
 function question_wrapper:create()
   question = {
@@ -40,10 +41,10 @@ function question_wrapper:create()
   --   })
   --
   -- Returns nothing
-  function question:update(config, dialog)
+  function question:update(config, _)
     for k,v in pairs(config) do
-      if question[k] ~= v and question[k] ~= nil then 
-        question[k] = v 
+      if question[k] ~= v and question[k] ~= nil then
+        question[k] = v
       end
     end
   end
@@ -60,9 +61,9 @@ function question_wrapper:create()
   --
   -- Returns a surface object containing the cursor
   local function load_cursor_from_sheet(cursor)
-    icon_sheet = sol.surface.create(cursor.path)
-    icon = cursor.icon
-    cursor_image = sol.surface.create()
+    local icon_sheet = sol.surface.create(cursor.path)
+    local icon = cursor.icon
+    local cursor_image = sol.surface.create()
 
     icon_sheet:draw_region(
       icon.width * icon.column,
@@ -91,7 +92,7 @@ function question_wrapper:create()
   --
   --  load_cursor({sprite = {}, ...}, nil)
   --    #=> sol.sprite
-  --  
+  --
   --  load_cursor({sprite = {}, ...}, sol.sprite)
   --    #=> sol.sprite
   --
@@ -121,8 +122,8 @@ function question_wrapper:create()
   --
   -- Returns two values (x and y) that we want to draw the cursor at
   local function get_cursor_position(cursor, x, y)
-    cursor_x = (function() if cursor.x_offset ~= nil then return x + cursor.x_offset else return x end end)()
-    cursor_y = (function() if cursor.y_offset ~= nil then return y + cursor.y_offset else return y end end)()
+    local cursor_x = (function() if cursor.x_offset ~= nil then return x + cursor.x_offset else return x end end)()
+    local cursor_y = (function() if cursor.y_offset ~= nil then return y + cursor.y_offset else return y end end)()
 
     return cursor_x, cursor_y
   end
@@ -146,15 +147,15 @@ function question_wrapper:create()
   --
   --   contains_question(["I didn't ask your opinion scrub!"])
   --   #=> ["I didn't ask your opinion scrub!"]
-  --        
+  --
   -- Returns an array of strings with the question markers removed (if they were present)
   local function set_question_indexes(lines)
     question.question_indexes = {}
 
-    question_indexes = {}
-    is_question_box = false
+    local question_indexes = {}
+    local is_question_box = false
 
-    for i = 1, #lines do 
+    for i = 1, #lines do
       if string.sub(lines[i]['line'], 1, #question.question_marker) == question.question_marker then
         table.insert(question_indexes, i)
         -- A question box must have at least 2 consecutive lines that start with the question_marker
@@ -172,14 +173,14 @@ function question_wrapper:create()
     end
   end
 
-  -- Checks if lines contains a question. If no lines are passed 
+  -- Checks if lines contains a question. If no lines are passed
   -- it will return the cached results of the previous lines it checked.
   --
   -- lines - optional table
   --
   -- Examples:
   --    is_a_question(
-  --      { 'line' => 'my first line', ...}, 
+  --      { 'line' => 'my first line', ...},
   --      { 'line' => 'my second line', ...},
   --        ...
   --    )
@@ -207,22 +208,22 @@ function question_wrapper:create()
   --   --assuming that $? is the question_marker
   --   format_question_lines(
   --    [
-  --      { 'line' => "Do you wish to call in an air strike?", ...}, 
+  --      { 'line' => "Do you wish to call in an air strike?", ...},
   --      { 'line' => "$? YEAH!", ...},
-  --      { 'line' => "$? HELL YEAH!", ...},      
+  --      { 'line' => "$? HELL YEAH!", ...},
   --    ]
   --   )
   --   #=>
   --        [
-  --          { 'line' => "Do you wish to call in an air strike?", ...}, 
+  --          { 'line' => "Do you wish to call in an air strike?", ...},
   --          { 'line' => "   YEAH!", ...},
-  --          { 'line' => "   HELL YEAH!", ...},      
+  --          { 'line' => "   HELL YEAH!", ...},
   --        ]
-  --       
+  --
   -- Returns an array of strings with the question markers removed
   function question:convert_dialog_to_question(lines)
     for i = 1, #question.question_indexes do
-      line = lines[question.question_indexes[i]]['line']
+      local line = lines[question.question_indexes[i]]['line']
       -- remove question_marker
       line = string.sub(line, #question.question_marker + 1 )
       -- trim the string
@@ -249,16 +250,16 @@ function question_wrapper:create()
   --
   -- Returns the passed in surface with the cursor drawn on it
   function question:draw_cursor(surface, lines)
-    config = question.cursor
+    local config = question.cursor
 
     if question.answer_selected == true and next(question.answer) ~= nil then
       config = question.answer
     end
 
-    cursor_image = load_cursor(config['image'], question.cursor_image)
+    local cursor_image = load_cursor(config['image'], question.cursor_image)
     cursor_image:set_xy(
       get_cursor_position(
-        config['image'], 
+        config['image'],
         lines:get_line_at_index(question.cursor_index):get_xy()
       )
     )
@@ -278,16 +279,16 @@ function question_wrapper:create()
   -- Returns nothing
   function question:move_cursor(command)
     -- don't allow player to move cursor if this isn't a if they have already made a selection
-    -- question box closes or if there's no question indexes 
-    if not question:is_a_question() or question.answer_selected == true then return end 
+    -- question box closes or if there's no question indexes
+    if not question:is_a_question() or question.answer_selected == true then return end
 
     -- Making the assumption that all selectable lines are consecutive
-    first_index = question.question_indexes[1]
-    last_index = question.question_indexes[#question.question_indexes]
+    local first_index = question.question_indexes[1]
+    local last_index = question.question_indexes[#question.question_indexes]
 
-    line_iter = (function() if command == "up" then return -1 else return 1 end end)()
+    local line_iter = (function() if command == "up" then return -1 else return 1 end end)()
     question.cursor_index = question.cursor_index + line_iter
-    
+
     if question.cursor_index < first_index then
       question.cursor_index = (function() if question.cursor_wrap == true then return last_index else return first_index end end)()
     elseif question.cursor_index > last_index then

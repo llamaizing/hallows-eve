@@ -1,27 +1,7 @@
-require("scripts/dialogs/libs/paths")
-require("scripts/dialogs/libs/table_helpers")
-
--- Loads JSON files
---
--- file - the json filepath to load (relative to project)
---
--- Example:
---   load_json('scripts/dialogs/configs/scenes/cabin/entrance/config.json')
---       #=> {'background' => {...}, 'dialog_box' => {...}, ...}
---
--- Returns a table of the parsed JSON data
-local function load_json(file)
-  json = require("scripts/dialogs/libs/lunajson/lunajson.lua")
-  local file = sol.file.open(file, "r" )
-  if file ~= nil then
-    local contents = file:read( "*a" )
-    myTable = json.decode(contents)
-    io.close( file )
-
-    return myTable
-  end
-  return {}
-end
+local config_loader = {}
+local path_manager = require("scripts/dialogs/libs/paths")
+local table_helper = require("scripts/dialogs/libs/table_helpers")
+local directories_and_files = require('scripts/dialogs/libs/directories_and_files')
 
   -- loads the scene configuration. It does so by first loading the default then layering
   -- the options of the dialog name. Ex. After the default config is loaded. Assume that the
@@ -33,19 +13,23 @@ end
   --
   -- Example:
   --   load_scene_config('hero.greeting')
-  --     #=> {}     
-  function load_scene_config(id)    
+  --     #=> {}
+  function config_loader:load_scene_config(id)
+    -- load scene defaults if they exist
     local scene_config = {}
 
-  -- load scene defaults
-    scene_config = load_json(scene_config_path().."/default.json")
+    if directories_and_files:is_module_available(path_manager:scene_config_path().."/default.lua") then
+      scene_config = require(path_manager:scene_config_path().."/default.lua")
+    end
 
     -- iterate down through scene groups and add or override the defaults
     local current_path = ""
     for w in (id .. "."):gmatch("([^.]*)") do
       current_path = current_path.."/"..w
-      config = load_json(scene_config_path()..current_path.."/config.json")
-      scene_config = recursive_merge(scene_config, config)
+      if directories_and_files:is_module_available(path_manager:scene_config_path()..current_path.."/config.lua") then
+        local config = require(path_manager:scene_config_path()..current_path.."/config.lua")
+        scene_config = table_helper:recursive_merge(scene_config, config)
+      end
     end
 
     -- This error means that you probably messed up your paths.
@@ -53,6 +37,21 @@ end
 
     return scene_config
   end
+
+  -- Load character config
+  -- e.g. sprite information, position, etc.
+  local function load_character_config(name)
+    name = name:lower()
+    local character = {}
+
+    -- load specific character info if it exists
+    if directories_and_files:is_module_available(path_manager:character_config_path().."/"..name..".lua") then
+      for k,v in pairs(require(path_manager:character_config_path().."/"..name..".lua")) do character[k] = v end
+    end
+
+    return character
+  end
+
   -- Loads default configs for all passed in characters
   --
   -- characters - Array of character names
@@ -62,22 +61,19 @@ end
   --     => { 'smith' => { 'sprite' => 'default', 'tansition' => 'enter_right', etc } }
   --
   -- Returns a table of character information (sprite, position, transitions, etc.)
-  function load_default_character_configs(characters)
-    character_configs = {}
+  function config_loader:load_default_character_configs(characters)
+    local character_configs = {}
 
     for count = 1, #characters do
-      name = characters[count]
-      character_configs[name] = load_json(character_config_path().."/"..name:lower()..".json")
-    end
-
-    for name, attributes in pairs(character_configs) do
-      -- load character defaults. e.g. attributes that we wish to include in every character
-      -- (characters can override these if they wish)
-      -- We have to reload the default everytime because lua seems to have problems letting go of
-      -- old data
-      default = load_json(character_config_path().."/".."default.json")
-      character_configs[name] = recursive_merge(default, load_json(character_config_path().."/"..name..".json"))
+      local character = characters[count]
+      local attributes = load_character_config(character)
+      -- these steps are crap but we have to ensure all values are wiped after every run
+      local config = {}
+      for k, v in pairs(attributes) do config[k] = v end
+      character_configs[character] = config
     end
 
     return character_configs
   end
+
+  return config_loader

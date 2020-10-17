@@ -1,6 +1,8 @@
 -- This class handles transitions between elements on screen
 -- (dialog_box, name_box, sprites, sounds, etc)
 
+local transitions = {}
+
 -- Internal: Applies fade transition to display objects in accordance to the config file
 --
 -- object: The display object the fade transition will be applied to
@@ -29,7 +31,7 @@ end
 --
 -- Returns nothing
 local function move(object, movement_type, angle, distance, speed)
-  movement = sol.movement.create(movement_type)
+  local movement = sol.movement.create(movement_type)
   movement:set_angle(angle)
   movement:set_max_distance(distance)
   movement:set_speed(speed)
@@ -46,11 +48,11 @@ end
 --
 -- Returns nothing
 local function slide(object, config)
-    x,y = object:get_xy()
-    screen_width, screen_height = sol.video.get_quest_size()
-    width,height = object:get_size()
-    angle = 0
-    distance = 0
+    local x,y = object:get_xy()
+    local screen_width, screen_height = sol.video.get_quest_size()
+    local width,height = object:get_size()
+    local angle = 0
+    local distance = 0
 
   if config['slide_direction'] == 'right' then
     angle = 0 --West
@@ -90,14 +92,14 @@ end
 -- Public: Used to determining which transition function need to be called
 --
 -- state: determins in this is a enter transition or an exit transition
--- object: the display object the transition will be applied to 
+-- object: the display object the transition will be applied to
 -- config: contains the config data for all display objects in the scene
 --
 -- Example:
 -- set_transition('enter',object,{'type'})
 --
 -- Reterns nothing
-function transition(state, object, config)
+function transitions:transition(state, object, config)
   transitions = {
     ['fade_in'] = fade,
     ['fade_out'] = fade,
@@ -108,3 +110,5 @@ function transition(state, object, config)
   if type(config) ~= "table" or type(config[state]) ~= "table" or type(config[state]['type']) ~= "string" then return end
   transitions[config[state]['type']](object, config[state])
 end
+
+return transitions
