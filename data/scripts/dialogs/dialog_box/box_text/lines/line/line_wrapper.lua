@@ -1,10 +1,10 @@
 -- Used for single line options e.g if we want to change a single word in a line to a different color or font.
 -- or if we want to add midline effects (like an image in the middle of the line or a SFX)
-require("scripts/dialogs/libs/color_helper")
+local color_helper = require("scripts/dialogs/libs/color_helper")
 
 local line_wrapper = {}
 
-function line_wrapper:create(game)
+function line_wrapper:create(_)
   local line_config = {
     line =  {}, -- INTERALLY POPULATED DO NOT SET! an array of sol.text.surfaces (min 1)
     text_config = {}, -- INTERNALLY POPULATED DO NOT SET The current text configuration (basically what options to use for text after overrides appled)
@@ -21,10 +21,10 @@ function line_wrapper:create(game)
   --
   -- Example:
   --   please see the sol.text_surface documentation for a complete list
-  --   config - { 
+  --   config - {
   --     horizontal_alignment = 'left',
   --     vertical_alignment = 'top',
-  --     font = 'my_cool_cont', 
+  --     font = 'my_cool_cont',
   --     font_size = 12,
   --     color = {255,0,0},
   --     image_path = 'dialog_test_art_assets/hud/text_images'
@@ -36,10 +36,10 @@ function line_wrapper:create(game)
   function line_config:update(config)
     -- These values were copied from the Solaurs 1.6 docs. If they change in the future this list will need to updated.
     -- I hate doing this but I can't figure out how to dynamically get these from a text_surface object.
-    for _index, value in pairs({ 'horizontal_alignment', 'vertical_alignment', 'font', 'rendering_mode', 'color', 'font_size', 'text', 'text_key' }) do
+    for _, value in pairs({ 'horizontal_alignment', 'vertical_alignment', 'font', 'rendering_mode', 'color', 'font_size', 'text', 'text_key' }) do
       if config[value] then
         if value == 'color' then
-          line_config.text_config[value] = get_color(config[value])
+          line_config.text_config[value] = color_helper:get_color(config[value])
         else
           line_config.text_config[value] = config[value]
         end
@@ -57,15 +57,15 @@ function line_wrapper:create(game)
   --
   -- Returns nothing
   function line_config:add_next_character()
-    next_char_index = line_config.get_text():len() + 1
-    next_char = line_config.text:sub(next_char_index, next_char_index)
+    local next_char_index = line_config.get_text():len() + 1
+    local next_char = line_config.text:sub(next_char_index, next_char_index)
 
-    override_options = line_config:character_position_overrides(next_char_index)
+    local override_options = line_config:character_position_overrides(next_char_index)
     if next(override_options) ~= nil then
-      line_config:add_line_section(override_options) 
+      line_config:add_line_section(override_options)
     end
 
-    line_section = line_config.line[#line_config.line]
+    local line_section = line_config.line[#line_config.line]
     line_section:set_text(line_section:get_text().. next_char)
     line_config.current_character_displayed = next_char
   end
@@ -77,13 +77,13 @@ function line_wrapper:create(game)
   -- Examples:
   --   character_postition_overrides(2)
   --    #=> {'font' => ['a_cool_font'] }
-  --     
+  --
   --   character_position_overrides(99)
   --    #=> {}
   --
   -- Returns a table containg overrides (empty if none found)
   function line_config:character_position_overrides(char_index)
-    override_options = {}
+    local override_options = {}
     for option, char_location in pairs(line_config.inline_options) do
       if char_location[char_index] ~= nil then
         override_options[option] = char_location[char_index]
@@ -95,7 +95,7 @@ function line_wrapper:create(game)
   -- Determines if what kind of override there is. If a non text surface
   -- It will add it, Then add a new text surface immediately following it
   -- This ensures the last element of lines is always a text_surface
-  -- 
+  --
   -- Example:
   --   add_line_section({9 => ['my_image.png']})
   --
@@ -106,9 +106,9 @@ function line_wrapper:create(game)
 
     -- should always add a text surface at the end of the line
     for override_name, values in pairs(override_options) do
-      for _index, value in pairs(values) do
-        if override_name == 'color' then 
-          line_config.text_config[override_name] = get_color(value)
+      for _, value in pairs(values) do
+        if override_name == 'color' then
+          line_config.text_config[override_name] = color_helper:get_color(value)
         else
           line_config.text_config[override_name] = value
         end
@@ -128,8 +128,9 @@ function line_wrapper:create(game)
   -- Returns nothing
   function line_config:add_non_text_sections(override_options)
     for override_type, values in pairs(override_options) do
-      for _index, value in pairs(values) do
-        config = line_config.config[override_type]
+      for _, value in pairs(values) do
+        local config = line_config.config[override_type]
+        local non_text_section
         if (override_type == 'image' or override_type == 'sprite') and type(config) == 'table' then
           if override_type == 'sprite' then
             non_text_section = sol.sprite.create(config['path']..'/'..value)
@@ -151,7 +152,7 @@ function line_wrapper:create(game)
   --   get_xy()
   --    #=>[12,45]
   --
-  -- Return xy pair as array 
+  -- Return xy pair as array
   function line_config:get_xy()
     return line_config.line[1]:get_xy()
   end
@@ -172,15 +173,15 @@ function line_wrapper:create(game)
       if index == 1 then
         section:set_xy(x, y)
       elseif index > 1 then
-        prev_section = line_config.line[index - 1]
-        prev_x, _prev_y = prev_section:get_xy()
-        prev_width, _prev_height = prev_section:get_size()
+        local prev_section = line_config.line[index - 1]
+        local prev_x, _ = prev_section:get_xy()
+        local prev_width, _ = prev_section:get_size()
 
         prev_x = prev_x + prev_width
-        y_offset = y
+        local y_offset = y
 
         if section['get_text'] == nil then
-          surface = (function() if section['get_animation_set'] ~= nil then return 'sprite' else return 'image' end end)()
+          local surface = (function() if section['get_animation_set'] ~= nil then return 'sprite' else return 'image' end end)()
           if line_config.config[surface].x_offset ~= nil then prev_x = prev_x + line_config.config[surface].x_offset end
           if line_config.config[surface].y_offset ~= nil then y_offset = y_offset + line_config.config[surface].y_offset end
         end
@@ -200,7 +201,7 @@ function line_wrapper:create(game)
   --
   -- Returns nothing
   function line_config:set_opacity(opactiy)
-    for _index, section in pairs(line_config.line) do section:set_opacity(opactiy) end
+    for _, section in pairs(line_config.line) do section:set_opacity(opactiy) end
   end
 
   -- wrapper around the draw function
@@ -213,7 +214,7 @@ function line_wrapper:create(game)
   --
   -- Returns nothing
   function line_config:draw(surface)
-    for _index, section in pairs(line_config.line) do
+    for _, section in pairs(line_config.line) do
       section:draw(surface)
     end
   end
@@ -226,8 +227,8 @@ function line_wrapper:create(game)
   --
   -- Returns string
   function line_config:get_text()
-    text = ''
-    for _index, section in pairs(line_config.line) do
+    local text = ''
+    for _, section in pairs(line_config.line) do
       if section.get_text ~= nil then text = text..section:get_text() end
     end
     return text
@@ -257,13 +258,13 @@ function line_wrapper:create(game)
   end
 
   function line_config:fade_in(delay)
-    for _index, line_section in pairs(line_config.line) do
+    for _, line_section in pairs(line_config.line) do
       line_section:fade_in(delay)
     end
   end
 
   function line_config:fade_out(delay)
-    for _index, line_section in pairs(line_config.line) do
+    for _, line_section in pairs(line_config.line) do
       line_section:fade_out(delay)
     end
   end

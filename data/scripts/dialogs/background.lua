@@ -8,12 +8,12 @@ local image_helper = require("scripts/dialogs/libs/image_helper")
 
 local background_manager = {}
 
-function background_manager:create(game)
-  background = {
+function background_manager:create(_)
+  local background = {
     transitions = {}, -- table of transition information for background
     image = sol.surface.create(sol.video.get_quest_size())
   }
-  
+
   function background:on_draw(dst_surface)
     background.image:draw(dst_surface)
   end
@@ -32,13 +32,13 @@ function background_manager:create(game)
 
     if config['image']['path'] == 'default' then
       background.image = sol.surface.create(sol.video.get_quest_size())
-      background.image:fill_color({10, 10, 10, 0})
+      background.image:fill_color({0, 0, 64, 192})
     else
       background.image = image_helper:get_image(config['image'])
     end
     background.transitions = config['transitions']
 
-    x, y = background.image:get_xy()
+    local x, y = background.image:get_xy()
     if config['image']['x_offset'] ~= nil then x = x + config['image']['x_offset'] end
     if config['image']['y_offset'] ~= nil then y = y + config['image']['y_offset'] end
     background.image:set_xy(x,y)
@@ -57,13 +57,7 @@ function background_manager:create(game)
   -- Returns nothing
   function background:transition(state)
     if type(background['transitions']) == 'table' and next(background['transitions']) ~= nil then
-      transition(state, background.image, background['transitions'])
-    end
-  end
-
-  function background:transition(state)
-    if type(background['transitions']) == 'table' and next(background['transitions']) ~= nil then
-      transition(state, background.image, background['transitions'])
+      transition_manager:transition(state, background.image, background['transitions'])
     end
   end
 

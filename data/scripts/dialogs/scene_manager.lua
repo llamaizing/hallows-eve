@@ -1,9 +1,9 @@
-require("scripts/dialogs/libs/table_helpers")
+local table_helper = require("scripts/dialogs/libs/table_helpers")
 
 -- scene manager handles the specific scene going on currently
 -- In order to use it you must require then populate the conversation and config
 -- attributes
-scene_manager = {}
+local scene_manager = {}
 
 function scene_manager:create(game)
   local display_position = require("scripts/dialogs/libs/display_position")
@@ -66,12 +66,22 @@ function scene_manager:create(game)
     end
 
     -- characters can overide dialog_box and backgrounds
-    character_overrides = scene.config["characters"][scene.current_speaker['name']]
+    local character_overrides = scene.config["characters"][scene.current_speaker['name']]
 
-    dialog_box_config = (function() if character_overrides['dialog_box'] ~= nil then return recursive_merge(scene.config['dialog_box'], character_overrides['dialog_box']) else return scene.config['dialog_box'] end end)()
+    local dialog_box_config = (function() if character_overrides['dialog_box'] ~= nil then
+      return table_helper:recursive_merge(scene.config['dialog_box'],
+        character_overrides['dialog_box'])
+      else
+        return scene.config['dialog_box'] end end)()
+
     scene.dialog_box:update(scene.current_speaker, dialog_box_config)
 
-    background_config = (function() if character_overrides['background'] ~= nil then return recursive_merge(scene.config['background'], character_overrides['background']) else return scene.config['background'] end end)()
+    local background_config = (function()
+      if character_overrides['background'] ~= nil then
+        return table_helper:recursive_merge(scene.config['background'], character_overrides['background'])
+      else
+        return scene.config['background'] end end)()
+
     scene.background:set_background(background_config)
 
     scene.characters:set_characters(scene.config['characters'], scene.dialog_box.box_graphic:get_box_surface())
@@ -90,21 +100,27 @@ function scene_manager:create(game)
   --
   -- Reterns nothing
   function scene:transition_delay(state)
-    config = scene.config
-    delay = 0
+    local config = scene.config
+    local delay = 0
 
-    if scene.config ~= nil then 
-      for _index, type in pairs({[1] = 'background', [2] = 'dialog_box'}) do
-        if scene.config[type]['transitions'] ~= nil and scene.config[type]['transitions'][state] ~= nil and scene.config[type]['transitions'][state]['delay'] ~= nil then
-          if scene.config[type]['transitions'][state]['delay'] > delay then delay = scene.config[type]['transitions'][state]['delay'] end
+    if scene.config ~= nil then
+      for _, type in pairs({[1] = 'background', [2] = 'dialog_box'}) do
+        if scene.config[type]['transitions'] ~= nil and
+           scene.config[type]['transitions'][state] ~= nil and
+           scene.config[type]['transitions'][state]['delay'] ~= nil and
+           scene.config[type]['transitions'][state]['delay'] > delay then delay = scene.config[type]['transitions'][state]['delay']
         end
       end
 
       if type(scene.characters) == 'table' and type(scene.characters.character_sprites) then
-        for name, _object in pairs(scene.characters.character_sprites) do
-          char_config = config['characters']
-          if type(char_config) == 'table' and type(char_config[name]) == 'table' and type(char_config[name]['transitions']) == 'table' and type(char_config[name]['transitions'][state]) == 'table' and char_config[name]['transitions'][state]['delay'] ~= nil then
-            if char_config[name]['transitions'][state]['delay'] > delay then delay = char_config[name]['transitions'][state]['delay'] end
+        for name, _ in pairs(scene.characters.character_sprites) do
+          local char_config = config['characters']
+          if type(char_config) == 'table' and
+             type(char_config[name]) == 'table' and
+             type(char_config[name]['transitions']) == 'table' and
+             type(char_config[name]['transitions'][state]) == 'table' and
+             char_config[name]['transitions'][state]['delay'] ~= nil and
+             char_config[name]['transitions'][state]['delay'] > delay then delay = char_config[name]['transitions'][state]['delay']
           end
         end
       end
@@ -119,9 +135,9 @@ function scene_manager:create(game)
   --
   -- Returns nothing
   function scene:stop()
-    delay = scene:transition_delay('exit')
+    local delay = scene:transition_delay('exit')
     transition('exit')
-    sol.timer.start(game, delay, function() 
+    sol.timer.start(game, delay, function()
       scene.dialog_box:stop(game)
       scene.open = false
     end)

@@ -6,13 +6,14 @@
 local dialog_box_graphics = {}
 
 local image_helper = require("scripts/dialogs/libs/image_helper")
-
+local display_position = require("scripts/dialogs/libs/display_position")
+local box_graphics
 -- handles the dialog box graphic. e.g. the "box" graphic of the dialog box.
 function dialog_box_graphics:create()
   local screen_width, screen_height = sol.video.get_quest_size()
 
   box_graphics = {}
-  
+
   -- Updates the box graphics using the passed table
   --
   -- Example
@@ -40,7 +41,7 @@ function dialog_box_graphics:create()
       end
     end
 
-    path = config['path']
+    local path = config['path']
     if type(path) == 'string' and path ~= '' then
       box_graphics.box_img = image_helper:get_image(config)
     end
@@ -66,7 +67,7 @@ function dialog_box_graphics:create()
   --
   -- Returns nothing
   function box_graphics:set_xy(position)
-    x, y = compute_position(box_graphics.box_img, position, nil) 
+    local x, y = display_position:compute_position(box_graphics.box_img, position, nil)
     box_graphics.box_img:set_xy(x + box_graphics.x_offset, y + box_graphics.y_offset)
   end
 

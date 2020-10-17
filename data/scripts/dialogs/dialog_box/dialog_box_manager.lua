@@ -3,9 +3,9 @@
 -- Usage:
 -- local dialog_box = require("scripts/dialog_box/dialog_box_manager"):create(game)
 
-local transition_manager = require("scripts/dialogs/libs/transitions")
-
 local dialog_box_manager = {}
+local  dialog_box
+local transitions = require("scripts/dialogs/libs/transitions.lua")
 
 -- dialog_box_manager handles all of the objects which makes up a dialog box. The box image, the text, animations, etc.
 -- display_position - An instace of the display_position class
@@ -20,8 +20,8 @@ function dialog_box_manager:create(game, display_position)
   -- Example
   --   dialog_box:update(
   --     {
-  --        name = 'Todd', 
-  --        dialog_id = 'todd.greeting',  
+  --        name = 'Todd',
+  --        dialog_id = 'todd.greeting',
   --        lines = ['my', 'spoken', 'lines']
   --     },
   --     {
@@ -30,7 +30,7 @@ function dialog_box_manager:create(game, display_position)
   --     }
   --   )
   --
-  -- Returns nothing 
+  -- Returns nothing
   function dialog_box:update(dialog, config)
     dialog_box.close_delay = 0 -- the amount of time to wait before closing the dialog box (1000 = 1 second)
     dialog_box.box_graphic = require("scripts/dialogs/dialog_box/box_graphic"):create()
@@ -42,15 +42,13 @@ function dialog_box_manager:create(game, display_position)
     dialog_box.box_graphic:update(config["image"])
     dialog_box.dialog_text:update(dialog, config["text"])
 
-    box_width, box_height = dialog_box.box_graphic.box_img:get_size()
-
     if dialog.name ~= "NO SPEAKER" then
       dialog_box.name_box:update(dialog, config['name_box'], dialog_box.box_graphic.box_img)
     end
 
     for k,v in pairs(config) do
       if dialog_box[k] ~= v and dialog_box[k] ~= nil and type(dialog_box[k]) ~= "table" then
-        dialog_box[k] = v 
+        dialog_box[k] = v
       end
     end
 
@@ -62,16 +60,16 @@ function dialog_box_manager:create(game, display_position)
   -- final actions it needs to do
   --
   -- game - A Solarus Game Object
-  -- 
+  --
   -- Examples
   --   stop(sol.game.new())
-  -- 
+  --
   -- returns nothing
-  function dialog_box:stop(game)
+  function dialog_box:stop(sol_game)
     dialog_box.dialog_text:stop()
 
-    sol.timer.start(game, dialog_box.close_delay, function()
-      game:stop_dialog(dialog_box:get_answer())
+    sol.timer.start(sol_game, dialog_box.close_delay, function()
+      sol_game:stop_dialog(dialog_box:get_answer())
     end)
   end
 
@@ -107,9 +105,11 @@ function dialog_box_manager:create(game, display_position)
   --
   -- Returns nothing
   function dialog_box:hide(should_hide)
+    local hidden = nil
+
     if type(should_hide) == "boolean" then hidden = should_hide else hidden = not hidden end
 
-    opacity = (function() if hidden then return 0 else return 255 end end)()
+    local opacity = (function() if hidden then return 0 else return 255 end end)()
 
     dialog_box.box_graphic.box_img:set_opacity(opacity)
     dialog_box.dialog_text.dialog_surface:set_opacity(opacity)
@@ -167,13 +167,13 @@ function dialog_box_manager:create(game, display_position)
   --
   -- Returns nothing
   function dialog_box:on_draw(dst_surface)
-    box_surface = dialog_box.box_graphic:get_box_surface()
-    x, y = get_xy(box_surface)
-    origin_x, origin_y = get_origin(box_surface)
-    dialog_surface = dialog_box.dialog_text:get_text_surface(x - origin_x, y - origin_y)
-    
+    local box_surface = dialog_box.box_graphic:get_box_surface()
+    local x, y = display_position:get_xy(box_surface)
+    local origin_x, origin_y = display_position:get_origin(box_surface)
+    local dialog_surface = dialog_box.dialog_text:get_text_surface(x - origin_x, y - origin_y)
+
     box_surface:draw(dst_surface)
-    dialog_surface:draw(dst_surface)    
+    dialog_surface:draw(dst_surface)
   end
 
   -- Public: transitions dialog_box
@@ -189,7 +189,7 @@ function dialog_box_manager:create(game, display_position)
   -- Returns nothing
   function dialog_box:transition(state)
     if type(dialog_box['transitions']) == 'table' and next(dialog_box['transitions']) ~= nil then
-      transition(state, dialog_box.box_graphic:get_box_surface(), dialog_box['transitions'])
+      transitions:transition(state, dialog_box.box_graphic:get_box_surface(), dialog_box['transitions'])
     end
   end
 

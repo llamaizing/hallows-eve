@@ -8,11 +8,11 @@ local lines_wrapper = {}
 -- handles displaying lines and anything related to that (font color etc.)
 --
 -- game - The Game Object
-function lines_wrapper:create(game)
-
+function lines_wrapper:create(game, line_space)
   local lines_config = {
     lines = {}, -- INTERNAL ONLY DO NOT SET! Array of line_wrapper object of size max displayed lines
-    speeds = { slow = 60, medium = 40, fast = 20, instant = 0}, -- These are some string shortcuts to various speeds 
+    line_space = line_space, -- The space between each line
+    speeds = { slow = 60, medium = 40, fast = 20, instant = 0}, -- These are some string shortcuts to various speeds
     speed = 20,  -- How long (in miliseconds) to wait before displaying the next character
     apply_speed_to_spaces = false, -- apply speed delay to spaces? (will display instantly otherwise)
     letter_sound = '',  -- what sound to play while text is being added to the screen
@@ -29,14 +29,14 @@ function lines_wrapper:create(game)
   -- Example
   --  update({ horizontal_alignment = "left", vertical_alignment = "top", ... }, 4)
   --
-  -- Returns nothing 
+  -- Returns nothing
   function lines_config:update(config, num_of_lines)
     for k,v in pairs(config) do
       if lines_config[k] ~= v and lines_config[k] ~= nil then
         -- if the speed passed was a string (e.g. fast, medium, slow etc.) we use the mapped value
         if k == 'speed' and type(v) == 'string' then
           lines_config[k] = lines_config.speeds[v]
-        else  
+        else
           lines_config[k] = v
         end
       end
@@ -54,7 +54,7 @@ function lines_wrapper:create(game)
   --
   -- Returns a boolean (true if all lines are full. false if they are not)
   function lines_config:all_lines_filled()
-    for index,line in pairs(lines_config.lines) do
+    for _,line in pairs(lines_config.lines) do
       if line.is_full() == false then return false end
     end
 
@@ -87,7 +87,7 @@ function lines_wrapper:create(game)
   local function get_current_line_index()
     for index,line in pairs(lines_config.lines) do
       if line:is_full() == false then
-        return index 
+        return index
       end
     end
 
@@ -98,7 +98,7 @@ function lines_wrapper:create(game)
   --
   -- Returns nothing
   local function clear_lines()
-    for _index, line in pairs(lines_config.lines) do
+    for _, line in pairs(lines_config.lines) do
       line:clear()
     end
   end
@@ -110,8 +110,8 @@ function lines_wrapper:create(game)
   --   add_next_character()
   --
   -- Returns nothing
-  local function add_next_character()    
-    line_index = get_current_line_index()
+  local function add_next_character()
+    local line_index = get_current_line_index()
     -- if we get an index that's out of bounds then we shouldn't try to display that line
     if line_index < 1 or line_index > #lines_config.lines then return end
 
@@ -119,7 +119,7 @@ function lines_wrapper:create(game)
     lines_config.lines[line_index]:add_next_character()
 
     -- set delay before displaying next letter
-    speed = lines_config.speed 
+    local speed = lines_config.speed
     if lines_config.lines[line_index].current_character_displayed == " "  and lines_config.apply_speed_to_spaces == false then speed = 0 end
     sol.timer.start(game, speed, add_next_character)
 
@@ -133,8 +133,8 @@ function lines_wrapper:create(game)
     end
 
     -- play message end sound if set
-    if lines_config:all_lines_filled() == true and lines_config.end_sound ~= '' then 
-      sol.audio.play_sound(lines_config.end_sound) 
+    if lines_config:all_lines_filled() == true and lines_config.end_sound ~= '' then
+      sol.audio.play_sound(lines_config.end_sound)
     end
   end
 
@@ -154,8 +154,8 @@ function lines_wrapper:create(game)
       lines_config.lines[index].text = line['line']
       lines_config.lines[index].inline_options = line['inline_options']
     end
-  
-    speed = lines_config.speed
+
+    local speed = lines_config.speed
     sol.timer.start(game, speed, add_next_character)
   end
 
@@ -164,9 +164,9 @@ function lines_wrapper:create(game)
   -- surface - A sol.surface
   --
   -- Returns the passed in surface with the text drawn on it
-  function lines_config:draw_lines(surface)
+  function lines_config:draw_lines(surface,x ,y)
     for index, line in pairs(lines_config.lines) do
-      line:set_xy(x, box_text.line_space * (index - 1) + y)
+      line:set_xy(x, lines_config.line_space * (index - 1) + y)
       line:draw(surface)
     end
   end
