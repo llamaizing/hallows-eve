@@ -30,25 +30,32 @@ local math__floor = math.floor
 local math__ceil = math.ceil
 local math__pi = math.pi
 
+--list of active items that can be assigned to slot #1 (6 max)
 local ITEM_LIST = {
 	"seed_shoot",
 	"soccer_kick",
 	"spin_kick",
 }
+for i,item_name in ipairs(ITEM_LIST) do ITEM_LIST[item_name] = i end --reverse lookup
 
+--list of passive items that aren't assigned to a slot (2 max)
 local PASSIVE_LIST = {
 	"pumpkin_jordans",
 }
 
-local OPENING_TRANSITION_TIME = 180 --Note: choose multiple of 90ms (i.e. multiple of both 18 & 10)
-local CLOSING_TRANSITION_TIME = 90
-local INV_MAX_DIST = 108 --16 extra pixels beyond width to make multiple of 18
+local OPENING_TRANSITION_TIME = 180 --time to open menu in ms
+local CLOSING_TRANSITION_TIME = 90 --time to close menu in ms
+--NOTE: choose multiple of 90ms (i.e. multiple of both 18 & 10)
+
+local INV_MAX_DIST = 108 --travel distance of left half of menu in pixels
+--NOTE: 16 extra pixels beyond its width to make it a multiple of 18
 
 --TODO move these to language manager script
 local FONT = "ComicNeue-Angular-Bold"
 local FONT_SIZE = 16
 local FONT_COLOR = {191, 96, 0}
 
+--allow different configuration options for menu (so can be different with DLC)
 local CONFIGURATIONS = {
 	standard = {
 		max_items = 3,
@@ -67,6 +74,11 @@ local CONFIGURATIONS = {
 }
 CONFIGURATIONS.DEFAULT = CONFIGURATIONS.standard
 
+--marker coordinates for world map for each map id
+--NOTE: the upper directory of a map can be used (applies to all maps in directory), but only if the map id is not found
+	--#1: (string) MAP_BG_LIST key that gives the image to use for the world map while a given map is active
+	--#2: (number, non-negative integer) x coordinate of marker for the map on world map (0-300)
+	--#3: (number, non-negative integer) y coordinate of marker for the map on world map (0-150)
 local MAP_COORDS = {
 	--standard maps
 	['suburbs/cemetery'] = {"world_map", 22, 33},
@@ -86,12 +98,18 @@ local MAP_COORDS = {
 	--['some_dlc_map'] = {"dlc_map", 24, 8},
 }
 
+--converts identifier keyword to an image file to use for the world map (image size should be 300x150)
 local MAP_BG_LIST = {
 	world_map = "menus/inventory/world_map.png",
 	--dlc_map = "menus/inventory/dlc_map.png",
 }
 MAP_BG_LIST.DEFAULT = MAP_BG_LIST.world_map
 
+--coordinates in pixels for where to put menu elements relative to upper-left of the screen (in quest size coordinates)
+	--#1: x coordinate
+	--#2: y coordinate
+	--#3: x spacing between columns (optional)
+	--#4: y spacing between rows (optional)
 local PLACEMENTS = {
 	passive_items = {24, 32, 36, 0},
 	pumpkin_seeds = {18, 64},
@@ -106,13 +124,34 @@ local PLACEMENTS = {
 --y offset for bouncing objective marker, cycle through these using repeating timer
 local BOUNCE_Y = {[0] = 0, 1, 2, 1, 0} --last entry unused but ensures #BOUNCE_Y is correct size
 
+--name of function to use for given command plus any arguments to pass
 local INPUTS = {
-	right = {"move_cursor", 1, 0},
-	left = {"move_cursor", -1, 0},
-	up = {"move_cursor", 0, -1},
-	down = {"move_cursor", 0, 1},
+	--move cursor: pass delta x/y pairs to try for cursor movement, fails if destination slot is empty
+	right = {"move_cursor", {1,0, 1,1, 1,-1, 0,1, 0,-1}},
+	left = {"move_cursor", {-1,0, -1,-1, -1,1, 0,-1, 0,1}},
+	up = {"move_cursor", {0,-1, 0,1, -1,-1, -1,1, -1,0}},
+	down = {"move_cursor", {0,1, 0,-1, 1,1, 1,-1, 1,0}},
+	
 	pause = "stop",
 }
+
+--// Converts index 1-6 to x & y position
+	--index (number, positive integer) 1-6
+	--return #1: x (number, positive integer) 0-1
+	--return #2: y (number, positive integer) 0-2
+local function index2xy(index)
+	local i = index - 1 --convenience
+	local x = math__floor(i / 3)
+	local y = i % 3
+	
+	return x, y
+end
+
+--// Converts x & y to index 1-6
+	--x (number, positive integer) 0-1
+	--y (number, positive integer) 0-2
+	--return #1: index (number, positive integer) 1-6
+local function xy2index(x, y) return 3*x + y + 1 end
 
 --// Use repeating timer to simulate a movement since Solarus cannot handle movements faster than 1000 pixels/sec
 	--properties (table) - list of properties for the slide movement
@@ -170,7 +209,6 @@ local function slide(properties)
 		current_distance = current_distance + speed
 		if current_distance > max_distance then --exceeded max dist, increment by smaller amount for last step
 			dir_speed = dir_speed - (current_distance - max_distance)
-			print("adjust:", dir_speed)
 		end
 		object.x = object.x + dir_speed
 		
@@ -180,18 +218,23 @@ local function slide(properties)
 		return is_repeat
 	end)
 end
-	
+
+--// Create and return new menu instance for given game and configuration
+	--game (sol.game) - the active game associated with the menu
+	--config (string, optional) - keyword to specify menu style (allows for different configurations for DLC)
+		--default: uses the "standard" configuration
 function menu_manager:init(game, config)
 	local menu = {}
 	
-	local objective_x, objective_y = 0, 0 --coordinates of objective marker (if visible)
+	local objective_x, objective_y = 0, 0 --coordinates of objective marker in pixels (if visible)
 	local bounce_index = 0 --increment with repeating timer, the current index from BOUNCE_Y
 	local objective_offset = 0 --vertical offset to apply to objective_marker, update via repeating timer
-	local cursor_index
+	local cursor_index --index of item select cursor position (1-6)
 	
 	--sprites
 	local item_sprites = {}
 	local passive_sprites = {}
+	local item_cursor
 	local pumpkin_seeds_sprite
 	local hero_marker
 	local objective_marker
@@ -248,11 +291,54 @@ function menu_manager:init(game, config)
 	local BG_MAP_WIDTH = bg_img_map:get_size()
 	local cursor_sprite = sol.sprite.create"menus/inventory/selector"
 	
-	function menu:move_cursor(dx, dy)
-		print("move cursor:", dx, dy)
+	--// Moves the item cursor by the specified x/y pairs (relative to current position)
+		--x: negative is left, positive is right, 0 is no movement
+		--y: negative is up, positive is down, 0 is not movement
+		--attempts movement for each xy pair in order until valid movement found (depends on whether destination slot is filled)
+	function menu:move_cursor(xy_pairs)
+		--find cursor x & y positions
+		local x,y = index2xy(cursor_index)
+		
+		--try each new xy position for cursor, checking to see if destination slot is filled
+		local new_index
+		for i=1,math__floor(#xy_pairs/2) do
+			local dest_x = (x + xy_pairs[i])%2
+			local dest_y = (y + xy_pairs[i+1])%3
+			local dest_index = xy2index(dest_x, dest_y)
+			
+			local item_name = ITEM_LIST[dest_index]
+			local has_item = item_name and game:has_item(item_name)
+			if has_item then new_index = dest_index; break end
+		end
+		
+		if new_index then
+			--calculate new cursor coordinates
+			local new_x, new_y = index2xy(new_index)
+			local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.items)
+			local target_x = offset_x + dx*new_x
+			local target_y = offset_y + dy*new_y
+			
+			--prepare movement for cursor
+			local movement = sol.movement.create"target"
+			movement:set_target(target_x, target_y)
+			movement:set_speed(250)
+			
+			--start cursor movement
+			item_cursor:stop_movement()
+			movement:start(item_cursor)
+			cursor_index = new_index
+		end --otherwise nowhere to move cursor, do nothing
 	end
 	
+	--// Performs closing animation then stops the menu
 	function menu:stop()
+		--assign item #1 slot from cursor position
+		if cursor_index then
+			local item_name = ITEM_LIST[cursor_index]
+			local item = item_name and game:get_item(item_name)
+			if item_name then game:set_item_assigned(1, item) end
+		end
+		
 		--do closing animation
 		slide{ --movement to left for inventory pane
 			context = self,
@@ -274,6 +360,7 @@ function menu_manager:init(game, config)
 				--remove sprites
 				item_sprites = {}
 				passive_sprites = {}
+				item_cursor = nil
 				pumpkin_seeds_sprite = nil
 				world_map_surface = nil
 				hero_marker = nil
@@ -282,38 +369,60 @@ function menu_manager:init(game, config)
 		}
 	end
 	
+	--// Creates menu sprites then performs opening animation for menu each time started
 	function menu:on_started()
 		--create item sprites for items player currently has in inventory
-		item_sprites = {max_count=0} --reset
-		for i=1,MAX_ITEMS do
-			local item_name = ITEM_LIST[i]
-			local item_variant = game:get_item(item_name):get_variant()
-			if item_variant > 0 then
-				local item_sprite = sol.sprite.create"menus/inventory/items"
-				item_sprite:set_animation(item_name)
-				item_sprite:set_direction(item_variant-1)
-				local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.items)
-				local x = math__floor((i-1) / 3) --x position in grid (0-1)
-				local y = (i-1) % 3 --y position in grid (0-2)
-				item_sprite:set_xy(offset_x + dx*x, offset_y + dy*y)
-				item_sprites[i] = item_sprite
-				item_sprites.max_count = i --tentative
+		do
+			local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.items)
+			
+			item_sprites = {max_count=0} --reset
+			for i=1,MAX_ITEMS do
+				local item_name = ITEM_LIST[i]
+				local item_variant = game:get_item(item_name):get_variant()
+				if item_variant > 0 then
+					local item_sprite = sol.sprite.create"menus/inventory/items"
+					item_sprite:set_animation(item_name)
+					item_sprite:set_direction(item_variant-1)
+					
+					local x, y = index2xy(i) --x position in grid (0-1); y position in grid (0-2)
+					item_sprite:set_xy(offset_x + dx*x, offset_y + dy*y)
+					item_sprites[i] = item_sprite
+					item_sprites.max_count = i --tentative
+				end
 			end
+			
+			--create item select cursor
+			item_cursor = sol.sprite.create"menus/inventory/selector"
+			local cursor_item = game:get_item_assigned(1)
+			local cursor_item_name = cursor_item and cursor_item:get_name()
+			cursor_index = ITEM_LIST[cursor_item_name]
+			if not cursor_index then --no item assigned yet, find lowest index and set it
+				for i, item_name in ipairs(ITEM_LIST) do
+					if game:has_item(item_name) then cursor_index = i; break end
+				end
+			end
+			if cursor_index then
+				local x, y = index2xy(cursor_index)
+				item_cursor:set_xy(offset_x + dx*x, offset_y + dy*y)
+			else item_cursor:set_opacity(0) end
 		end
 		
 		--create item sprites for passive items
-		passive_sprites = {max_count=0} --reset
-		for i=1,MAX_PASSIVES do
-			local item_name = PASSIVE_LIST[i]
-			local item_variant = game:get_item(item_name):get_variant()
-			if item_variant > 0 then
-				local item_sprite = sol.sprite.create"menus/inventory/items"
-				item_sprite:set_animation(item_name)
-				item_sprite:set_direction(item_variant-1)
-				local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.passive_items)
-				item_sprite:set_xy(offset_x+dx*(i-1), offset_y)
-				passive_sprites[i] = item_sprite
-				passive_sprites.max_count = i --tentative
+		do
+			local offset_x, offset_y, dx, dy = unpack(PLACEMENTS.passive_items)
+			
+			passive_sprites = {max_count=0} --reset
+			for i=1,MAX_PASSIVES do
+				local item_name = PASSIVE_LIST[i]
+				local item_variant = game:get_item(item_name):get_variant()
+				if item_variant > 0 then
+					local item_sprite = sol.sprite.create"menus/inventory/items"
+					item_sprite:set_animation(item_name)
+					item_sprite:set_direction(item_variant-1)
+					item_sprite:set_xy(offset_x+dx*(i-1), offset_y)
+					passive_sprites[i] = item_sprite
+					passive_sprites.max_count = i --tentative
+				end
 			end
 		end
 		
@@ -397,6 +506,7 @@ function menu_manager:init(game, config)
 		}
 	end
 	
+	--// Process user input commands per INPUTS table
 	function menu:on_command_pressed(command)
 		local list = INPUTS[command]
 		if type(list)=="string" then
@@ -408,6 +518,7 @@ function menu_manager:init(game, config)
 		end
 	end
 	
+	--// Draws the menu each frame
 	function menu:on_draw(dst_surface)
 		--convenience
 		local left_x = left_position.x
@@ -426,6 +537,7 @@ function menu_manager:init(game, config)
 			local item_sprite = item_sprites[i]
 			if item_sprite then item_sprite:draw(dst_surface, left_x, 0) end
 		end
+		item_cursor:draw(dst_surface, left_x, 0)
 		
 		--menu right side elements
 		bg_img_map:draw(dst_surface, right_x, 0)
