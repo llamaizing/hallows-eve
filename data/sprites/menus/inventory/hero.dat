@@ -1,0 +1,9 @@
+animation{
+  name = "spinning",
+  src_image = "hero/ichabod.png",
+  frame_delay = 180,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 272, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4, num_columns = 1 },
+  },
+}
