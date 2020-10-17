@@ -59,3 +59,9 @@ function warped_sensor:on_activated()
   game:save()
 --]]
 end
+
+
+
+function witch_area_switch:on_activated()
+  map:open_doors"witch_area_gate"
+end

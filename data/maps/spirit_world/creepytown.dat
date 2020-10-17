@@ -14176,6 +14176,87 @@ tile{
   pattern = "88_2",
 }
 
+tile{
+  layer = 0,
+  x = 584,
+  y = 560,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 560,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 560,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "73",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "73",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 560,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 504,
+  width = 48,
+  height = 16,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 568,
+  width = 64,
+  height = 56,
+  pattern = "90",
+}
+
 sensor{
   name = "see_portal_sensor",
   layer = 0,
@@ -15696,8 +15777,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 32,
-  y = 589,
+  x = 152,
+  y = 581,
   properties = {
     {
       key = "height",
@@ -15710,16 +15791,16 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 56,
-  y = 581,
+  x = 176,
+  y = 573,
   sprite = "destructibles/pumpkin_small",
   weight = 1,
 }
 
 destructible{
   layer = 0,
-  x = 40,
-  y = 597,
+  x = 160,
+  y = 589,
   sprite = "destructibles/pumpkin_small",
   weight = 1,
 }
@@ -16249,6 +16330,47 @@ sensor{
   y = 381,
   width = 80,
   height = 16,
+}
+
+door{
+  name = "witch_area_gate",
+  layer = 0,
+  x = 568,
+  y = 560,
+  direction = 3,
+  sprite = "doors/iron_gate",
+  savegame_variable = "creepytown_witch_area_gate_state",
+}
+
+switch{
+  name = "witch_area_switch",
+  layer = 0,
+  x = 592,
+  y = 592,
+  subtype = "walkable",
+  sprite = "switches/switch_plate",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+teletransporter{
+  layer = 0,
+  x = 56,
+  y = 584,
+  width = 16,
+  height = 16,
+  destination_map = "suburbs/dennys",
+  destination = "from_creepytown",
+  sprite = "entities/portal",
+}
+
+destination{
+  name = "from_dennys",
+  layer = 0,
+  x = 64,
+  y = 613,
+  direction = 3,
+  starting_location_mode = "no",
 }
 
 tile{
@@ -21768,6 +21890,60 @@ tile{
   pattern = "89_2",
 }
 
+tile{
+  layer = 1,
+  x = 584,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 544,
+  y = 552,
+  width = 16,
+  height = 8,
+  pattern = "75",
+}
+
+tile{
+  layer = 1,
+  x = 536,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 552,
+  width = 16,
+  height = 8,
+  pattern = "75",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle",
   layer = 1,
@@ -22190,5 +22366,15 @@ dynamic_tile{
   width = 16,
   height = 24,
   pattern = "16_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_41",
+  layer = 1,
+  x = 56,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "17",
 }
 

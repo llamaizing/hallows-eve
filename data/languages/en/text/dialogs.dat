@@ -1149,6 +1149,16 @@ Mr. Reaper!
 }
 
 dialog{
+  id = "dennys.22",
+  text = [[
+@Ichabod
+Looks like another way back into the spirit
+world nearby. Strange things are afoot behind the
+7 Eleven. I should check that out.
+]],
+}
+
+dialog{
   id = "dennys.3",
   text = [[
 @Zach
