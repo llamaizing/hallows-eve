@@ -2,7 +2,8 @@ return {
 	background = {
 		image = {
 			path = "default"
-		}
+		},
+    color = {0,0,0,20}
 	},
   dialog_box = {
     close_delay = 0,
