@@ -9,7 +9,8 @@ animation{
   name = "pumpkin_jordans",
   src_image = "entities/items.png",
   directions = {
-    { x = 208, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 8 },
+    { x = 528, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 16 },
+    { x = 560, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 16 },
   },
 }
 animation{

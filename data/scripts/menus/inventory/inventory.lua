@@ -107,8 +107,11 @@ MAP_BG_LIST.DEFAULT = MAP_BG_LIST.world_map
 	--#3: x spacing between columns (optional)
 	--#4: y spacing between rows (optional)
 local PLACEMENTS = {
-	passive_items = {24, 32, 36, 0},
-	pumpkin_seeds = {18, 64},
+--	passive_items = {24, 32, 36, 0},
+--	pumpkin_seeds = {18, 64},
+--	items = {24, 136, 36, 36},
+	passive_items = {24, 96, 36, 0},
+	pumpkin_seeds = {18, 24},
 	items = {24, 136, 36, 36},
 	
 	bg_img_map = {92, 0},
