@@ -66,7 +66,7 @@ local CONFIGURATIONS = {
 		bg_img_inv = "TBD",
 		bg_img_map = "TBD",
 	},
-	]]
+	--]]
 }
 CONFIGURATIONS.DEFAULT = CONFIGURATIONS.standard
 
@@ -77,18 +77,18 @@ CONFIGURATIONS.DEFAULT = CONFIGURATIONS.standard
 	--#3: (number, non-negative integer) y coordinate of marker for the map on world map (0-150)
 local MAP_COORDS = {
 	--standard maps
-	['suburbs/cemetery'] = {"world_map", 22, 33},
-	['suburbs/dennys'] = {"world_map", 22, 33},
-	['suburbs/downtown'] = {"world_map", 22, 33},
-		['suburbs/video_store'] = {"world_map", 22, 33},
-	['suburbs/neighborhood'] = {"world_map", 22, 33},
-	['outskirts/barn'] = {"world_map", 212, 64},
-	['outskirts/farm'] = {"world_map", 22, 33},
-	['outskirts/forest'] = {"world_map", 22, 33},
-	['outskirts/pumpkin_cove'] = {"world_map", 22, 33},
-		['outskirts/pumpkin_inside'] = {"world_map", 22, 33},
-	['haunted_house/outside'] = {"world_map", 48, 18},
-		['haunted_house/'] = {"world_map", 48, 18},
+	['suburbs/cemetery'] = {"world_map", 157, 75},
+	['suburbs/dennys'] = {"world_map", 13, 68},
+	['suburbs/downtown'] = {"world_map", 57, 128},
+		['suburbs/video_store'] = {"world_map", 18, 122},
+	['suburbs/neighborhood'] = {"world_map", 71, 78},
+	['outskirts/barn'] = {"world_map", 260, 24},
+	['outskirts/farm'] = {"world_map", 267, 59},
+	['outskirts/forest'] = {"world_map", 224, 46},
+	['outskirts/pumpkin_cove'] = {"world_map", 293, 31},
+		['outskirts/pumpkin_inside'] = {"world_map", 293, 31},
+	['haunted_house/outside'] = {"world_map", 152, 43},
+		['haunted_house/'] = {"world_map", 155, 24},
 	
 	--DLC maps
 	--['some_dlc_map'] = {"dlc_map", 24, 8},

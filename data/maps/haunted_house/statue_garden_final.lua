@@ -136,6 +136,7 @@ function map:cutscene()
     wait(300)
     dialog"haunted_house.cutscenes.lizardnapper.23"
     game:set_value("haunted_house_lizardnapper_scene", true)
+    game:set_value("current_objective", "suburbs/dennys")
     game:set_value("darkness_level", "dusk")
     hero:unfreeze()
   end)

@@ -20,6 +20,7 @@ function caleb:on_interaction()
       dialog"video_store.4"
       dialog"video_store.5"
       dialog"video_store.6"
+      game:set_value("current_objective", "outskirts/farm")
       hero:unfreeze()
     end)
   elseif game:get_value("caleb_convo_counter") == 1 then

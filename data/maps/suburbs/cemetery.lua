@@ -159,6 +159,7 @@ function map:curse_cutscene()
     dialog("controls.kick")
     hero:unfreeze()
     game:set_value("cemetery_cutscene_viewed", true)
+    game:set_value("current_objective", "suburbs/video_store")
     
   end)
   --352

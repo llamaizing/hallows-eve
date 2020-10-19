@@ -30,6 +30,8 @@ end
 
 function boss:on_dead()
   map:start_coroutine(function()
+    sol.audio.play_sound"monster_scream"
+    sol.audio.play_sound"monster_scream_short"
     sol.audio.stop_music()
     hero:freeze()
     hero:set_direction(hero:get_direction4_to(ich_target))
@@ -45,14 +47,16 @@ function boss:on_dead()
     map:create_poof(acimonia:get_position())
     wait(1000)
     dialog"spirit_world.witch_hut.defeated_1"
+    sol.audio.play_sound"enemy_killed"
     acimonia:get_sprite():set_animation("blow_up", function() acimonia:set_enabled(false) end)
     wait(1200)
     maggie:set_enabled(true)
     map:create_poof(maggie:get_position())
     lizard:set_enabled(true)
     map:create_poof(lizard:get_position())
+    wait(600)
     eye_rune:set_enabled(false)
-    wait(1200)
+    wait(600)
     dialog"spirit_world.witch_hut.defeated_2"
     dialog"spirit_world.witch_hut.defeated_3"
     dialog"spirit_world.witch_hut.defeated_4"

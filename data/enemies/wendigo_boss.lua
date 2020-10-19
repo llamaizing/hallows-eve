@@ -28,7 +28,7 @@ function enemy:on_created()
     ghost_sprite:set_frame(frame)
   end
   
-  enemy:set_life(1)
+  enemy:set_life(20)
   enemy:set_push_hero_on_sword(true)
   enemy:set_damage(2)
   enemy:set_size(32,32)

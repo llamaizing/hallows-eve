@@ -56,7 +56,7 @@ function dash_manager:dash(game)
     --map:create_poof(hero:get_position())
 
     --Apply jump state
-    hero:start_state(game:get_item("inventory/feather"):get_jumping_state())
+    hero:start_state(dash_manager:get_dashing_state())
     hero:set_animation("dash")
 
     dash_manager.m:start(hero, function()
@@ -150,6 +150,35 @@ function dash_manager:generate_moths(game)
 
 end
 
+
+function dash_manager:get_dashing_state()
+  local state = sol.state.create("dashing")
+  state:set_can_control_direction(false)
+  state:set_can_control_movement(false)
+  state:set_can_traverse_ground("hole", true)
+  state:set_can_traverse_ground("deep_water", true)
+  state:set_can_traverse_ground("lava", true)
+  state:set_affected_by_ground("hole", false)
+  state:set_affected_by_ground("deep_water", false)
+  state:set_affected_by_ground("lava", false)
+  state:set_gravity_enabled(false)
+  state:set_can_come_from_bad_ground(false)
+  state:set_can_be_hurt(false)
+  state:set_can_use_sword(false)
+  state:set_can_use_item(false)
+  state:set_can_interact(false)
+  state:set_can_grab(false)
+  state:set_can_push(false)
+  state:set_can_pick_treasure(false)
+  state:set_can_use_teletransporter(false)
+  state:set_can_use_switch(false)
+  state:set_can_use_stream(false)
+  state:set_can_use_stairs(false)
+  state:set_can_use_jumper(false)
+  state:set_carried_object_action("throw")
+
+  return state
+end
 
 
 return dash_manager

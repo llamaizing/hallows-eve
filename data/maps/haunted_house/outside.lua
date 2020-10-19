@@ -45,6 +45,8 @@ function flood_end_sensor:on_activated()
     game:save()
 
     game:set_value("lizard_flood_finished", true)
+    game:set_value("current_objective", "haunted_house/")
+
     game:set_value("caleb_convo_counter", 2)
     map:start_coroutine(function()
       hero:freeze()
