@@ -53,7 +53,8 @@ local INV_MAX_DIST = 108 --travel distance of left half of menu in pixels
 --TODO move these to language manager script
 local FONT = "ComicNeue-Angular-Bold"
 local FONT_SIZE = 16
-local FONT_COLOR = {191, 96, 0}
+--local FONT_COLOR = {191, 96, 0}
+local FONT_COLOR = {206, 187, 169}
 
 --allow different configuration options for menu (so can be different with DLC)
 local CONFIGURATIONS = {
@@ -467,6 +468,7 @@ function menu_manager:init(game, config)
 			local coords = MAP_COORDS[objective_map]
 			if coords then
 				objective_x, objective_y = unpack(coords, 2)
+        objective_marker:set_xy(world_map_x, world_map_y)
 				
 				--create timer for bouncing objective_marker
 				sol.timer.start(self, 250, function()
