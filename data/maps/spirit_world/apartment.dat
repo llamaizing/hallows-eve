@@ -902,6 +902,14 @@ teletransporter{
   destination = "from_apartment",
 }
 
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 192,
+  y = 69,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 224,
@@ -983,6 +991,7 @@ dynamic_tile{
   layer = 1,
   x = 176,
   y = 16,
+  enabled_at_start = false,
   width = 32,
   height = 40,
   pattern = "66",

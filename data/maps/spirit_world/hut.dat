@@ -1,0 +1,883 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "halloween",
+  music = "malice",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "8_9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 64,
+  width = 256,
+  height = 144,
+  pattern = "11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 224,
+  height = 16,
+  pattern = "1_2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 16,
+  width = 224,
+  height = 32,
+  pattern = "1_6",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 64,
+  width = 240,
+  height = 144,
+  pattern = "7",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 24,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 40,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 32,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 16,
+  width = 240,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 56,
+  width = 240,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 0,
+  width = 256,
+  height = 16,
+  pattern = "10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 16,
+  width = 16,
+  height = 192,
+  pattern = "8_2",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 16,
+  width = 16,
+  height = 192,
+  pattern = "8_4",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 208,
+  width = 96,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 208,
+  width = 96,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "8_5",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_3",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_6",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "8_3",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "8_6",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 40,
+  width = 48,
+  height = 32,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 16,
+  width = 48,
+  height = 16,
+  pattern = "50",
+  tileset = "ghost_town",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 64,
+  height = 48,
+  pattern = "68",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 160,
+  width = 32,
+  height = 24,
+  pattern = "30",
+  tileset = "haunted_house",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_63",
+  layer = 0,
+  x = 272,
+  y = 56,
+  width = 16,
+  height = 24,
+  pattern = "61",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_60",
+  layer = 0,
+  x = 104,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_61",
+  layer = 0,
+  x = 320,
+  y = 168,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_64",
+  layer = 0,
+  x = 80,
+  y = 168,
+  width = 16,
+  height = 24,
+  pattern = "61",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_65",
+  layer = 0,
+  x = 168,
+  y = 48,
+  width = 16,
+  height = 24,
+  pattern = "61",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_62",
+  layer = 0,
+  x = 224,
+  y = 64,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+npc{
+  name = "maggie",
+  layer = 0,
+  x = 200,
+  y = 133,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/maggie",
+}
+
+npc{
+  name = "lizard",
+  layer = 0,
+  x = 224,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/lizard",
+}
+
+destination{
+  name = "from_outside",
+  layer = 0,
+  x = 208,
+  y = 205,
+  direction = 1,
+  starting_location_mode = "no",
+}
+
+teletransporter{
+  layer = 0,
+  x = 192,
+  y = 208,
+  width = 32,
+  height = 16,
+  destination_map = "spirit_world/witch_house",
+  destination = "from_hut",
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 144,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 144,
+  y = 181,
+  direction = 3,
+  default = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 160,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 165,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 120,
+  y = 173,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 128,
+  y = 197,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 128,
+  width = 24,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 232,
+  y = 112,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 184,
+  y = 104,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 176,
+  y = 112,
+  width = 8,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 184,
+  y = 128,
+  width = 8,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+npc{
+  name = "acimonia",
+  layer = 0,
+  x = 208,
+  y = 93,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/acimonia",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 24,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 48,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 88,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 120,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 144,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 24,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 48,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 88,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 1,
+  x = 312,
+  y = 120,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 144,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+

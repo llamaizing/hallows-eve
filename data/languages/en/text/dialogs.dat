@@ -103,7 +103,7 @@ dialog{
   text = [[
 @Zach
 Alright lizard, this is the cemetery. You eat like, worms
-and shit, so this is basically gonna be a fancy lizard
+and stuff, so this is basically gonna be a fancy lizard
 buffet with all the worms that grow in corpses I think.
 ]],
 }
@@ -1848,6 +1848,67 @@ dialog{
 @Ichabod
 Bingo. Old crack between dimensions is opened
 up for the day. Here I come, dinosaurs.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.1",
+  text = [[
+@Maggie
+I was wondering how long I'd be in hell
+before some stupid demon showed up to
+do hell stuff.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.2",
+  text = [[
+@Ichabod
+I'm not a demon, I'm a pumpkin man. But that's
+not important right now, I'm here to get you and
+the lizard back to the human world.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.3",
+  text = [[
+@Maggie
+Like a prison break? You're either a stupid demon
+trying to trick me, or not a demon but still stupid.
+I can't get out of this eye drawing, you idiot.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.4",
+  text = [[
+@Ichabod
+I get that you're having a bad day but you
+don't need to be so hostile. If I'm being honest
+I mainly came down here for the lizard.
+Anyway, I can probably like, kick through
+whatever spell is trapping you here.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.5",
+  text = [[
+@Ichabod
+Huh. I guess not. Well that was pretty much
+my only idea.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.6",
+  text = [[
+@Acimonia
+Ehehehehe! You fool! You fell right into my trap!
+You'll never break the curse I've laid on the town.
+Now be torn to shreds by the wendigo ghost!
 ]],
 }
 

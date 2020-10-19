@@ -1,0 +1,600 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "halloween",
+  music = "malice",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "8_9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 384,
+  height = 144,
+  pattern = "11",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 48,
+  width = 352,
+  height = 16,
+  pattern = "1_2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 16,
+  width = 352,
+  height = 32,
+  pattern = "1_6",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "1_5",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1_3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "1_4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 384,
+  height = 144,
+  pattern = "7",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 24,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 40,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 32,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 16,
+  width = 368,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 56,
+  width = 368,
+  height = 8,
+  pattern = "3",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "4",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "2",
+  tileset = "farm",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 384,
+  height = 16,
+  pattern = "10",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 192,
+  pattern = "8_2",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 16,
+  width = 16,
+  height = 192,
+  pattern = "8_4",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 208,
+  width = 384,
+  height = 16,
+  pattern = "9",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "8_5",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_3",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "8_6",
+  tileset = "haunted_house",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "66",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 24,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 48,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 88,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 120,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 24,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 48,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 88,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 120,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 24,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 32,
+  width = 40,
+  height = 16,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 64,
+  height = 48,
+  pattern = "68",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_60",
+  layer = 0,
+  x = 40,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_61",
+  layer = 0,
+  x = 384,
+  y = 168,
+  width = 16,
+  height = 24,
+  pattern = "61_2",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_64",
+  layer = 0,
+  x = 16,
+  y = 168,
+  width = 16,
+  height = 24,
+  pattern = "61",
+  tileset = "yarntown",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_65",
+  layer = 0,
+  x = 360,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "61",
+  tileset = "yarntown",
+}
+
+enemy{
+  name = "boss",
+  layer = 0,
+  x = 104,
+  y = 117,
+  direction = 0,
+  breed = "wendigo_boss",
+}
+
+destination{
+  name = "destination",
+  layer = 0,
+  x = 200,
+  y = 149,
+  direction = 1,
+  starting_location_mode = "no",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 144,
+  width = 16,
+  height = 56,
+  pattern = "65",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 144,
+  width = 16,
+  height = 56,
+  pattern = "65_2",
+}
+

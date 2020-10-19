@@ -85,7 +85,7 @@ hero_meta:register_event("on_state_changed", function(self, state)
     local x,y,z = hero:get_position()
     for entity in map:get_entities_in_rectangle(x-8, y-13, 16, 16) do
       if entity:get_type() == "enemy" then
-        entity:hurt(1)
+        --entity:hurt(1)
       end
     end
   end

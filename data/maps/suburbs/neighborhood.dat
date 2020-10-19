@@ -6632,6 +6632,16 @@ tile{
 }
 
 dynamic_tile{
+  name = "eye_rune",
+  layer = 0,
+  x = 1160,
+  y = 1000,
+  width = 64,
+  height = 48,
+  pattern = "68",
+}
+
+dynamic_tile{
   name = "^lighting_effect_candle_1",
   layer = 0,
   x = 464,

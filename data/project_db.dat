@@ -21,7 +21,11 @@ map{ id = "outskirts/pumpkin_cove", description = "Pumpkin Cove" }
 map{ id = "outskirts/pumpkin_inside", description = "Pumpkin Inside" }
 map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
+map{ id = "spirit_world/challenge_islands/test", description = "Test" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
+map{ id = "spirit_world/hut", description = "Hut" }
+map{ id = "spirit_world/hut_battle", description = "Hut Battle" }
+map{ id = "spirit_world/witch_house", description = "Witch House" }
 map{ id = "suburbs/cemetery", description = "Cemetery" }
 map{ id = "suburbs/dennys", description = "Dennys" }
 map{ id = "suburbs/downtown", description = "Downtown" }
@@ -81,6 +85,7 @@ sprite{ id = "enemies/misc/bird", description = "Blackbird" }
 sprite{ id = "enemies/misc/slash", description = "slash" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
 sprite{ id = "enemies/spider_thing", description = "Spider Thing" }
+sprite{ id = "enemies/wendigo_boss", description = "Wendigo Boss" }
 sprite{ id = "enemies/wendigo_ghost", description = "Wendigo Ghost" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
@@ -128,6 +133,7 @@ sprite{ id = "foliage/ironweed", description = "ironweed" }
 sprite{ id = "foliage/leaf_burst", description = "Leaf Burst" }
 sprite{ id = "foliage/nettle_short", description = "Nettle-Short" }
 sprite{ id = "foliage/pumpkin_leaves", description = "Pumpkin Leaves" }
+sprite{ id = "foliage/skeletongrass", description = "Skeletongrass" }
 sprite{ id = "foliage/skeletonreed", description = "Skeletonreed" }
 sprite{ id = "foliage/sprig", description = "sprig" }
 sprite{ id = "foliage/sunflower", description = "Sunflower" }
@@ -176,6 +182,8 @@ sprite{ id = "shadows/shadow_small", description = "Small shadow" }
 sprite{ id = "switches/lightning_switch", description = "Lightning Switch" }
 sprite{ id = "switches/switch_plate", description = "Switch-Plate" }
 sprite{ id = "utility/climbing_wall", description = "climbing_wall" }
+sprite{ id = "weather/rain", description = "Rain" }
+sprite{ id = "weather/snow", description = "Snow" }
 
 music{ id = "creepytown", description = "creepytown" }
 music{ id = "fields", description = "fields" }
@@ -343,6 +351,7 @@ enemy{ id = "gremlin", description = "Gremlin" }
 enemy{ id = "hand", description = "Hand" }
 enemy{ id = "misc/bird", description = "Bird" }
 enemy{ id = "spider_thing", description = "Spider Thing" }
+enemy{ id = "wendigo_boss", description = "Wendigo Boss" }
 enemy{ id = "wendigo_ghost", description = "Wendigo Ghost" }
 
 entity{ id = "arrow_player" }
@@ -385,6 +394,7 @@ file{ path = "enemies/ghost_projectile.lua", author = "Max Mraz", }
 file{ path = "enemies/gremlin.lua", author = "Max Mraz", }
 file{ path = "enemies/hand.lua", author = "Max Mraz", }
 file{ path = "enemies/spider_thing.lua", author = "Max Mraz", }
+file{ path = "enemies/wendigo_boss.lua", author = "Max Mraz", }
 file{ path = "enemies/wendigo_ghost.lua", author = "Max Mraz", }
 file{ path = "entities/climbing_wall.lua", author = "Max Mraz", }
 file{ path = "entities/conductive_block.lua", author = "Max Mraz", }
@@ -471,6 +481,12 @@ file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
 file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/hut.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/hut.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/hut_battle.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/hut_battle.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/witch_house.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/witch_house.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.dat", author = "Max Mraz", }
 file{ path = "maps/suburbs/cemetery.lua", author = "Max Mraz", }
 file{ path = "maps/suburbs/dennys.dat", author = "Max Mraz", }
@@ -665,6 +681,7 @@ file{ path = "sprites/enemies/gremlin.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/hand.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/misc/slash.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/spider_thing.dat", author = "Max Mraz", }
+file{ path = "sprites/enemies/wendigo_boss.dat", author = "Max Mraz", }
 file{ path = "sprites/enemies/wendigo_ghost.dat", author = "Max Mraz", }
 file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -718,6 +735,7 @@ file{ path = "sprites/foliage/ironweed.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/leaf_burst.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/nettle_short.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/foliage/pumpkin_leaves.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/foliage/skeletongrass.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/skeletonreed.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/sprig.dat", author = "Max Mraz", }
 file{ path = "sprites/foliage/sunflower.dat", author = "Max Mraz", }

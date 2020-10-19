@@ -25,15 +25,17 @@ function initial_game:initialize_new_savegame(game)
   game:set_ability("sword", 1)
   --game:set_ability("swim", 1)
 
-  --game:get_item("seed_shoot"):set_variant(1)
+  game:get_item("seed_shoot"):set_variant(1)
   game:get_item("soccer_kick"):set_variant(1)
   game:get_item("spin_kick"):set_variant(1)
   game:get_item("heal"):set_variant(1)
+  game:get_item("pumpkin_jordans"):set_variant(1)
 
   game:set_item_assigned(1, game:get_item("spin_kick"))
   game:set_item_assigned(2, game:get_item("heal"))
 
   game:set_value("darkness_level", "evening")
+  game:set_value("respawn_map", "spirit_world/apartment")
 
 
 end

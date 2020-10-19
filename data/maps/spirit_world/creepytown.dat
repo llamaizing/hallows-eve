@@ -3670,15 +3670,6 @@ tile{
 
 tile{
   layer = 0,
-  x = -40,
-  y = 648,
-  width = 16,
-  height = 16,
-  pattern = "54",
-}
-
-tile{
-  layer = 0,
   x = 128,
   y = 464,
   width = 16,
@@ -8255,24 +8246,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 832,
-  width = 8,
-  height = 16,
-  pattern = "77",
-}
-
-tile{
-  layer = 0,
-  x = 0,
-  y = 848,
-  width = 8,
-  height = 48,
-  pattern = "76",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 760,
   width = 32,
@@ -8660,31 +8633,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
-  y = 832,
-  width = 32,
-  height = 24,
-  pattern = "92",
-  tileset = "halloween",
-}
-
-tile{
-  layer = 0,
   x = 448,
   y = 832,
   width = 48,
   height = 32,
   pattern = "18",
-}
-
-tile{
-  layer = 0,
-  x = 456,
-  y = 832,
-  width = 32,
-  height = 24,
-  pattern = "92",
-  tileset = "halloween",
 }
 
 tile{
@@ -14257,6 +14210,26 @@ tile{
   pattern = "90",
 }
 
+tile{
+  layer = 0,
+  x = 136,
+  y = 832,
+  width = 32,
+  height = 24,
+  pattern = "92_2",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 832,
+  width = 32,
+  height = 24,
+  pattern = "92_3",
+  tileset = "halloween",
+}
+
 sensor{
   name = "see_portal_sensor",
   layer = 0,
@@ -16371,6 +16344,24 @@ destination{
   y = 613,
   direction = 3,
   starting_location_mode = "no",
+}
+
+destination{
+  name = "destinationfrom_witch_area",
+  layer = 0,
+  x = 24,
+  y = 861,
+  direction = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 832,
+  width = 16,
+  height = 64,
+  destination_map = "spirit_world/witch_house",
+  destination = "from_town",
 }
 
 tile{
@@ -18815,15 +18806,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 0,
-  y = 824,
-  width = 8,
-  height = 8,
-  pattern = "78",
-}
-
-tile{
-  layer = 1,
   x = 176,
   y = 712,
   width = 32,
@@ -18919,26 +18901,6 @@ tile{
   width = 32,
   height = 64,
   pattern = "24_2",
-}
-
-tile{
-  layer = 1,
-  x = 120,
-  y = 776,
-  width = 64,
-  height = 56,
-  pattern = "93",
-  tileset = "halloween",
-}
-
-tile{
-  layer = 1,
-  x = 440,
-  y = 776,
-  width = 64,
-  height = 56,
-  pattern = "93",
-  tileset = "halloween",
 }
 
 tile{
@@ -21942,6 +21904,26 @@ tile{
   width = 8,
   height = 8,
   pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 776,
+  width = 64,
+  height = 56,
+  pattern = "93_2",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 776,
+  width = 64,
+  height = 56,
+  pattern = "93_3",
+  tileset = "halloween",
 }
 
 dynamic_tile{

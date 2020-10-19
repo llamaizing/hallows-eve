@@ -9,6 +9,9 @@ end)
 
 
 function map:on_opening_transition_finished()
+  sol.timer.start(map, 500, function()
+    eye_rune:set_enabled(false)
+  end)
   if not game:get_value("seen_acimonia_neighborhood_scene") then
     map:acimonia_cutscene()
   end

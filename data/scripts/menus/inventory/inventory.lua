@@ -21,7 +21,7 @@
 	Setting objectives:
 	game:set_value("current_objective", "outskirts/farm") --set an objective (go to map)
 	game:set_value("current_objective", nil) --remove the objective
-]]
+--]]
 
 local menu_manager = {}
 

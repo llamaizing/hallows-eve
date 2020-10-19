@@ -21,5 +21,6 @@ require"scripts/meta/input"
 require"scripts/meta/game"
 require"scripts/meta/hero"
 require"scripts/meta/map"
+require"scripts/weather/weather_manager"
 
 return true

@@ -15,6 +15,7 @@ map:register_event("on_started", function()
 
   if not game:get_value("intro_cutscene_viewed") then
     game:get_hud():set_enabled(false)
+    door:set_enabled(true)
   else
     map:ralph_looks_at_ich()
   end

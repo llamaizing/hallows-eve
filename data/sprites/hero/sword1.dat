@@ -3,10 +3,10 @@ animation{
   src_image = "hero/sword.sword1.png",
   frame_delay = 60,
   directions = {
-    { x = 16, y = 0, frame_width = 32, frame_height = 32, origin_x = -8, origin_y = 29, num_frames = 6 },
-    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 49, num_frames = 6 },
-    { x = 16, y = 32, frame_width = 32, frame_height = 32, origin_x = 40, origin_y = 29, num_frames = 6 },
-    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 5, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 49, num_frames = 6 },
+    { x = 0, y = 32, frame_width = 48, frame_height = 32, origin_x = 40, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 33, num_frames = 6 },
   },
 }
 animation{
@@ -14,10 +14,10 @@ animation{
   src_image = "hero/sword.sword1.png",
   frame_delay = 70,
   directions = {
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
-    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 160, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 160, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 160, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
+    { x = 0, y = 160, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 8, num_columns = 4 },
   },
 }
 animation{
