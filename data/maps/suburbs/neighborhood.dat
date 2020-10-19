@@ -7219,7 +7219,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_5",
   model = "sentry",
 }
 
@@ -7472,7 +7472,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_2",
   model = "sentry",
 }
 
@@ -7778,7 +7778,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_2",
   model = "sentry",
 }
 
@@ -7874,7 +7874,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 1,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_6",
   model = "sentry",
 }
 
@@ -7886,7 +7886,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_4",
   model = "sentry",
 }
 
@@ -7898,7 +7898,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_3",
   model = "sentry",
 }
 
@@ -7931,7 +7931,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_5",
   model = "sentry",
 }
 
@@ -7943,7 +7943,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_2",
   model = "sentry",
 }
 
@@ -7955,7 +7955,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_6",
   model = "sentry",
 }
 
@@ -7967,7 +7967,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_6",
   model = "sentry",
 }
 
@@ -8034,7 +8034,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_3",
   model = "sentry",
 }
 
@@ -8058,7 +8058,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_3",
   model = "sentry",
 }
 
@@ -8070,7 +8070,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_6",
   model = "sentry",
 }
 
@@ -8082,7 +8082,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 1,
-  sprite = "npcs/neighborhood_adult_1",
+  sprite = "npcs/neighborhood_adult_4",
   model = "sentry",
 }
 

@@ -175,6 +175,10 @@ sprite{ id = "npcs/lizard", description = "Lizard" }
 sprite{ id = "npcs/maggie", description = "Maggie" }
 sprite{ id = "npcs/neighborhood_adult_1", description = "Neighborhood Adult 1" }
 sprite{ id = "npcs/neighborhood_adult_2", description = "Neighborhood Adult 2" }
+sprite{ id = "npcs/neighborhood_adult_3", description = "Neightborhood Adult 3" }
+sprite{ id = "npcs/neighborhood_adult_4", description = "Neightborhood Adult 4" }
+sprite{ id = "npcs/neighborhood_adult_5", description = "Neightborhood Adult 5" }
+sprite{ id = "npcs/neighborhood_adult_6", description = "Neightborhood Adult 6" }
 sprite{ id = "npcs/ralph", description = "Ralph" }
 sprite{ id = "npcs/toby", description = "Toby" }
 sprite{ id = "npcs/toby_hat", description = "Toby-Hat" }
@@ -795,6 +799,10 @@ file{ path = "sprites/npcs/lizard.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/maggie.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/neighborhood_adult_1.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/neighborhood_adult_2.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/neighborhood_adult_3.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/neighborhood_adult_4.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/neighborhood_adult_5.dat", author = "Max Mraz", }
+file{ path = "sprites/npcs/neighborhood_adult_6.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/ralph.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby.dat", author = "Max Mraz", }
 file{ path = "sprites/npcs/toby_hat.dat", author = "Max Mraz", }
