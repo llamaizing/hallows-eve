@@ -34,9 +34,11 @@ function enemy:on_created()
   enemy:set_size(32,32)
   enemy:set_origin(16,29)
   enemy:set_attacking_collision_mode"overlapping"
-
 end
 
+function enemy:set_detection_distance(dist)
+  DETECTION_DISTANCE = dist
+end
 
 function enemy:on_movement_changed(movement)
   local angle = movement:get_angle()

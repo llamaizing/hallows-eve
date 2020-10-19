@@ -22,6 +22,7 @@ map{ id = "outskirts/pumpkin_inside", description = "Pumpkin Inside" }
 map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
 map{ id = "spirit_world/challenge_islands/test", description = "Test" }
+map{ id = "spirit_world/credits_apartment", description = "Credits Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
 map{ id = "spirit_world/hut", description = "Hut" }
 map{ id = "spirit_world/hut_battle", description = "Hut Battle" }
@@ -149,19 +150,23 @@ sprite{ id = "hero/spear", description = "Spear" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/trail", description = "Trail" }
-sprite{ id = "hero/tunic1", description = "Caspian-Tunic 1" }
+sprite{ id = "hero/tunic1", description = "Ichabod" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
 sprite{ id = "hud/heart", description = "Heart" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "hud/swim_meter", description = "Swim Meter Blob" }
 sprite{ id = "menus/arrow", description = "Arrow" }
+sprite{ id = "menus/cursor", description = "Cursor" }
 sprite{ id = "menus/inventory/hero" }
 sprite{ id = "menus/inventory/items", description = "Items(inventory menu)" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/pumpkin_seeds" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
+sprite{ id = "menus/splash_screens/maxname", description = "Maxname" }
+sprite{ id = "menus/splash_screens/mothbox", description = "mothbox" }
+sprite{ id = "menus/splash_screens/moths", description = "moths" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "menus/title_screen" }
 sprite{ id = "npcs/acimonia", description = "Acimonia" }
@@ -193,6 +198,8 @@ music{ id = "haunted_house_exploration", description = "haunted_house_exploratio
 music{ id = "haunted_house_monster_chase", description = "haunted_house_monster_chase" }
 music{ id = "malice", description = "malice" }
 music{ id = "malice-and-crickets", description = "malice-and-crickets" }
+music{ id = "title_screen", description = "Title Screen" }
+music{ id = "trailer", description = "trailer" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "ball_kick", description = "Ball Kick" }
@@ -481,6 +488,8 @@ file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
 file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/credits_apartment.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/credits_apartment.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/hut.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/hut.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/hut_battle.dat", author = "Max Mraz", }
@@ -776,6 +785,7 @@ file{ path = "sprites/menus/options_cursor.png", author = "Olivier Cléro", lice
 file{ path = "sprites/menus/panel.png", author = "Max Mraz", license = "CC-0" }
 file{ path = "sprites/menus/solarus_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/solarus_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
+file{ path = "sprites/menus/splash_screens/moths.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }

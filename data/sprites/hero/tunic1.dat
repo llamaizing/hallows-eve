@@ -209,6 +209,16 @@ animation{
   },
 }
 animation{
+  name = "feet_up",
+  src_image = "hero/ichabod.png",
+  directions = {
+    { x = 48, y = 896, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 48, y = 896, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 48, y = 896, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 48, y = 896, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "floating",
   src_image = "hero/caspian.png",
   frame_delay = 250,

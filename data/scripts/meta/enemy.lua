@@ -9,9 +9,9 @@ function enemy_meta:on_hurt(attack)
 
   --Shake screen
   game:set_suspended(true)
-  sol.timer.start(game, 120, function()
+  sol.timer.start(game, 60, function()
     game:set_suspended(false)
-    camera:shake({count = 4, amplitude = 5, speed = 100, zoom_factor = 1.005})
+    camera:shake({count = 4, amplitude = 5, speed = 200, zoom_factor = 1.005})
   end) --end of timer
 
   --Flash enemy

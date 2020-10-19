@@ -10,7 +10,9 @@ local initial_game = require("scripts/initial_game")
 local game_manager = {}
 
 -- Creates a game ready to be played.
-function game_manager:create(file)
+function game_manager:create(file, overwrite)
+  --Delete previous save if overwrite is true
+  if overwrite then sol.game.delete(file) end
 
   -- Create the game (but do not start it).
   local exists = sol.game.exists(file)

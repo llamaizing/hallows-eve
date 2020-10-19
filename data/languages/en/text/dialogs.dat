@@ -207,6 +207,70 @@ Press C to kick ghosts
 }
 
 dialog{
+  id = "credits",
+  text = [[
+Created by:Max Mraz
+ : 
+Additional Programming:Llamazing
+ : 
+Music:Max Mraz
+Music:Nic Caruso
+Music:Molly Mraz
+ : 
+Portrait Art:Riley Patrick
+ : 
+ : 
+ : 
+The End
+]],
+}
+
+dialog{
+  id = "credits_scroll",
+  text = [[
+
+
+
+
+
+
+
+
+Created By
+Max Mraz
+
+
+
+
+
+Additional Programming
+Llamazing
+
+
+
+
+
+Music
+Max Mraz
+Nic Caruso
+Molly Mraz
+
+
+
+
+
+Portrait Art
+Riley Patrick
+
+
+
+
+
+The End
+]],
+}
+
+dialog{
   id = "demo.cabin.green_knight10_dialog",
   text = [[
 If you don't like any of our preset speeds. 
@@ -1909,6 +1973,58 @@ dialog{
 Ehehehehe! You fool! You fell right into my trap!
 You'll never break the curse I've laid on the town.
 Now be torn to shreds by the wendigo ghost!
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.7",
+  text = [[
+@Ichabod
+Damnit, alright. I've gotta actually fight this one.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_1",
+  text = [[
+@Acimonia
+No! How did you manage to defeat the wendigo ghost!?
+You've fulfilled the ancient prophecy! My power, my curse!
+It's all- ahhhhhhh!
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_2",
+  text = [[
+@Maggie
+What was all that about?
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_3",
+  text = [[
+@Ichabod
+I really have no idea what that witch wanted,
+I've just been trying to rent a movie all evening.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_4",
+  text = [[
+@Maggie
+Seems like you must be bad at it then.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_5",
+  text = [[
+@Ichabod
+Look... just give me that lizard and follow
+me back to the human world.
 ]],
 }
 

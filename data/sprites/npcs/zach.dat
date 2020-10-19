@@ -9,6 +9,16 @@ animation{
   },
 }
 animation{
+  name = "feet_up",
+  src_image = "npcs/zach.png",
+  directions = {
+    { x = 80, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 80, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 80, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 80, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "kick",
   src_image = "npcs/zach.png",
   frame_delay = 100,

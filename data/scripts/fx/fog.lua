@@ -116,12 +116,20 @@ function fog_manager.new()
 
 
 	function fog_menu:on_draw(dst_surface)
-	  local camera_x, camera_y = sol.main.get_game():get_map():get_camera():get_position()
-	  tile_draw(
-	  	fog_menu.drift_x + math.floor(camera_x * fog_menu.parallax_speed)%width,
-	  	fog_menu.drift_y + math.floor(camera_y * fog_menu.parallax_speed)%height,
-	  	dst_surface, 0, 0
-	  	)
+    if sol.main.get_game() then
+  	  local camera_x, camera_y = sol.main.get_game():get_map():get_camera():get_position()
+  	  tile_draw(
+  	  	fog_menu.drift_x + math.floor(camera_x * fog_menu.parallax_speed)%width,
+  	  	fog_menu.drift_y + math.floor(camera_y * fog_menu.parallax_speed)%height,
+  	  	dst_surface, 0, 0
+  	  	)
+    else
+  	  tile_draw(
+  	  	fog_menu.drift_x % width,
+  	  	fog_menu.drift_y % height,
+  	  	dst_surface, 0, 0
+  	  	)
+    end
 	end
 
 	return fog_menu

@@ -11,6 +11,20 @@ local initial_menus = {}
 -- This function is called when Solarus starts.
 function sol.main:on_started()
 
+  local is_new_install = not sol.file.exists("settings.dat")
+  if is_new_install then
+    sol.video.set_fullscreen(true)
+  end
+  if sol.video.is_fullscreen() then
+    sol.video.set_cursor_visible(false)
+  end
+
+  --preload the sounds for faster access
+  sol.audio.preload_sounds()
+
+  --Set the window title.
+  sol.video.set_window_title("Ocean's Heart")
+
   sol.main.load_settings()
   math.randomseed(os.time())
 
@@ -77,4 +91,16 @@ function sol.main:on_key_pressed(key, modifiers)
   end
 
   return handled
+end
+
+
+--Starts a game.
+function sol.main:start_savegame(game)
+  sol.main.game = game
+  game:start()
+end
+
+--Called when app stops
+function sol.main:on_finished()
+  sol.main.save_settings()
 end

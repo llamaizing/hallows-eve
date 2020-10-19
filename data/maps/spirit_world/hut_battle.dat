@@ -509,7 +509,8 @@ tile{
   pattern = "63",
 }
 
-tile{
+dynamic_tile{
+  name = "eye_rune",
   layer = 0,
   x = 176,
   y = 96,
@@ -578,6 +579,48 @@ destination{
   y = 149,
   direction = 1,
   starting_location_mode = "no",
+}
+
+sensor{
+  name = "ich_target",
+  layer = 0,
+  x = 208,
+  y = 165,
+  width = 16,
+  height = 16,
+}
+
+npc{
+  name = "acimonia",
+  layer = 0,
+  x = 208,
+  y = 93,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/acimonia",
+}
+
+npc{
+  name = "maggie",
+  layer = 0,
+  x = 200,
+  y = 133,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/maggie",
+}
+
+npc{
+  name = "lizard",
+  layer = 0,
+  x = 224,
+  y = 125,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npcs/lizard",
 }
 
 tile{

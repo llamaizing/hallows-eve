@@ -1949,14 +1949,6 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 496,
-  y = 381,
-  direction = 0,
-  breed = "wendigo_ghost",
-}
-
-enemy{
-  layer = 0,
   x = 112,
   y = 293,
   direction = 0,
