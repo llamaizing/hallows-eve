@@ -61,6 +61,7 @@ function cutscene_sensor:on_activated()
         maggie:set_enabled(false)
       end)
       movement(m, ghost_dragon)
+      ghost_dragon:set_enabled(false)
       zach:get_sprite():set_direction(2)
       dialog"dennys.8"
       dialog"dennys.9"

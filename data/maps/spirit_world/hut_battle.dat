@@ -641,3 +641,14 @@ tile{
   pattern = "65_2",
 }
 
+npc{
+  name = "zach",
+  layer = 1,
+  x = 208,
+  y = 13,
+  enabled_at_start = false,
+  direction = 0,
+  subtype = 0,
+  sprite = "npcs/zach",
+}
+

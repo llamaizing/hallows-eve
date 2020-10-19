@@ -24,7 +24,14 @@ end)
 
 
 function map:on_opening_transition_finished()
-  hero:freeze()
-  credits = require"scripts/menus/credits"
-  sol.menu.start(map, credits)
+  map:start_coroutine(function()
+    hero:freeze()
+    wait(3000)
+    dialog"spirit_world.apartment.ending_1"
+    wait(3000)
+    dialog"spirit_world.apartment.ending_2"
+    wait(1000)
+    credits = require"scripts/menus/credits"
+    sol.menu.start(map, credits)
+  end)
 end

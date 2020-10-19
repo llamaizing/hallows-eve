@@ -1778,7 +1778,7 @@ dialog{
   text = [[
 @Acimonia
 Don't play coy. Unthering the Ghost Dragon?
-Breaking the Labyrinth Curse on Auburn Manor?
+Breaking the Labyrinth Hex on Auburn Manor?
 You're trying to undo my power.
 ]],
 }
@@ -1822,6 +1822,23 @@ dialog{
   text = [[
 @Acimonia
 Ehehehehehehe! Fuck you.
+]],
+}
+
+dialog{
+  id = "spirit_world.apartment.ending_1",
+  text = [[
+@Ralph
+Oh, did you remember to get any
+human ceral for me while you were out?
+]],
+}
+
+dialog{
+  id = "spirit_world.apartment.ending_2",
+  text = [[
+@Ichabod
+Damnit.
 ]],
 }
 
@@ -2006,8 +2023,8 @@ dialog{
   id = "spirit_world.witch_hut.defeated_3",
   text = [[
 @Ichabod
-I really have no idea what that witch wanted,
-I've just been trying to rent a movie all evening.
+I really have no idea. I've just been trying to get
+this lizard so I can rent a movie.
 ]],
 }
 
@@ -2015,7 +2032,9 @@ dialog{
   id = "spirit_world.witch_hut.defeated_4",
   text = [[
 @Maggie
-Seems like you must be bad at it then.
+I hate to tell you this, but lizards are not currency
+in the human world. You're going to need human
+money to rent a movie, idiot.
 ]],
 }
 
@@ -2023,8 +2042,48 @@ dialog{
   id = "spirit_world.witch_hut.defeated_5",
   text = [[
 @Ichabod
-Look... just give me that lizard and follow
-me back to the human world.
+That's not what I- look, just give me that lizard.
+I need to take it back to that Zach kid.
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_6",
+  text = [[
+@Zach
+Oh! You got the lizard! Right on!
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_7",
+  text = [[
+@Ichabod
+Did you... what are you doing here?
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_8",
+  text = [[
+@Zach
+I accidentally rang the lizard bell again and the
+ghost dragon ate me. Anyway, thanks for getting
+the lizard!
+So wait, did you track me down, fight all these
+ghosts, and come down to hell just to get this
+movie from me?
+]],
+}
+
+dialog{
+  id = "spirit_world.witch_hut.defeated_9",
+  text = [[
+@Ichabod
+...
+...
+...
+Yes.
 ]],
 }
 
