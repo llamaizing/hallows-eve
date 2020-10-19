@@ -7104,6 +7104,15 @@ sensor{
   height = 16,
 }
 
+chest{
+  layer = 0,
+  x = 392,
+  y = 669,
+  treasure_name = "seed_shoot",
+  treasure_savegame_variable = "pumpkin_seed_hh_outside",
+  sprite = "chests/chest",
+}
+
 tile{
   layer = 1,
   x = 952,

@@ -14198,16 +14198,16 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 784,
-  y = 221,
+  x = 264,
+  y = 141,
   direction = 0,
   breed = "spider_thing",
 }
 
 enemy{
   layer = 0,
-  x = 768,
-  y = 261,
+  x = 192,
+  y = 165,
   direction = 0,
   breed = "spider_thing",
 }
@@ -14230,8 +14230,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 880,
-  y = 285,
+  x = 304,
+  y = 189,
   direction = 0,
   breed = "spider_thing",
 }
@@ -15965,6 +15965,15 @@ teletransporter{
   height = 16,
   destination_map = "outskirts/barn",
   destination = "from_outside",
+}
+
+chest{
+  layer = 0,
+  x = 424,
+  y = 333,
+  treasure_name = "seed_shoot",
+  treasure_savegame_variable = "pumpkin_seed_farm",
+  sprite = "chests/chest",
 }
 
 tile{

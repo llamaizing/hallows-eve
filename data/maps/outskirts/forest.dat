@@ -9857,6 +9857,15 @@ teletransporter{
   destination = "from_forest",
 }
 
+chest{
+  layer = 0,
+  x = 104,
+  y = 573,
+  treasure_name = "seed_shoot",
+  treasure_savegame_variable = "pumpkin_seed_forest",
+  sprite = "chests/chest",
+}
+
 tile{
   layer = 1,
   x = -40,
