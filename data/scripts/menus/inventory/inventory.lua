@@ -88,7 +88,7 @@ local MAP_COORDS = {
 	['outskirts/forest'] = {"world_map", 224, 46},
 	['outskirts/pumpkin_cove'] = {"world_map", 293, 31},
 		['outskirts/pumpkin_inside'] = {"world_map", 293, 31},
-	['haunted_house/outside'] = {"world_map", 152, 43},
+	['haunted_house/outside'] = {"world_map", 155, 24},
 		['haunted_house/'] = {"world_map", 155, 24},
 	
 	--DLC maps
@@ -452,7 +452,7 @@ function menu_manager:init(game, config)
 		
 		--update map objectives
 		local objective_map = game:get_value"current_objective"
-		objective_marker = sol.sprite.create"menus/arrow"
+		objective_marker = sol.sprite.create"menus/inventory/arrow"
 		objective_marker:set_direction(3) --down
 		local objective_text = objective_map and sol.language.get_string"menu.pause.objective" or ""
 		if objective_map then
