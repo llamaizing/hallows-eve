@@ -11,7 +11,7 @@ text{ key = "map.location.suburbs/video_store", value = "The Video Store" }
 text{ key = "menu.pause.map_title", value = "Auburn Tourism Bureau" }
 text{ key = "menu.pause.objective", value = "Go to %s" }
 text{ key = "menu.title.button_mapping", value = "Map Buttons" }
-text{ key = "menu.title.cancel", value = "Cancel" }
+text{ key = "menu.title.cancel", value = "Back" }
 text{ key = "menu.title.clear_save", value = "Clear Save" }
 text{ key = "menu.title.continue", value = "Continue" }
 text{ key = "menu.title.credits", value = "Credits" }
@@ -27,6 +27,6 @@ text{ key = "options.command.left", value = "Left" }
 text{ key = "options.command.pause", value = "Pause" }
 text{ key = "options.command.right", value = "Right" }
 text{ key = "options.command.up", value = "Up" }
-text{ key = "options.commands_column", value = "Commands Column" }
-text{ key = "options.joypad_column", value = "Joypad Column" }
-text{ key = "options.keyboard_column", value = "Keyboard Column" }
+text{ key = "options.commands_column", value = "Command" }
+text{ key = "options.joypad_column", value = "Joypad" }
+text{ key = "options.keyboard_column", value = "Keyboard" }

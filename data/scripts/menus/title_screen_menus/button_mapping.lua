@@ -1,6 +1,7 @@
 local menu = {}
 local parent_menu
 
+require"scripts/misc/command_binding_manager"
 
 
 function menu:on_started()
@@ -8,6 +9,8 @@ function menu:on_started()
 
   local width, height = sol.video.get_quest_size()
   local center_x, center_y = width / 2, height / 2
+
+  self.background_image = sol.surface.create("menus/button_mapping_background.png")
 
   self.column_color = { 255, 255, 255}
   self.text_color = { 115, 59, 22 }
@@ -41,6 +44,16 @@ function menu:on_started()
     color = self.column_color,
   }
   self.joypad_column_text:set_xy(center_x + 69, center_y - 37)
+
+  self.cancel_text = sol.text_surface.create{
+    horizontal_alignment = "center",
+    vertical_alignment = "top",
+    font = font,
+    font_size = font_size,
+    text_key = "menu.title.cancel",
+    color = self.column_color,
+  }
+  self.cancel_text:set_xy(132, 72)
 
   self.commands_surface = sol.surface.create(215, 160)
   self.commands_surface:set_xy(center_x - 107, center_y - 18)
@@ -91,8 +104,6 @@ function menu:on_started()
   self.cursor_position = nil
   self:set_cursor_position(1)
 
-  self.game:set_custom_command_effect("action", "change")
-
 end
 
 
@@ -109,8 +120,8 @@ function menu:load_command_texts()
 
   self.commands_surface:clear()
   for i = 1, #self.command_names do
-    local keyboard_binding = self.game:get_command_keyboard_binding(self.command_names[i])
-    local joypad_binding = self.game:get_command_joypad_binding(self.command_names[i])
+    local keyboard_binding = sol.main:get_command_keyboard_binding(self.command_names[i])
+    local joypad_binding = sol.main:get_command_joypad_binding(self.command_names[i])
     self.keyboard_texts[i]:set_text(keyboard_binding:sub(1, 9))
     self.joypad_texts[i]:set_text(joypad_binding:sub(1, 9))
 
@@ -128,13 +139,12 @@ function menu:set_cursor_position(position)
     local width, height = sol.video.get_quest_size()
 
     self.cursor_position = position
-    if position == 1 then  -- Video mode.
-      self:set_caption("options.caption.press_action_change_mode")
-      self.cursor_sprite.x = width / 2 - 58
-      self.cursor_sprite.y = height / 2 - 59
-      self.cursor_sprite:set_animation("big")
+    if position == 1 then --cancel
+      self.cursor_sprite.x = width / 2 - 105
+      self.cursor_sprite.y = 72
+
     else  -- Customization of a command.
-      self:set_caption("options.caption.press_action_customize_key")
+      --self:set_caption("options.caption.press_action_customize_key")
 
       -- Make sure the selected command is visible.
       while position <= self.commands_highest_visible do
@@ -149,7 +159,6 @@ function menu:set_cursor_position(position)
 
       self.cursor_sprite.x = width / 2 - 105
       self.cursor_sprite.y = height / 2 - 32 + 16 * (position - self.commands_highest_visible)
-      self.cursor_sprite:set_animation("small")
     end
   end
 end
@@ -159,6 +168,8 @@ function menu:on_draw(dst_surface)
   --self:draw_background(dst_surface)
   --self:draw_caption(dst_surface)
 
+  self.background_image:draw(dst_surface)
+
   -- Cursor.
   self.cursor_sprite:draw(dst_surface, self.cursor_sprite.x, self.cursor_sprite.y)
 
@@ -166,6 +177,7 @@ function menu:on_draw(dst_surface)
   self.command_column_text:draw(dst_surface)
   self.keyboard_column_text:draw(dst_surface)
   self.joypad_column_text:draw(dst_surface)
+  self.cancel_text:draw(dst_surface)
   self.commands_surface:draw_region(0, self.commands_visible_y, 215, 84, dst_surface)
 
   -- Arrows.
@@ -179,29 +191,32 @@ function menu:on_draw(dst_surface)
     self.down_arrow_sprite:draw(dst_surface, 115, 0)
   end
 
-  self:draw_save_dialog_if_any(dst_surface)
 end
 
 
 
 
-function menu:on_command_pressed(command)
+function menu:on_key_pressed(key)
+  if key == "up" or key == "down" or key == "left" or key == "right" then
+    menu:on_command_pressed(key)
+  elseif key == "space" or key == "return" then
+    menu:on_command_pressed("action")
+  elseif key == "escape" or key == "c" or key == "d" then
+    menu:on_command_pressed("attack")
+  end
+  return true
+end
 
+function menu:on_command_pressed(command)
   if self.command_customizing ~= nil then
     -- We are customizing a command: any key pressed should have been handled before.
     error("options_submenu:on_command_pressed() should not called in this state")
   end
 
-  local handled = submenu.on_command_pressed(self, command)
+  local handled = false
 
   if not handled then
-    if command == "left" then
-      self:previous_submenu()
-      handled = true
-    elseif command == "right" then
-      self:next_submenu()
-      handled = true
-    elseif command == "up" then
+    if command == "up" then
       sol.audio.play_sound("cursor")
       self:set_cursor_position((self.cursor_position + 8) % 10 + 1)
       handled = true
@@ -210,27 +225,29 @@ function menu:on_command_pressed(command)
       self:set_cursor_position(self.cursor_position % 10 + 1)
       handled = true
     elseif command == "action" then
-      sol.audio.play_sound("danger")
+print"ACTION"
+print(self.cursor_position, self.cursor_sprite.x, self.cursor_sprite.y)
       if self.cursor_position == 1 then
-        -- Change the video mode.
-        sol.video.switch_mode()
-        self.video_mode_text:set_text(sol.video.get_mode())
+        sol.menu.stop(menu)
+        handled = true
       else
+        sol.audio.play_sound("danger")
         -- Customize a game command.
-        self:set_caption("options.caption.press_key")
-        self.cursor_sprite:set_animation("small_blink")
+        --self:set_caption("options.caption.press_key")
+        --self.cursor_sprite:set_animation("small_blink")
         local command_to_customize = self.command_names[self.cursor_position - 1]
-        self.game:capture_command_binding(command_to_customize, function()
+        sol.main:capture_command_binding(command_to_customize, function()
           sol.audio.play_sound("danger")
-          self:set_caption("options.caption.press_action_customize_key")
-          self.cursor_sprite:set_animation("small")
+          --self:set_caption("options.caption.press_action_customize_key")
+          --self.cursor_sprite:set_animation("small")
           self:load_command_texts()
           -- TODO restore HUD icons.
         end)
-
-        -- TODO grey over HUD icons, make the icon of the command blink.
+        handled = true
       end
-      handled = true
+
+    elseif command == "attack" then
+      sol.menu.stop(menu)
     end
   end
 
