@@ -24,6 +24,11 @@ function enemy_meta:on_hurt(attack)
 		end)
   end
 
+  --If you have magic shoelaces
+  if game:get_item("pumpkin_jordans"):get_variant() >= 2 then
+    enemy:remove_life(1)
+  end
+
   --Remove extra life if attack was an explosion
   if attack == "explosion" then
     enemy:remove_life(5)

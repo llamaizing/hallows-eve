@@ -6,8 +6,9 @@ local sprite
 local ghost_sprite
 local movement
 
+local HAND_CHASE_DURATION = 4200
 local SLAM_DISTANCE = 32
-local SPEED = 130
+local SPEED = 127
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed(), "main")
@@ -41,7 +42,7 @@ function enemy:on_restarted()
   movement:set_ignore_obstacles(true)
   movement:start(enemy)
 
-  sol.timer.start(enemy, 6000, function()
+  sol.timer.start(enemy, HAND_CHASE_DURATION, function()
     sol.timer.stop_all(enemy)
     enemy:stop_movement()
     sprite:set_animation("slam", function() enemy:remove() end)

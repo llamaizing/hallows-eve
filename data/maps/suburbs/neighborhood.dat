@@ -7671,8 +7671,8 @@ sensor{
 custom_entity{
   name = "sentry_treater_c_13",
   layer = 0,
-  x = 256,
-  y = 165,
+  x = 912,
+  y = 133,
   width = 16,
   height = 16,
   direction = 3,
@@ -7683,8 +7683,8 @@ custom_entity{
 custom_entity{
   name = "sentry_treater_c_14",
   layer = 0,
-  x = 264,
-  y = 181,
+  x = 920,
+  y = 149,
   width = 16,
   height = 16,
   direction = 3,
@@ -7695,8 +7695,8 @@ custom_entity{
 custom_entity{
   name = "sentry_treater_c_15",
   layer = 0,
-  x = 248,
-  y = 189,
+  x = 904,
+  y = 157,
   width = 16,
   height = 16,
   direction = 3,
@@ -7799,30 +7799,6 @@ custom_entity{
   layer = 0,
   x = 896,
   y = 301,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npcs/treater_witch",
-  model = "sentry",
-}
-
-custom_entity{
-  name = "sentry_treater_b_8",
-  layer = 0,
-  x = 544,
-  y = 245,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npcs/treater_witch",
-  model = "sentry",
-}
-
-custom_entity{
-  name = "sentry_treater_b_9",
-  layer = 0,
-  x = 528,
-  y = 237,
   width = 16,
   height = 16,
   direction = 3,
