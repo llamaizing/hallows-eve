@@ -62,6 +62,15 @@ end)
 
 
 
+function see_tree_sensor:on_activated()
+  if not game:get_value"haunted_forest_seen_tree_explanation" then
+    game:start_dialog"farm.forest_tree_kick"
+    game:set_value("haunted_forest_seen_tree_explanation", true)
+    see_tree_sensor:remove()
+  end
+end
+
+
 function map:start_spawning_lizards()
   for emitter in map:get_entities("lizard_emitter") do
     local x,y,z = emitter:get_position()

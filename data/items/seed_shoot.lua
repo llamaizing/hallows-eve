@@ -4,7 +4,7 @@ local game = item:get_game()
 local MAGIC_COST = 8
 
 function item:on_started()
-  item:set_savegame_variable("possession_soccer_kick")
+  item:set_savegame_variable("possession_seed_shoot")
   item:set_assignable(true)
 end
 

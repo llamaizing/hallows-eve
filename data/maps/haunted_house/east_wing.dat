@@ -1710,7 +1710,7 @@ chest{
   layer = 1,
   x = 672,
   y = 421,
-  treasure_name = "seed_shoot",
+  treasure_name = "pumpkin_seed",
   treasure_savegame_variable = "pumpkin_seed_hh_east_wing",
   sprite = "chests/chest",
 }

@@ -15971,7 +15971,7 @@ chest{
   layer = 0,
   x = 424,
   y = 333,
-  treasure_name = "seed_shoot",
+  treasure_name = "pumpkin_seed",
   treasure_savegame_variable = "pumpkin_seed_farm",
   sprite = "chests/chest",
 }

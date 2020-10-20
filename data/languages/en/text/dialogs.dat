@@ -1302,6 +1302,16 @@ This isn't the direction I need to be headed.
 }
 
 dialog{
+  id = "farm.forest_tree_kick",
+  text = [[
+@Ichabod
+Huh, if that log was moved a bit, I could use it
+as a bridge. Is this a problem I can solve by
+kicking? Can solve most things that way.
+]],
+}
+
+dialog{
   id = "farm.lizard_scene.1",
   text = [[
 @Zach
@@ -2146,7 +2156,7 @@ Then I'll let you in on a secret. Zach came by a
 few minutes ago to borrow something from me.
 He said he was going to the pumpkin patch on the
 outskirts of town. You can get there through the
-forest east of the graveyard.
+forest east of town. Follow the road out.
 ===
 ]],
 }
@@ -2155,7 +2165,7 @@ dialog{
   id = "video_store.5",
   text = [[
 @Ichabod
-Cut through the forest east of the graveyard?...
+Cut through the forest east of town?...
 Hey, you aren't going to judge me for hunting down
 a teenager because I want this movie?
 ]],
@@ -2192,7 +2202,7 @@ said. That kid with the movie went where?
 ===
 @Caleb
 He went to the pumpkin patch- you can get there
-through the forest east of the cemetery. Just head
+through the forest east of town. Just head
 east down the road, and you'll eventually find it.
 ]],
 }
