@@ -10,9 +10,11 @@ text{ key = "map.location.suburbs/neighborhood", value = "The Neighborhood" }
 text{ key = "map.location.suburbs/video_store", value = "The Video Store" }
 text{ key = "menu.pause.map_title", value = "Auburn Tourism Bureau" }
 text{ key = "menu.pause.objective", value = "Go to %s" }
+text{ key = "menu.title.button_mapping", value = "Button Mapping" }
 text{ key = "menu.title.cancel", value = "Cancel" }
 text{ key = "menu.title.clear_save", value = "Clear Save" }
 text{ key = "menu.title.continue", value = "Continue" }
+text{ key = "menu.title.credits", value = "Credits" }
 text{ key = "menu.title.new_game", value = "New Game" }
 text{ key = "menu.title.options", value = "Options" }
 text{ key = "menu.title.quit", value = "Quit" }

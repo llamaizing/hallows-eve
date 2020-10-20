@@ -55,4 +55,9 @@ function title_screen:on_draw(dst_surface)
   black_fill:draw(dst_surface)
 end
 
+
+function title_screen:get_title_surface()
+  return title_surface
+end
+
 return title_screen

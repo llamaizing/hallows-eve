@@ -4,7 +4,7 @@ local game_manager = require("scripts/game_manager")
 
 local selection_options = {
  "credits",
- "language",
+ "button_mapping",
  "return"
 }
 
@@ -60,8 +60,7 @@ function menu:on_draw(dst_surface)
   selection_surface:clear()
   text_surface:set_text_key("menu.title.credits")
   text_surface:draw(selection_surface, 12, 0)
-  text_surface2:set_text_key("menu.title.language")
-  if #sol.language.get_languages() <= 1 then text_surface2:set_color_modulation{200,200,200} end
+  text_surface2:set_text_key("menu.title.button_mapping")
   text_surface2:draw(selection_surface, 12, 16)
   text_surface3:set_text_key("menu.title.cancel")
   text_surface3:draw(selection_surface, 12, 32)
@@ -89,24 +88,20 @@ end
 
 
 function menu:process_selected_option(selection)
-    --From Intro
     if selection == "credits" then
-      local credits = require("scripts/menus/credits2")
-      sol.audio.play_music("oceans_heart")
-      sol.menu.stop(parent_menu)
-      sol.menu.stop_all(sol.main)
+      local credits = require("scripts/menus/credits")
+      sol.audio.play_music("funky-fresh-credits")
+--      sol.menu.stop(menu)
+--      sol.menu.stop(parent_menu)
+--      sol.menu.stop_all(sol.main)
+      local title_logo = require("scripts/menus/title_screen_menus/background"):get_title_surface()
+      title_logo:set_opacity(0)
       sol.menu.start(sol.main, credits)
       credits.started_from_menu = true
-    elseif selection == "language" then
-      if #sol.language.get_languages() <= 1 then
-        --only one language
-        sol.audio.play_sound"wrong"
-      else
-        sol.audio.play_sound"ok"
-        local lang_menu = require("scripts/menus/language")
-        lang_menu.choose_new_language = true
-        sol.menu.start(sol.main, lang_menu)      
-      end
+
+
+    elseif selection == "button_mapping" then
+      
 
     --Return
     elseif selection == "return" then

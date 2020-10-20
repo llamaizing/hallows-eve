@@ -62,7 +62,9 @@ function credits:show_next_name()
       if sol.main:get_game() then
         sol.main.reset()
       else
-        sol.menu.start(sol.main, require("scripts/menus/title_screen"))
+        local title_logo = require("scripts/menus/title_screen_menus/background"):get_title_surface()
+        title_logo:set_opacity(255)
+        sol.audio.play_music"title_screen"
       end
     end)
   end
@@ -73,5 +75,14 @@ function credits:on_draw(dst_surface)
   credits.top:draw(dst_surface, 200, 120)
   credits.bottom:draw(dst_surface, 200, 140)
 end
+
+function credits:on_key_pressed()
+  return true
+end
+
+function credits:on_joypad_button_pressed()
+  return true
+end
+
 
 return credits
