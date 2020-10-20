@@ -10,7 +10,7 @@ text{ key = "map.location.suburbs/neighborhood", value = "The Neighborhood" }
 text{ key = "map.location.suburbs/video_store", value = "The Video Store" }
 text{ key = "menu.pause.map_title", value = "Auburn Tourism Bureau" }
 text{ key = "menu.pause.objective", value = "Go to %s" }
-text{ key = "menu.title.button_mapping", value = "Button Mapping" }
+text{ key = "menu.title.button_mapping", value = "Map Buttons" }
 text{ key = "menu.title.cancel", value = "Cancel" }
 text{ key = "menu.title.clear_save", value = "Clear Save" }
 text{ key = "menu.title.continue", value = "Continue" }
@@ -18,3 +18,15 @@ text{ key = "menu.title.credits", value = "Credits" }
 text{ key = "menu.title.new_game", value = "New Game" }
 text{ key = "menu.title.options", value = "Options" }
 text{ key = "menu.title.quit", value = "Quit" }
+text{ key = "options.command.action", value = "Action" }
+text{ key = "options.command.attack", value = "Attack" }
+text{ key = "options.command.down", value = "Down" }
+text{ key = "options.command.item_1", value = "Item 1" }
+text{ key = "options.command.item_2", value = "Item 2" }
+text{ key = "options.command.left", value = "Left" }
+text{ key = "options.command.pause", value = "Pause" }
+text{ key = "options.command.right", value = "Right" }
+text{ key = "options.command.up", value = "Up" }
+text{ key = "options.commands_column", value = "Commands Column" }
+text{ key = "options.joypad_column", value = "Joypad Column" }
+text{ key = "options.keyboard_column", value = "Keyboard Column" }

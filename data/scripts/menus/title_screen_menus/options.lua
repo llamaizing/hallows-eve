@@ -101,7 +101,7 @@ function menu:process_selected_option(selection)
 
 
     elseif selection == "button_mapping" then
-      
+      sol.menu.start(sol.main, require("scripts/menus/title_screen_menus/button_mapping"))
 
     --Return
     elseif selection == "return" then
