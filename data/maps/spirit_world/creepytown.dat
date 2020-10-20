@@ -16327,6 +16327,7 @@ switch{
 }
 
 teletransporter{
+  name = "warp_portal_2",
   layer = 0,
   x = 56,
   y = 584,

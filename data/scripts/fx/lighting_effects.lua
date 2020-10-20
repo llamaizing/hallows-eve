@@ -180,6 +180,14 @@ function lighting_effects:on_draw(dst_surface)
       effects.parking_lot_light:draw(light_surface, x - cam_x, y - cam_y + 3)
     end
   end
+  --World Warp Portals
+  for e in map:get_entities("warp_portal") do
+    if e:is_enabled() and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.torch:draw(light_surface, x - cam_x, y - cam_y + 3)
+    end
+  end
+
 
   --explosions
   for e in map:get_entities_by_type("explosion") do

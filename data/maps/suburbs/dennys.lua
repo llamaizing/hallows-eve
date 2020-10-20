@@ -4,7 +4,6 @@ local hero = map:get_hero()
 
 map:register_event("on_started", function()
   map.light_fx:set_darkness_level(game:get_value("darkness_level"))
-  map.light_fx:set_darkness_level"dusk"
 
   local fog2 = require("scripts/fx/fog").new()
   fog2:set_props{
