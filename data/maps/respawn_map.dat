@@ -8,6 +8,15 @@ properties{
   tileset = "halloween",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 48,
+  height = 56,
+  pattern = "1",
+}
+
 destination{
   name = "destination",
   layer = 0,

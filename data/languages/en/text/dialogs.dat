@@ -1312,6 +1312,15 @@ kicking? Can solve most things that way.
 }
 
 dialog{
+  id = "farm.lizard_over_holes",
+  text = [[
+@Ichabod
+Wow, that bugger was going so fast he
+went right over the holes.
+]],
+}
+
+dialog{
   id = "farm.lizard_scene.1",
   text = [[
 @Zach
