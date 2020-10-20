@@ -22,10 +22,14 @@ function map:on_opening_transition_finished()
   hero:set_visible()
   if not game:get_value"witch_hut_scene_viewed" then
     sol.timer.start(map, 500, function()
+      game:set_value("witch_hut_scene_viewed", true)
       game:start_dialog"spirit_world.witch_hut.7"
       hero:unfreeze()
     end)
   end
+  local boss_bar = require"scripts/hud/boss_bar"
+  sol.menu.start(game, boss_bar)
+  boss_bar:set_enemy(boss)
 end
 
 function boss:on_dead()

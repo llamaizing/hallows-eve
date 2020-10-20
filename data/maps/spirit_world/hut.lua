@@ -25,7 +25,6 @@ function maggie:on_interaction()
       wait(1000)
       dialog"spirit_world.witch_hut.5"
       wait(200)
-      game:set_value("witch_hut_scene_viewed", true)
       map:it_a_trap()
     end)
   end

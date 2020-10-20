@@ -153,8 +153,10 @@ sprite{ id = "hero/trail", description = "Trail" }
 sprite{ id = "hero/tunic1", description = "Ichabod" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
+sprite{ id = "hud/health_bar", description = "Health Bar" }
 sprite{ id = "hud/heart", description = "Heart" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
+sprite{ id = "hud/stamina_bar_background", description = "stamina bar BG" }
 sprite{ id = "hud/swim_meter", description = "Swim Meter Blob" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/cursor", description = "Cursor" }
@@ -522,6 +524,7 @@ file{ path = "musics/malice.ogg", author = "Max Mraz", }
 file{ path = "scripts/coroutine_helper.lua", author = "std::gregwar", license = "GPL v3" }
 file{ path = "scripts/features.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "scripts/hud/boss_bar.lua", license = "GPL v3" }
 file{ path = "scripts/hud/consumables.lua", author = "Llamazing", license = "GPL v3" }
 file{ path = "scripts/hud/danger_edges.lua", author = "Max Mraz", }
 file{ path = "scripts/hud/hearts.lua", author = "Christopho", license = "GPL v3" }
@@ -775,12 +778,15 @@ file{ path = "sprites/hud/dialog_box.png", author = "Olivier Cléro", license = 
 file{ path = "sprites/hud/dialog_box_message_end.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/dialog_icons.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/empty_heart.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
+file{ path = "sprites/hud/health_bar.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/heart.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/hearts.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/interact_icon.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/magic_bar.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/magic_bar.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/magic_bar_background.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/hud/stamina_bar.png", license = "CC BY-SA 4.0" }
+file{ path = "sprites/hud/stamina_bar_background.dat", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/swim_meter.dat", author = "Max Mraz", license = "CC-BY 4.0" }
 file{ path = "sprites/menus", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
