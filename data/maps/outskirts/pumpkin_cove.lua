@@ -32,3 +32,20 @@ map:register_event("on_started", function()
   sol.menu.start(map, fog3)
 
 end)
+
+function map:on_opening_transition_finished()
+  if game:has_item"pumpkin_jordans" and not game:get_value"farm_seen_lizard_cross_holes" then
+    game:set_value("farm_seen_lizard_cross_holes", true)
+    local m = sol.movement.create"straight"
+    m:set_ignore_obstacles(true)
+    m:set_speed(200)
+    m:set_angle(0)
+    m:set_max_distance(400)
+    m:start(lizard, function()
+      lizard:remove()
+    end)
+    map:focus_on(lizard, function()
+
+    end)
+  end
+end

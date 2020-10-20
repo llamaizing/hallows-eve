@@ -4976,6 +4976,17 @@ enemy{
   breed = "spider_thing",
 }
 
+npc{
+  name = "lizard",
+  layer = 0,
+  x = 536,
+  y = 109,
+  enabled_at_start = false,
+  direction = 0,
+  subtype = 1,
+  sprite = "npcs/lizard",
+}
+
 tile{
   layer = 1,
   x = -40,
