@@ -3,6 +3,7 @@ local game = map:get_game()
 
 local trans_surf = sol.surface.create()
 trans_surf:set_opacity(0)
+local boss_bar = require"scripts/hud/boss_bar"
 
 map:register_event("on_started", function()
 
@@ -27,12 +28,13 @@ function map:on_opening_transition_finished()
       hero:unfreeze()
     end)
   end
-  local boss_bar = require"scripts/hud/boss_bar"
+
   sol.menu.start(game, boss_bar)
   boss_bar:set_enemy(boss)
 end
 
 function boss:on_dead()
+  sol.menu.stop(boss_bar)
   map:start_coroutine(function()
     sol.audio.play_sound"monster_scream"
     sol.audio.play_sound"monster_scream_short"
