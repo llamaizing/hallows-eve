@@ -27,7 +27,12 @@ function item:on_using()
   item.heal_timer = sol.timer.start(state, HEAL_TIME, function()
     game:remove_magic(MAGIC_COST)
     game:add_life(2)
-    return true
+    if game:get_life() < game:get_max_life() then
+      return true
+    else
+      hero:unfreeze()
+      item:set_finished()
+    end
   end)
 
   --End if button released
