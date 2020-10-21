@@ -1,8 +1,8 @@
 local item = ...
 local game = item:get_game()
 
-local MAGIC_COST = 30
-local HEAL_TIME = 1300
+local MAGIC_COST = 20
+local HEAL_TIME = 800
 
 function item:on_started()
   item:set_savegame_variable("possession_heal")
@@ -26,9 +26,8 @@ function item:on_using()
   hero:start_state(state)
   item.heal_timer = sol.timer.start(state, HEAL_TIME, function()
     game:remove_magic(MAGIC_COST)
-    game:add_life(3)
-    hero:unfreeze()
-    item:set_finished()
+    game:add_life(2)
+    return true
   end)
 
   --End if button released

@@ -14,7 +14,7 @@ function initial_game:initialize_new_savegame(game)
 
   -- You can modify this function to set the initial life and equipment
   -- and the starting location.
-  game:set_starting_location("debug", "destination")  -- Starting location.
+  game:set_starting_location("spirit_world/apartment", "start")  -- Starting location.
 
   game:set_max_life(6)
   game:set_life(game:get_max_life())

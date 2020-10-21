@@ -3112,9 +3112,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
+  x = 432,
   y = 792,
-  width = 64,
+  width = 80,
   height = 8,
   pattern = "46",
 }
@@ -3122,9 +3122,9 @@ tile{
 tile{
   layer = 0,
   x = 440,
-  y = 800,
+  y = 880,
   width = 8,
-  height = 112,
+  height = 32,
   pattern = "48",
 }
 
@@ -3526,7 +3526,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
+  x = 424,
   y = 792,
   width = 8,
   height = 8,
@@ -4812,6 +4812,159 @@ tile{
   pattern = "21",
 }
 
+tile{
+  layer = 0,
+  x = 424,
+  y = 800,
+  width = 8,
+  height = 80,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 880,
+  width = 16,
+  height = 8,
+  pattern = "53",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "54_2",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 800,
+  width = 16,
+  height = 80,
+  pattern = "45",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 680,
+  width = 48,
+  height = 16,
+  pattern = "21_3",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 712,
+  width = 48,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 696,
+  width = 48,
+  height = 16,
+  pattern = "21_2",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "low_stone_wall_1",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "low_stone_wall",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "low_stone_wall_2",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "low_stone_wall_1",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "low_stone_wall",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "low_stone_wall_2",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "15_2",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 1016,
+  width = 8,
+  height = 8,
+  pattern = "16",
+}
+
 destructible{
   layer = 0,
   x = 752,
@@ -4869,15 +5022,6 @@ teletransporter{
   height = 64,
   destination_map = "spirit_world/creepytown",
   destination = "destinationfrom_witch_area",
-}
-
-enemy{
-  name = "group_a_enemy_1",
-  layer = 0,
-  x = 448,
-  y = 1541,
-  direction = 0,
-  breed = "eyewight",
 }
 
 custom_entity{
@@ -5519,8 +5663,8 @@ door{
 enemy{
   name = "group_a_enemy_2",
   layer = 0,
-  x = 352,
-  y = 1589,
+  x = 288,
+  y = 1541,
   direction = 0,
   breed = "eyewight",
 }
@@ -6106,42 +6250,6 @@ enemy{
 }
 
 enemy{
-  name = "group_b_enemy_4",
-  layer = 0,
-  x = 216,
-  y = 1197,
-  direction = 0,
-  breed = "gremlin",
-}
-
-enemy{
-  name = "group_b_enemy_5",
-  layer = 0,
-  x = 136,
-  y = 1173,
-  direction = 0,
-  breed = "spider_thing",
-}
-
-enemy{
-  name = "group_b_enemy_6",
-  layer = 0,
-  x = 320,
-  y = 1285,
-  direction = 0,
-  breed = "spider_thing",
-}
-
-enemy{
-  name = "group_b_enemy_7",
-  layer = 0,
-  x = 264,
-  y = 1341,
-  direction = 0,
-  breed = "spider_thing",
-}
-
-enemy{
   name = "group_b_enemy_8",
   layer = 0,
   x = 128,
@@ -6413,19 +6521,10 @@ enemy{
 }
 
 enemy{
-  name = "group_d_enemy_7",
-  layer = 0,
-  x = 552,
-  y = 653,
-  direction = 0,
-  breed = "spider_thing",
-}
-
-enemy{
   name = "group_d_enemy_8",
   layer = 0,
-  x = 504,
-  y = 653,
+  x = 512,
+  y = 677,
   direction = 0,
   breed = "spider_thing",
 }
