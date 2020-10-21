@@ -103,10 +103,10 @@ end
 
 
 function enemy:choose_attack()
-  local rand = math.random(1,3)
-  if rand == 1 then enemy:shoot()
-  elseif rand == 2 then enemy:roar()
-  elseif rand == 3 then enemy:attack()
+  local rand = math.random(1,4)
+  if rand <= 2 then enemy:shoot()
+  elseif rand <= 3 then enemy:roar()
+  elseif rand <= 4 then enemy:attack()
   end
 end
 
