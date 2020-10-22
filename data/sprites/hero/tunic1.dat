@@ -219,6 +219,17 @@ animation{
   },
 }
 animation{
+  name = "flash",
+  src_image = "hero/ichabod.png",
+  frame_delay = 30,
+  directions = {
+    { x = 176, y = 912, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 912, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 912, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 176, y = 912, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
   name = "floating",
   src_image = "hero/caspian.png",
   frame_delay = 250,

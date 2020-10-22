@@ -19,7 +19,7 @@ function enemy:on_created()
   --set proper windup time
   WIND_UP_TIME = sprite:get_num_frames("charging", 0) * sprite:get_frame_delay("charging")
   enemy:set_life(2)
-  enemy:set_damage(3)
+  enemy:set_damage(2)
 
   ghost_sprite = enemy:create_sprite("enemies/"..enemy:get_breed(), "ghost_aura")
   enemy:bring_sprite_to_back(ghost_sprite)

@@ -1,8 +1,8 @@
 local item = ...
 local game = item:get_game()
 
-local MAGIC_COST = 20
-local HEAL_TIME = 800
+local MAGIC_COST = 13
+local HEAL_TIME = 1100
 
 function item:on_started()
   item:set_savegame_variable("possession_heal")
@@ -23,16 +23,19 @@ function item:on_using()
   end
 
   hero:set_animation"healing"
-  sol.audio.play_sound"charge_leaf"
   hero:start_state(state)
   item.heal_timer = sol.timer.start(state, HEAL_TIME, function()
     game:remove_magic(MAGIC_COST)
     game:add_life(2)
-    if game:get_life() < game:get_max_life() then
+    hero:set_animation("flash", function() hero:set_animation"healing" end)
+    sol.audio.play_sound"charge_leaf"
+    if game:get_life() < game:get_max_life() and game:get_magic() >= MAGIC_COST then
       return true
     else
-      hero:unfreeze()
-      item:set_finished()
+      sol.timer.start(hero, 30, function()
+        hero:unfreeze()
+        item:set_finished()
+      end)
     end
   end)
 
