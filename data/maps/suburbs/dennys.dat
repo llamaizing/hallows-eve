@@ -3848,6 +3848,7 @@ teletransporter{
   layer = 0,
   x = 520,
   y = 168,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   destination_map = "spirit_world/creepytown",

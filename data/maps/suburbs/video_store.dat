@@ -399,7 +399,7 @@ npc{
   layer = 0,
   x = 208,
   y = 93,
-  direction = 3,
+  direction = 0,
   subtype = 1,
   sprite = "npcs/caleb",
 }

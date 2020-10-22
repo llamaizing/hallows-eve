@@ -3,7 +3,14 @@ local language_manager = require("scripts/language_manager")
 
 local options_submenu = submenu:new()
 
+
+function options_submenu:on_finished()
+  sol.main.get_game():get_hero():unfreeze()
+end
+
 function options_submenu:on_started()
+  local game = sol.main.get_game()
+  game:get_hero():freeze()
 
   submenu.on_started(self)
 
@@ -113,7 +120,6 @@ function options_submenu:on_started()
   self.cursor_position = nil
   self:set_cursor_position(1)
 
-  self.game:set_custom_command_effect("action", "change")
 end
 
 -- Loads the text displayed for each game command, for the
@@ -208,10 +214,8 @@ function options_submenu:on_command_pressed(command)
 
   if not handled then
     if command == "left" then
-      self:previous_submenu()
       handled = true
     elseif command == "right" then
-      self:next_submenu()
       handled = true
     elseif command == "up" then
       sol.audio.play_sound("cursor")

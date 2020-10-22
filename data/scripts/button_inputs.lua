@@ -70,7 +70,14 @@ function menu:initialize(game)
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
 
-    if key == "r"  and debug_mode then
+    if key == "q" then
+      if not sol.menu.is_started(require"scripts/menus/button_mapping_in_game") then
+        sol.menu.start(game, require"scripts/menus/button_mapping_in_game")
+      else
+        sol.menu.stop(require"scripts/menus/button_mapping_in_game")
+      end
+
+    elseif key == "r"  and debug_mode then
       if hero:get_walking_speed() == 300 then
         hero:set_walking_speed(debug.normal_walking_speed)
       else
@@ -91,7 +98,6 @@ function menu:initialize(game)
       game:set_life(game:get_max_life())
 
     elseif key == "j" and debug_mode then
---      game:remove_life(10)
       hero:start_hurt(2)
 
     elseif key == "m" and debug_mode then

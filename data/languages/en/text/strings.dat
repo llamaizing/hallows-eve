@@ -30,3 +30,6 @@ text{ key = "options.command.up", value = "Up" }
 text{ key = "options.commands_column", value = "Command" }
 text{ key = "options.joypad_column", value = "Joypad" }
 text{ key = "options.keyboard_column", value = "Keyboard" }
+text{ key = "save_dialog.no", value = "No" }
+text{ key = "save_dialog.yes", value = "Yes" }
+text{ key = "selection_menu.options.video_mode", value = "Video mode" }

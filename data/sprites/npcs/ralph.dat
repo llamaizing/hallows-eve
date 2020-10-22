@@ -3,6 +3,9 @@ animation{
   src_image = "npcs/ralph.png",
   directions = {
     { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
   },
 }
 animation{
@@ -12,12 +15,18 @@ animation{
   frame_to_loop_on = 0,
   directions = {
     { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61, num_frames = 2 },
   },
 }
 animation{
   name = "looking_up",
   src_image = "npcs/ralph.png",
   directions = {
+    { x = 96, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
+    { x = 96, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
+    { x = 96, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
     { x = 96, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61 },
   },
 }

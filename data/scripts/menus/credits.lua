@@ -33,8 +33,8 @@ end
 function credits:on_finished() self.dialog_text = nil end
 
 function credits:roll()
-  self.black:fade_in(150, function()
-    sol.timer.start(self, 100, function()
+  self.black:fade_in(10, function()
+    sol.timer.start(self, 10, function()
       self.next_text = self.dialog_text:gmatch("([^\n]*)\n") --each line including empty ones
       self:show_next_name()
     end)

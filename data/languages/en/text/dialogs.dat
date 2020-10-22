@@ -203,6 +203,13 @@ dialog{
   id = "controls.kick",
   text = [[
 Press C to kick ghosts
+ 
+ 
+Press X to use any special attacks you've
+equipped from the pause menu (D).
+ 
+Special attacks use energy.
+Refill your energy by kicking ghosts.
 ]],
 }
 
@@ -1823,7 +1830,7 @@ come alive, feeding off their fear.
 You're a bit spooky dear. Better hope none of them
 see you. The creatures in their shadows might just
 decide to pull you into the darkness.
-This this be a lesson not to try and interfere with
+Let this be a lesson not to try and interfere with
 my plans, pumpkin man.
 ]],
 }
@@ -1849,7 +1856,7 @@ dialog{
   text = [[
 @Ralph
 Oh, did you remember to get any
-human ceral for me while you were out?
+human cereal for me while you were out?
 ]],
 }
 

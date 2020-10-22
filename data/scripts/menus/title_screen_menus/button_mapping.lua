@@ -120,6 +120,7 @@ function menu:load_command_texts()
 
   self.commands_surface:clear()
   for i = 1, #self.command_names do
+print("Keyboard binding to get", self.command_names[i])
     local keyboard_binding = sol.main:get_command_keyboard_binding(self.command_names[i])
     local joypad_binding = sol.main:get_command_joypad_binding(self.command_names[i])
     self.keyboard_texts[i]:set_text(keyboard_binding:sub(1, 9))
@@ -197,7 +198,14 @@ end
 
 
 function menu:on_key_pressed(key)
-  if key == "up" or key == "down" or key == "left" or key == "right" then
+  if self.command_customizing then
+    print("command to customize:", self.command_to_customize)
+    print("command customizing, new key:", key)
+    sol.audio.play_sound("danger")
+    self.cursor_sprite:set_animation("small")
+    self:load_command_texts()
+
+  elseif key == "up" or key == "down" or key == "left" or key == "right" then
     menu:on_command_pressed(key)
   elseif key == "space" or key == "return" then
     menu:on_command_pressed("action")
@@ -208,7 +216,7 @@ function menu:on_key_pressed(key)
 end
 
 function menu:on_command_pressed(command)
-  if self.command_customizing ~= nil then
+  if self.command_customizing then
     -- We are customizing a command: any key pressed should have been handled before.
     error("options_submenu:on_command_pressed() should not called in this state")
   end
@@ -225,24 +233,15 @@ function menu:on_command_pressed(command)
       self:set_cursor_position(self.cursor_position % 10 + 1)
       handled = true
     elseif command == "action" then
-print"ACTION"
-print(self.cursor_position, self.cursor_sprite.x, self.cursor_sprite.y)
       if self.cursor_position == 1 then
         sol.menu.stop(menu)
         handled = true
       else
         sol.audio.play_sound("danger")
         -- Customize a game command.
-        --self:set_caption("options.caption.press_key")
-        --self.cursor_sprite:set_animation("small_blink")
-        local command_to_customize = self.command_names[self.cursor_position - 1]
-        sol.main:capture_command_binding(command_to_customize, function()
-          sol.audio.play_sound("danger")
-          --self:set_caption("options.caption.press_action_customize_key")
-          --self.cursor_sprite:set_animation("small")
-          self:load_command_texts()
-          -- TODO restore HUD icons.
-        end)
+        self.cursor_sprite:set_animation("small_blink")
+        self.command_customizing = true
+        self.command_to_customize = self.command_names[self.cursor_position - 1]
         handled = true
       end
 

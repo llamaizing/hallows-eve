@@ -14230,6 +14230,24 @@ tile{
   tileset = "halloween",
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 144,
+  width = 16,
+  height = 24,
+  pattern = "123_2",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 208,
+  width = 16,
+  height = 24,
+  pattern = "123_2",
+}
+
 sensor{
   name = "see_portal_sensor",
   layer = 0,
@@ -15868,17 +15886,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "^lighting_effect_candle_60",
-  layer = 0,
-  x = 1472,
-  y = 256,
-  width = 16,
-  height = 24,
-  pattern = "61_2",
-  tileset = "yarntown",
-}
-
-dynamic_tile{
   name = "^lighting_effect_candle_61",
   layer = 0,
   x = 1696,
@@ -15890,21 +15897,10 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "^lighting_effect_candle_62",
-  layer = 0,
-  x = 1472,
-  y = 320,
-  width = 16,
-  height = 24,
-  pattern = "61",
-  tileset = "yarntown",
-}
-
-dynamic_tile{
   name = "^lighting_effect_candle_63",
   layer = 0,
-  x = 1520,
-  y = 168,
+  x = 1776,
+  y = 104,
   width = 16,
   height = 24,
   pattern = "61",
@@ -20143,24 +20139,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "118",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 144,
-  width = 16,
-  height = 24,
-  pattern = "123_2",
-}
-
-tile{
-  layer = 1,
-  x = 40,
-  y = 208,
-  width = 16,
-  height = 24,
-  pattern = "123_2",
 }
 
 tile{

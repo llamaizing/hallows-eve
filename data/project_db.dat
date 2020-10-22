@@ -452,6 +452,7 @@ file{ path = "items/seed_shoot.lua", author = "Max Mraz", }
 file{ path = "items/small_key.lua", author = "Max Mraz", }
 file{ path = "items/soccer_kick.lua", author = "Max Mraz", }
 file{ path = "items/spin_kick.lua", author = "Max Mraz", }
+file{ path = "languages/en/images/pause_submenus.png", author = "Solarus Team", license = "CC-BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "maps/haunted_house/basement.dat", author = "Max Mraz", }
 file{ path = "maps/haunted_house/basement.lua", author = "Max Mraz", }

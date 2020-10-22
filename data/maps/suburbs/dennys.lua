@@ -13,6 +13,14 @@ map:register_event("on_started", function()
   }
   --sol.menu.start(map, fog2)
 
+  if game:get_value("lizard_eaten") then
+    warp_portal:set_enabled(true)
+
+    maggie:set_enabled(false)
+    lizard:set_enabled(false)
+    zach:set_enabled(false)
+    toby:set_enabled(false)
+  end
 
 end)
 
@@ -96,7 +104,8 @@ function cutscene_sensor:on_activated()
       toby:set_enabled(false)
       zach:set_enabled(false)
       camera:start_tracking(hero)
-      map:focus_on(from_creepytown, function() game:start_dialog"dennys.22" end)
+      warp_portal:set_enabled(true)
+      map:focus_on(warp_portal, function() game:start_dialog"dennys.22" end)
       game:set_value("current_objective", nil)
       game:set_value("lizard_eaten", true)
       hero:unfreeze()
