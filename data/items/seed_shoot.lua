@@ -21,6 +21,7 @@ function item:on_using(props)
     return
   end
   game:remove_magic(MAGIC_COST)
+  sol.audio.play_sound"throw_whip"
 
   hero:set_animation("shoot_seed", function()
     item:set_finished()
@@ -32,7 +33,7 @@ function item:on_using(props)
     local x, y, z = hero:get_position()
     local projectile = map:create_custom_entity{
       x = x + game:dx(8)[dir4],
-      y = y + game:dy(8)[dir4] - 8,
+      y = y + game:dy(8)[dir4],
       layer = z,
       width = 8, height = 8,
       direction = dir4,
