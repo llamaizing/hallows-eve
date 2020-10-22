@@ -561,6 +561,7 @@ destination{
 }
 
 teletransporter{
+  name = "ravine_to_farm_teleporter",
   layer = -1,
   x = 1232,
   y = 464,

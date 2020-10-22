@@ -24,6 +24,7 @@ map:register_event("on_started", function()
   if game.lizard_flood_started and not game:get_value("lizard_flood_finished") then
     map:start_spawning_lizards()
     game:set_value("darkness_level", "sunset")
+    ravine_to_farm_teleporter:set_enabled(false)
   end
 
 
