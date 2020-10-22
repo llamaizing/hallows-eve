@@ -21,6 +21,7 @@ map{ id = "outskirts/pumpkin_cove", description = "Pumpkin Cove" }
 map{ id = "outskirts/pumpkin_inside", description = "Pumpkin Inside" }
 map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
+map{ id = "spirit_world/challenge_islands/forest", description = "Forest" }
 map{ id = "spirit_world/challenge_islands/test", description = "Test" }
 map{ id = "spirit_world/credits_apartment", description = "Credits Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
@@ -498,6 +499,8 @@ file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
 file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/forest.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/forest.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/credits_apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/credits_apartment.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/hut.dat", author = "Max Mraz", }

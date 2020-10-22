@@ -6895,6 +6895,24 @@ tile{
   pattern = "86",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "26",
+}
+
 teletransporter{
   layer = 0,
   x = 256,
@@ -7191,8 +7209,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 112,
-  y = 597,
+  x = 88,
+  y = 573,
   width = 16,
   height = 16,
   direction = 0,
@@ -9858,15 +9876,6 @@ teletransporter{
   destination = "from_forest",
 }
 
-chest{
-  layer = 0,
-  x = 104,
-  y = 573,
-  treasure_name = "pumpkin_seed",
-  treasure_savegame_variable = "pumpkin_seed_forest",
-  sprite = "chests/chest",
-}
-
 sensor{
   name = "see_tree_sensor",
   layer = 0,
@@ -9887,6 +9896,26 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destination{
+  name = "from_spirit_challenge",
+  layer = 0,
+  x = 104,
+  y = 605,
+  direction = 3,
+}
+
+teletransporter{
+  name = "warp_portal",
+  layer = 0,
+  x = 96,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "spirit_world/challenge_islands/forest",
+  destination = "from_mortal_world",
+  sprite = "entities/portal",
 }
 
 tile{
