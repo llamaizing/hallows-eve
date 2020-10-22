@@ -40,7 +40,7 @@ function entity:fire(angle)
 --  local shadow_sprite = entity:create_sprite"shadows/shadow_small"
 --  entity:bring_sprite_to_back(shadow_sprite)
   local m = sol.movement.create"straight"
-  m:set_speed(250)
+  m:set_speed(300)
   m:set_angle(angle)
   m:set_smooth(false)
   m:start(entity)

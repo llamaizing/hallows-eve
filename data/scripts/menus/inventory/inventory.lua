@@ -505,6 +505,9 @@ function menu_manager:init(game, config)
 	
 	--// Process user input commands per INPUTS table
 	function menu:on_command_pressed(command)
+    if command == "left" or command == "right" or command == "up" or command == "down" then
+      sol.audio.play_sound"cursor"
+    end
 		local list = INPUTS[command]
 		if type(list)=="string" then
 			self[list](self)
