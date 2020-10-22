@@ -26,6 +26,9 @@ function game_manager:create(file, overwrite)
   require("scripts/button_inputs"):initialize(game)
   require("scripts/menus/inventory/inventory"):init(game, "standard")
   require("scripts/game_over"):init(game)
+  sol.timer.start(sol.main, 50, function()
+ 	sol.menu.start(game, require"scripts/menus/item_test")
+ end)
 
 
   return game
