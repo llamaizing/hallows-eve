@@ -16,7 +16,7 @@ function initial_game:initialize_new_savegame(game)
   -- and the starting location.
   game:set_starting_location("spirit_world/apartment", "start")  -- Starting location.
 
-  game:set_max_life(6)
+  game:set_max_life(8)
   game:set_life(game:get_max_life())
   game:set_max_magic(40)
   game:set_magic(game:get_max_magic())

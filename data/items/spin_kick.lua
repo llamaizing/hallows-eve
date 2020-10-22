@@ -22,6 +22,7 @@ function item:on_using()
   local state = item:get_spin_state()
 
   hero:start_state(state)
+  sol.audio.play_sound"spin_kick"
   hero:set_animation("spin_attack", function() hero:set_animation"stopped" end)
   local x,y,z = hero:get_position()
   local dir = hero:get_direction()

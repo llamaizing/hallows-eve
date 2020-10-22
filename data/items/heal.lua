@@ -22,7 +22,8 @@ function item:on_using()
     return
   end
 
-  hero:set_animation"glowing"
+  hero:set_animation"healing"
+  sol.audio.play_sound"charge_leaf"
   hero:start_state(state)
   item.heal_timer = sol.timer.start(state, HEAL_TIME, function()
     game:remove_magic(MAGIC_COST)
@@ -43,8 +44,22 @@ function item:on_using()
       hero:unfreeze()
       item:set_finished()
     end
-
   end)
+
+  --Create leaf visual effect
+  sol.timer.start(hero, 200, function()
+    if hero:get_state_object() == state then
+      sol.audio.play_sound"leaf_rattle"
+      local leaf_sprite = hero:create_sprite("entities/leaf_blowing")
+      local m = sol.movement.create("random")
+      m:start(leaf_sprite)
+      leaf_sprite:set_animation("fade_out", function()
+        hero:remove_sprite(leaf_sprite)
+      end)
+      return true
+    end
+  end)
+
 end
 
 

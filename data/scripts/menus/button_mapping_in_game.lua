@@ -79,7 +79,7 @@ function options_submenu:on_started()
   self.command_texts = {}
   self.keyboard_texts = {}
   self.joypad_texts = {}
-  self.command_names = { "action", "attack", "item_1", "item_2", "pause", "left", "right", "up", "down" }
+  self.command_names = { "action", "attack", "item_1", "item_2", "pause", "left", "right", "up", "down"}
   for i = 1, #self.command_names do
 
     self.command_texts[i] = sol.text_surface.create{

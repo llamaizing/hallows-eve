@@ -1852,6 +1852,15 @@ Ehehehehehehe! Fuck you.
 }
 
 dialog{
+  id = "neighborhood.hide_in_flowers",
+  text = [[
+@Ichabod
+I could probably hide in those sunflowers
+so these people don't see me.
+]],
+}
+
+dialog{
   id = "spirit_world.apartment.ending_1",
   text = [[
 @Ralph

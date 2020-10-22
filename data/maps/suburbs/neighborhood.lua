@@ -97,6 +97,14 @@ for entity in map:get_entities("sentry_adult_spin") do
 end
 
 
+function hide_in_sunflowers_sensor:on_activated()
+  if not game:get_value"seen_sunflower_hide_idea" then
+    game:set_value("seen_sunflower_hide_idea", true)
+    game:start_dialog"neighborhood.hide_in_flowers"
+    hide_in_sunflowers_sensor:remove()
+  end
+end
+
 
 function map:acimonia_cutscene()
   map:start_coroutine(function()

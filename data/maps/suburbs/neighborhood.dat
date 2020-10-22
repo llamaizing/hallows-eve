@@ -9282,6 +9282,15 @@ wall{
   stops_projectiles = true,
 }
 
+sensor{
+  name = "hide_in_sunflowers_sensor",
+  layer = 0,
+  x = 232,
+  y = 909,
+  width = 800,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = -16,

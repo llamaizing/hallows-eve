@@ -210,6 +210,8 @@ music{ id = "trailer", description = "trailer" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "ball_kick", description = "Ball Kick" }
+sound{ id = "ball_kick_harder", description = "ball_kick_harder" }
+sound{ id = "bell", description = "bell" }
 sound{ id = "bird_chirp", description = "bird_chirp" }
 sound{ id = "bird_chirp1", description = "bird_chirp1" }
 sound{ id = "bird_chirp2", description = "bird_chirp2" }
