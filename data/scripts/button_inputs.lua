@@ -69,12 +69,13 @@ function menu:initialize(game)
   --Key Presses
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
+    local button_menu = require"scripts/menus/button_mapping_in_game"
 
     if key == "q" then
-      if not sol.menu.is_started(require"scripts/menus/button_mapping_in_game") then
-        sol.menu.start(game, require"scripts/menus/button_mapping_in_game")
+      if not sol.menu.is_started(button_menu) and hero:get_state() ~= "frozen" then
+        sol.menu.start(game, button_menu)
       else
-        sol.menu.stop(require"scripts/menus/button_mapping_in_game")
+        sol.menu.stop(button_menu)
       end
 
     elseif key == "r"  and debug_mode then

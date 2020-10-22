@@ -247,10 +247,17 @@ function options_submenu:on_command_pressed(command)
         -- TODO grey over HUD icons, make the icon of the command blink.
       end
       handled = true
+
+    elseif command == "pause" or command == "attack" then
+      sol.menu.stop(self)
     end
   end
 
   return handled
+end
+
+function options_submenu:on_key_pressed(key)
+
 end
 
 return options_submenu
