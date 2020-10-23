@@ -256,6 +256,19 @@ function options_submenu:on_command_pressed(command)
   return handled
 end
 
+
+--Avoid analog stick wildly jumping
+local joy_avoid_repeat = {-2, -2}
+
+function options_submenu:on_joypad_axis_moved(axis, state)
+
+  local handled = joy_avoid_repeat[axis % 2] == state
+  joy_avoid_repeat[axis % 2] = state
+
+  return handled
+end
+
+
 function options_submenu:on_key_pressed(key)
 
 end
