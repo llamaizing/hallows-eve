@@ -32,7 +32,7 @@ map:register_event("on_started", function()
 
   local fog4 = require("scripts/fx/fog").new()
   fog4:set_props{
-  	fog_texture = {png = "fogs/fog_1.png", mode = "blend", opacity = 40},
+  	fog_texture = {png = "fogs/fog.png", mode = "blend", opacity = 40},
   	opacity_range = {50,100},
     drift = {10, 0, -1, 1}
   }

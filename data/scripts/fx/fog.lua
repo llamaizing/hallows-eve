@@ -45,7 +45,7 @@ function fog_manager.new()
 		if not fog_menu.props_set then fog_menu:set_props() end
     sol.menu.bring_to_back(fog_menu) --so that it'll be behind the lighting_effects
 
-		surface = sol.surface.create(fog_menu.texture.png or "fogs/fog.png")
+		surface = sol.surface.create(fog_menu.texture or "fogs/fog.png")
 		surface:set_blend_mode(fog_menu.texture.mode or "blend")
 		surface:set_opacity(fog_menu.texture.opacity or 100)
 
