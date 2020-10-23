@@ -353,7 +353,8 @@ function quick_item_builder:init(game)
 	
 	function menu:on_draw(dst_surface)
 		if is_visible then
-			
+			local camera = game:get_map():get_camera()
+			local camera_x, camera_y = camera:get_position()
 			local hero_x, hero_y = hero:get_position()
 			local w = offset.x + zero_w
 			
@@ -362,7 +363,11 @@ function quick_item_builder:init(game)
 					local w = w + (i-2)*W_STEP
 					local offset_x = X_RANGE * math__sin(w * math__pi/2 / W_STEP)
 					local offset_y = -Y_RANGE/W_STEP^2 * w * w
-					item_sprite:draw(dst_surface, hero_x+offset_x, hero_y-40+offset_y)
+					item_sprite:draw(
+						dst_surface,
+						hero_x - camera_x + offset_x,
+						hero_y - camera_y - 40 + offset_y
+					)
 				end
 			end
 		end
