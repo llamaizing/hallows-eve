@@ -30,9 +30,11 @@ return {
         cursor_wrap = true,
         cursor = {
           image = {
-            path = "demo/hud/cursor/icons/individual_icons/book_04e.png",
-            x_offset = 0,
-            y_offset = -8
+            path = "menus/cursor",
+            sprite = {
+              "walking"
+            },
+            x_offset = 8,
           }
         }
       }

@@ -1784,6 +1784,15 @@ spinny statue mechanism.
 }
 
 dialog{
+  id = "menus.quit_question",
+  text = [[
+Return to title screen?
+$? Yes
+$? No
+]],
+}
+
+dialog{
   id = "neighborhood.acimonia_scene.1",
   text = [[
 @Acimonia

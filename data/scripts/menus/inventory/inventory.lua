@@ -508,6 +508,7 @@ function menu_manager:init(game, config)
     if command == "left" or command == "right" or command == "up" or command == "down" then
       sol.audio.play_sound"cursor"
     end
+
 		local list = INPUTS[command]
 		if type(list)=="string" then
 			self[list](self)
@@ -516,6 +517,14 @@ function menu_manager:init(game, config)
 			self[ list[1] ](self, unpack(list, 2))
 			return true
 		end
+
+    if command == "attack" then
+      game:start_dialog("menus.quit_question", function(answer)
+        if answer == 2 then
+          sol.main.reset()
+        end
+      end)
+    end
 	end
 	
 	--// Draws the menu each frame

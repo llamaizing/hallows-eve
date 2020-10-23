@@ -78,6 +78,9 @@ function menu:initialize(game)
         sol.menu.stop(button_menu)
       end
 
+    elseif key == "escape" then
+      game:simulate_command_pressed("pause")
+
     elseif key == "r"  and debug_mode then
       if hero:get_walking_speed() == 300 then
         hero:set_walking_speed(debug.normal_walking_speed)
