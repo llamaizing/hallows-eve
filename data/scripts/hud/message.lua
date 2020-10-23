@@ -1,3 +1,5 @@
+--I have no idea what this menu is for. Don't think I've ever used it for anything -Max
+
 local message_menu = {}
 
 local text_surface = sol.text_surface.create()
