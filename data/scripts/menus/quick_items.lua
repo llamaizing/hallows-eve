@@ -1,6 +1,6 @@
 --[[ quick_items.lua
 	version 1.0
-	21 Oct 2020
+	22 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -12,8 +12,12 @@
 	This menu script is displayed on the HUD when the player scrolls through the available
 	slot #1 items to quickly change items without opening the pause menu.
 	
+	The menu is always active while a game is running to process user inputs, but the menu
+	is no longer visible after a delay from the last time that the active item is changed.
+	
 	Usage:
-	Started automatically by the scripts/hud/hud.lua script
+	require("scripts/menus/quick_items.lua"):init(game)
+	game.quick_menu --access the menu from other scripts
 --]]
 
 local quick_item_builder = {}
@@ -37,53 +41,53 @@ local INPUT_LIST = {
 	joypad_button = {left=5, right=6, get_input="is_joypad_button_pressed"},
 }
 
+--list of items that can be assigned to slot #1
 local ITEM_LIST = {
 	"seed_shoot",
 	"soccer_kick",
 	"spin_kick",
 }
+for i,item_name in ipairs(ITEM_LIST) do ITEM_LIST[item_name] = i end --reverse lookup
 
+--converts directions "right" and "left" to amounts to shift carousel
 local DIRECTIONS = {
 	left = -1,
 	right = 1,
 }
 
 
-
---// update x scale (spin effect) of carousel sprites based on current offset.x value
---called by movement:on_position_changed() event for offset object; don't want to update scale in on_draw()
-local function update_scale()
-	local w = offset.x + zero_w
-	for i,item_sprite in ipairs(carousel) do
-		if item_sprite then --ignore non-visible sprites (value of false)
-			local scale_x = math__cos((w + (i-2)*W_STEP) * math__pi/2 / W_STEP)
-			item_sprite:set_scale(scale_x, 1)
-		end
-	end
-end
-
-function quick_item_builder:new(game, config)
+function quick_item_builder:init(game)
 	local menu = {}
+	local hero = game:get_hero()
 	
-	local INITIAL_DELAY = 750 --time in ms to begin scrolling when button held
-	local REPEAT_DELAY = 500 --time in ms until moving to next item while scrolling
+	if game.quick_items then return end --only init once per game
+	game.quick_items = menu
 	
-	--local scroll_direction
-	local timer
+	local INITIAL_DELAY = 600 --time in ms to begin scrolling when button held
+	local REPEAT_DELAY = 300 --time in ms until moving to next item while scrolling
+	local HIDE_DELAY = 1000 --time in ms to hide menu after movement finished
 	
-	local active_inputs = {}
+	local is_visible = false --(boolean) menu only drawn if true (hide until button pressed)
+	local scroll_direction --(string or nil) "right" or "left" for direction of scrolling when button held down; nil for not active
+	local repeat_timer --(sol.timer) repeating timer for when scrolling button held down
+	local hide_timer --(sol.timer) timer from end of movement to hide menu
+	
+	local active_inputs = {} --(table, key/value) keeps track of held down buttons; keys are "key" or "joy_button"
+		--values are "right" or "left" corresponding to button held down, or nil for none
 	--local item_list = {}
 	
-	local item_sprites = {} --list of item sprites player currently has in inventory
-	local item_index --item_sprites index for currently selected sprite
-	local carousel = {} --list of item sprites currently visible in on-screen selector
+	local item_sprites = {} --(table, array) list of item sol.sprites player currently has in inventory (circular buffer)
+	local item_index --(number, positive integer) item_sprites index for currently selected sprite
+		--NOTE: nil until menu:on_started() and nil again after menu:on_finished()
+	local carousel = {} --(table, array) list of item sol.sprites currently visible in on-screen selector
 		--index 1 is item on left, index 2 is current item, index 3 is item on right
-		--value changed to false for indices 1 & 3 when sprite no longer visible
+		--value is false for indices 1 & 3 when sprite no longer visible
+		--NOTE: ensure same sprite does not exist in array more than one time or else both will have same x_scale (bad!)
 	
 	local carousel_movt --(sol.movement) equal to nil when movement not active
 	local offset = {x=0, y=0} --movement object whose x value is used to calculate x, y & spin coordinates of carousel sprites
-	local zero_w = 0 --left movements decrease by W_STEP, right movements increase by W_STEP, keeps track of position of current item
-	local overflow = 0 --if items cycled faster than animation then keep track of excess here and skip animation ahead to keep up
+	local zero_w = 0 --(number, integer) left movements decrease by W_STEP, right movements increase by W_STEP, keeps track of position of current item
+	local overflow = 0 --(number, integer) if items cycled faster than animation then keep track of excess here and skip animation ahead to keep up
 		--negative integers add left motion, positive integers add right motion
 	
 	--// Returns an item sprite relative to the current item
@@ -94,34 +98,46 @@ function quick_item_builder:new(game, config)
 		return item_sprites[index]
 	end
 	
-	--[[
-	local function next_item(direction)
-		direction = direction or scroll_direction
-		local amount = DIRECTIONS[direction]
-		
-		if #item_list > 1 and amount then
-			item_index = (item_index + amount - 1)%#item_list + 1
-			local new_item_name = item_list[item_index]
-			local new_item = new_item_name and game:get_item(new_item_name)
-			if new_item then game:set_item_assigned(1, new_item) end
-			
-			--TODO create movement
+	--// update x scale (spin effect) of carousel sprites based on current offset.x value
+	--called by movement:on_position_changed() event for offset object; don't want to update scale in on_draw()
+	local function update_scale()
+		local w = offset.x + zero_w
+		for i,item_sprite in ipairs(carousel) do
+			if item_sprite then --ignore non-visible sprites (value of false)
+				local scale_x = math__cos((w + (i-2)*W_STEP) * math__pi/2 / W_STEP)
+				item_sprite:set_scale(scale_x, 1)
+			end
 		end
 	end
 	
-	local function start_timer()
-		if timer then timer:stop() end
-		timer = sol.timer.start(menu, INITIAL_DELAY, function()
-			next_item()
+	--// Stops existing repeat_timer
+	local function start_repeat_timer()
+		if repeat_timer then repeat_timer:stop() end
+		repeat_timer = sol.timer.start(menu, INITIAL_DELAY, function()
+			if not scroll_direction then return end --abort if scroll_direction no longer set
+			menu:advance(DIRECTIONS[scroll_direction])
 			return REPEAT_DELAY
 		end)
-		timer:set_suspended_with_map(true)
+		repeat_timer:set_suspended_with_map(true)
 	end
-	]]
+	
+	local function start_hide_timer()
+		if hide_timer then hide_timer:stop() end
+		hide_timer = sol.timer.start(menu, HIDE_DELAY, function()
+			is_visible = false
+		end)
+		hide_timer:set_suspended_with_map(true)
+	end
 	
 	local function input_pressed(direction, input_type)
 		if not direction then return end
 		if active_inputs[input_type] == direction then return end --ignore double-presses
+		
+		assert(type(direction)=="string", "Bad argument #1 to 'input_pressed' (string expected)")
+		local amount = DIRECTIONS[direction]
+		assert(amount, "Bad argument #1 to 'input_pressed', invalid direction: "..direction)
+		
+		is_visible = true
 		
 		--clear any active inputs in different direction
 		for input,dir in pairs(active_inputs) do
@@ -129,19 +145,16 @@ function quick_item_builder:new(game, config)
 		end
 		active_inputs[input_type] = direction
 		
-		--direction changed, restart timer
-		if scroll_direction ~= direction then
-			scroll_direction = direction
-			start_timer()
-		else --already scrolling
-			--advance item immediately if not in middle of movement
-			--TODO
-		end
+		scroll_direction = direction
+		menu:advance(amount)
+		if not repeat_timer then start_repeat_timer() end
 	end
 	
 	local function input_released(direction, input_type)
 		if not direction then return end
-		if active_inputs[input_type] == direction then --ignore release if wasn't previously active
+		assert(type(direction)=="string", "Bad argument #1 to 'input_released' (string expected)")
+		
+		if active_inputs[input_type] == direction then
 			active_inputs[input_type] = nil
 			
 			local is_scrolling = false --tentative
@@ -155,20 +168,28 @@ function quick_item_builder:new(game, config)
 			--no inputs active anymore, stop scrolling
 			if not is_scrolling then
 				scroll_direction = nil
-				if timer then timer:stop() end
+				if repeat_timer then repeat_timer:stop(); repeat_timer = nil end
+				if not hide_timer then start_hide_timer() end
 			end
-		end
+		end --else ignore release if wasn't previously active
 	end
 	
+	--// Advances carousel by amount
+		--amount (number, integer) - amount to move carousel (positive moves right, negative left)
+			--NOTE: if already moving then amount gets added to overflow and will take effect later
 	function menu:advance(amount)
 		amount = tonumber(amount or 0)
 		assert(amount, "Bad argument #1 to 'advance' (number expected)")
 		amount = math__floor(amount)
 		
-		overflow = overflow + amount
-		if overflow==0 then return end --don't do anything if returned to original position
+		if hide_timer then hide_timer:stop(); hide_timer = nil end
 		
-		if math__abs(overflow)%#item_sprites == 0 then return end --do nothing if would spin back to current item
+		overflow = overflow + amount
+		if overflow==0 then return end --don't do anything if returned to original position (prevents same sprite from appearing twice in carousel)
+		
+		if math__abs(overflow) % #item_sprites == 0 then return end --do nothing if would spin back to current item
+		
+		is_visible = true
 		
 		--take immediate action if movement not currently active
 		if not carousel_movt then
@@ -213,15 +234,16 @@ function quick_item_builder:new(game, config)
 				end
 			end)
 			carousel_movt = movement
-			--TODO set active item
-			--TODO start timer to close menu
+			start_hide_timer()
+			
+			--set active item
+			local active_item_name = item_sprites[item_index]:get_animation()
+			local active_item = game:get_item(active_item_name)
+			game:set_item_assigned(1, active_item) 
 		else return end --else action will be processed when current movement is done
 	end
 	
-	--// Each time the menu is started
-	function menu:on_started()
-		active_inputs = {} --reset
-		
+	local function update_item_list()
 		--set item_index to currently active item
 		local active_item = game:get_item_assigned(1)
 		local active_item_name = active_item and active_item:get_name()
@@ -232,12 +254,21 @@ function quick_item_builder:new(game, config)
 			if item_variant > 0 then
 				local item_sprite = sol.sprite.create"menus/inventory/items"
 				item_sprite:set_animation(item_name)
-				item_sprites[i] = item_sprite
+				table.insert(item_sprites, item_sprite)
 			
 				if active_item_name==item_name then item_index = #item_sprites end
 			end
 		end
 		item_index = item_index or 1
+		
+		if carousel then carousel[2] = item_sprites[item_index] end
+	end
+	
+	--// Each time the menu is started
+	function menu:on_started()
+		active_inputs = {} --reset
+		
+		update_item_list()
 		
 		offset = {x=0, y=0}
 		zero_w = 0
@@ -253,10 +284,7 @@ function quick_item_builder:new(game, config)
 		carousel = nil
 		offset = nil
 		
-		if carouesl_movt then
-			carousel_movt:stop()
-			carousel_movt = nil
-		end
+		if carouesl_movt then carousel_movt:stop(); carousel_movt = nil end
 	end
 	
 	function menu:on_paused()
@@ -293,16 +321,14 @@ function quick_item_builder:new(game, config)
 				--no inputs are now active, stop timer
 				if not is_active then
 					scroll_direction = nil
-					if timer then timer:stop() end
+					if repeat_timer then repeat_timer:stop(); repeat_timer = nil end
 				end
 			end
 		end
 	end
 	
 	function menu:on_key_pressed(key)
-		--if key=="i" then self:advance(-1) return true end --OBSOLETE
-		
-		if not game:is_paused() then --ignore presses while paused
+		if not game:is_suspended() then --ignore presses while suspended
 			if key=="a" then
 				input_pressed("left", "key")
 				return true
@@ -326,20 +352,32 @@ function quick_item_builder:new(game, config)
 	end
 	
 	function menu:on_draw(dst_surface)
-		local game = sol.main:get_game()
-		local hero = game:get_hero()
-		local hero_x, hero_y = hero:get_position()
-		local w = offset.x + zero_w
-		
-		for i,item_sprite in ipairs(carousel) do
-			if item_sprite then
-				local w = w + (i-2)*W_STEP
-				local offset_x = X_RANGE * math__sin(w * math__pi/2 / W_STEP)
-				local offset_y = -Y_RANGE/W_STEP^2 * w * w
-				item_sprite:draw(dst_surface, hero_x+offset_x, hero_y-40+offset_y)
+		if is_visible then
+			
+			local hero_x, hero_y = hero:get_position()
+			local w = offset.x + zero_w
+			
+			for i,item_sprite in ipairs(carousel) do
+				if item_sprite then
+					local w = w + (i-2)*W_STEP
+					local offset_x = X_RANGE * math__sin(w * math__pi/2 / W_STEP)
+					local offset_y = -Y_RANGE/W_STEP^2 * w * w
+					item_sprite:draw(dst_surface, hero_x+offset_x, hero_y-40+offset_y)
+				end
 			end
 		end
 	end
+	
+	
+	local item_meta = sol.main.get_metatable"item"
+	item_meta:register_event("on_obtaining", function(item, variant, savegame_variable)
+		is_visible = false --hide so brandish animation is visible
+		
+		--only update list if new item is assignable to item slot
+		if ITEM_LIST[item:get_name()] then update_item_list() end
+	end)
+	
+	if not sol.menu.is_started(menu) then sol.menu.start(game, menu) end
 	
 	return menu
 end
