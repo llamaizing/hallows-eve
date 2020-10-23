@@ -749,10 +749,8 @@ file{ path = "sounds/wrong2.ogg", author = "Diarandor", license = "CC BY-SA 4.0"
 file{ path = "sounds/wrong3.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/blocks/conductive_block.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/blocks/cracked_block.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/chests", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/chest.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/chests/chest.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush2.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -762,7 +760,6 @@ file{ path = "sprites/destructibles/pot.png", author = "Max Mraz", license = "CC
 file{ path = "sprites/destructibles/pumpkin_big.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/destructibles/pumpkin_small.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/destructibles/pumpkins.png", author = "Max Mraz", license = "All Rights Reserved" }
-file{ path = "sprites/doors", license = "CC BY-SA 4.0" }
 file{ path = "sprites/doors/door_shutter_stone.dat", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/door_shutter_stone.png", author = "Max Mraz", license = "CC-BY-SA" }
 file{ path = "sprites/doors/iron_gate.dat", author = "Max Mraz", license = "CC0" }
@@ -786,7 +783,6 @@ file{ path = "sprites/elements/snowflake_frisbee.dat", author = "Max Mraz", lice
 file{ path = "sprites/elements/water.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/water_puddle_s.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/elements/water_splash.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
-file{ path = "sprites/enemies", license = "CC BY-SA 4.0" }
 file{ path = "sprites/enemies/big_lizard.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/enemies/big_lizard.png", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/enemies/enemy_killed.dat", author = "Max Mraz", license = "All Rights Reserved" }
@@ -813,7 +809,6 @@ file{ path = "sprites/enemies/wendigo_boss.png", author = "Max Mraz", license = 
 file{ path = "sprites/enemies/wendigo_ghost.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/enemies/wendigo_ghost.png", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/enemies/wendigo_ghost_onionskineffect.png", author = "Max Mraz", license = "All Rights Reserved" }
-file{ path = "sprites/entities", license = "CC BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/arrow.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/entities/arrow_fire.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
@@ -911,7 +906,6 @@ file{ path = "sprites/foliage/sunflower.dat", author = "Max Mraz", license = "Al
 file{ path = "sprites/foliage/sunflower.png", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/foliage/water_reed.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/foliage/yarrow.dat", author = "Max Mraz", license = "All Rights Reserved" }
-file{ path = "sprites/ground_effects", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/fall_on_hole_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/lava_splash.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
@@ -921,7 +915,6 @@ file{ path = "sprites/ground_effects/leaves.png", author = "Diarandor", license 
 file{ path = "sprites/ground_effects/walking_ground_effects.png", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/water_splash.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/ground_effects/water_splash_effect.png", author = "Diarandor", license = "CC BY-SA 4.0" }
-file{ path = "sprites/hero", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/caspian.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/ground1.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/ground2.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
@@ -936,7 +929,6 @@ file{ path = "sprites/hero/sword_stars1.dat", author = "Max Mraz", license = "CC
 file{ path = "sprites/hero/trail.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hero/tunic1.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "sprites/hero/tunic1.png", author = "Max Mraz", license = "All Rights Reserved" }
-file{ path = "sprites/hud", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/button_icon.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/danger_edges.png", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/hud/dialog_box.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
@@ -956,7 +948,6 @@ file{ path = "sprites/hud/magic_bar_background_2.png", author = "Max Mraz", lice
 file{ path = "sprites/hud/stamina_bar.png", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/stamina_bar_background.dat", author = "Max Mraz", license = "CC BY-SA 4.0" }
 file{ path = "sprites/hud/swim_meter.dat", author = "Max Mraz", license = "CC-BY 4.0" }
-file{ path = "sprites/menus", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/arrow.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/options_cursor.dat", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
@@ -1044,11 +1035,9 @@ file{ path = "sprites/portraits/zach.png", author = "Riley Patrick", license = "
 file{ path = "sprites/portraits/zach_angry.png", author = "Riley Patrick", license = "All Rights Reserved" }
 file{ path = "sprites/portraits/zach_anxious.png", author = "Riley Patrick", license = "All Rights Reserved" }
 file{ path = "sprites/portraits/zach_cocky.png", author = "Riley Patrick", license = "All Rights Reserved" }
-file{ path = "sprites/shadows", license = "CC BY-SA 4.0" }
 file{ path = "sprites/shadows/shadow.png", author = "Max Mraz", license = "CC0" }
 file{ path = "sprites/shadows/shadow_medium.dat", author = "Max Mraz", license = "CC0" }
 file{ path = "sprites/shadows/shadow_small.dat", author = "Max Mraz", license = "CC0" }
-file{ path = "sprites/switches", license = "CC BY-SA 4.0" }
 file{ path = "sprites/switches/lightning_switch.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/switches/switch_plate.dat", author = "Max Mraz", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/utility/climbing_wall.dat", author = "Max Mraz", license = "CC0" }

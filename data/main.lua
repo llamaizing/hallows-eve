@@ -14,6 +14,7 @@ function sol.main:on_started()
   local is_new_install = not sol.file.exists("settings.dat")
   if is_new_install then
     sol.video.set_fullscreen(true)
+    sol.video.set_cursor_visible(false)
   end
   if sol.video.is_fullscreen() then
     sol.video.set_cursor_visible(false)

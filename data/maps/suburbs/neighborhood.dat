@@ -7515,8 +7515,8 @@ custom_entity{
 custom_entity{
   name = "sentry_treater_b_4",
   layer = 0,
-  x = 824,
-  y = 557,
+  x = 360,
+  y = 525,
   width = 16,
   height = 16,
   direction = 3,
@@ -7527,8 +7527,8 @@ custom_entity{
 custom_entity{
   name = "sentry_treater_b_3",
   layer = 0,
-  x = 800,
-  y = 557,
+  x = 360,
+  y = 501,
   width = 16,
   height = 16,
   direction = 3,
@@ -7809,8 +7809,8 @@ custom_entity{
 custom_entity{
   name = "sentry_treater_b_10",
   layer = 0,
-  x = 360,
-  y = 517,
+  x = 408,
+  y = 237,
   width = 16,
   height = 16,
   direction = 3,
@@ -7821,8 +7821,8 @@ custom_entity{
 custom_entity{
   name = "sentry_treater_b_11",
   layer = 0,
-  x = 352,
-  y = 541,
+  x = 384,
+  y = 253,
   width = 16,
   height = 16,
   direction = 3,
@@ -9289,6 +9289,39 @@ sensor{
   y = 909,
   width = 800,
   height = 16,
+}
+
+custom_entity{
+  name = "ghost_candle",
+  layer = 0,
+  x = 72,
+  y = 525,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/ghost_candle",
+  model = "ghost_candle",
+}
+
+destination{
+  name = "ghost_candle_destination",
+  layer = 0,
+  x = 72,
+  y = 541,
+  direction = 3,
+  default = true,
+}
+
+custom_entity{
+  name = "sentry_treater_b_12",
+  layer = 0,
+  x = 360,
+  y = 469,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npcs/treater_ghost",
+  model = "sentry",
 }
 
 tile{
