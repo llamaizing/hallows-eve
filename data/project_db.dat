@@ -397,7 +397,7 @@ entity{ id = "toss_ball", description = "Toss Ball" }
 language{ id = "en", description = "English" }
 
 font{ id = "8_bit", description = "8 bit" }
-font{ id = "ComicNeue-Angular-Bold", description = "ComicNeue-Angular-Bold" }
+font{ id = "DigitalDisco", description = "DigitalDisco" }
 font{ id = "enter_command", description = "Enter Command" }
 font{ id = "white_digits", description = "White digits" }
 
@@ -438,6 +438,7 @@ file{ path = "entities/shoot_seed.lua", author = "Max Mraz", license = "MIT" }
 file{ path = "entities/soccer_ball.lua", author = "Max Mraz", license = "MIT" }
 file{ path = "entities/toss_ball.lua", author = "Max Mraz", license = "MIT" }
 file{ path = "fonts/8_bit.png", author = "usr_share, Christopho", license = "Public domain" }
+file{ path = "fonts/DigitalDisco.ttf", author = "Jeti", license = "CC-BY 4.0" }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
 file{ path = "items/heal.lua", author = "Max Mraz", license = "MIT" }
 file{ path = "items/inventory/bombs_counter.lua", author = "Max Mraz", license = "MIT" }

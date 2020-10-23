@@ -51,7 +51,7 @@ local INV_MAX_DIST = 108 --travel distance of left half of menu in pixels
 --NOTE: 16 extra pixels beyond its width to make it a multiple of 18
 
 --TODO move these to language manager script
-local FONT = "ComicNeue-Angular-Bold"
+local FONT = "DigitalDisco"
 local FONT_SIZE = 16
 --local FONT_COLOR = {191, 96, 0}
 local FONT_COLOR = {206, 187, 169}
