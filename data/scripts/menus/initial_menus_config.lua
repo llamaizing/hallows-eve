@@ -9,7 +9,6 @@ local initial_menus = {
   --"scripts/menus/maxmraz_logo",
   --"scripts/menus/solarus_logo",
   "scripts/menus/title_screen_menus/top_menu",
-  "scripts/menus/start_game",
 }
 
 return initial_menus

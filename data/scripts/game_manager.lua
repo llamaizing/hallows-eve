@@ -27,6 +27,10 @@ function game_manager:create(file, overwrite)
   require("scripts/menus/inventory/inventory"):init(game, "standard")
   require("scripts/game_over"):init(game)
 
+  --need 10ms delay or else game:get_hero() returns nil
+  sol.timer.start(game, 10, function()
+  	require("scripts/menus/quick_items"):init(game)
+  end)
 
   return game
 end
