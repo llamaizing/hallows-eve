@@ -5,12 +5,12 @@ local options_submenu = submenu:new()
 
 
 function options_submenu:on_finished()
-  sol.main.get_game():get_hero():unfreeze()
+  sol.main.get_game():set_suspended(false)
 end
 
 function options_submenu:on_started()
   local game = sol.main.get_game()
-  game:get_hero():freeze()
+  game:set_suspended(true)
 
   submenu.on_started(self)
 
@@ -236,12 +236,22 @@ function options_submenu:on_command_pressed(command)
         self:set_caption("options.caption.press_key")
         self.cursor_sprite:set_animation("small_blink")
         local command_to_customize = self.command_names[self.cursor_position - 1]
+
+        local orig_keyboard_bind = self.game:get_command_keyboard_binding(command_to_customize)
+        self.is_prevent_close = true
         self.game:capture_command_binding(command_to_customize, function()
-          sol.audio.play_sound("danger")
+          self.is_prevent_close = false
+          local new_keyboard_bind = self.game:get_command_keyboard_binding(command_to_customize)
+          if new_keyboard_bind:match"^f%d+$" then --revert and do nothing
+            sol.audio.play_sound("no")
+            self.game:set_command_keyboard_binding(command_to_customize, orig_keyboard_bind)
+          else
+            sol.audio.play_sound("danger")
+            self:load_command_texts()
+            -- TODO restore HUD icons.
+          end
           self:set_caption("options.caption.press_action_customize_key")
           self.cursor_sprite:set_animation("small")
-          self:load_command_texts()
-          -- TODO restore HUD icons.
         end)
 
         -- TODO grey over HUD icons, make the icon of the command blink.
