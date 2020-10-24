@@ -20,9 +20,7 @@ text{ key = "menu.title.options", value = "Options" }
 text{ key = "menu.title.quit", value = "Quit" }
 text{ key = "options.caption.press_action_change_mode", value = "Press Action to adjust setting" }
 text{ key = "options.caption.press_action_customize_key", value = "Press Action to configure this key" }
---text{ key = "options.caption.press_key", value = "Press any key on the keyboard or joypad" }
---text{ key = "options.caption.press_key", value = "Press any key or button" }
-text{ key = "options.caption.press_key", value = "Press any keyboard/joypad button" }
+text{ key = "options.caption.press_key", value = "Press any key or button" }
 text{ key = "options.command.action", value = "Action" }
 text{ key = "options.command.attack", value = "Attack" }
 text{ key = "options.command.down", value = "Down" }
@@ -37,4 +35,7 @@ text{ key = "options.joypad_column", value = "Joypad" }
 text{ key = "options.keyboard_column", value = "Keyboard" }
 text{ key = "save_dialog.no", value = "No" }
 text{ key = "save_dialog.yes", value = "Yes" }
-text{ key = "selection_menu.options.video_mode", value = "Video mode" }
+text{ key = "selection_menu.options.fullscreen", value = "Fullscreen" }
+text{ key = "selection_menu.options.fullscreen_true", value = "Enabled" }
+text{ key = "selection_menu.options.fullscreen_false", value = "Disabled" }
+--text{ key = "selection_menu.options.video_mode", value = "Video mode" }

@@ -21,25 +21,25 @@ function options_submenu:on_started()
   self.column_color = { 255, 255, 255}
   self.text_color = { 255, 255, 255 }
 
-  self.video_mode_label_text = sol.text_surface.create{
+  self.fullscreen_label_text = sol.text_surface.create{
     horizontal_alignment = "left",
     vertical_alignment = "top",
     font = font,
     font_size = font_size,
-    text_key = "selection_menu.options.video_mode",
+    text_key = "selection_menu.options.fullscreen",
     color = self.text_color,
   }
-  self.video_mode_label_text:set_xy(center_x - 50, center_y - 58)
+  self.fullscreen_label_text:set_xy(center_x - 50, center_y - 58)
 
-  self.video_mode_text = sol.text_surface.create{
+  self.fullscreen_text = sol.text_surface.create{
     horizontal_alignment = "right",
     vertical_alignment = "top",
     font = font,
     font_size = font_size,
-    text = sol.video.get_mode(),
+    text_key = "selection_menu.options.fullscreen_"..tostring(sol.video.is_fullscreen()),
     color = self.text_color,
   }
-  self.video_mode_text:set_xy(center_x + 104, center_y - 58)
+  self.fullscreen_text:set_xy(center_x + 104, center_y - 58)
 
   self.command_column_text = sol.text_surface.create{
     horizontal_alignment = "center",
@@ -182,8 +182,8 @@ function options_submenu:on_draw(dst_surface)
   self.cursor_sprite:draw(dst_surface, self.cursor_sprite.x, self.cursor_sprite.y)
 
   -- Text.
-  self.video_mode_label_text:draw(dst_surface)
-  self.video_mode_text:draw(dst_surface)
+  self.fullscreen_label_text:draw(dst_surface)
+  self.fullscreen_text:draw(dst_surface)
   self.command_column_text:draw(dst_surface)
   self.keyboard_column_text:draw(dst_surface)
   self.joypad_column_text:draw(dst_surface)
@@ -228,9 +228,9 @@ function options_submenu:on_command_pressed(command)
     elseif command == "action" then
       sol.audio.play_sound("danger")
       if self.cursor_position == 1 then
-        -- Change the video mode.
-        sol.video.switch_mode()
-        self.video_mode_text:set_text(sol.video.get_mode())
+        local is_fullscreen = sol.video.is_fullscreen()
+        sol.video.set_fullscreen(not is_fullscreen)
+        self.fullscreen_text:set_text_key("selection_menu.options.fullscreen_"..tostring(not is_fullscreen))
       else
         -- Customize a game command.
         self:set_caption("options.caption.press_key")
