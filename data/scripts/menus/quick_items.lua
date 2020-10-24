@@ -1,6 +1,6 @@
 --[[ quick_items.lua
 	version 1.0
-	22 Oct 2020
+	23 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -19,6 +19,8 @@
 	require("scripts/menus/quick_items.lua"):init(game)
 	game.quick_menu --access the menu from other scripts
 --]]
+
+require"scripts/multi_events"
 
 local quick_item_builder = {}
 
@@ -239,7 +241,7 @@ function quick_item_builder:init(game)
 			--set active item
 			local active_item_name = item_sprites[item_index]:get_animation()
 			local active_item = game:get_item(active_item_name)
-			game:set_item_assigned(1, active_item) 
+			game:set_item_assigned(1, active_item)
 		else return end --else action will be processed when current movement is done
 	end
 	
@@ -287,45 +289,39 @@ function quick_item_builder:init(game)
 		if carouesl_movt then carousel_movt:stop(); carousel_movt = nil end
 	end
 	
-	function menu:on_paused()
-		--TODO fade out
-	end
-	
-	function menu:on_unpaused()
-		menu:rebuild_surface()
-		--TODO fade in
+	game:register_event("on_paused", function()
+		is_visible = false
+		if hide_timer then hide_timer:stop(); hide_timer = nil end
 		
-		--remove any inputs that are not longer active when unpaused
-		if scroll_direction then --only care if actively scrolling
-			local is_stoped = false --tentative
-			for input,dir in pairs(active_inputs) do
-				local info = INPUT_LIST[input]
-				if info then
-					if not sol.input[info.get_input](dir) then --if input now no longer active
-						if active_inputs[input]==scroll_direction then is_stopped = true end
-						active_inputs[input] = nil
-					end
-				end
-			end
-			
-			--if at least on input is now stopped then check if all are now stopped
-			if is_stopped then
-				local is_active = false --tentative
-				for input,dir in pairs(active_inputs) do
-					if dir==scroll_direction then
-						is_active = true
-						break --don't need to check if more than one is active
-					end
-				end
-				
-				--no inputs are now active, stop timer
-				if not is_active then
-					scroll_direction = nil
-					if repeat_timer then repeat_timer:stop(); repeat_timer = nil end
-				end
-			end
+		--abort carousel if active
+		if carousel_movt then carousel_movt:stop(); carousel_movt = nil end
+		if carousel then
+			carousel[1] = false
+			carousel[3] = false
 		end
-	end
+		
+		--advance to item that should be active
+		if overflow ~= 0 then
+			item_index = (item_index + overflow - 1) % #item_sprites + 1
+			local active_item_name = item_sprites[item_index]:get_animation()
+			local active_item = game:get_item(active_item_name)
+			game:set_item_assigned(1, active_item)
+			overflow = 0
+		end
+		
+		--reset position
+		offset.x = 0
+		zero_w = 0
+		
+		--reset held any buttons
+		actove_inputs = {}
+		scroll_direction = nil
+		if repeat_timer then repeat_timer:stop(); repeat_timer = nil end
+	end, true) --ensure this event triggers before inventory menu on_paused event
+	
+	game:register_event("on_unpaused", function()
+		update_item_list()
+	end)
 	
 	function menu:on_key_pressed(key)
 		if not game:is_suspended() then --ignore presses while suspended

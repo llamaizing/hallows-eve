@@ -1,6 +1,6 @@
 --[[ inventory.lua
 	version 1.0
-	16 Oct 2020
+	23 Oct 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -22,6 +22,8 @@
 	game:set_value("current_objective", "outskirts/farm") --set an objective (go to map)
 	game:set_value("current_objective", nil) --remove the objective
 --]]
+
+require"scripts/multi_events"
 
 local menu_manager = {}
 
@@ -277,7 +279,7 @@ function menu_manager:init(game, config)
 	
 	if game.inventory_menu then return end --menu has already been initialized for game
 	game.inventory_menu = menu --save reference to menu
-	function game:on_paused() sol.menu.start(game, menu) end
+	game:register_event("on_paused", function() sol.menu.start(game, menu) end)
 	
 	--// create menu sprites
 	local bg_img_inv = sol.surface.create(BG_INV)
