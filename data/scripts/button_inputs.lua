@@ -71,8 +71,8 @@ function menu:initialize(game)
     local hero = game:get_hero()
     local button_menu = require"scripts/menus/button_mapping_in_game"
 
-    if key == "q" then
-      if not sol.menu.is_started(button_menu) and hero:get_state() ~= "frozen" then
+    if key == "q" and not game:is_suspended() then
+      if not sol.menu.is_started(button_menu) then
         sol.menu.start(game, button_menu)
       else
         sol.menu.stop(button_menu)
