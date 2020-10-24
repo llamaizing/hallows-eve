@@ -7501,6 +7501,15 @@ teletransporter{
   destination = "from_outside",
 }
 
+sensor{
+  name = "unlock_gates_forever_sensor",
+  layer = 0,
+  x = 136,
+  y = 597,
+  width = 48,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 824,

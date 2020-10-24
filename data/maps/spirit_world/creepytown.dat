@@ -3664,7 +3664,7 @@ tile{
   x = 616,
   y = 512,
   width = 8,
-  height = 384,
+  height = 352,
   pattern = "76",
 }
 
@@ -7425,9 +7425,9 @@ tile{
 tile{
   layer = 0,
   x = 1064,
-  y = 192,
+  y = 304,
   width = 8,
-  height = 256,
+  height = 144,
   pattern = "76",
 }
 
@@ -8763,9 +8763,9 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 840,
+  y = 904,
   width = 8,
-  height = 128,
+  height = 64,
   pattern = "76",
 }
 
@@ -8812,36 +8812,6 @@ tile{
   width = 1216,
   height = 8,
   pattern = "75",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 840,
-  width = 64,
-  height = 56,
-  pattern = "93",
-  tileset = "halloween",
-}
-
-tile{
-  layer = 0,
-  x = 768,
-  y = 896,
-  width = 32,
-  height = 24,
-  pattern = "92",
-  tileset = "halloween",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 832,
-  width = 64,
-  height = 56,
-  pattern = "93",
-  tileset = "halloween",
 }
 
 tile{
@@ -10968,15 +10938,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1240,
-  y = 216,
-  width = 32,
-  height = 32,
-  pattern = "27",
-}
-
-tile{
-  layer = 0,
   x = 1288,
   y = 296,
   width = 16,
@@ -11275,9 +11236,9 @@ tile{
 tile{
   layer = 0,
   x = 1152,
-  y = 200,
+  y = 296,
   width = 8,
-  height = 176,
+  height = 80,
   pattern = "76",
 }
 
@@ -14248,6 +14209,341 @@ tile{
   pattern = "123_2",
 }
 
+tile{
+  layer = 0,
+  x = 1064,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 200,
+  width = 8,
+  height = 32,
+  pattern = "76",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 200,
+  width = 8,
+  height = 32,
+  pattern = "76",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 232,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 232,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 256,
+  width = 16,
+  height = 24,
+  pattern = "57_3",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "56_3",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "58_3",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "59",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "59",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 256,
+  width = 16,
+  height = 24,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 152,
+  width = 80,
+  height = 24,
+  pattern = "59",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 136,
+  width = 80,
+  height = 32,
+  pattern = "1_2",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 160,
+  width = 24,
+  height = 24,
+  pattern = "3",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 160,
+  width = 24,
+  height = 24,
+  pattern = "3",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 120,
+  width = 24,
+  height = 24,
+  pattern = "172_2",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "174",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 128,
+  width = 24,
+  height = 24,
+  pattern = "172",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 856,
+  width = 32,
+  height = 24,
+  pattern = "92",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 872,
+  width = 112,
+  height = 8,
+  pattern = "58_2",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 880,
+  width = 112,
+  height = 8,
+  pattern = "57_2",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 872,
+  width = 16,
+  height = 8,
+  pattern = "58_3",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 880,
+  width = 16,
+  height = 8,
+  pattern = "57",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 888,
+  width = 16,
+  height = 8,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 872,
+  width = 16,
+  height = 8,
+  pattern = "58",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 880,
+  width = 16,
+  height = 8,
+  pattern = "57_3",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 888,
+  width = 112,
+  height = 8,
+  pattern = "56_2",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 888,
+  width = 16,
+  height = 8,
+  pattern = "56_3",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 896,
+  width = 8,
+  height = 16,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "76",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 856,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 856,
+  width = 8,
+  height = 16,
+  pattern = "59",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 896,
+  width = 128,
+  height = 16,
+  pattern = "59",
+  tileset = "halloween",
+}
+
 sensor{
   name = "see_portal_sensor",
   layer = 0,
@@ -15096,8 +15392,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 1136,
-  y = 253,
+  x = 1080,
+  y = 221,
   width = 16,
   height = 16,
   direction = 0,
@@ -15108,7 +15404,7 @@ custom_entity{
 custom_entity{
   layer = 0,
   x = 1144,
-  y = 277,
+  y = 301,
   width = 16,
   height = 16,
   direction = 0,
@@ -15953,19 +16249,6 @@ dynamic_tile{
 
 wall{
   layer = 0,
-  x = 1584,
-  y = 464,
-  width = 16,
-  height = 40,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
   x = 1520,
   y = 600,
   width = 8,
@@ -15983,19 +16266,6 @@ wall{
   y = 600,
   width = 8,
   height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  layer = 0,
-  x = 1488,
-  y = 464,
-  width = 16,
-  height = 40,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
@@ -16359,6 +16629,92 @@ teletransporter{
   height = 64,
   destination_map = "spirit_world/witch_house",
   destination = "from_town",
+}
+
+chest{
+  layer = 0,
+  x = 1240,
+  y = 205,
+  treasure_name = "pumpkin_seed",
+  treasure_savegame_variable = "pumpkin_seed_creepytown_canal_dash",
+  sprite = "chests/chest",
+}
+
+wall{
+  layer = 0,
+  x = 768,
+  y = 904,
+  width = 208,
+  height = 72,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1024,
+  y = 896,
+  width = 112,
+  height = 72,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1136,
+  y = 840,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "from_ruin_city",
+  layer = 0,
+  x = 1000,
+  y = 941,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 976,
+  y = 944,
+  width = 48,
+  height = 16,
+  destination_map = "spirit_world/challenge_islands/ruin_city",
+  destination = "destinationfrom_creepytown",
+}
+
+tile{
+  layer = 1,
+  x = 1120,
+  y = 800,
+  width = 64,
+  height = 56,
+  pattern = "93",
+  tileset = "halloween",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 832,
+  width = 64,
+  height = 56,
+  pattern = "93",
+  tileset = "halloween",
 }
 
 tile{
@@ -19023,16 +19379,16 @@ tile{
 tile{
   layer = 1,
   x = 880,
-  y = 888,
+  y = 904,
   width = 16,
-  height = 80,
+  height = 64,
   pattern = "20_5",
 }
 
 tile{
   layer = 1,
-  x = 1008,
-  y = 872,
+  x = 960,
+  y = 888,
   width = 16,
   height = 16,
   pattern = "21_4",
@@ -19040,27 +19396,27 @@ tile{
 
 tile{
   layer = 1,
-  x = 1008,
-  y = 888,
+  x = 960,
+  y = 904,
   width = 16,
-  height = 80,
+  height = 64,
   pattern = "20_4",
 }
 
 tile{
   layer = 1,
   x = 896,
-  y = 888,
-  width = 112,
-  height = 80,
+  y = 904,
+  width = 64,
+  height = 64,
   pattern = "20_6",
 }
 
 tile{
   layer = 1,
   x = 896,
-  y = 872,
-  width = 112,
+  y = 888,
+  width = 64,
   height = 16,
   pattern = "21_6",
 }
@@ -19068,7 +19424,7 @@ tile{
 tile{
   layer = 1,
   x = 880,
-  y = 872,
+  y = 888,
   width = 16,
   height = 16,
   pattern = "21_5",
@@ -21905,6 +22261,129 @@ tile{
   tileset = "halloween",
 }
 
+tile{
+  layer = 1,
+  x = 1064,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "78",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "78",
+}
+
+tile{
+  layer = 1,
+  x = 1064,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 120,
+  width = 64,
+  height = 16,
+  pattern = "2_2",
+  tileset = "yarntown_props",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 112,
+  width = 24,
+  height = 8,
+  pattern = "173_2",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 104,
+  width = 32,
+  height = 8,
+  pattern = "175",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 1,
+  x = 1096,
+  y = 120,
+  width = 24,
+  height = 8,
+  pattern = "173",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 96,
+  width = 32,
+  height = 8,
+  pattern = "175",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "174",
+  tileset = "yarntown",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 888,
+  width = 8,
+  height = 8,
+  pattern = "78",
+}
+
+tile{
+  layer = 1,
+  x = 616,
+  y = 848,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 848,
+  width = 8,
+  height = 8,
+  pattern = "74",
+}
+
 dynamic_tile{
   name = "^lighting_effect_candle",
   layer = 1,
@@ -22337,5 +22816,14 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "17",
+}
+
+tile{
+  layer = 2,
+  x = 1240,
+  y = 216,
+  width = 32,
+  height = 32,
+  pattern = "27",
 }
 

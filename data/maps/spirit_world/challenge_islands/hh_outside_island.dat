@@ -7,6 +7,7 @@ properties{
   max_layer = 2,
   world = "spirit_challenge",
   tileset = "cars",
+  music = "haunted_forest",
 }
 
 tile{
@@ -3313,6 +3314,7 @@ destination{
   x = 192,
   y = 157,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 teletransporter{

@@ -2056,6 +2056,18 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "91",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 192, 192, 192 },
+  y = { 0, 16, 32 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "92",
   ground = "wall",
   default_layer = 0,
@@ -2227,6 +2239,18 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "95",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 208, 208, 208 },
+  y = { 0, 16, 32 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{

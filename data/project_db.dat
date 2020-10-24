@@ -21,9 +21,12 @@ map{ id = "outskirts/pumpkin_cove", description = "Pumpkin Cove" }
 map{ id = "outskirts/pumpkin_inside", description = "Pumpkin Inside" }
 map{ id = "respawn_map", description = "Respawn Map" }
 map{ id = "spirit_world/apartment", description = "Apartment" }
+map{ id = "spirit_world/challenge_islands/cove_island", description = "Cove Island" }
+map{ id = "spirit_world/challenge_islands/dennys_island", description = "Denny's Island" }
 map{ id = "spirit_world/challenge_islands/farm_island", description = "Farm Island" }
 map{ id = "spirit_world/challenge_islands/forest", description = "Forest" }
 map{ id = "spirit_world/challenge_islands/hh_outside_island", description = "HH Outside Island" }
+map{ id = "spirit_world/challenge_islands/ruin_city", description = "Ruin City" }
 map{ id = "spirit_world/challenge_islands/test", description = "Test" }
 map{ id = "spirit_world/credits_apartment", description = "Credits Apartment" }
 map{ id = "spirit_world/creepytown", description = "Creepytown" }
@@ -512,12 +515,18 @@ file{ path = "maps/respawn_map.dat", author = "Max Mraz", }
 file{ path = "maps/respawn_map.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/apartment.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/cove_island.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/cove_island.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/dennys_island.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/dennys_island.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/challenge_islands/farm_island.dat", author = "Max Mraz", license = "All Rights Reserved" }
 file{ path = "maps/spirit_world/challenge_islands/farm_island.lua", author = "Max Mraz", license = "MIT" }
 file{ path = "maps/spirit_world/challenge_islands/forest.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/challenge_islands/forest.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/challenge_islands/hh_outside_island.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/challenge_islands/hh_outside_island.lua", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/ruin_city.dat", author = "Max Mraz", }
+file{ path = "maps/spirit_world/challenge_islands/ruin_city.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/credits_apartment.dat", author = "Max Mraz", }
 file{ path = "maps/spirit_world/credits_apartment.lua", author = "Max Mraz", }
 file{ path = "maps/spirit_world/hut.dat", author = "Max Mraz", }
