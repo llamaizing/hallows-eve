@@ -107,10 +107,10 @@ function submenu:draw_caption(dst_surface)
   local width, height = dst_surface:get_size()
 
   if self.caption_text_2:get_text():len() == 0 then
-    self.caption_text_1:draw(dst_surface, width / 2, height / 2 + 89)
+    self.caption_text_1:draw(dst_surface, width / 2, height / 2 - 74)
   else
-    self.caption_text_1:draw(dst_surface, width / 2, height / 2 + 83)
-    self.caption_text_2:draw(dst_surface, width / 2, height / 2 + 95)
+    self.caption_text_1:draw(dst_surface, width / 2, height / 2 - 80)
+    self.caption_text_2:draw(dst_surface, width / 2, height / 2 - 68)
   end
 end
 
