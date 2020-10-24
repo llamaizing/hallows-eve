@@ -10,6 +10,7 @@ function manager:manage_spawns(map)
 
   --Give enemies a unique ID based on their position
   for enemy in map:get_entities_by_type"enemy" do
+    if map:get_world() == "spirit_challenge" then return end
     local x, y, z = enemy:get_position()
     --create a unique ID for each enemy based on starting position
     --This will fall apart if multiple enemies start in the same location

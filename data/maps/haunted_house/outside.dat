@@ -6300,8 +6300,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 432,
-  y = 693,
+  x = 376,
+  y = 757,
   direction = 0,
   breed = "spider_thing",
 }
@@ -7104,13 +7104,146 @@ sensor{
   height = 16,
 }
 
-chest{
+destination{
+  name = "from_spirit_challenge",
   layer = 0,
   x = 392,
+  y = 693,
+  direction = 3,
+  starting_location_mode = "no",
+}
+
+teletransporter{
+  name = "warp_portal",
+  layer = 0,
+  x = 384,
+  y = 664,
+  width = 16,
+  height = 16,
+  destination_map = "spirit_world/challenge_islands/hh_outside_island",
+  destination = "from_mortal_world",
+  sprite = "entities/portal",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
   y = 669,
-  treasure_name = "pumpkin_seed",
-  treasure_savegame_variable = "pumpkin_seed_hh_outside",
-  sprite = "chests/chest",
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 677,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 360,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 368,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 432,
+  y = 693,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 416,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 384,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/yarrow",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 440,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 432,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 709,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 717,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "foliage/brown_thistle",
+  model = "foliage",
 }
 
 tile{

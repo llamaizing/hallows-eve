@@ -15967,13 +15967,24 @@ teletransporter{
   destination = "from_outside",
 }
 
-chest{
+destination{
+  name = "from_challenge_island",
   layer = 0,
-  x = 424,
-  y = 333,
-  treasure_name = "pumpkin_seed",
-  treasure_savegame_variable = "pumpkin_seed_farm",
-  sprite = "chests/chest",
+  x = 408,
+  y = 365,
+  direction = 3,
+}
+
+teletransporter{
+  name = "warp_portal",
+  layer = 0,
+  x = 400,
+  y = 336,
+  width = 16,
+  height = 16,
+  destination_map = "spirit_world/challenge_islands/farm_island",
+  destination = "from_mortal_world",
+  sprite = "entities/portal",
 }
 
 tile{
