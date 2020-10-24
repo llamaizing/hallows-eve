@@ -53,7 +53,7 @@ function boss:on_dead()
     map:create_poof(acimonia:get_position())
     wait(1000)
     dialog"spirit_world.witch_hut.defeated_1"
-    sol.audio.play_sound"enemy_killed"
+    sol.audio.play_sound"enemy_killed_finale"
     acimonia:get_sprite():set_animation("blow_up", function() acimonia:set_enabled(false) end)
     wait(1200)
     maggie:set_enabled(true)

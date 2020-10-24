@@ -20,7 +20,7 @@ dialog{
   id = "_treasure.pumpkin_seed.1",
   text = [[
 You found a Pumpkin Seed!
-Collect 5 to increase your maximum life!
+Collect 3 to increase your maximum life!
 ]],
 }
 

@@ -254,6 +254,7 @@ sound{ id = "electrified2", description = "electrified2" }
 sound{ id = "enemy_awake", description = "enemy_awake" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "enemy_killed_finale", description = "enemy_killed_finale" }
 sound{ id = "explosion", description = "explosion" }
 sound{ id = "falling_on_hole", description = "falling_on_hole" }
 sound{ id = "falling_rock", description = "falling_rock" }
@@ -672,6 +673,7 @@ file{ path = "sounds/electrified2.ogg", author = "Diarandor", license = "CC BY-S
 file{ path = "sounds/enemy_awake.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/enemy_hurt.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/enemy_killed.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sounds/enemy_killed_finale.ogg", author = "Max Mraz", license = "CC0" }
 file{ path = "sounds/explosion.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/falling_on_hole.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sounds/falling_rock.ogg", author = "Diarandor", license = "CC BY-SA 4.0" }

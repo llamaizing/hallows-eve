@@ -62,7 +62,15 @@ map_meta:register_event("on_started", function(self)
     portal:get_sprite():set_blend_mode("add")
 
     portal:register_event("on_activated", function()
+      sol.audio.stop_music()
       sol.audio.play_sound"world_warp"
+      local flash = require"scripts/fx/white_flash"
+      if sol.menu.is_started(flash) then sol.menu.stop(flash) end
+      flash.fade_in_time = 10
+      sol.menu.start(game, flash)
+      sol.timer.start(game, 1000, function()
+        flash:fade_out()
+      end)
     end)
   end
 
